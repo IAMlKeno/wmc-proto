@@ -1,0 +1,25 @@
+uuid: 9c51d17f-e580-4b47-936a-68979ee0df82
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.subject
+  module:
+    - taxonomy
+_core:
+  default_config_hash: 7dhQX-FT16CcrLdhBdu0zaKOz0WYJlp_2jhiu_ZeeQU
+id: taxonomy_term.subject
+targetEntityType: taxonomy_term
+bundle: subject
+types:
+  - 'schema:Thing'
+fieldMappings:
+  name:
+    properties:
+      - 'schema:name'
+  description:
+    properties:
+      - 'schema:description'
+  field_authority_link:
+    properties:
+      - 'schema:sameAs'

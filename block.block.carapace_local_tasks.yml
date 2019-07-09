@@ -1,0 +1,22 @@
+uuid: 4bb82ab8-e106-462c-84de-0f33639a8e27
+langcode: en
+status: true
+dependencies:
+  theme:
+    - carapace
+_core:
+  default_config_hash: X9fkY4VmNAGjdUvl6vSnQk9UhiuQWoYf1c3pHBjW9Do
+id: carapace_local_tasks
+theme: carapace
+region: content
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

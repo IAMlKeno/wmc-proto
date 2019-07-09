@@ -1,0 +1,22 @@
+uuid: 5484089c-34ed-48f6-b67c-653243d07597
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - carapace
+_core:
+  default_config_hash: qoUfzBmYbbC9mVSNDhqod7XEh3LKx5iTwKEoxKNGy9c
+id: carapace_messages
+theme: carapace
+region: highlighted
+weight: -100
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
