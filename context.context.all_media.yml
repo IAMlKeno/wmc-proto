@@ -36,7 +36,6 @@ reactions:
   index:
     id: index
     actions:
-      index_media_in_fedora: index_media_in_fedora
       index_media_in_triplestore: index_media_in_triplestore
     saved: false
   delete:
