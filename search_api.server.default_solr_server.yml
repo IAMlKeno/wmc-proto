@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - search_api_solr.solr_field_type.text_en_7_0_0
+    - search_api_solr.solr_field_type.text_phonetic_en_7_0_0
     - search_api_solr.solr_field_type.text_phonetic_und_7_0_0
     - search_api_solr.solr_field_type.text_und_7_0_0
   module:
@@ -19,8 +21,8 @@ backend_config:
     scheme: http
     host: localhost
     port: 8983
-    path: /solr
-    core: CLAW
+    path: /
+    core: islandora8
     timeout: 5
     index_timeout: 10
     optimize_timeout: 15
@@ -29,11 +31,12 @@ backend_config:
     solr_version: ''
     http_method: AUTO
     jmx: false
+    solr_install_dir: /opt/solr
+  disabled_field_types: {  }
   retrieve_data: false
   highlight_data: false
   skip_schema_check: false
-  domain: generic
-  site_hash: true
   server_prefix: ''
+  domain: generic
   optimize: false
-  disabled_field_types: {  }
+  site_hash: true
