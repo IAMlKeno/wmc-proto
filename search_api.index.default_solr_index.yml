@@ -1,38 +1,15 @@
 uuid: e4866bd5-b5dc-40a9-a507-6fc1de7f2756
 langcode: en
-status: true
+status: false
 dependencies:
   module:
-    - search_api_solr
     - node
     - user
     - search_api
+    - search_api_solr
   config:
     - field.storage.node.field_tags
-    - search_api.server.default_solr_server
     - core.entity_view_mode.node.search_index
-third_party_settings:
-  search_api_solr:
-    finalize: false
-    commit_before_finalize: false
-    commit_after_finalize: false
-    highlighter:
-      maxAnalyzedChars: 51200
-      fragmenter: regex
-      regex:
-        slop: 0.5
-        pattern: blank
-        maxAnalyzedChars: 10000
-      usePhraseHighlighter: true
-      highlightMultiTerm: true
-      preserveMulti: false
-      highlight:
-        mergeContiguous: false
-        requireFieldMatch: false
-        snippets: 3
-        fragsize: 0
-    advanced:
-      index_prefix: ''
 _core:
   default_config_hash: lB3g7pP4d5WoIDhvi41ngXGpcOj78D0gn2e6BTMKikw
 id: default_solr_index
@@ -91,6 +68,7 @@ field_settings:
       view_mode:
         'entity:node':
           article: search_index
+          islandora_object: search_index
           page: search_index
   status:
     label: 'Publishing status'
@@ -185,4 +163,4 @@ tracker_settings:
 options:
   index_directly: true
   cron_limit: 50
-server: default_solr_server
+server: null
