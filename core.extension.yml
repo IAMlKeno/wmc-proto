@@ -22,7 +22,6 @@ module:
   controlled_access_terms_defaults: 0
   datetime: 0
   dblog: 0
-  devel: 0
   dgi_i8_helper: 0
   dynamic_page_cache: 0
   editor: 0

@@ -16,9 +16,12 @@ third_party_settings:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
     highlighter:
       maxAnalyzedChars: 51200
-      fragmenter: regex
+      fragmenter: gap
       regex:
         slop: 0.5
         pattern: blank
@@ -31,8 +34,20 @@ third_party_settings:
         requireFieldMatch: false
         snippets: 3
         fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
     advanced:
       index_prefix: ''
+      collection: ''
 _core:
   default_config_hash: lB3g7pP4d5WoIDhvi41ngXGpcOj78D0gn2e6BTMKikw
 id: default_solr_index
@@ -91,6 +106,7 @@ field_settings:
       view_mode:
         'entity:node':
           article: search_index
+          islandora_object: search_index
           page: search_index
   status:
     label: 'Publishing status'
