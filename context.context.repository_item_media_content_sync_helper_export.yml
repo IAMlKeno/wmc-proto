@@ -1,0 +1,39 @@
+uuid: a8d7b2fb-31bd-4d50-a84e-1de221c77c28
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_sync_helper
+    - islandora
+name: repository_item_media_content_sync_helper_export
+label: 'Repository Item Media Content Sync Helper export'
+group: 'DGI Islandora'
+description: 'Exports media entries belonging repository items, via content_sync.'
+requireAllConditions: true
+disabled: false
+conditions:
+  content_sync_helper_media_parent_node_has_type:
+    id: content_sync_helper_media_parent_node_has_type
+    bundles:
+      islandora_object: islandora_object
+    negate: 0
+    uuid: 8d410e72-5de6-4763-a3d5-825f64979696
+    context_mapping:
+      media: '@islandora.media_route_context_provider:media'
+reactions:
+  index:
+    id: index
+    actions:
+      export_entity: export_entity
+    saved: false
+  derivative:
+    id: derivative
+    actions:
+      export_entity: export_entity
+    saved: false
+  delete:
+    id: delete
+    actions:
+      export_entity: export_entity
+    saved: false
+weight: 0
