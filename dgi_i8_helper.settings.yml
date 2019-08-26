@@ -1,4 +1,6 @@
-remapped_schemes: '["repo-bin", "repo-meta"]'
+remapped_schemes:
+  - repo-meta
+  - repo-bin
 remapped_scheme: private
 _core:
   default_config_hash: N7TBcg0W11_L4YicUwGQeBi76kUxcqGcOI7ejat41vM
