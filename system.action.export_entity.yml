@@ -15,3 +15,6 @@ configuration:
   type: entity
   files: none
   include-dependencies: 1
+  entity-types: ''
+  uuids: ''
+  actions: ''
