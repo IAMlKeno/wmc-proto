@@ -1,0 +1,39 @@
+uuid: 57bcd1c8-c774-464b-9f56-7eaae739887f
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+    - node
+name: repository_item_content_sync_helper_export
+label: 'Repository Item Content Sync Helper export'
+group: 'DGI Islandora'
+description: 'Exports repository items via content_sync.'
+requireAllConditions: true
+disabled: false
+conditions:
+  node_type:
+    id: node_type
+    bundles:
+      islandora_object: islandora_object
+    negate: 0
+    uuid: 562187e6-545a-484f-be88-58af12217da4
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  index:
+    id: index
+    actions:
+      export_entity: export_entity
+    saved: false
+  delete:
+    id: delete
+    actions:
+      export_entity: export_entity
+    saved: false
+  derivative:
+    id: derivative
+    actions:
+      export_entity: export_entity
+    saved: false
+weight: 0
