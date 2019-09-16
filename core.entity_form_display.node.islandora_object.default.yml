@@ -37,15 +37,15 @@ third_party_settings:
         - field_display_hints
         - field_pid
       parent_name: ''
-      weight: 2
+      weight: 0
       format_type: details
       format_settings:
-        label: System
+        label: Islandora
         open: true
         required_fields: true
         id: ''
         classes: ''
-      label: System
+      label: Islandora
       region: content
     group_descriptive:
       children:
@@ -82,7 +82,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -121,6 +121,7 @@ content:
     settings:
       strict_dates: false
       intervals: false
+      sets: false
     third_party_settings: {  }
   field_edtf_date_created:
     type: edtf_default
@@ -129,6 +130,7 @@ content:
     settings:
       strict_dates: false
       intervals: false
+      sets: false
     third_party_settings: {  }
   field_edtf_date_issued:
     type: edtf_default
@@ -137,6 +139,7 @@ content:
     settings:
       strict_dates: false
       intervals: false
+      sets: false
     third_party_settings: {  }
   field_extent:
     type: string_textfield
@@ -218,13 +221,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 6
+    weight: 5
     region: content
     settings:
       display_label: true
@@ -233,12 +236,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 4
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 9
+    weight: 8
     region: content
     settings:
       display_label: true
@@ -252,13 +255,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
