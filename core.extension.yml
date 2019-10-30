@@ -1,5 +1,6 @@
 module:
   action: 0
+  addtoany: 0
   apollo: 0
   at_tools: 0
   auto_entitylabel: 0
