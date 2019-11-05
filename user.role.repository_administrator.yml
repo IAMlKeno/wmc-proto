@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: repository_administrator
 label: 'Repository Administrator'
-weight: -7
+weight: -6
 is_admin: null
 permissions:
   - 'access browse_content entity browser pages'
