@@ -65,7 +65,6 @@ module:
   jsonld: 0
   jwt: 0
   key: 0
-  kint: 0
   language: 0
   libraries: 0
   link: 0
