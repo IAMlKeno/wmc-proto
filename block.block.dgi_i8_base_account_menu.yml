@@ -1,4 +1,4 @@
-uuid: b969d80b-a640-4966-8116-dbdec1a2ba73
+uuid: a3bb9bc6-a66c-41b1-8c22-9ce1c280cb02
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - carapace
+    - dgi_i8_base
 _core:
   default_config_hash: kvoxkYJaM22pDHNT-dpkmKnaa8wtVUTuyES4F985Z_s
-id: carapace_account_menu
-theme: carapace
-region: leaderboard
+id: dgi_i8_base_account_menu
+theme: dgi_i8_base
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'

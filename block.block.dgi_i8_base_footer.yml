@@ -1,4 +1,4 @@
-uuid: baa0bddc-5fdf-4641-b6ad-fbc167707fef
+uuid: eaf450f4-a60b-4702-a6af-ac2b41d618ab
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - carapace
+    - dgi_i8_base
 _core:
   default_config_hash: lrPRjjQnZxEWg1UjhSN6ubZ2xl7G8shSt5bfyiDXj4g
-id: carapace_footer
-theme: carapace
+id: dgi_i8_base_footer
+theme: dgi_i8_base
 region: footer
 weight: 0
 provider: null

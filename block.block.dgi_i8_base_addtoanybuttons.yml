@@ -1,15 +1,15 @@
-uuid: 41d6b4fc-9238-40d0-b323-143f190cdec0
+uuid: 12efb854-a409-4b8b-89ab-2ca69644a735
 langcode: en
 status: true
 dependencies:
   module:
     - addtoany
   theme:
-    - carapace
-id: addtoanybuttons
-theme: carapace
+    - dgi_i8_base
+id: dgi_i8_base_addtoanybuttons
+theme: dgi_i8_base
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: addtoany_block
 settings:

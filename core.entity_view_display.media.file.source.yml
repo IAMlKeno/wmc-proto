@@ -31,6 +31,7 @@ content:
     weight: 0
     region: content
 hidden:
+  addtoany: true
   created: true
   field_access_terms: true
   field_file_size: true

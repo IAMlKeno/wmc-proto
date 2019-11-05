@@ -1,17 +1,17 @@
-uuid: 9e661ca5-8905-48a8-a39b-eecb314bb611
+uuid: cf2c5c68-85d4-476e-9bed-f22ce8af23f9
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - carapace
+    - dgi_i8_base
 _core:
   default_config_hash: xTpv6QsjA2YbIEClmPZAolMQv3R26s722mict6wVh_c
-id: carapace_help
-theme: carapace
+id: dgi_i8_base_help
+theme: dgi_i8_base
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: help_block
 settings:

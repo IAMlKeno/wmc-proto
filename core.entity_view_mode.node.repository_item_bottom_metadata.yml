@@ -1,0 +1,10 @@
+uuid: 41ec46fc-d6d9-4329-a253-c03154d93a74
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.repository_item_bottom_metadata
+label: 'Repository Item: Bottom Metadata'
+targetEntityType: node
+cache: true
