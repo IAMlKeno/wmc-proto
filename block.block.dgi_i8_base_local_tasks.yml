@@ -1,15 +1,15 @@
-uuid: 4bb82ab8-e106-462c-84de-0f33639a8e27
+uuid: 9594ba90-f793-4bfc-86cb-0172bd076f54
 langcode: en
 status: true
 dependencies:
   theme:
-    - carapace
+    - dgi_i8_base
 _core:
   default_config_hash: X9fkY4VmNAGjdUvl6vSnQk9UhiuQWoYf1c3pHBjW9Do
-id: carapace_local_tasks
-theme: carapace
+id: dgi_i8_base_local_tasks
+theme: dgi_i8_base
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

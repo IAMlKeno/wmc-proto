@@ -35,6 +35,7 @@ content:
       pagemode: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
   field_access_terms: true
   field_file_size: true

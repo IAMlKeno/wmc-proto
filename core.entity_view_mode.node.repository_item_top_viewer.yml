@@ -1,0 +1,10 @@
+uuid: 8d695dae-e7c2-4816-9189-85675daa8701
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.repository_item_top_viewer
+label: 'Repository Item: Top Viewer'
+targetEntityType: node
+cache: true

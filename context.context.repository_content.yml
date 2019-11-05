@@ -14,7 +14,7 @@ name: repository_content
 label: Content
 group: Islandora
 description: 'All repository content'
-requireAllConditions: false
+requireAllConditions: true
 disabled: false
 conditions:
   node_type:

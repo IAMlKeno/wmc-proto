@@ -7,6 +7,7 @@ dependencies:
     - node
     - user
     - search_api
+    - media
   config:
     - field.storage.node.field_tags
     - search_api.server.default_solr_server
@@ -154,6 +155,13 @@ field_settings:
       module:
         - node
 datasource_settings:
+  'entity:media':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
   'entity:node':
     bundles:
       default: true

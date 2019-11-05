@@ -1,17 +1,17 @@
-uuid: 2b0f2984-6212-4b3f-8c83-4cfeb6d97052
+uuid: de394dec-9e30-490a-b10d-b6626ea4688b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - carapace
+    - dgi_i8_base
 _core:
   default_config_hash: 5el0pvO6r0xKjseMWvYZUnp_hfDq_-g8SiW7gJFaUgc
-id: carapace_page_title
-theme: carapace
+id: dgi_i8_base_page_title
+theme: dgi_i8_base
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: page_title_block
 settings:
