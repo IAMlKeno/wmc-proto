@@ -1,0 +1,14 @@
+uuid: 46850218-7c6d-467b-85fa-21bc1bac41ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ingester
+  module:
+    - user
+id: user_remove_role_action.ingester
+label: 'Remove the Ingester role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ingester
