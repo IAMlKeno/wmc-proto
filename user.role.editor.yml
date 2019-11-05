@@ -1,0 +1,21 @@
+uuid: 3941a4c6-fbf5-45e5-b5a2-5a0e33856733
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: -8
+is_admin: null
+permissions:
+  - 'edit any audio media'
+  - 'edit any file media'
+  - 'edit any image media'
+  - 'edit any islandora_object content'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit own audio media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own islandora_object content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
