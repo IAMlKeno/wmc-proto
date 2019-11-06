@@ -38,7 +38,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-3'
+        weight: '0'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -51,7 +51,7 @@ reactions:
         provider: system
         label_display: 0
         region: content
-        weight: '0'
+        weight: '-3'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -64,7 +64,7 @@ reactions:
         provider: system
         label_display: 0
         region: content
-        weight: '1'
+        weight: '2'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -105,11 +105,11 @@ reactions:
         primary: 1
         secondary: 0
         region: content
-        weight: '2'
+        weight: '1'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
-        unique: 0
+        unique: 1
         context_id: repository_content_items
         uuid: a8eadc34-bbce-42e9-8836-bc870a94d7b6
       224db010-ac2e-489a-901c-b4ba250fde1a:
@@ -130,5 +130,21 @@ reactions:
     id: blocks
     saved: false
     uuid: e90aa662-f44c-472a-b91c-647d459d21a2
-    include_default_blocks: 0
+    include_default_blocks: 1
+  regions:
+    id: regions
+    regions:
+      bartik: {  }
+      classy: {  }
+      seven: {  }
+      stable: {  }
+      at_core: {  }
+      adminimal_theme: {  }
+      bootstrap: {  }
+      dgi_i8_base:
+        - navigation
+        - header
+        - sidebar_second
+    saved: false
+    uuid: 4c566c65-9a6e-4a9a-8142-3e102af99a6d
 weight: 0
