@@ -17,5 +17,6 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format basic_html'
+  - 'use text format restricted_html'
   - 'view media'
+  - 'view the administration theme'
