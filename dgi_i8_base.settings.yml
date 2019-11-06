@@ -1,12 +1,42 @@
 cdn_provider: ''
 region_wells-sidebar_first: ''
 _core:
-  default_config_hash: q_ndN9dutJkyGiQn6ksVn7NTUajQSoVzc5klFB0i3gM
+  default_config_hash: 8Kd7wP_1eLByvuacvFyVnjKNv0THG9DHOYykRgzGjY8
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://adam-vagrant-i8sandbox.dgi/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://discoverygarden-vagrant-i8.local/themes/custom/dgi_i8_base/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  dgi_i8_base: 8000
+table_responsive: '-1'
+region_wells:
+  navigation: ''
+  header: ''
+  header_left: ''
+  header_center: ''
+  header_right: ''
+  sidr: ''
+  sidr_bottom: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  object_more: ''
+  object_actions: ''
+  object_lower: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  pre_footer: ''
+  footer: ''
+  footer_bottom: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''
+table: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -16,6 +46,3 @@ logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
-  dgi_i8_base: 8000
