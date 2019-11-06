@@ -53,7 +53,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 0
+          items_per_page: 25
           offset: 0
           id: 0
           total_pages: null
@@ -211,19 +211,28 @@ display:
       sorts: {  }
       title: 'Search Content'
       header:
-        area:
-          id: area
+        display_link:
+          id: display_link
           table: views
-          field: area
+          field: display_link
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: ''
-            format: basic_html
-          plugin_id: text
+          empty: true
+          display_id: page_1
+          label: List
+          plugin_id: display_link
+        display_link_1:
+          id: display_link_1
+          table: views
+          field: display_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          display_id: page_2
+          label: Grid
+          plugin_id: display_link
       footer: {  }
       empty: {  }
       relationships: {  }

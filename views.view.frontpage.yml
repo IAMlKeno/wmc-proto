@@ -3,9 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.display_block
     - core.entity_view_mode.node.rss
-    - core.entity_view_mode.node.teaser
+    - field.storage.node.field_display_block_images
+    - field.storage.node.field_elevated_title
   module:
+    - image
     - node
     - user
 _core:
@@ -195,7 +198,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: display_block
       sorts:
         sticky:
           admin_label: ''
@@ -237,21 +241,154 @@ display:
       header: {  }
       footer: {  }
       relationships: {  }
-      fields: {  }
+      fields:
+        field_elevated_title:
+          id: field_elevated_title
+          table: node__field_elevated_title
+          field: field_elevated_title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_display_block_images:
+          id: field_display_block_images
+          table: node__field_display_block_images
+          field: field_display_block_images
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: ''
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       arguments: {  }
       display_extenders: {  }
+      css_class: front-page-view
     display_plugin: default
     display_title: Master
     id: default
     position: 0
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_display_block_images'
+        - 'config:field.storage.node.field_elevated_title'
+        - env
+        - extensions
   feed_1:
     display_plugin: feed
     id: feed_1
@@ -282,14 +419,19 @@ display:
       display_extenders: {  }
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_display_block_images'
+        - 'config:field.storage.node.field_elevated_title'
+        - env
+        - extensions
   page_1:
     display_options:
-      path: node
+      path: front
       display_extenders: {  }
     display_plugin: page
     display_title: Page
@@ -297,9 +439,14 @@ display:
     position: 1
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_display_block_images'
+        - 'config:field.storage.node.field_elevated_title'
+        - env
+        - extensions
