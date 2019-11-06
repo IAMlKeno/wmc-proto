@@ -4,10 +4,20 @@ status: true
 dependencies:
   module:
     - search_api_solr
+    - media
     - node
     - user
+    - taxonomy
     - search_api
   config:
+    - field.storage.media.field_media_file
+    - field.storage.media.field_file_size
+    - field.storage.media.field_media_of
+    - field.storage.node.field_edtf_date_created
+    - field.storage.node.field_edtf_date_issued
+    - field.storage.node.field_model
+    - field.storage.node.field_resource_type
+    - field.storage.taxonomy_term.field_type
     - field.storage.node.field_tags
     - search_api.server.default_solr_server
     - core.entity_view_mode.node.search_index
@@ -81,6 +91,46 @@ field_settings:
     dependencies:
       module:
         - node
+  field_edtf_date_created:
+    label: 'Date Created'
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date_created
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date_created
+  field_edtf_date_issued:
+    label: 'Date Issued'
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date_issued
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date_issued
+  field_file_size:
+    label: 'File size'
+    datasource_id: 'entity:media'
+    property_path: field_file_size
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_file_size
+  field_media_file:
+    label: File
+    datasource_id: 'entity:media'
+    property_path: field_media_file
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_file
+  field_media_of:
+    label: 'Media of'
+    datasource_id: 'entity:media'
+    property_path: field_media_of
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_media_of
   field_tags:
     label: Tags
     datasource_id: 'entity:node'
@@ -89,6 +139,55 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_tags
+  field_type:
+    label: 'Resource Type » Taxonomy term » Type'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_type:entity:field_type'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_type
+        - field.storage.taxonomy_term.field_type
+      module:
+        - taxonomy
+  mid:
+    label: ID
+    datasource_id: 'entity:media'
+    property_path: mid
+    type: integer
+    dependencies:
+      module:
+        - media
+  name:
+    label: 'Model » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_model:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_model
+      module:
+        - taxonomy
+        - taxonomy
+  nid:
+    label: 'Media of » Content » ID'
+    datasource_id: 'entity:media'
+    property_path: 'field_media_of:entity:nid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_media_of
+      module:
+        - node
+        - node
+  nid_1:
+    label: 'Content: ID'
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -154,6 +253,13 @@ field_settings:
       module:
         - node
 datasource_settings:
+  'entity:media':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
   'entity:node':
     bundles:
       default: true
