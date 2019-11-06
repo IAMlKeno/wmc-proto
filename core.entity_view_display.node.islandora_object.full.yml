@@ -1,8 +1,9 @@
-uuid: f372f601-5cda-40e6-8d0d-f2a58511302b
+uuid: 74fa311b-0310-41d1-a85a-a2dd389d8a4c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_description
@@ -27,10 +28,10 @@ dependencies:
     - user
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
-id: node.islandora_object.default
+id: node.islandora_object.full
 targetEntityType: node
 bundle: islandora_object
-mode: default
+mode: full
 content:
   field_description:
     type: basic_string

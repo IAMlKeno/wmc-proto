@@ -1,9 +1,9 @@
-uuid: 345797e4-880d-4bd9-9e31-ecca427582b0
+uuid: 4049578c-e2c7-42cf-9a6c-74e74f18e1db
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.binary
+    - core.entity_view_mode.node.repository_item_bottom_metadata
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_description
@@ -26,42 +26,76 @@ dependencies:
       - islandora_defaults
   module:
     - controlled_access_terms
+    - field_group
     - user
+third_party_settings:
+  field_group:
+    group_left:
+      children:
+        - field_alternative_title
+        - field_identifier
+        - field_pid
+        - langcode
+        - field_member_of
+        - field_edtf_date
+        - field_edtf_date_created
+        - field_edtf_date_issued
+      parent_name: group_details
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        label: ''
+        description: ''
+        id: ''
+        classes: ''
+      label: ''
+    group_right:
+      children:
+        - field_model
+        - field_extent
+        - field_resource_type
+        - field_rights
+        - field_linked_agent
+        - field_subject
+      parent_name: group_details
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        label: ''
+        description: ''
+        id: ''
+        classes: ''
+      label: ''
+    group_details:
+      children:
+        - group_left
+        - group_right
+      parent_name: ''
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Details
 _core:
-  default_config_hash: Yq1ixIFCMHikg5vFCfy-mi5u51nHeQrDIarO80B3dhs
-id: node.islandora_object.binary
+  default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
+id: node.islandora_object.repository_item_bottom_metadata
 targetEntityType: node
 bundle: islandora_object
-mode: binary
+mode: repository_item_bottom_metadata
 content:
-  display_media_entity_view_2:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  display_media_entity_view_3:
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_alternative_title:
     type: string
-    weight: 0
+    weight: 3
     region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_description:
-    type: basic_string
-    weight: 10
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
   field_edtf_date:
     type: edtf_default
-    weight: 7
+    weight: 8
     region: content
     label: above
     settings:
@@ -69,11 +103,10 @@ content:
       date_order: big_endian
       month_format: mm
       day_format: dd
-      season_hemisphere: north
     third_party_settings: {  }
   field_edtf_date_created:
     type: edtf_default
-    weight: 5
+    weight: 9
     region: content
     label: above
     settings:
@@ -81,11 +114,10 @@ content:
       date_order: big_endian
       month_format: mm
       day_format: dd
-      season_hemisphere: north
     third_party_settings: {  }
   field_edtf_date_issued:
     type: edtf_default
-    weight: 6
+    weight: 10
     region: content
     label: above
     settings:
@@ -93,11 +125,10 @@ content:
       date_order: big_endian
       month_format: mm
       day_format: dd
-      season_hemisphere: north
     third_party_settings: {  }
   field_extent:
     type: string
-    weight: 11
+    weight: 17
     region: content
     label: above
     settings:
@@ -105,7 +136,7 @@ content:
     third_party_settings: {  }
   field_identifier:
     type: string
-    weight: 1
+    weight: 4
     region: content
     label: above
     settings:
@@ -113,23 +144,39 @@ content:
     third_party_settings: {  }
   field_linked_agent:
     type: typed_relation_default
-    weight: 8
+    weight: 20
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
   field_member_of:
-    weight: 4
+    type: entity_reference_label
+    weight: 7
+    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
+  field_model:
     type: entity_reference_label
+    weight: 16
     region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_pid:
+    type: string
+    weight: 5
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_resource_type:
     type: entity_reference_label
-    weight: 14
+    weight: 18
     region: content
     label: above
     settings:
@@ -137,7 +184,7 @@ content:
     third_party_settings: {  }
   field_rights:
     type: string
-    weight: 13
+    weight: 19
     region: content
     label: above
     settings:
@@ -145,7 +192,7 @@ content:
     third_party_settings: {  }
   field_subject:
     type: entity_reference_label
-    weight: 12
+    weight: 21
     region: content
     label: above
     settings:
@@ -153,32 +200,24 @@ content:
     third_party_settings: {  }
   langcode:
     type: language
-    weight: 9
+    weight: 6
     region: content
     label: above
     settings:
       link_to_entity: false
       native_language: false
     third_party_settings: {  }
-  links:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  openseadragon_media_evas_entity_view_1:
-    weight: 21
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   addtoany: true
   display_media_entity_view_1: true
+  display_media_entity_view_2: true
   display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true
+  field_description: true
   field_display_hints: true
-  field_model: true
-  field_pid: true
+  links: true
+  openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
   pdfjs_media_evas_entity_view_1: true

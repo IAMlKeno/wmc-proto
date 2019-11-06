@@ -1,8 +1,9 @@
-uuid: f372f601-5cda-40e6-8d0d-f2a58511302b
+uuid: 6b959d65-f3fe-4054-80bf-35115673d996
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.repository_item_top_viewer
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_description
@@ -27,26 +28,24 @@ dependencies:
     - user
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
-id: node.islandora_object.default
+id: node.islandora_object.repository_item_top_viewer
 targetEntityType: node
 bundle: islandora_object
-mode: default
+mode: repository_item_top_viewer
 content:
-  field_description:
-    type: basic_string
+  display_media_service_file:
     weight: 0
     region: content
-    label: above
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
-  display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true
   field_alternative_title: true
+  field_description: true
   field_display_hints: true
   field_edtf_date: true
   field_edtf_date_created: true

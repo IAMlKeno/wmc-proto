@@ -1,0 +1,21 @@
+cdn_provider: ''
+region_wells-sidebar_first: ''
+_core:
+  default_config_hash: q_ndN9dutJkyGiQn6ksVn7NTUajQSoVzc5klFB0i3gM
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://adam-vagrant-i8sandbox.dgi/themes/contrib/bootstrap/favicon.ico'
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+schemas:
+  bootstrap: 8000
+  dgi_i8_base: 8000

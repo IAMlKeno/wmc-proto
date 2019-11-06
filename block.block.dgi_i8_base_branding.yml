@@ -1,16 +1,16 @@
-uuid: fe2a7479-d39c-4e9d-8165-1b2e4d37669c
+uuid: 940bb91a-ddfe-4b8b-a20c-793afb365d2b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - carapace
+    - dgi_i8_base
 _core:
   default_config_hash: l2kI3VocgFztymekEMDU3uRYElx-EV27rSO99wjjf5g
-id: carapace_branding
-theme: carapace
-region: header_first
+id: dgi_i8_base_branding
+theme: dgi_i8_base
+region: navigation
 weight: 0
 provider: null
 plugin: system_branding_block

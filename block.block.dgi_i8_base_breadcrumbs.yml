@@ -1,16 +1,16 @@
-uuid: 17682363-0ffc-41d5-949f-05ef3a4294bd
+uuid: abab7dde-75fb-4864-9964-5161d3916035
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - carapace
+    - dgi_i8_base
 _core:
   default_config_hash: gJIY1Qtuq8yxK8coDyscLxO4RW7IagOmVBkXy6PR2Vc
-id: carapace_breadcrumbs
-theme: carapace
-region: content_prefix
+id: dgi_i8_base_breadcrumbs
+theme: dgi_i8_base
+region: navigation
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

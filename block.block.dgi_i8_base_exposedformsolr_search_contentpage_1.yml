@@ -1,4 +1,4 @@
-uuid: ca7fc6cb-5bc6-4027-a61b-7c8fa5029ac8
+uuid: b835cb07-ef94-4726-be60-3588c9090338
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - views
   theme:
-    - carapace
+    - dgi_i8_base
 _core:
   default_config_hash: qAfb4caT_8NQ1iWN2j6l0TBEGLytvNolwkPexVyhDxs
-id: exposedformsolr_search_contentpage_1
-theme: carapace
+id: dgi_i8_base_exposedformsolr_search_contentpage_1
+theme: dgi_i8_base
 region: sidebar_second
 weight: -5
 provider: null
