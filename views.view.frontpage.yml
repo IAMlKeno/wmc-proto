@@ -3,12 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.display_block
     - core.entity_view_mode.node.rss
-    - field.storage.node.field_display_block_images
-    - field.storage.node.field_elevated_title
   module:
-    - image
     - node
     - user
 _core:
@@ -199,7 +195,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: display_block
+          view_mode: default
       sorts:
         sticky:
           admin_label: ''
@@ -378,17 +374,12 @@ display:
     position: 0
     cache_metadata:
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags:
-        - 'config:field.storage.node.field_display_block_images'
-        - 'config:field.storage.node.field_elevated_title'
-        - env
-        - extensions
+      tags: {  }
   feed_1:
     display_plugin: feed
     id: feed_1
@@ -419,16 +410,11 @@ display:
       display_extenders: {  }
     cache_metadata:
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags:
-        - 'config:field.storage.node.field_display_block_images'
-        - 'config:field.storage.node.field_elevated_title'
-        - env
-        - extensions
+      tags: {  }
   page_1:
     display_options:
       path: front
@@ -439,14 +425,9 @@ display:
     position: 1
     cache_metadata:
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags:
-        - 'config:field.storage.node.field_display_block_images'
-        - 'config:field.storage.node.field_elevated_title'
-        - env
-        - extensions
+      tags: {  }
