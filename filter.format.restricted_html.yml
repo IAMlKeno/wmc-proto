@@ -30,5 +30,3 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
-roles:
-  - anonymous

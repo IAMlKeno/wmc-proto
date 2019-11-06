@@ -1,0 +1,30 @@
+uuid: e8c1894d-00d8-4d09-8188-f87b5ff2a0f3
+langcode: en
+status: true
+dependencies: {  }
+id: ingester
+label: Ingester
+weight: -7
+is_admin: null
+permissions:
+  - 'access tour'
+  - 'access user profiles'
+  - 'create audio media'
+  - 'create file media'
+  - 'create image media'
+  - 'create islandora_object content'
+  - 'create media'
+  - 'create remote_video media'
+  - 'create video media'
+  - 'delete own islandora_object content'
+  - 'edit own audio media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own islandora_object content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'
+  - 'view own unpublished content'
+  - 'view own unpublished media'

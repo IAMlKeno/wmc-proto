@@ -1,0 +1,14 @@
+uuid: 1be4c16f-d8e6-4d72-ab25-6a8d906dbdf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.repository_administrator
+  module:
+    - user
+id: user_add_role_action.repository_administrator
+label: 'Add the Repository Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: repository_administrator

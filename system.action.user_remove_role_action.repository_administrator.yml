@@ -1,0 +1,14 @@
+uuid: 7598e72f-ed2a-4284-aeb5-88ff69583e66
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.repository_administrator
+  module:
+    - user
+id: user_remove_role_action.repository_administrator
+label: 'Remove the Repository Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: repository_administrator

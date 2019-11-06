@@ -1,0 +1,14 @@
+uuid: da132384-e5b4-424d-ace1-3a2bab8b38cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ingester
+  module:
+    - user
+id: user_add_role_action.ingester
+label: 'Add the Ingester role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ingester
