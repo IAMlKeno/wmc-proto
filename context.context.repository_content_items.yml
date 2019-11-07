@@ -30,21 +30,6 @@ conditions:
 reactions:
   blocks:
     blocks:
-      a33b8aae-ab37-4cc9-9354-0e37e632e911:
-        id: 'views_block:repository_item_content_blocks-block_1'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: repository_content_items
-        uuid: a33b8aae-ab37-4cc9-9354-0e37e632e911
       1edf7e88-2744-43c2-8783-646879eee330:
         id: system_breadcrumb_block
         label: Breadcrumbs
@@ -112,21 +97,21 @@ reactions:
         unique: 1
         context_id: repository_content_items
         uuid: a8eadc34-bbce-42e9-8836-bc870a94d7b6
-      224db010-ac2e-489a-901c-b4ba250fde1a:
-        id: 'views_block:repository_item_content_blocks-block_2'
+      7d090d4d-ffb9-4436-930b-932dcac14e9c:
+        id: 'views_block:repository_item_content_blocks-repository_item_viewer'
         label: ''
         provider: views
         label_display: 0
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '0'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
         unique: 0
         context_id: repository_content_items
-        uuid: 224db010-ac2e-489a-901c-b4ba250fde1a
+        uuid: 7d090d4d-ffb9-4436-930b-932dcac14e9c
     id: blocks
     saved: false
     uuid: e90aa662-f44c-472a-b91c-647d459d21a2
@@ -138,7 +123,6 @@ reactions:
       classy: {  }
       seven: {  }
       stable: {  }
-      at_core: {  }
       adminimal_theme: {  }
       bootstrap: {  }
       dgi_i8_base:
