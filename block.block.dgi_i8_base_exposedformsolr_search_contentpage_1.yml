@@ -1,6 +1,6 @@
 uuid: b835cb07-ef94-4726-be60-3588c9090338
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.solr_search_content
