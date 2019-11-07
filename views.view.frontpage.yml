@@ -195,6 +195,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       sorts:
         sticky:
@@ -240,6 +241,7 @@ display:
       fields: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: front-page-view
     display_plugin: default
     display_title: Master
     id: default
@@ -289,7 +291,7 @@ display:
       tags: {  }
   page_1:
     display_options:
-      path: node
+      path: front
       display_extenders: {  }
     display_plugin: page
     display_title: Page

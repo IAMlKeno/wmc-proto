@@ -29,7 +29,6 @@ permissions:
   - 'administer facets'
   - 'administer field permissions'
   - 'administer image styles'
-  - 'administer matomo'
   - 'administer media'
   - 'administer media display'
   - 'administer media fields'
