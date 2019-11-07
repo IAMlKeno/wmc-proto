@@ -1,0 +1,17 @@
+uuid: 92932580-0dcd-43d9-b8b0-930c02706dca
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: About
+type: about
+description: 'This content type is designed to display ''About'' pages with a stylized layout.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

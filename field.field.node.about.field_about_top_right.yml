@@ -1,0 +1,24 @@
+uuid: ea1fc2fb-fca8-47dc-b66a-e137ebf5cd19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_top_right
+    - node.type.about
+  module:
+    - text
+id: node.about.field_about_top_right
+field_name: field_about_top_right
+entity_type: node
+bundle: about
+label: 'About top right'
+description: 'This text will appear in the top right of this content. See preview for a look at how it''s styled.'
+required: false
+translatable: true
+default_value:
+  -
+    value: "<p>This is some sample text for the top right corner. You could put a quote or some short message here.</p>\r\n"
+    format: restricted_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long
