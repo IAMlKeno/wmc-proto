@@ -1,0 +1,62 @@
+uuid: d74222e5-f092-4a04-90cc-c869f8a8c941
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.display_block
+    - field.field.node.block_display.body
+    - field.field.node.block_display.field_display_block
+    - field.field.node.block_display.field_display_block_images
+    - field.field.node.block_display.field_elevated_title
+    - field.field.node.block_display.field_view_mode
+    - node.type.block_display
+  module:
+    - image
+    - user
+id: node.block_display.display_block
+targetEntityType: node
+bundle: block_display
+mode: display_block
+content:
+  field_display_block:
+    type: entity_reference_entity_view
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_display_block_images:
+    type: image
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_elevated_title:
+    type: string
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  display_media_entity_view_1: true
+  display_media_entity_view_2: true
+  display_media_service_file: true
+  display_media_thumbnail: true
+  field_view_mode: true
+  langcode: true
+  links: true
+  openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_service_file: true
+  pdfjs_media_evas_entity_view_1: true
+  pdfjs_media_evas_entity_view_2: true
+  pdfjs_media_evas_service_file: true

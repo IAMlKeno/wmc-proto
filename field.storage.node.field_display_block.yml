@@ -1,0 +1,24 @@
+uuid: 3dfd4f46-6e82-4800-99ca-bdfb3dc0316a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: node.field_display_block
+field_name: field_display_block
+entity_type: node
+type: entity_reference
+settings:
+  target_type: block
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
