@@ -190,7 +190,7 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
-      css_class: col-md-5
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -214,7 +214,7 @@ display:
       defaults:
         style: false
         row: false
-        css_class: true
+        css_class: false
       row:
         type: 'entity:node'
         options:
@@ -223,6 +223,7 @@ display:
       entity_type: node
       bundles:
         - islandora_object
+      css_class: col-md-5
     cache_metadata:
       max-age: -1
       contexts:
@@ -1253,6 +1254,8 @@ display:
       block_category: 'Repository Item Content Blocks'
       allow:
         items_per_page: true
+      defaults:
+        css_class: true
     cache_metadata:
       max-age: -1
       contexts:

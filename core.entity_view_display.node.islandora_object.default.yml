@@ -36,9 +36,10 @@ third_party_settings:
       weight: 0
       format_type: fieldset
       format_settings:
-        id: ''
-        classes: ''
+        label: Metadata
         description: ''
+        id: ''
+        classes: metadata
       label: Metadata
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
