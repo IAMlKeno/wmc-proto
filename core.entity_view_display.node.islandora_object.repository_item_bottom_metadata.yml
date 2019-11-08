@@ -36,10 +36,10 @@ third_party_settings:
       weight: 1
       format_type: details
       format_settings:
-        id: ''
-        classes: ''
+        label: Collections
         open: true
-        required_fields: false
+        id: ''
+        classes: collections
       label: Collections
     group_categories:
       children:
@@ -48,10 +48,10 @@ third_party_settings:
       weight: 0
       format_type: details
       format_settings:
-        id: ''
-        classes: ''
+        label: Categories
         open: true
-        required_fields: false
+        id: ''
+        classes: categories
       label: Categories
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
