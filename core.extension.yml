@@ -106,6 +106,7 @@ module:
   user: 0
   view_mode_selector: 0
   views_autocomplete_filters: 0
+  views_field_view: 0
   views_ui: 0
   menu_link_content: 1
   content_translation: 10
