@@ -1,0 +1,82 @@
+uuid: 4fe77338-2398-465d-ba77-a857c6048f31
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.block_display.body
+    - field.field.node.block_display.field_display_block
+    - field.field.node.block_display.field_display_block_images
+    - field.field.node.block_display.field_elevated_title
+    - field.field.node.block_display.field_view_mode
+    - node.type.block_display
+  module:
+    - user
+id: node.block_display.teaser
+targetEntityType: node
+bundle: block_display
+mode: teaser
+content:
+  display_media_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_thumbnail:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_display_block: true
+  field_display_block_images: true
+  field_elevated_title: true
+  field_view_mode: true
+  langcode: true

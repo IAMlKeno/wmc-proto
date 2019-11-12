@@ -1,0 +1,23 @@
+uuid: 5263e5c8-479d-40a3-8b06-4fcbff63c13b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_block
+    - node.type.block_display
+id: node.block_display.field_display_block
+field_name: field_display_block
+entity_type: node
+bundle: block_display
+label: 'Display Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference
