@@ -1,4 +1,4 @@
-uuid: b835cb07-ef94-4726-be60-3588c9090338
+uuid: 4a183bae-d9e8-4b9c-85dc-9d9898e733a8
 langcode: en
 status: true
 dependencies:
@@ -9,12 +9,10 @@ dependencies:
     - views
   theme:
     - dgi_i8_base
-_core:
-  default_config_hash: qAfb4caT_8NQ1iWN2j6l0TBEGLytvNolwkPexVyhDxs
-id: dgi_i8_base_exposedformsolr_search_contentpage_1
+id: exposedformsolr_search_contentpage_1
 theme: dgi_i8_base
-region: sidebar_second
-weight: -5
+region: sidr
+weight: -6
 provider: null
 plugin: 'views_exposed_filter_block:solr_search_content-page_1'
 settings:
@@ -22,10 +20,5 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: ''
-visibility:
-  request_path:
-    id: request_path
-    pages: "/about\r\n/contact"
-    negate: true
-    context_mapping: {  }
+  views_label: Islandora
+visibility: {  }

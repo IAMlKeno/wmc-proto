@@ -1,0 +1,10 @@
+uuid: 7ffa5e23-58d0-4916-b56c-6084cd66e22a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.display_block
+label: 'Display Block'
+targetEntityType: node
+cache: true

@@ -1,0 +1,10 @@
+uuid: 0c607082-9734-47da-876b-13417560be79
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.view_mode_selector
+label: 'View mode selector'
+targetEntityType: node
+cache: true
