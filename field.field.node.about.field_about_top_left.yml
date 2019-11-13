@@ -1,0 +1,24 @@
+uuid: 20904c9c-9b9a-4ee4-9ea3-a9e6030a34d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_top_left
+    - node.type.about
+  module:
+    - text
+id: node.about.field_about_top_left
+field_name: field_about_top_left
+entity_type: node
+bundle: about
+label: 'About top left'
+description: 'This text will be displayed in the top left of this content. See the preview for how it will be styled.'
+required: false
+translatable: true
+default_value:
+  -
+    value: "Use <em>em</em> tags to make some <em>words</em> really <em>pop</em>. This is a good place for a <em>slogan</em>.\r\n"
+    format: restricted_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,24 @@
+uuid: 0556961a-c28b-43ff-8bad-20ae0cd06ab0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_body_emphasized
+    - node.type.about
+  module:
+    - text
+id: node.about.field_about_body_emphasized
+field_name: field_about_body_emphasized
+entity_type: node
+bundle: about
+label: 'About body emphasized'
+description: 'This text will appear above the body. See the preview for how it will be styled.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Put something flashy and catchy here.'
+    format: restricted_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

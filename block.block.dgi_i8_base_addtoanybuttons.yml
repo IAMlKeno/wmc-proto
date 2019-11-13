@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - addtoany
+    - system
   theme:
     - dgi_i8_base
 id: dgi_i8_base_addtoanybuttons
@@ -17,4 +18,9 @@ settings:
   label: 'AddToAny buttons'
   provider: addtoany
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/about\r\n/contact"
+    negate: true
+    context_mapping: {  }
