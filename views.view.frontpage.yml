@@ -167,26 +167,10 @@ display:
           entity_type: node
           entity_field: langcode
       pager:
-        type: full
+        type: some
         options:
-          items_per_page: 10
+          items_per_page: 1
           offset: 0
-          id: 0
-          total_pages: 0
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          quantity: 9
       query:
         type: views_query
         options:
@@ -216,18 +200,18 @@ display:
           entity_type: node
           entity_field: sticky
         created:
-          field: created
           id: created
-          order: DESC
           table: node_field_data
-          plugin_id: date
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
           granularity: second
+          plugin_id: date
           entity_type: node
           entity_field: created
       style:
@@ -380,7 +364,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
@@ -441,7 +424,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
