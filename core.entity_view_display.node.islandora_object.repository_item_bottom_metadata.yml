@@ -25,59 +25,34 @@ dependencies:
     module:
       - islandora_defaults
   module:
-    - controlled_access_terms
     - field_group
     - user
 third_party_settings:
   field_group:
-    group_left:
+    group_collections:
       children:
-        - field_alternative_title
-        - field_identifier
-        - field_pid
-        - langcode
         - field_member_of
-        - field_edtf_date
-        - field_edtf_date_created
-        - field_edtf_date_issued
-      parent_name: group_details
-      weight: 0
-      format_type: fieldset
-      format_settings:
-        label: ''
-        description: ''
-        id: ''
-        classes: ''
-      label: ''
-    group_right:
-      children:
-        - field_model
-        - field_extent
-        - field_resource_type
-        - field_rights
-        - field_linked_agent
-        - field_subject
-      parent_name: group_details
-      weight: 1
-      format_type: fieldset
-      format_settings:
-        label: ''
-        description: ''
-        id: ''
-        classes: ''
-      label: ''
-    group_details:
-      children:
-        - group_left
-        - group_right
       parent_name: ''
-      weight: 20
-      format_type: fieldset
+      weight: 1
+      format_type: details
       format_settings:
+        label: Collections
+        open: true
         id: ''
-        classes: ''
-        description: ''
-      label: Details
+        classes: collections
+      label: Collections
+    group_categories:
+      children:
+        - field_subject
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        label: Categories
+        open: true
+        id: ''
+        classes: categories
+      label: Categories
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
 id: node.islandora_object.repository_item_bottom_metadata
@@ -85,127 +60,21 @@ targetEntityType: node
 bundle: islandora_object
 mode: repository_item_bottom_metadata
 content:
-  field_alternative_title:
-    type: string
-    weight: 3
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_edtf_date:
-    type: edtf_default
-    weight: 8
-    region: content
-    label: above
-    settings:
-      date_separator: dash
-      date_order: big_endian
-      month_format: mm
-      day_format: dd
-    third_party_settings: {  }
-  field_edtf_date_created:
-    type: edtf_default
-    weight: 9
-    region: content
-    label: above
-    settings:
-      date_separator: dash
-      date_order: big_endian
-      month_format: mm
-      day_format: dd
-    third_party_settings: {  }
-  field_edtf_date_issued:
-    type: edtf_default
-    weight: 10
-    region: content
-    label: above
-    settings:
-      date_separator: dash
-      date_order: big_endian
-      month_format: mm
-      day_format: dd
-    third_party_settings: {  }
-  field_extent:
-    type: string
-    weight: 17
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_identifier:
-    type: string
-    weight: 4
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_linked_agent:
-    type: typed_relation_default
-    weight: 20
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_member_of:
     type: entity_reference_label
-    weight: 7
+    weight: 15
     region: content
-    label: above
+    label: hidden
     settings:
       link: true
-    third_party_settings: {  }
-  field_model:
-    type: entity_reference_label
-    weight: 16
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_pid:
-    type: string
-    weight: 5
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_resource_type:
-    type: entity_reference_label
-    weight: 18
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_rights:
-    type: string
-    weight: 19
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
   field_subject:
     type: entity_reference_label
     weight: 21
     region: content
-    label: above
+    label: hidden
     settings:
       link: true
-    third_party_settings: {  }
-  langcode:
-    type: language
-    weight: 6
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
     third_party_settings: {  }
 hidden:
   addtoany: true
@@ -214,8 +83,20 @@ hidden:
   display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true
+  field_alternative_title: true
   field_description: true
   field_display_hints: true
+  field_edtf_date: true
+  field_edtf_date_created: true
+  field_edtf_date_issued: true
+  field_extent: true
+  field_identifier: true
+  field_linked_agent: true
+  field_model: true
+  field_pid: true
+  field_resource_type: true
+  field_rights: true
+  langcode: true
   links: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
@@ -223,3 +104,7 @@ hidden:
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
+  repository_item_content_blocks_classification: true
+  repository_item_content_blocks_entity_view_2: true
+  repository_item_content_blocks_entity_view_3: true
+  repository_item_content_blocks_metadata: true

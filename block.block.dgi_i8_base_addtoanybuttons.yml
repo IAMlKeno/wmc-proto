@@ -10,7 +10,7 @@ dependencies:
 id: dgi_i8_base_addtoanybuttons
 theme: dgi_i8_base
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: addtoany_block
 settings:

@@ -3,8 +3,38 @@ langcode: en
 status: true
 dependencies:
   module:
+    - context_groups
     - islandora
     - node
+third_party_settings:
+  context_groups:
+    top:
+      name: top
+      label: Top
+      region: viewer
+      parent: ''
+      weight: '0'
+      theme: dgi_i8_base
+      class: 'col-md-10 col-md-offset-1 row top'
+      all_parents: {  }
+    metadata:
+      name: metadata
+      label: Metadata
+      region: content_bottom
+      parent: ''
+      weight: '3'
+      theme: dgi_i8_base
+      class: 'col-md-12 row bottom'
+      all_parents: {  }
+    bottom:
+      name: bottom
+      label: Bottom
+      region: content
+      parent: ''
+      weight: '1'
+      theme: dgi_i8_base
+      class: ''
+      all_parents: {  }
 name: repository_content_items
 label: 'Repository Content Items'
 group: 'DGI Islandora'
@@ -30,28 +60,17 @@ conditions:
 reactions:
   blocks:
     blocks:
-      a33b8aae-ab37-4cc9-9354-0e37e632e911:
-        id: 'views_block:repository_item_content_blocks-block_1'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '-3'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: repository_content_items
-        uuid: a33b8aae-ab37-4cc9-9354-0e37e632e911
       1edf7e88-2744-43c2-8783-646879eee330:
         id: system_breadcrumb_block
         label: Breadcrumbs
         provider: system
         label_display: 0
-        region: content
         weight: '0'
+        region: viewer
+        parent_wrapper:
+          parent: top
+        all_parents:
+          - top
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -63,8 +82,12 @@ reactions:
         label: 'Main page content'
         provider: system
         label_display: 0
-        region: content
-        weight: '1'
+        weight: '2'
+        region: content_bottom
+        parent_wrapper:
+          parent: metadata
+        all_parents:
+          - metadata
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -76,8 +99,12 @@ reactions:
         label: 'Page title'
         provider: core
         label_display: 0
-        region: content
-        weight: '-1'
+        weight: '2'
+        region: viewer
+        parent_wrapper:
+          parent: top
+        all_parents:
+          - top
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -89,8 +116,12 @@ reactions:
         label: Messages
         provider: system
         label_display: 0
-        region: content
-        weight: '-2'
+        weight: '1'
+        region: viewer
+        parent_wrapper:
+          parent: top
+        all_parents:
+          - top
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -104,31 +135,71 @@ reactions:
         label_display: 0
         primary: 1
         secondary: 0
-        region: content
-        weight: '2'
+        weight: '4'
+        region: viewer
+        parent_wrapper:
+          parent: top
+        all_parents:
+          - top
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
-        unique: 0
+        unique: 1
         context_id: repository_content_items
         uuid: a8eadc34-bbce-42e9-8836-bc870a94d7b6
-      224db010-ac2e-489a-901c-b4ba250fde1a:
-        id: 'views_block:repository_item_content_blocks-block_2'
+      7d090d4d-ffb9-4436-930b-932dcac14e9c:
+        id: 'views_block:repository_item_content_blocks-repository_item_viewer'
         label: ''
         provider: views
         label_display: 0
         views_label: ''
         items_per_page: none
-        region: content
         weight: '3'
+        region: viewer
+        parent_wrapper:
+          parent: top
+        all_parents:
+          - top
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
         unique: 0
         context_id: repository_content_items
-        uuid: 224db010-ac2e-489a-901c-b4ba250fde1a
+        uuid: 7d090d4d-ffb9-4436-930b-932dcac14e9c
+      a9d31932-f5d1-4c9a-8e46-0bf3226685fc:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: 0
+        weight: '2'
+        region: content
+        parent_wrapper:
+          parent: bottom
+        all_parents:
+          - bottom
+        context_mapping: {  }
+        theme: dgi_i8_base
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: a9d31932-f5d1-4c9a-8e46-0bf3226685fc
     id: blocks
     saved: false
     uuid: e90aa662-f44c-472a-b91c-647d459d21a2
     include_default_blocks: 0
+  regions:
+    id: regions
+    regions:
+      stable: {  }
+      bartik: {  }
+      classy: {  }
+      seven: {  }
+      bootstrap: {  }
+      dgi_i8_base:
+        - navigation
+        - header
+        - sidebar_second
+      adminimal_theme: {  }
+    saved: false
+    uuid: 4c566c65-9a6e-4a9a-8142-3e102af99a6d
 weight: 0

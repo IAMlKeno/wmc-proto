@@ -2,6 +2,9 @@ uuid: 9594ba90-f793-4bfc-86cb-0172bd076f54
 langcode: en
 status: true
 dependencies:
+  module:
+    - content_sync_helper
+    - islandora
   theme:
     - dgi_i8_base
 _core:
@@ -9,7 +12,7 @@ _core:
 id: dgi_i8_base_local_tasks
 theme: dgi_i8_base
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:
@@ -19,4 +22,17 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  content_sync_helper_media_parent_node_has_type:
+    id: content_sync_helper_media_parent_node_has_type
+    bundles:
+      islandora_object: islandora_object
+    negate: true
+    context_mapping:
+      media: '@islandora.media_route_context_provider:media'
+  entity_bundle:
+    id: entity_bundle
+    bundles:
+      islandora_object: islandora_object
+    negate: true
+    context_mapping: {  }
