@@ -16,6 +16,7 @@ permissions:
   - 'create field_display_block'
   - 'edit field_display_block'
   - 'edit own field_display_block'
+  - 'execute graphql requests'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
