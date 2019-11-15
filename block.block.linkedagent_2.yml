@@ -1,0 +1,23 @@
+uuid: b440c4b0-47eb-47b6-9736-eb0ce552999f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.linked_agent
+  module:
+    - facets
+  theme:
+    - dgi_i8_base
+id: linkedagent_2
+theme: dgi_i8_base
+region: search_facet_header
+weight: 0
+provider: null
+plugin: 'facet_block:linked_agent'
+settings:
+  id: 'facet_block:linked_agent'
+  label: 'Linked Agent'
+  provider: facets
+  label_display: '0'
+  block_id: linkedagent_2
+visibility: {  }

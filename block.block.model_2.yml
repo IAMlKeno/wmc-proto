@@ -1,0 +1,23 @@
+uuid: ddb22b01-7132-46a7-a2be-b80e68f596e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.model
+  module:
+    - facets
+  theme:
+    - dgi_i8_base
+id: model_2
+theme: dgi_i8_base
+region: search_facet_header
+weight: 0
+provider: null
+plugin: 'facet_block:model'
+settings:
+  id: 'facet_block:model'
+  label: Model
+  provider: facets
+  label_display: '0'
+  block_id: model_2
+visibility: {  }

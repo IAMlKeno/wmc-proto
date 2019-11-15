@@ -15,9 +15,13 @@ dependencies:
     - field.storage.media.field_media_of
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
+    - field.storage.node.field_linked_agent
+    - field.storage.node.field_member_of
     - field.storage.node.field_model
     - field.storage.node.field_resource_type
+    - field.storage.taxonomy_term.field_relationships
     - field.storage.taxonomy_term.field_type
+    - field.storage.node.field_subject
     - field.storage.node.field_tags
     - search_api.server.default_solr_server
     - core.entity_view_mode.node.search_index
@@ -75,6 +79,11 @@ field_settings:
         - node
         - user
         - user
+  bundle:
+    label: 'Reverse reference: Media using Media of » Media type'
+    datasource_id: 'entity:node'
+    property_path: 'search_api_reverse_entity_references_media__field_media_of:bundle'
+    type: string
   changed:
     label: Changed
     datasource_id: 'entity:node'
@@ -169,6 +178,41 @@ field_settings:
       module:
         - taxonomy
         - taxonomy
+  name_1:
+    label: 'Resource Type » Taxonomy term » Related Entities » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_type:entity:field_relationships:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_type
+        - field.storage.taxonomy_term.field_relationships
+      module:
+        - taxonomy
+        - taxonomy
+        - taxonomy
+  name_2:
+    label: 'Linked Agent » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_linked_agent:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_linked_agent
+      module:
+        - taxonomy
+        - taxonomy
+  name_3:
+    label: 'Subject » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_subject:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_subject
+      module:
+        - taxonomy
+        - taxonomy
   nid:
     label: 'Media of » Content » ID'
     datasource_id: 'entity:media'
@@ -234,6 +278,17 @@ field_settings:
     dependencies:
       module:
         - node
+  title_1:
+    label: 'Member of » Content » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_member_of:entity:title'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_member_of
+      module:
+        - node
+        - node
   type:
     label: 'Content type'
     datasource_id: 'entity:node'
@@ -282,9 +337,7 @@ processor_settings:
     weights:
       preprocess_index: -10
   html_filter:
-    weights:
-      preprocess_index: -3
-      preprocess_query: -6
+    all_fields: false
     fields:
       - rendered_item
     title: true
@@ -295,12 +348,17 @@ processor_settings:
       h2: 3
       h3: 2
       string: 2
-    all_fields: false
+    weights:
+      preprocess_index: -3
+      preprocess_query: -6
   rendered_item:
     weights:
       add_properties: 0
       pre_index_save: -10
-  solr_date_range: {  }
+  reverse_entity_references: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
 tracker_settings:
   default:
     indexing_order: fifo

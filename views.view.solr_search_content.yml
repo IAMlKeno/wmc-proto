@@ -3,6 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block.block.datecreated_2
+    - block.block.datecreatedgrid
+    - block.block.linkedagent_2
+    - block.block.linkedagentgrid
+    - block.block.memberof_2
+    - block.block.memberofgrid
+    - block.block.model_2
+    - block.block.modelgrid
+    - block.block.subject_2
+    - block.block.subjectgrid
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_model
     - search_api.index.default_solr_index
@@ -371,6 +381,71 @@ display:
           display_id: page_2
           label: Grid
           plugin_id: display_link
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: true
+          target: datecreated_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_1:
+          id: entity_block_1
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: linkedagent_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_2:
+          id: entity_block_2
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: memberof_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_3:
+          id: entity_block_3
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: model_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_4:
+          id: entity_block_4
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: subject_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -857,7 +932,8 @@ display:
         filters: true
         filter_groups: true
         exposed_form: false
-        header: false
+        header: true
+        cache: false
       row:
         type: fields
         options:
@@ -1272,55 +1348,8 @@ display:
           sort_desc_label: Desc
           text_input_required: 'Please enter some keywords to search.'
           text_input_required_format: basic_html
-      header:
-        area_1:
-          id: area_1
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: "  <div class=\"results-title\">\r\n    <h2>All results for [current-page:query:search_api_fulltext]</h2>\r\n  </div>"
-            format: basic_html
-          plugin_id: text
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"[view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>\r\n"
-            format: full_html
-          plugin_id: text
-        display_link:
-          id: display_link
-          table: views
-          field: display_link
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          display_id: page_1
-          label: List
-          plugin_id: display_link
-        display_link_1:
-          id: display_link_1
-          table: views
-          field: display_link
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          display_id: page_2
-          label: Grid
-          plugin_id: display_link
+      cache:
+        type: none
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -1659,6 +1688,8 @@ display:
         css_class: false
         style: false
         row: false
+        header: false
+        cache: false
       relationships: {  }
       css_class: 'solr-search-content--grid solr-search-content'
       style:
@@ -1674,6 +1705,122 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      header:
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "  <div class=\"results-title\">\r\n    <h2>All results for [current-page:query:search_api_fulltext]</h2>\r\n  </div>"
+            format: basic_html
+          plugin_id: text
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"[view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>\r\n"
+            format: full_html
+          plugin_id: text
+        display_link:
+          id: display_link
+          table: views
+          field: display_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          display_id: page_1
+          label: List
+          plugin_id: display_link
+        display_link_1:
+          id: display_link_1
+          table: views
+          field: display_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          display_id: page_2
+          label: Grid
+          plugin_id: display_link
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: datecreatedgrid
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_1:
+          id: entity_block_1
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: linkedagentgrid
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_2:
+          id: entity_block_2
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: memberofgrid
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_3:
+          id: entity_block_3
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: modelgrid
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_4:
+          id: entity_block_4
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: subjectgrid
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+      cache:
+        type: none
     cache_metadata:
       contexts:
         - 'languages:language_content'
