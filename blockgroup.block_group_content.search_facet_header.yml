@@ -1,0 +1,6 @@
+uuid: 0eb7d6f0-73e8-4a75-95f3-9121e34fead3
+langcode: en
+status: true
+dependencies: {  }
+id: search_facet_header
+label: 'Search facet header'

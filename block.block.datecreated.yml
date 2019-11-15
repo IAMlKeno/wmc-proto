@@ -1,0 +1,23 @@
+uuid: 519ee92d-ebef-4219-80d2-ebc8e64a519e
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.date_created
+  module:
+    - facets
+  theme:
+    - dgi_i8_base
+id: datecreated
+theme: dgi_i8_base
+region: highlighted
+weight: 0
+provider: null
+plugin: 'facet_block:date_created'
+settings:
+  id: 'facet_block:date_created'
+  label: 'Date Created'
+  provider: facets
+  label_display: visible
+  block_id: datecreated
+visibility: {  }

@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.solr_search_content
   module:
-    - system
     - views
   theme:
     - dgi_i8_base
