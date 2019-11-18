@@ -1,0 +1,8 @@
+uuid: 0313e63b-f990-4d4e-be4b-dc4342c39568
+langcode: en
+status: true
+dependencies: {  }
+id: legal
+label: Legal
+description: 'The legal portion of the footer in the DGI Footer Menu Block.'
+locked: false

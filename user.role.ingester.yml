@@ -23,6 +23,7 @@ permissions:
   - 'edit own islandora_object content'
   - 'edit own remote_video media'
   - 'edit own video media'
+  - 'execute graphql requests'
   - 'update media'
   - 'use text format basic_html'
   - 'use text format restricted_html'

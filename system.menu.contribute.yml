@@ -1,0 +1,8 @@
+uuid: f4acfe41-9dd0-455a-8b22-70b9f83d30f8
+langcode: en
+status: true
+dependencies: {  }
+id: contribute
+label: Contribute
+description: 'The contribute portion of the footer in the DGI Footer Menu Block.'
+locked: false

@@ -1,0 +1,23 @@
+uuid: 00d69a48-7490-43f1-94bc-ea40970a1db3
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.subject
+  module:
+    - facets
+  theme:
+    - dgi_i8_base
+id: subject
+theme: dgi_i8_base
+region: highlighted
+weight: 0
+provider: null
+plugin: 'facet_block:subject'
+settings:
+  id: 'facet_block:subject'
+  label: Subject
+  provider: facets
+  label_display: visible
+  block_id: subject
+visibility: {  }
