@@ -1,0 +1,8 @@
+uuid: cc1567a2-df35-41b5-9d93-12744d6dd666
+langcode: en
+status: true
+dependencies: {  }
+id: follow
+label: Follow
+description: 'The follow portion of the footer in the DGI Footer Menu Block.'
+locked: false

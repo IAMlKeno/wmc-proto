@@ -1,0 +1,21 @@
+uuid: fc4d4691-f3a4-4d0d-ab73-84a64621e1aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - react_block
+  theme:
+    - dgi_i8_base
+id: dgifootermenublock
+theme: dgi_i8_base
+region: footer
+weight: 0
+provider: null
+plugin: 'react_block:dgi_footer_menu_block'
+settings:
+  id: 'react_block:dgi_footer_menu_block'
+  label: 'DGI Footer Menu Block'
+  provider: react_block
+  label_display: '0'
+  pdb_configuration: null
+visibility: {  }
