@@ -1,0 +1,13 @@
+uuid: 5f046509-fe15-46ca-bc1a-3b22995c6ecb
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - dgi_header
+_core:
+  default_config_hash: uMEWYrrbSqif57rKsB5Xruh0P8avRX_WUR7OQg4AJDs
+id: dgi_header
+label: 'DGI Header Menu'
+description: ''
+locked: false
