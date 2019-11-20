@@ -6,8 +6,8 @@ dependencies:
     module:
       - dgi_header
 _core:
-  default_config_hash: uMEWYrrbSqif57rKsB5Xruh0P8avRX_WUR7OQg4AJDs
+  default_config_hash: whsALJuxL07y7EJ0Md7ubHFAj9PqX3lHM4a2B22Et18
 id: dgi_header
 label: 'DGI Header Menu'
-description: ''
+description: 'Menu to be embedded in the DGI Header block by default.'
 locked: false
