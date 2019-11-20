@@ -183,6 +183,28 @@ reactions:
         unique: 0
         context_id: repository_content_items
         uuid: a9d31932-f5d1-4c9a-8e46-0bf3226685fc
+      589dedc6-0671-44d7-a39e-aa06e1f08c89:
+        id: dgi_header
+        label: 'DGI Header Block'
+        provider: dgi_header
+        label_display: 0
+        weight: '0'
+        region: navigation
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        admin_label: ''
+        menu: header
+        search:
+          view: solr_search_content
+          display_id: page_1
+          parameter: search_api_fulltext
+        context_mapping: {  }
+        theme: dgi_i8_base
+        css_class: ''
+        unique: 1
+        context_id: repository_content_items
+        uuid: 589dedc6-0671-44d7-a39e-aa06e1f08c89
     id: blocks
     saved: false
     uuid: e90aa662-f44c-472a-b91c-647d459d21a2
@@ -191,12 +213,11 @@ reactions:
     id: regions
     regions:
       stable: {  }
-      bartik: {  }
       classy: {  }
+      bartik: {  }
       seven: {  }
       bootstrap: {  }
       dgi_i8_base:
-        - navigation
         - header
         - sidebar_second
       adminimal_theme: {  }
