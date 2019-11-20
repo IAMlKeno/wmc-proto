@@ -1,0 +1,15 @@
+uuid: 0f55cce7-b328-496f-a464-9d2720aefbd9
+langcode: en
+status: true
+dependencies: {  }
+name: dgi_header_bubble
+label: dgi_header_bubble
+effects:
+  1e187f47-9073-4cee-a090-ef762b0ad4da:
+    uuid: 1e187f47-9073-4cee-a090-ef762b0ad4da
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 48
+      height: 48
+      anchor: center-center

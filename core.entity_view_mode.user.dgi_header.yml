@@ -1,0 +1,10 @@
+uuid: 93c6c2ee-8428-4fb8-b6d1-5eca738b6175
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.dgi_header
+label: 'DGI Header'
+targetEntityType: user
+cache: true
