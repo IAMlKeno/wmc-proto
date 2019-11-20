@@ -1,8 +1,0 @@
-uuid: 7c0f1b4a-5d7f-4fac-ade2-01c3178a2c4f
-langcode: en
-status: true
-dependencies: {  }
-id: header
-label: Header
-description: ''
-locked: false
