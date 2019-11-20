@@ -33,6 +33,7 @@ module:
   controlled_access_terms_defaults: 0
   datetime: 0
   dblog: 0
+  dgi_header: 0
   dgi_i8_helper: 0
   dgi_react_components: 0
   diff: 0
