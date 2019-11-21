@@ -183,6 +183,28 @@ reactions:
         unique: 0
         context_id: repository_content_items
         uuid: a9d31932-f5d1-4c9a-8e46-0bf3226685fc
+      589dedc6-0671-44d7-a39e-aa06e1f08c89:
+        id: dgi_header
+        label: 'DGI Header Block'
+        provider: dgi_header
+        label_display: 0
+        weight: '0'
+        region: navigation
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        admin_label: ''
+        menu: dgi_header
+        search:
+          view: solr_search_content
+          display_id: page_1
+          parameter: search_api_fulltext
+        context_mapping: {  }
+        theme: dgi_i8_base
+        css_class: ''
+        unique: 1
+        context_id: repository_content_items
+        uuid: 589dedc6-0671-44d7-a39e-aa06e1f08c89
       d0472fc6-2c86-4de3-a492-73c05b44121c:
         id: 'react_block:dgi_footer_menu_block'
         label: 'DGI Footer Menu Block'
@@ -207,14 +229,13 @@ reactions:
   regions:
     id: regions
     regions:
-      bartik: {  }
       classy: {  }
+      bartik: {  }
       seven: {  }
       stable: {  }
       adminimal_theme: {  }
       bootstrap: {  }
       dgi_i8_base:
-        - navigation
         - header
         - sidebar_second
     saved: false
