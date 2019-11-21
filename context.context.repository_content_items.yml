@@ -205,6 +205,23 @@ reactions:
         unique: 1
         context_id: repository_content_items
         uuid: 589dedc6-0671-44d7-a39e-aa06e1f08c89
+      d0472fc6-2c86-4de3-a492-73c05b44121c:
+        id: 'react_block:dgi_footer_menu_block'
+        label: 'DGI Footer Menu Block'
+        provider: react_block
+        label_display: 0
+        weight: '0'
+        region: footer
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        pdb_configuration: null
+        context_mapping: {  }
+        theme: dgi_i8_base
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: d0472fc6-2c86-4de3-a492-73c05b44121c
     id: blocks
     saved: false
     uuid: e90aa662-f44c-472a-b91c-647d459d21a2
@@ -212,15 +229,15 @@ reactions:
   regions:
     id: regions
     regions:
-      stable: {  }
       classy: {  }
       bartik: {  }
       seven: {  }
+      stable: {  }
+      adminimal_theme: {  }
       bootstrap: {  }
       dgi_i8_base:
         - header
         - sidebar_second
-      adminimal_theme: {  }
     saved: false
     uuid: 4c566c65-9a6e-4a9a-8142-3e102af99a6d
 weight: 0
