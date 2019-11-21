@@ -188,17 +188,17 @@ reactions:
         label: 'DGI Header Block'
         provider: dgi_header
         label_display: 0
+        menu: dgi_header
+        search:
+          view: solr_search_content
+          display_id: page_1
+          parameter: search_api_fulltext
         weight: '0'
         region: navigation
         parent_wrapper:
           parent: ''
         all_parents: {  }
         admin_label: ''
-        menu: dgi_header
-        search:
-          view: solr_search_content
-          display_id: page_1
-          parameter: search_api_fulltext
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
