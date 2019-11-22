@@ -1,12 +1,9 @@
 uuid: 5f046509-fe15-46ca-bc1a-3b22995c6ecb
 langcode: en
 status: true
-dependencies:
-  enforced:
-    module:
-      - dgi_header
+dependencies: {  }
 _core:
-  default_config_hash: whsALJuxL07y7EJ0Md7ubHFAj9PqX3lHM4a2B22Et18
+  default_config_hash: 9K9gZV3b_8DiI5qDrGYlQlf9bZQ5QL4XYyuBRn2xALc
 id: dgi_header
 label: 'DGI Header Menu'
 description: 'Menu to be embedded in the DGI Header block by default.'
