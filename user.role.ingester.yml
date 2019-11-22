@@ -17,6 +17,7 @@ permissions:
   - 'create remote_video media'
   - 'create video media'
   - 'delete own islandora_object content'
+  - 'display eu cookie compliance popup'
   - 'edit own audio media'
   - 'edit own file media'
   - 'edit own image media'
