@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - facets.facet.member_of_grid_
+    - blockgroup.block_group_content.search_facet_header
   module:
     - facets
+    - blockgroup
   theme:
     - dgi_i8_base
 id: memberofgrid
