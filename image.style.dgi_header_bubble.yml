@@ -2,6 +2,8 @@ uuid: 0f55cce7-b328-496f-a464-9d2720aefbd9
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: nvhT7wLVbJtQXMG3FJGhGapuUjRevofAClVsLnXf5oU
 name: dgi_header_bubble
 label: dgi_header_bubble
 effects:
