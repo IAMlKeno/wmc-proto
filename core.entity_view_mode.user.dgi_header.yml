@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: Dm_dFDeWiaxx8ELkbeYjZsxcy3oMvztqizWy-wpZhJw
 id: user.dgi_header
 label: 'DGI Header'
 targetEntityType: user
