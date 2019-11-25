@@ -21,6 +21,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/about\r\n/contact"
+    pages: "/about\r\n/contact\r\n/user/*"
     negate: true
     context_mapping: {  }
