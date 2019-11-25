@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: explore
-label: Explore
-description: 'The explore portion of the footer in the DGI Footer Menu Block.'
+label: Islandora
+description: 'The Islandora portion of the footer in the DGI Footer Menu Block.'
 locked: false
