@@ -48,6 +48,11 @@ targetEntityType: node
 bundle: islandora_object
 mode: default
 content:
+  addtoany:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   repository_item_content_blocks_classification:
     weight: 2
     region: content
@@ -69,7 +74,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  addtoany: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true
