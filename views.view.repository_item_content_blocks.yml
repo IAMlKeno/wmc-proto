@@ -215,6 +215,7 @@ display:
         style: false
         row: false
         css_class: false
+        footer: false
       row:
         type: 'entity:node'
         options:
@@ -224,6 +225,7 @@ display:
       bundles:
         - islandora_object
       css_class: col-md-5
+      footer: {  }
     cache_metadata:
       max-age: -1
       contexts:
