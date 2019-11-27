@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_pid
+    - field.field.node.islandora_object.field_representative_image
     - field.field.node.islandora_object.field_resource_type
     - field.field.node.islandora_object.field_rights
     - field.field.node.islandora_object.field_subject
@@ -32,6 +33,7 @@ third_party_settings:
     group_structure:
       children:
         - field_model
+        - field_representative_image
         - field_member_of
         - field_access_terms
         - field_display_hints
@@ -88,7 +90,7 @@ content:
     third_party_settings: {  }
   field_access_terms:
     type: options_buttons
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -110,7 +112,7 @@ content:
     third_party_settings: {  }
   field_display_hints:
     type: options_buttons
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -168,7 +170,7 @@ content:
     region: content
   field_member_of:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -182,12 +184,21 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_pid:
-    weight: 12
+    weight: 13
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_representative_image:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_resource_type:
     weight: 3
