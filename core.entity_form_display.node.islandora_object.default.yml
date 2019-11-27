@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.image_media_browser
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_description
@@ -26,6 +27,7 @@ dependencies:
       - islandora_defaults
   module:
     - controlled_access_terms
+    - entity_browser
     - field_group
     - path
 third_party_settings:
@@ -194,11 +196,16 @@ content:
   field_representative_image:
     weight: 9
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: image_media_browser
+      field_widget_display: label
+      field_widget_remove: true
+      field_widget_replace: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   field_resource_type:
     weight: 3
