@@ -8,7 +8,7 @@ dependencies:
   module:
     - search_api
 id: model_grid_
-name: 'Model (Grid)'
+name: Model
 url_alias: model
 weight: 0
 min_count: 1
