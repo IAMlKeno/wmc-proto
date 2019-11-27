@@ -2,7 +2,7 @@ tag: i
 method: webfonts
 use_cdn: true
 external_svg_location: 'https://use.fontawesome.com/releases/v5.10.0/css/all.css'
-use_shim: true
+use_shim: false
 external_shim_location: 'https://use.fontawesome.com/releases/v5.10.0/css/v4-shims.css'
 use_solid_file: true
 use_regular_file: true
