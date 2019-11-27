@@ -70,6 +70,7 @@ permissions:
   - 'administer nodes'
   - 'administer permissions'
   - 'administer responsive images'
+  - 'administer search autocomplete'
   - 'administer shortcut_set labels'
   - 'administer shortcuts'
   - 'administer site configuration'
