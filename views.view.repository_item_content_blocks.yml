@@ -17,6 +17,7 @@ dependencies:
   module:
     - controlled_access_terms
     - eva
+    - expand_collapse_formatter
     - node
     - user
 id: repository_item_content_blocks
@@ -215,6 +216,7 @@ display:
         style: false
         row: false
         css_class: false
+        footer: false
       row:
         type: 'entity:node'
         options:
@@ -224,6 +226,7 @@ display:
       bundles:
         - islandora_object
       css_class: col-md-5
+      footer: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -755,8 +758,14 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: basic_string
-          settings: {  }
+          type: expand_collapse_formatter
+          settings:
+            trim_length: '300'
+            default_state: collapsed
+            link_text_open: 'Show more'
+            link_text_close: 'Show less'
+            link_class_open: ecf-open
+            link_class_close: ecf-close
           group_column: value
           group_columns: {  }
           group_rows: true

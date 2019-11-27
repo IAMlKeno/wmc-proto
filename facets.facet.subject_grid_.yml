@@ -8,7 +8,7 @@ dependencies:
   module:
     - search_api
 id: subject_grid_
-name: 'Subject (Grid)'
+name: Subject
 url_alias: subject
 weight: 0
 min_count: 1

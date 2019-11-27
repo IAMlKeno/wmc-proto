@@ -48,8 +48,8 @@ module:
   entity_embed: 0
   entity_reference: 0
   eva: 0
+  expand_collapse_formatter: 0
   facets: 0
-  fast404: 0
   features: 0
   features_ui: 0
   field: 0
