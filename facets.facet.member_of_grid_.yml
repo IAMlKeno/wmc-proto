@@ -8,7 +8,7 @@ dependencies:
   module:
     - search_api
 id: member_of_grid_
-name: 'Member of (Grid)'
+name: 'Member of'
 url_alias: member_of
 weight: 0
 min_count: 1
