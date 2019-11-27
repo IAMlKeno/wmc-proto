@@ -5,6 +5,7 @@ dependencies:
   config:
     - media.type.image
   module:
+    - better_exposed_filters
     - entity_browser
     - media
     - user
@@ -40,7 +41,7 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Apply
           reset_button: false
@@ -49,6 +50,22 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+            filter:
+              name:
+                plugin_id: default
+                advanced:
+                  collapsible: false
+                  is_secondary: false
       pager:
         type: full
         options:
@@ -235,7 +252,7 @@ display:
               site_administrator: '0'
               administrator: '0'
             placeholder: ''
-            autocomplete_filter: 0
+            autocomplete_filter: 1
             autocomplete_min_chars: '0'
             autocomplete_items: '10'
             autocomplete_field: name
@@ -257,56 +274,6 @@ display:
           entity_type: media
           entity_field: name
           plugin_id: views_autocomplete_filters_string
-        uid:
-          id: uid
-          table: media_field_data
-          field: uid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: uid_op
-            label: 'Authored by'
-            description: ''
-            use_operator: false
-            operator: uid_op
-            identifier: uid
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              ingester: '0'
-              repository_administrator: '0'
-              site_administrator: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: media
-          entity_field: uid
-          plugin_id: numeric
         status:
           value: '1'
           table: media_field_data
