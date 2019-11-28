@@ -367,7 +367,7 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          display_id: page_1
+          display_id: page_2
           label: List
           plugin_id: display_link
         display_link_1:
@@ -378,7 +378,7 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          display_id: page_2
+          display_id: page_1
           label: Grid
           plugin_id: display_link
         entity_block:
@@ -862,9 +862,9 @@ display:
         - 'config:field.storage.node.field_model'
         - env
         - extensions
-  page_1:
+  page_2:
     display_plugin: page
-    id: page_1
+    id: page_2
     display_title: 'Page (List)'
     position: 1
     display_options:
@@ -1363,9 +1363,9 @@ display:
         - 'config:field.storage.node.field_model'
         - env
         - extensions
-  page_2:
+  page_1:
     display_plugin: page
-    id: page_2
+    id: page_1
     display_title: 'Page (Grid WIP)'
     position: 1
     display_options:
@@ -1740,7 +1740,7 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          display_id: page_1
+          display_id: page_2
           label: List
           plugin_id: display_link
         display_link_1:
@@ -1751,7 +1751,7 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          display_id: page_2
+          display_id: page_1
           label: Grid
           plugin_id: display_link
         entity_block:
