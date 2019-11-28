@@ -17,7 +17,6 @@ dependencies:
     - field.storage.node.field_model
     - search_api.index.default_solr_index
   module:
-    - better_exposed_filters
     - controlled_access_terms
     - file
     - search_api
@@ -50,7 +49,7 @@ display:
         type: search_api_query
         options: {  }
       exposed_form:
-        type: bef
+        type: input_required
         options:
           submit_button: Search
           reset_button: false
@@ -61,21 +60,6 @@ display:
           sort_desc_label: Desc
           text_input_required: 'Please enter some keywords to search.'
           text_input_required_format: basic_html
-          bef:
-            general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
-              autosubmit_hide: false
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-            sort:
-              plugin_id: default
-            filter:
-              search_api_fulltext:
-                plugin_id: default
-              name_1:
-                plugin_id: default
       pager:
         type: full
         options:
@@ -1401,7 +1385,7 @@ display:
         fields: false
         filters: true
         filter_groups: true
-        exposed_form: false
+        exposed_form: true
         header: true
         cache: false
       row:
@@ -1806,18 +1790,6 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
-      exposed_form:
-        type: input_required
-        options:
-          submit_button: Search
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-          text_input_required: 'Please enter some keywords to search.'
-          text_input_required_format: basic_html
       cache:
         type: none
     cache_metadata:
