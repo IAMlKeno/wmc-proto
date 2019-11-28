@@ -15,6 +15,7 @@ permissions:
   - 'display eu cookie compliance popup'
   - 'execute graphql requests'
   - 'search content'
+  - 'use search autocomplete'
   - 'use text format restricted_html'
   - 'view field_display_block'
   - 'view media'

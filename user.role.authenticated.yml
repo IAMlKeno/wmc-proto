@@ -21,6 +21,7 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'use search autocomplete'
   - 'use text format restricted_html'
   - 'view field_display_block'
   - 'view media'
