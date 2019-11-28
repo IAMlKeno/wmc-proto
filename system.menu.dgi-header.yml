@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: 9K9gZV3b_8DiI5qDrGYlQlf9bZQ5QL4XYyuBRn2xALc
-id: dgi_header
+id: dgi-header
 label: 'DGI Header Menu'
 description: 'Menu to be embedded in the DGI Header block by default.'
 locked: false
