@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.image_media_browser
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_description
@@ -16,6 +17,7 @@ dependencies:
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_pid
+    - field.field.node.islandora_object.field_representative_image
     - field.field.node.islandora_object.field_resource_type
     - field.field.node.islandora_object.field_rights
     - field.field.node.islandora_object.field_subject
@@ -25,6 +27,7 @@ dependencies:
       - islandora_defaults
   module:
     - controlled_access_terms
+    - entity_browser
     - field_group
     - path
 third_party_settings:
@@ -32,6 +35,7 @@ third_party_settings:
     group_structure:
       children:
         - field_model
+        - field_representative_image
         - field_member_of
         - field_access_terms
         - field_display_hints
@@ -88,7 +92,7 @@ content:
     third_party_settings: {  }
   field_access_terms:
     type: options_buttons
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -110,7 +114,7 @@ content:
     third_party_settings: {  }
   field_display_hints:
     type: options_buttons
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -168,7 +172,7 @@ content:
     region: content
   field_member_of:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -182,12 +186,27 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_pid:
-    weight: 12
+    weight: 13
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_representative_image:
+    weight: 9
+    settings:
+      entity_browser: image_media_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_remove: true
+      field_widget_replace: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
     region: content
   field_resource_type:
     weight: 3
