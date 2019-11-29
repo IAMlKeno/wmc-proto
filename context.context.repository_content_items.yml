@@ -15,7 +15,7 @@ third_party_settings:
       parent: ''
       weight: '0'
       theme: dgi_i8_base
-      class: 'col-md-10 col-md-offset-1 row top'
+      class: 'col-md-14 col-md-offset-1 row top'
       all_parents: {  }
     metadata:
       name: metadata

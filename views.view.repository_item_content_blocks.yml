@@ -225,7 +225,7 @@ display:
       entity_type: node
       bundles:
         - islandora_object
-      css_class: col-md-5
+      css_class: col-md-7
       footer: {  }
     cache_metadata:
       max-age: -1
@@ -1230,7 +1230,7 @@ display:
       entity_type: node
       bundles:
         - islandora_object
-      css_class: col-md-7
+      css_class: col-md-9
     cache_metadata:
       max-age: -1
       contexts:
