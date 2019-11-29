@@ -101,7 +101,6 @@ module:
   pdb: 0
   pdf: 0
   prepopulate: 0
-  quickedit: 0
   rdf: 0
   react_block: 0
   responsive_image: 0
