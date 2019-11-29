@@ -94,6 +94,7 @@ hidden:
   field_linked_agent: true
   field_model: true
   field_pid: true
+  field_representative_image: true
   field_resource_type: true
   field_rights: true
   langcode: true
