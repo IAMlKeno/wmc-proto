@@ -40,6 +40,16 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
+  repository_item_content_blocks_classification:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  repository_item_content_blocks_metadata:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   addtoany: true
   display_media_entity_view_1: true
@@ -58,6 +68,7 @@ hidden:
   field_member_of: true
   field_model: true
   field_pid: true
+  field_representative_image: true
   field_resource_type: true
   field_rights: true
   field_subject: true

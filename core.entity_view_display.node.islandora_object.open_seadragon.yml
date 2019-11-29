@@ -62,6 +62,7 @@ hidden:
   field_member_of: true
   field_model: true
   field_pid: true
+  field_representative_image: true
   field_resource_type: true
   field_rights: true
   field_subject: true
