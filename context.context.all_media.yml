@@ -33,4 +33,4 @@ reactions:
     id: islandora_map_uri_predicate
     drupal_uri_predicate: 'iana:describedby'
     saved: false
-weight: 0
+weight: -7

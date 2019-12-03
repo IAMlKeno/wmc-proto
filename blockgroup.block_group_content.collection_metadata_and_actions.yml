@@ -1,0 +1,6 @@
+uuid: c8b952c6-721f-469a-a509-46795d7983e3
+langcode: en
+status: true
+dependencies: {  }
+id: collection_metadata_and_actions
+label: 'Collection Metadata and Actions'

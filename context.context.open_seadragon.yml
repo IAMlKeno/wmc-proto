@@ -28,4 +28,4 @@ reactions:
     id: view_mode_alter
     mode: node.open_seadragon
     saved: false
-weight: 0
+weight: -1

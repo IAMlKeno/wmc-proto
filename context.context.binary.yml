@@ -31,4 +31,4 @@ reactions:
     id: view_mode_alter
     mode: node.binary
     saved: false
-weight: 0
+weight: -5

@@ -1,0 +1,10 @@
+uuid: 1410e3d0-0c36-4f52-8468-ddc65b2b1006
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.repository_item_collections
+label: 'Repository Item: Collections'
+targetEntityType: node
+cache: true
