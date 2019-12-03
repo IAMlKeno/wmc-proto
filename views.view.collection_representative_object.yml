@@ -220,7 +220,7 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_representative_image: Media'
-          required: false
+          required: true
           plugin_id: standard
       arguments:
         nid:
