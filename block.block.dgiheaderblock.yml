@@ -17,7 +17,7 @@ settings:
   label: 'DGI Header Block'
   provider: dgi_header
   label_display: '0'
-  menu: dgi_header
+  menu: dgi-header
   search:
     view: solr_search_content
     display_id: page_1
