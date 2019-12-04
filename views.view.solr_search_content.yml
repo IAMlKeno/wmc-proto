@@ -59,7 +59,7 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Please enter some keywords to search.'
+          text_input_required: 'This collection has no members. When repository items are added to this collection, they will display here.'
           text_input_required_format: basic_html
       pager:
         type: full
@@ -919,7 +919,7 @@ display:
           separator: ''
           hide_empty: false
       display_description: ''
-      css_class: 'solr-search-content--list solr-search-content'
+      css_class: 'solr-search-content--list solr-search-content collection-eva'
       fields:
         title:
           id: title
@@ -1314,7 +1314,7 @@ display:
             multi_separator: ', '
           plugin_id: search_api_field
       exposed_form:
-        type: bef
+        type: input_required
         options:
           submit_button: Search
           reset_button: false
@@ -1323,16 +1323,8 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Please enter some keywords to search.'
+          text_input_required: 'This collection has no members. When repository items are added to this collection, they will display here.'
           text_input_required_format: basic_html
-          bef:
-            general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
-              autosubmit_hide: false
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
       cache:
         type: none
       entity_type: node
@@ -1390,7 +1382,7 @@ display:
             min: ''
             max: ''
             value: ''
-          group: 1
+          group: 2
           exposed: false
           expose:
             operator_id: ''
@@ -1421,7 +1413,7 @@ display:
             group_items: {  }
           plugin_id: search_api_numeric
       filter_groups:
-        operator: OR
+        operator: AND
         groups:
           1: AND
           2: AND
@@ -1446,7 +1438,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           tokenize: false
           content:
             value: "<div class=\"display-links\">\r\n  <a href=\"[current-page:url]?page=[current-page:query:page]\">list</a>\r\n  <a href=\"[current-page:url]?display=grid&page=[current-page:query:page]\">Grid</a>\r\n</div>\r\n"
@@ -1532,10 +1524,8 @@ display:
             title: All
           title_enable: false
           title: ''
-          default_argument_type: raw
-          default_argument_options:
-            index: 1
-            use_alias: false
+          default_argument_type: node
+          default_argument_options: {  }
           default_argument_skip_url: false
           summary_options: {  }
           summary:
@@ -1894,7 +1884,7 @@ display:
         filter_groups: false
         arguments: false
       relationships: {  }
-      css_class: 'solr-search-content--grid solr-search-content'
+      css_class: 'solr-search-content--grid solr-search-content collection-eva-grid'
       style:
         type: default
         options:
@@ -1929,7 +1919,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           tokenize: false
           content:
             value: "<div class=\"display-links\">\r\n  <a href=\"[current-page:url]?page=[current-page:query:page]\">list</a>\r\n  <a href=\"[current-page:url]?display=grid&page=[current-page:query:page]\">Grid</a>\r\n</div>\r\n"
@@ -2057,7 +2047,7 @@ display:
             min: ''
             max: ''
             value: ''
-          group: 1
+          group: 2
           exposed: false
           expose:
             operator_id: ''
@@ -2091,6 +2081,7 @@ display:
         operator: AND
         groups:
           1: AND
+          2: AND
       arguments:
         nid_2:
           id: nid_2
@@ -2106,10 +2097,8 @@ display:
             title: All
           title_enable: false
           title: ''
-          default_argument_type: raw
-          default_argument_options:
-            index: 1
-            use_alias: false
+          default_argument_type: node
+          default_argument_options: {  }
           default_argument_skip_url: false
           summary_options: {  }
           summary:
@@ -2308,7 +2297,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
+            max_length: 30
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -2347,7 +2336,7 @@ display:
           field_rendering: true
           fallback_handler: search_api
           fallback_options:
-            link_to_item: false
+            link_to_item: true
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
