@@ -1,8 +1,9 @@
-uuid: f372f601-5cda-40e6-8d0d-f2a58511302b
+uuid: 3cbeba8e-73c3-4322-91cd-3debb8b74063
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.repository_item_collection_description
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_description
@@ -30,11 +31,9 @@ dependencies:
 third_party_settings:
   field_group:
     group_metadata:
-      children:
-        - repository_item_content_blocks_metadata
-        - repository_item_content_blocks_classification
+      children: {  }
       parent_name: ''
-      weight: 0
+      weight: 1
       format_type: fieldset
       format_settings:
         label: Metadata
@@ -44,19 +43,16 @@ third_party_settings:
       label: Metadata
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
-id: node.islandora_object.default
+id: node.islandora_object.repository_item_collection_description
 targetEntityType: node
 bundle: islandora_object
-mode: default
+mode: repository_item_collection_description
 content:
-  addtoany:
-    weight: 1
+  field_description:
+    type: basic_string
+    weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  repository_item_content_blocks_classification:
-    weight: 2
-    region: content
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
   repository_item_content_blocks_entity_view_2:
@@ -69,19 +65,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  repository_item_content_blocks_metadata:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  addtoany: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true
   field_alternative_title: true
-  field_description: true
   field_display_hints: true
   field_edtf_date: true
   field_edtf_date_created: true
@@ -104,5 +95,7 @@ hidden:
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
+  repository_item_content_blocks_classification: true
+  repository_item_content_blocks_metadata: true
   solr_search_content_entity_view_1: true
   solr_search_content_entity_view_2: true

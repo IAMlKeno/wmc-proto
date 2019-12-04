@@ -34,4 +34,4 @@ reactions:
     id: alter_jsonld_type
     source_field: field_model
     saved: false
-weight: 0
+weight: 2

@@ -1,0 +1,15 @@
+uuid: 1c509b08-d2b8-4cbc-b437-2b4171cf975e
+langcode: en
+status: true
+dependencies: {  }
+name: representative_object_image_formatter
+label: 'Representative Object: Image Formatter'
+effects:
+  ebfb8785-f93f-4322-a7f1-078fca2f43ba:
+    uuid: ebfb8785-f93f-4322-a7f1-078fca2f43ba
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1174
+      height: 425
+      anchor: center-center

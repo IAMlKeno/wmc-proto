@@ -1,0 +1,10 @@
+uuid: 4c42b4cf-25e4-4ddf-be9f-82a0604e7bc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.representative_object_media
+label: 'Representative Object: Media'
+targetEntityType: media
+cache: true
