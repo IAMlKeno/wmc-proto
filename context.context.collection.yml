@@ -140,7 +140,7 @@ reactions:
         admin_label: ''
         context_mapping: {  }
         theme: dgi_i8_base
-        css_class: ''
+        css_class: dgi-header-max-height
         unique: 0
         context_id: collection
         uuid: fb50bc6d-885b-43e6-96de-3be4ae1bbee9
