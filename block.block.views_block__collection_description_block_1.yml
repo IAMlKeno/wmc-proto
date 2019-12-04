@@ -1,0 +1,31 @@
+uuid: c3b4a0d2-1e99-4fbf-95d8-a46186e82c10
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.collection_description
+    - blockgroup.block_group_content.collection_metadata_and_actions
+  module:
+    - block_class
+    - views
+    - blockgroup
+  theme:
+    - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: col-lg-6
+id: views_block__collection_description_block_1
+theme: dgi_i8_base
+region: collection_metadata_and_actions
+weight: 0
+provider: null
+plugin: 'views_block:collection_description-block_1'
+settings:
+  id: 'views_block:collection_description-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

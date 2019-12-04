@@ -1,8 +1,9 @@
-uuid: f372f601-5cda-40e6-8d0d-f2a58511302b
+uuid: 3197669b-6a9a-4689-a6ea-70d2d7cd3ce0
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.repository_item_collections
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_description
@@ -25,40 +26,14 @@ dependencies:
     module:
       - islandora_defaults
   module:
-    - field_group
     - user
-third_party_settings:
-  field_group:
-    group_metadata:
-      children:
-        - repository_item_content_blocks_metadata
-        - repository_item_content_blocks_classification
-      parent_name: ''
-      weight: 0
-      format_type: fieldset
-      format_settings:
-        label: Metadata
-        description: ''
-        id: ''
-        classes: metadata
-      label: Metadata
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
-id: node.islandora_object.default
+id: node.islandora_object.repository_item_collections
 targetEntityType: node
 bundle: islandora_object
-mode: default
+mode: repository_item_collections
 content:
-  addtoany:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  repository_item_content_blocks_classification:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   repository_item_content_blocks_entity_view_2:
     weight: 2
     region: content
@@ -69,12 +44,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  repository_item_content_blocks_metadata:
-    weight: 1
+  solr_search_content_entity_view_1:
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true
@@ -104,5 +80,7 @@ hidden:
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
-  solr_search_content_entity_view_1: true
+  repository_item_content_blocks_classification: true
+  repository_item_content_blocks_metadata: true
+  solr_search_content_entity_view_1_form: true
   solr_search_content_entity_view_2: true

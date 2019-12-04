@@ -1,0 +1,28 @@
+uuid: 744eaea3-d9bf-483b-852d-e0b47615e3a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - blockgroup
+  theme:
+    - dgi_i8_base
+  config:
+    - blockgroup.block_group_content.collection_metadata_and_actions
+third_party_settings:
+  block_class:
+    classes: col-lg-6
+id: tabs
+theme: dgi_i8_base
+region: collection_metadata_and_actions
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

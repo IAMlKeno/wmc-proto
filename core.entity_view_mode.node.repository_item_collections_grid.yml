@@ -1,0 +1,10 @@
+uuid: 296ef0de-1ae6-4e17-a3fe-801c7536c937
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.repository_item_collections_grid
+label: 'Repository Item: Collections Grid'
+targetEntityType: node
+cache: true

@@ -10,6 +10,7 @@ module:
   betterlogin: 0
   big_pipe: 0
   block: 0
+  block_class: 0
   block_content: 0
   blockgroup: 0
   breadcrumbs: 0
@@ -98,11 +99,13 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  path_alias: 0
   pdb: 0
   pdf: 0
   prepopulate: 0
   rdf: 0
   react_block: 0
+  request_data_conditions: 0
   responsive_image: 0
   rest: 0
   restui: 0
