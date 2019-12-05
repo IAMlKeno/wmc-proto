@@ -1452,7 +1452,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"display-links\">\r\n  <a href=\"[current-page:url]?page=[current-page:query:page]\">list</a>\r\n  <a href=\"[current-page:url]?display=grid&page=[current-page:query:page]\">Grid</a>\r\n</div>\r\n"
+            value: "<div class=\"display-links\">\r\n  <a href=\"[current-page:url]?display=list&page=[current-page:query:page]\">list</a>\r\n  <a href=\"[current-page:url]?page=[current-page:query:page]\">Grid</a>\r\n</div>"
             format: full_html
           plugin_id: text
         entity_block:
@@ -1933,7 +1933,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"display-links\">\r\n  <a href=\"[current-page:url]?page=[current-page:query:page]\">list</a>\r\n  <a href=\"[current-page:url]?display=grid&page=[current-page:query:page]\">Grid</a>\r\n</div>\r\n"
+            value: "<div class=\"display-links\">\r\n  <a href=\"[current-page:url]?display=list&page=[current-page:query:page]\">list</a>\r\n  <a href=\"[current-page:url]?page=[current-page:query:page]\">Grid</a>\r\n</div>"
             format: full_html
           plugin_id: text
         entity_block:

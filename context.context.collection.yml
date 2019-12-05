@@ -36,8 +36,8 @@ conditions:
     conditions:
       -
         name: display
-        op: not_set
-        value: ''
+        op: equals
+        value: list
     require_all_params: 1
     negate: 0
     uuid: af9537e3-5ca8-4cbc-b53e-f2931d5f5808

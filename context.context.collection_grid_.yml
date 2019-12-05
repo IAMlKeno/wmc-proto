@@ -33,7 +33,7 @@ conditions:
     conditions:
       -
         name: display
-        op: equals
+        op: not_set
         value: grid
     require_all_params: 1
     negate: 0
