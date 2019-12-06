@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.solr_search_content
   module:
+    - request_data_conditions
     - views
   theme:
     - dgi_i8_base
@@ -19,5 +20,29 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: Islandora
-visibility: {  }
+  views_label: 'Digital Repository'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
