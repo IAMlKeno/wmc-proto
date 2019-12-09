@@ -2695,7 +2695,7 @@ display:
         filters: false
         filter_groups: false
         exposed_form: false
-        header: true
+        header: false
         cache: false
         arguments: false
       row:
@@ -3316,6 +3316,120 @@ display:
         groups:
           1: AND
       arguments: {  }
+      header:
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] results</h2>\r\n  </div>"
+            format: basic_html
+          plugin_id: text
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"[view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>\r\n"
+            format: full_html
+          plugin_id: text
+        display_link:
+          id: display_link
+          table: views
+          field: display_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          display_id: page_2
+          label: List
+          plugin_id: display_link
+        display_link_1:
+          id: display_link_1
+          table: views
+          field: display_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          display_id: page_1
+          label: Grid
+          plugin_id: display_link
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: datecreated_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_1:
+          id: entity_block_1
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: linkedagent_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_2:
+          id: entity_block_2
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: memberof_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_3:
+          id: entity_block_3
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: model_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_4:
+          id: entity_block_4
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: subject_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
     cache_metadata:
       contexts:
         - 'languages:language_content'
