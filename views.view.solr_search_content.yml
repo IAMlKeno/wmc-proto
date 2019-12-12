@@ -15,6 +15,7 @@ dependencies:
     - block.block.subjectgrid
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_model
+    - node.type.islandora_object
     - search_api.index.default_solr_index
   module:
     - controlled_access_terms
@@ -1717,11 +1718,11 @@ display:
           element_default_classes: true
           empty: ''
           hide_empty: false
-          empty_zero: true
+          empty_zero: false
           hide_alter_empty: false
-          view: media_content_thumbnail
+          view: content_thumbnails_from_media_use
           display: block_1
-          arguments: '{{ fields.nid }}'
+          arguments: '{{ raw_fields.nid }}'
           plugin_id: view
         title:
           id: title
@@ -2061,55 +2062,10 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: search_api_options
-        nid_2:
-          id: nid_2
-          table: search_api_index_default_solr_index
-          field: nid_2
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: 'not empty'
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: search_api_numeric
       filter_groups:
         operator: AND
         groups:
           1: AND
-          2: AND
       arguments:
         nid_2:
           id: nid_2
@@ -2133,11 +2089,16 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: false
+          specify_validation: true
           validate:
-            type: none
+            type: 'entity:node'
             fail: 'not found'
-          validate_options: {  }
+          validate_options:
+            bundles:
+              islandora_object: islandora_object
+            access: true
+            operation: view
+            multiple: 0
           break_phrase: false
           not: false
           plugin_id: search_api
@@ -2295,9 +2256,9 @@ display:
           hide_empty: false
           empty_zero: true
           hide_alter_empty: false
-          view: media_content_thumbnail
+          view: content_thumbnails_from_media_use
           display: block_1
-          arguments: '{{ fields.nid }}'
+          arguments: '{{ raw_fields.nid }}'
           plugin_id: view
         title:
           id: title
