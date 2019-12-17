@@ -1,7 +1,7 @@
 uuid: 5d4a4b76-5ee5-46ca-8f08-05769347c712
-name: 'Islandora 8'
-mail: admin@example.com
-slogan: ''
+name: discoverygarden
+mail: noreply+demo@discoverygarden.ca
+slogan: 'Find. Protect. Share. '
 page:
   403: ''
   404: ''
