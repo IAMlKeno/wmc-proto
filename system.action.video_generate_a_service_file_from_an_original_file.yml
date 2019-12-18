@@ -16,7 +16,7 @@ configuration:
   source_term_uri: 'http://pcdm.org/use#OriginalFile'
   derivative_term_uri: 'http://pcdm.org/use#ServiceFile'
   mimetype: video/mp4
-  args: '-loglevel warning'
+  args: '-loglevel warning -movflags faststart'
   destination_media_type: video
   scheme: public
   path: '[date:custom:Y]-[date:custom:m]/[node:nid]-[term:name].mp4'
