@@ -10,8 +10,14 @@ effects:
   1e187f47-9073-4cee-a090-ef762b0ad4da:
     uuid: 1e187f47-9073-4cee-a090-ef762b0ad4da
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 48
       height: 48
       anchor: center-center
+  a5bfc82c-12a3-4d1e-8e64-5b0fbc8a01c3:
+    uuid: a5bfc82c-12a3-4d1e-8e64-5b0fbc8a01c3
+    id: image_convert
+    weight: -10
+    data:
+      extension: jpeg
