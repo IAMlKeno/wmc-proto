@@ -5,6 +5,12 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_corp_alt_name
     - taxonomy.vocabulary.corporate_body
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: K-bS8JMYTTIFVjkUNLJXnemZKNSx18oX_8W6XNy5DNc
 id: taxonomy_term.corporate_body.field_corp_alt_name

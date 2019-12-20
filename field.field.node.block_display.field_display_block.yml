@@ -5,6 +5,12 @@ dependencies:
   config:
     - field.storage.node.field_display_block
     - node.type.block_display
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: node.block_display.field_display_block
 field_name: field_display_block
 entity_type: node

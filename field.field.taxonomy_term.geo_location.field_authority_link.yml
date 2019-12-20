@@ -7,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.geo_location
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: XUFzv8sw4FtTc9aJ-fqQkCkZdD0vbQwg6tu5b30sPZI
 id: taxonomy_term.geo_location.field_authority_link

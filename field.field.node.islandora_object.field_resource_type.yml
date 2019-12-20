@@ -6,6 +6,12 @@ dependencies:
     - field.storage.node.field_resource_type
     - node.type.islandora_object
     - taxonomy.vocabulary.resource_types
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: FsQFpgp2cpLBMyOnHmUA5xlWA9HiAC4qPUkcK2O2jzc
 id: node.islandora_object.field_resource_type

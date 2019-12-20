@@ -8,6 +8,12 @@ dependencies:
   enforced:
     module:
       - islandora_defaults
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: 'Add container'
+    custom_remove: ''
 _core:
   default_config_hash: v20YaVtVj46zHNe2jXTgkFAVVLS2UcyzL9Pw1ng9038
 id: node.islandora_object.field_member_of

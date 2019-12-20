@@ -5,6 +5,12 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_geo_broader
     - taxonomy.vocabulary.geo_location
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: OuZUfTGVgZkChu7PTyGwgrGH419YKUvnR5d1-WpZIvo
 id: taxonomy_term.geo_location.field_geo_broader

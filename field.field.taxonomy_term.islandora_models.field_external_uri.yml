@@ -6,7 +6,12 @@ dependencies:
     - field.storage.taxonomy_term.field_external_uri
     - taxonomy.vocabulary.islandora_models
   module:
+    - custom_add_another
     - link
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: 7U-ySHLZEnQciUDJxVyLw9AOkEwHMLaRvBeHk4meAaU
 id: taxonomy_term.islandora_models.field_external_uri

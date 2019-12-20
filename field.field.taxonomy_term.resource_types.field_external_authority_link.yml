@@ -7,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.resource_types
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: yX-2NV2eCywIvNG7PQmu7OEvIfsD-hIiUjZl6PwTbg0
 id: taxonomy_term.resource_types.field_external_authority_link

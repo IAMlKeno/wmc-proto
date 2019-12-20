@@ -8,6 +8,12 @@ dependencies:
   enforced:
     module:
       - islandora_core_feature
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: gn7p6M0YOBKc6By22FhqBtqsJ4TDeBzu4QRZBdF4t3U
 id: media.audio.field_mime_type

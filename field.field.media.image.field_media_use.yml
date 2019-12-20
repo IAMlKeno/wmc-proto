@@ -6,6 +6,12 @@ dependencies:
     - field.storage.media.field_media_use
     - media.type.image
     - taxonomy.vocabulary.islandora_media_use
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: czUe39uQUc4HK-JU_cy-dPIMCfNQJdvd-ln8rRNySEs
 id: media.image.field_media_use

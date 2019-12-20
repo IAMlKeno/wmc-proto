@@ -7,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.corporate_body
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: 0it-3tma5jMJ9Xrj2pNeqCBkcy3pwDPsLI5bvba5-h0
 id: taxonomy_term.corporate_body.field_cat_date_end
