@@ -7,6 +7,11 @@ dependencies:
     - node.type.islandora_object
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: 'Add date created'
+    custom_remove: ''
 _core:
   default_config_hash: xzMbQMCYwzONMH19PCAdeh49qr4y5oWmj0yK_KyjQ6U
 id: node.islandora_object.field_edtf_date_created

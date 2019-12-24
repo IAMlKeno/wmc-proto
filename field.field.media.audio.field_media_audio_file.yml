@@ -9,7 +9,12 @@ dependencies:
     module:
       - islandora_core_feature
   module:
+    - custom_add_another
     - file
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: Dxz-WEngY38KoRu0t1OD9c63Yysfs3GDAf2wndSH408
 id: media.audio.field_media_audio_file

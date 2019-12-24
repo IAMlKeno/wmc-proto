@@ -7,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.subject
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: FxxCREY_FA7NclXDepm8WCJYlCr-u2sPeevoXnhJzhM
 id: taxonomy_term.subject.field_authority_link

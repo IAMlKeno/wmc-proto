@@ -8,6 +8,12 @@ dependencies:
   enforced:
     module:
       - islandora_core_feature
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: zH3Rn7ZU6uSjbpw7u7YomCMvji5rI2Y19zJP0tJP1D0
 id: media.video.field_file_size

@@ -9,6 +9,11 @@ dependencies:
     - taxonomy.vocabulary.person
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: P747iMcB3of4ZQOlVFRwhID75h70ffJxI_sj5ii_9Pw
 id: taxonomy_term.corporate_body.field_relationships

@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_about_top_left
     - node.type.about
   module:
+    - custom_add_another
     - text
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: node.about.field_about_top_left
 field_name: field_about_top_left
 entity_type: node

@@ -10,7 +10,12 @@ dependencies:
       - media
       - islandora_core_feature
   module:
+    - custom_add_another
     - file
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: nvfDHoMQmVfRuyJ3o-0vnC0FIqJAvzYgtteAXWxKkp0
 id: media.file.field_media_file

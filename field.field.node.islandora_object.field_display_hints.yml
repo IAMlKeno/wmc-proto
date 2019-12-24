@@ -9,6 +9,12 @@ dependencies:
   enforced:
     module:
       - islandora_defaults
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: 0PTvIS3-VovLt_PMKWjQzCAYv1790rkdBbqaL3ER-VM
 id: node.islandora_object.field_display_hints

@@ -7,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.family
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: PO5hZdw7UuTVL9G0fmY3AGUiqFoeigwbKYT8K9CXQC8
 id: taxonomy_term.family.field_cat_date_end

@@ -6,6 +6,12 @@ dependencies:
     - field.storage.media.field_media_use
     - media.type.video
     - taxonomy.vocabulary.islandora_media_use
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: edwWb7GuvSOr4MWenMMVfLPyvKMoAhxHwjGCpeKO5GA
 id: media.video.field_media_use

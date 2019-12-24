@@ -7,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.person
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: NSffS6bRr3LMgZZa6iioJC6VJ5rR8bPqJDAh7qBGFmM
 id: taxonomy_term.person.field_cat_date_begin

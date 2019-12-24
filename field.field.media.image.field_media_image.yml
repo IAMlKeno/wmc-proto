@@ -10,7 +10,12 @@ dependencies:
       - media
       - islandora_core_feature
   module:
+    - custom_add_another
     - image
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 _core:
   default_config_hash: idm-WOGrZKncw6SH8HGFJ6IzrgFpS0ifbdaK1x-81SA
 id: media.image.field_media_image
