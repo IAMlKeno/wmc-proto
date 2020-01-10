@@ -13,6 +13,7 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'access sitemap'
   - 'create field_display_block'
   - 'display eu cookie compliance popup'
   - 'edit field_display_block'
