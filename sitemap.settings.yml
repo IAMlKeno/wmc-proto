@@ -8,15 +8,15 @@ show_titles: true
 show_books: {  }
 books_expanded: true
 show_menus:
-  account: account
+  contribute: contribute
   dgi-header: dgi-header
   follow: follow
-  footer: footer
   legal: legal
+  main: main
+  account: '0'
   admin: '0'
-  contribute: '0'
   explore: '0'
-  main: '0'
+  footer: '0'
   tools: '0'
 show_menus_hidden: false
 show_vocabularies:

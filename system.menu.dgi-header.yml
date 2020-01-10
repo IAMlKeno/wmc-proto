@@ -1,7 +1,12 @@
 uuid: 5f046509-fe15-46ca-bc1a-3b22995c6ecb
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - sitemap
+third_party_settings:
+  sitemap:
+    sitemap_display_name: 'Site Navigation'
 _core:
   default_config_hash: 9K9gZV3b_8DiI5qDrGYlQlf9bZQ5QL4XYyuBRn2xALc
 id: dgi-header
