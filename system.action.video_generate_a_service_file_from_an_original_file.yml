@@ -18,5 +18,5 @@ configuration:
   mimetype: video/mp4
   args: '-loglevel warning -movflags faststart'
   destination_media_type: video
-  scheme: public
+  scheme: repo-service
   path: '[date:custom:Y]-[date:custom:m]/[node:nid]-[term:name].mp4'
