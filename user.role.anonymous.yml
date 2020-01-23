@@ -12,6 +12,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'access sitemap'
   - 'display eu cookie compliance popup'
   - 'execute graphql requests'
   - 'search content'

@@ -1,0 +1,68 @@
+langcode: en
+page_title: Sitemap
+message:
+  value: ''
+  format: restricted_html
+show_front: false
+show_titles: true
+show_books: {  }
+books_expanded: true
+show_menus:
+  contribute: contribute
+  dgi-header: dgi-header
+  follow: follow
+  legal: legal
+  main: main
+  account: '0'
+  admin: '0'
+  explore: '0'
+  footer: '0'
+  tools: '0'
+show_menus_hidden: false
+show_vocabularies:
+  corporate_body: '0'
+  family: '0'
+  geo_location: '0'
+  islandora_access: '0'
+  islandora_display: '0'
+  islandora_media_use: '0'
+  islandora_models: '0'
+  person: '0'
+  resource_types: '0'
+  subject: '0'
+  tags: '0'
+show_description: true
+show_count: true
+vocabulary_show_links: false
+vocabulary_depth: -1
+term_threshold: 0
+forum_threshold: -1
+rss_front: rss.xml
+show_rss_links: 1
+rss_taxonomy: -1
+css: true
+order:
+  front: -50
+  vocabularies_corporate_body: -50
+  vocabularies_subject: -50
+  vocabularies_resource_types: -50
+  vocabularies_person: -50
+  vocabularies_islandora_models: -50
+  vocabularies_islandora_media_use: -50
+  vocabularies_islandora_display: -50
+  vocabularies_islandora_access: -50
+  vocabularies_geo_location: -50
+  vocabularies_family: -50
+  menus_tools: -50
+  menus_account: -50
+  menus_main: -50
+  menus_legal: -50
+  menus_footer: -50
+  menus_follow: -50
+  menus_explore: -50
+  menus_dgi-header: -50
+  menus_contribute: -50
+  menus_admin: -50
+  vocabularies_tags: -50
+_core:
+  default_config_hash: f4sH8CGbEMFQXKFoGeaHbmIP_f6cOTi02EeFhHSbYyo
