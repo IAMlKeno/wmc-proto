@@ -41,6 +41,7 @@ module:
   default_content: 0
   dgi_header: 0
   dgi_i8_helper: 0
+  dgi_i8_helper_flysystem_s3: 0
   dgi_react_components: 0
   diff: 0
   dynamic_page_cache: 0
