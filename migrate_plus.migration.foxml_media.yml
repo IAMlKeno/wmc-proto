@@ -1,0 +1,102 @@
+uuid: 852139fb-8e8b-4879-a5ae-d256686897b7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - dgi_migrate
+_core:
+  default_config_hash: ByKyGzKQs0IV42cbooJayI6MJLKMhPI0e_7PzU9AxJk
+id: foxml_media
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: foxml_to_nodes
+label: 'FOXML to media entities'
+source:
+  plugin: dgi_migrate.source.migration
+  track_changes: true
+  migration: foxml_files
+process:
+  field_media_file:
+    plugin: dgi_migrate.load_entity
+    source: fid
+    entity_type: 'entity:file'
+  _parsed:
+    -
+      plugin: dgi_migrate.method
+      method: getFileUri
+      source: '@field_media_file'
+    -
+      plugin: dgi_migrate.parse_foxml
+  field_media_of:
+    -
+      plugin: migration_lookup
+      migration: foxml_nodes
+      source: fid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+    -
+      plugin: extract
+      index:
+        - 0
+    -
+      plugin: skip_on_empty
+      method: row
+    -
+      plugin: dgi_migrate.load_entity
+      entity_type: 'entity:node'
+  name:
+    plugin: dgi_migrate.subproperty
+    source: '@_parsed'
+    property: label
+  field_media_use:
+    -
+      plugin: default_value
+      default_value: 'http://pcdm.org/use#IntermediateFile'
+    -
+      plugin: entity_lookup
+      bundle_key: vid
+      bundle: islandora_media_use
+      value_key: field_external_uri
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_mime_type:
+    -
+      plugin: default_value
+      default_value: application/xml
+  created:
+    -
+      plugin: dgi_migrate.subproperty
+      source: '@_parsed'
+      property: createdDate
+    -
+      plugin: callback
+      callable: strtotime
+  changed:
+    -
+      plugin: dgi_migrate.subproperty
+      source: '@_parsed'
+      property: lastModifiedDate
+    -
+      plugin: callback
+      callable: strtotime
+  status:
+    -
+      plugin: default_value
+      default_value: 1
+  uid:
+    -
+      plugin: default_value
+      source: shared/default_uid
+      default_value: 0
+destination:
+  plugin: 'entity:media'
+  default_bundle: file
+migration_dependencies:
+  required:
+    - foxml_nodes
+    - foxml_files

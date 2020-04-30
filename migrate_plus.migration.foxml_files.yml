@@ -1,0 +1,72 @@
+uuid: d74f11ed-e097-4bb3-92a3-13087ba2a92a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - dgi_migrate
+_core:
+  default_config_hash: A-4BVqOTIzbPF7fV_VyeJr9dEFs6eaqIRmx65hL-kMU
+id: foxml_files
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: foxml_to_nodes
+label: 'FOXML to file entities'
+source:
+  plugin: directory
+  track_changes: true
+  path: 'foxml-migration-source://'
+  cache_counts: true
+process:
+  uri: path
+  _validate:
+    -
+      plugin: callback
+      callable: is_writable
+      source: '@uri'
+    -
+      plugin: dgi_migrate.process.log
+      template: 'Should not be writable... is it? :value'
+      level: 4
+    -
+      plugin: skip_on_value
+      value: true
+      method: row
+  _parsed:
+    plugin: dgi_migrate.parse_foxml
+    source: path
+  created:
+    -
+      plugin: dgi_migrate.subproperty
+      source: '@_parsed'
+      property: createdDate
+    -
+      plugin: callback
+      callable: strtotime
+  changed:
+    -
+      plugin: dgi_migrate.subproperty
+      source: '@_parsed'
+      property: lastModifiedDate
+    -
+      plugin: callback
+      callable: strtotime
+  status:
+    -
+      plugin: default_value
+      default_value: 1
+  uid:
+    -
+      plugin: default_value
+      source: shared/default_uid
+      default_value: 0
+  filemime:
+    -
+      plugin: default_value
+      default_value: application/xml
+destination:
+  plugin: 'entity:file'
+  validate: true
+migration_dependencies: null

@@ -1,0 +1,131 @@
+uuid: c5bfbf57-73b3-40a0-984a-2cd29980bafc
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - dgi_migrate
+_core:
+  default_config_hash: jEA75KunW4t5qsnhs-D14E-7SmOWah4BPnQJsMy4X-k
+id: content_media
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: foxml_to_nodes
+label: 'FOXML to content entities'
+source:
+  plugin: dgi_migrate.source.migration
+  track_changes: true
+  migration: foxml_files
+process:
+  field_media_of/target_id:
+    -
+      plugin: migration_lookup
+      migration: foxml_nodes
+      source: fid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+    -
+      plugin: extract
+      index:
+        - 0
+    -
+      plugin: skip_on_empty
+      method: row
+  _file_id:
+    -
+      plugin: migration_lookup
+      migration: content_files
+      source: fid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+  _file:
+    plugin: dgi_migrate.load_entity
+    source: '@_file_id'
+    entity_type: 'entity:file'
+  _parsed:
+    -
+      plugin: dgi_migrate.load_entity
+      source: fid
+      entity_type: 'entity:file'
+    -
+      plugin: dgi_migrate.method
+      method: getFileUri
+    -
+      plugin: dgi_migrate.parse_foxml
+  _models:
+    -
+      plugin: dgi_migrate.method
+      source: '@_parsed'
+      method: models
+    -
+      plugin: skip_on_empty
+      method: row
+  name:
+    plugin: dgi_migrate.subproperty
+    property: label
+    source: '@_parsed'
+  field_media_audio_file: '@_file'
+  field_media_file: '@_file'
+  field_media_image/target_id: '@_file_id'
+  field_media_image/alt: '@name'
+  field_media_video_file: '@_file'
+  bundle:
+    -
+      plugin: static_map
+      source: '@_models'
+      bypass: false
+      map:
+        'info:fedora/islandora:sp_basic_image': image
+        'info:fedora/islandora:sp_large_image_cmodel': image
+        'info:fedora/ir:citationCModel': file
+        'info:fedora/islandora:sp_pdf': file
+        'info:fedora/islandora:sp_videoCModel': video
+        'info:fedora/islandora:sp-audioCModel': audio
+    -
+      plugin: extract
+      index:
+        - 0
+  field_media_use:
+    -
+      plugin: default_value
+      default_value: 'http://pcdm.org/use#OriginalFile'
+    -
+      plugin: entity_lookup
+      bundle_key: vid
+      bundle: islandora_media_use
+      value_key: field_external_uri
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_mime_type:
+    -
+      plugin: dgi_migrate.method
+      method: getMimeType
+      source: '@_file'
+  created:
+    -
+      plugin: callback
+      callable: time
+  changed: '@created'
+  status:
+    -
+      plugin: default_value
+      default_value: 1
+  uid:
+    -
+      plugin: dgi_migrate.method
+      method: getOwnerId
+      source: '@_file'
+destination:
+  plugin: 'entity:media'
+  default_bundle: file
+migration_dependencies:
+  required:
+    - foxml_nodes
+    - foxml_files
+    - content_files

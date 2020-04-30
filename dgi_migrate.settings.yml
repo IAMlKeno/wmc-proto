@@ -1,0 +1,4 @@
+openssl_executable: openssl
+spool_dir: 'temporary://'
+_core:
+  default_config_hash: d5VhXJt2L1wnYlJ0tVsg7ArrkRAExUrlYKrOreNDaV0
