@@ -1,0 +1,18 @@
+uuid: 4971a7de-8391-4aae-a0b2-160ed38216c1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - dgi_migrate
+_core:
+  default_config_hash: Uu6DHSA5Kb4CKqqPKMSSNnLJGUPFQpw25oaj3bZwRZI
+id: foxml_to_nodes
+label: 'FOXML to Islandora Repository Object nodes'
+description: 'Mapping from Fedora 3 FOXML from I7 on to I8.'
+source_type: 'Directory of XML files'
+module: null
+shared_configuration:
+  source:
+    shared:
+      default_uid: 1

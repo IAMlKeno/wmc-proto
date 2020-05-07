@@ -18,6 +18,5 @@ source_configuration:
 field_map:
   name: name
   mimetype: field_mime_type
-  filesize: field_file_size
   width: field_width
   height: field_height
