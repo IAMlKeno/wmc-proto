@@ -1453,8 +1453,8 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] results</h2>\r\n  </div>"
-            format: basic_html
+            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] <span class=\"_plural-text\"></span></h2>\r\n  </div>\r\n<script>\r\n  var word = [view:total-rows] == 1 ? 'result' : 'results';\r\n  document.getElementsByClassName('_plural-text')[0].innerHTML = word;\r\n</script>"
+            format: full_html
           plugin_id: text
         area_2:
           id: area_2
@@ -1934,8 +1934,8 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] results</h2>\r\n  </div>"
-            format: basic_html
+            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] <span class=\"_plural-text\"</span></h2>\r\n  </div>\r\n<script>\r\n  var word = [view:total-rows] == 1 ? 'result' : 'results';\r\n  document.getElementsByClassName('_plural-text')[0].innerHTML = word;\r\n</script>"
+            format: full_html
           plugin_id: text
         area_2:
           id: area_2
@@ -2468,8 +2468,8 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] results</h2>\r\n  </div>"
-            format: basic_html
+            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] <span class=\"_plural-text\"></span></h2>\r\n  </div>\r\n<script>\r\n  var word = [view:total-rows] == 1 ? 'result' : 'results';\r\n  document.getElementsByClassName('_plural-text')[0].innerHTML = word;\r\n</script>"
+            format: full_html
           plugin_id: text
         area:
           id: area
@@ -3288,8 +3288,8 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] results</h2>\r\n  </div>"
-            format: basic_html
+            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] <span class=\"_plural-text\"></span></h2>\r\n  </div>\r\n<script>\r\n  var word = [view:total-rows] == 1 ? 'result' : 'results';\r\n  document.getElementsByClassName('_plural-text')[0].innerHTML = word;\r\n</script>"
+            format: full_html
           plugin_id: text
         area:
           id: area
