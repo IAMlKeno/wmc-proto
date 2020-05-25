@@ -9,11 +9,12 @@ dependencies:
     - field.field.media.file.field_media_of
     - field.field.media.file.field_media_use
     - field.field.media.file.field_mime_type
+    - field.field.media.file.field_original_name
     - media.type.file
   module:
     - file
 _core:
-  default_config_hash: 4IvggE8oYmWHSc5cJSI4Wr8_0gspviIvNbfty4vvN5s
+  default_config_hash: 5HGHWtGLH5W_p2zLKU2NNlbvyyYHz1U9hUIxVUUZdjA
 id: media.file.default
 targetEntityType: media
 bundle: file
@@ -36,6 +37,11 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
+  field_gemini_uri:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_media_file:
     label: visually_hidden
     settings:
@@ -68,6 +74,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_original_name:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   name:
     type: string
     weight: 0

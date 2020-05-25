@@ -12,6 +12,7 @@ dependencies:
     - media
     - taxonomy
     - user
+    - views_autocomplete_filters
 _core:
   default_config_hash: PwHfj8LVZBG0Ed_tSvp_wJEJvp7NphZ_H28h0sDu8Uk
 id: pdfjs_media_evas

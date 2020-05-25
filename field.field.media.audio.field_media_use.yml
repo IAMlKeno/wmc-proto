@@ -13,13 +13,13 @@ third_party_settings:
     custom_add_another: ''
     custom_remove: ''
 _core:
-  default_config_hash: ZSdgdnlaHn9SQJzAd4ZgJqQ8uCUA3wf4OQNRxaPL4d0
+  default_config_hash: C5NjuB4IRbBnEpI-vmqLBitkXyR5GqMMjt-Zn39VGyk
 id: media.audio.field_media_use
 field_name: field_media_use
 entity_type: media
 bundle: audio
 label: 'Media Use'
-description: ''
+description: 'Defined by Portland Common Data Model: Use Extension https://pcdm.org/2015/05/12/use. ''Original File'' will trigger creation of derivatives.'
 required: false
 translatable: false
 default_value: {  }

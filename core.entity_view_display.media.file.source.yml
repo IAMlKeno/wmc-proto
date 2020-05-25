@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.source
+    - field.field.media.file.field_access_terms
     - field.field.media.file.field_file_size
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_of
     - field.field.media.file.field_media_use
     - field.field.media.file.field_mime_type
+    - field.field.media.file.field_original_name
     - media.type.file
   enforced:
     module:
@@ -16,7 +18,7 @@ dependencies:
   module:
     - file
 _core:
-  default_config_hash: sGc7pGybBKeXzDOOiQNzB7NggzXRakKJ-WqkIJvW5jY
+  default_config_hash: z2VqdgGMguFn_u-N2KgXxb67fxyEjesU-Yn7nyLFG9E
 id: media.file.source
 targetEntityType: media
 bundle: file
@@ -39,6 +41,7 @@ hidden:
   field_media_of: true
   field_media_use: true
   field_mime_type: true
+  field_original_name: true
   langcode: true
   name: true
   thumbnail: true

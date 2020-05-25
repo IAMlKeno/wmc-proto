@@ -10,6 +10,7 @@ dependencies:
     - field.field.media.file.field_media_of
     - field.field.media.file.field_media_use
     - field.field.media.file.field_mime_type
+    - field.field.media.file.field_original_name
     - media.type.file
   enforced:
     module:
@@ -17,7 +18,7 @@ dependencies:
   module:
     - openseadragon
 _core:
-  default_config_hash: cJGM1LsJUaX9QZ7lnthD4rDotLsJQVC6MCLe6KkmEc0
+  default_config_hash: '-78UGWpsfXyTMx1xpGjziIAWC8LsIDT5K0-OJygDyPg'
 id: media.file.open_seadragon
 targetEntityType: media
 bundle: file
@@ -39,6 +40,7 @@ hidden:
   field_media_of: true
   field_media_use: true
   field_mime_type: true
+  field_original_name: true
   langcode: true
   name: true
   thumbnail: true

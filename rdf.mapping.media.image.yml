@@ -10,7 +10,7 @@ dependencies:
   module:
     - media
 _core:
-  default_config_hash: GqAfOOq_PIBSzjrzLvIavLq9a7hqRK47ELwUBgyx69k
+  default_config_hash: 4Tl_qytyaduLYtyvEHMOnnJG-dVhdMUzkjiFFWrXnnA
 id: media.image
 targetEntityType: media
 bundle: image
@@ -19,7 +19,7 @@ types:
 fieldMappings:
   name:
     properties:
-      - 'dc:title'
+      - 'dcterms:title'
       - 'rdf:label'
   created:
     properties:
@@ -42,6 +42,9 @@ fieldMappings:
     properties:
       - 'pcdm:fileOf'
     mapping_type: rel
+  field_original_name:
+    properties:
+      - 'premis3:originalName'
   field_tags:
     properties:
       - 'schema:additionalType'
@@ -52,3 +55,6 @@ fieldMappings:
   field_height:
     properties:
       - 'ebucore:height'
+  field_file_size:
+    properties:
+      - 'premis:hasSize'

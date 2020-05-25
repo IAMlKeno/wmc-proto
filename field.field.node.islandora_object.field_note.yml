@@ -1,0 +1,28 @@
+uuid: b6db9c01-fa74-485e-9692-09056bdf54a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_note
+    - node.type.islandora_object
+  module:
+    - custom_add_another
+    - text
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+_core:
+  default_config_hash: Aebshr3yHubH5IfL7kRp29DHbcOkh2yXDOouyvJWSSo
+id: node.islandora_object.field_note
+field_name: field_note
+entity_type: node
+bundle: islandora_object
+label: Note
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

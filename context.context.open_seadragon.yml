@@ -5,27 +5,27 @@ dependencies:
   module:
     - islandora
 _core:
-  default_config_hash: kwMmT03zqaT-gV5xzEksx0bosJ-m8a6Ui0XyeWTaX5g
+  default_config_hash: Da9SKh2OX1dNN8-V54Zrhcsnb5bNRwQanxqlujk9tzA
 name: open_seadragon
 label: 'Open Seadragon'
-group: Islandora
-description: 'Displays media using the Open Seadragon viewer'
+group: Display
+description: 'Open Seadragon viewer for Images'
 requireAllConditions: false
 disabled: false
 conditions:
   node_has_term:
     id: node_has_term
     negate: 0
-    uuid: dba449c3-4b9a-4428-8320-e6bd8f69eee2
     tids:
       -
         target_id: '35'
     context_mapping:
       node: '@node.node_route_context:node'
     uri: 'http://openseadragon.github.io'
+    logic: and
 reactions:
   view_mode_alter:
     id: view_mode_alter
     mode: node.open_seadragon
     saved: false
-weight: -1
+weight: -2

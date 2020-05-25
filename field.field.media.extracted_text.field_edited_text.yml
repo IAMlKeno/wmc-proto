@@ -1,0 +1,28 @@
+uuid: 1910c3a8-d531-4244-a785-b7b004a298f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_edited_text
+    - media.type.extracted_text
+  module:
+    - custom_add_another
+    - text
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+_core:
+  default_config_hash: PFEjmDTu5NiDBpIWn3uT7EbTugdW8f1WbzN5ND7k_PQ
+id: media.extracted_text.field_edited_text
+field_name: field_edited_text
+entity_type: media
+bundle: extracted_text
+label: 'Edited Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

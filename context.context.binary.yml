@@ -8,27 +8,27 @@ dependencies:
   module:
     - islandora
 _core:
-  default_config_hash: 0M1JtrmkLv2eeGuIe7zMV4s2sVRFUE31uM0Q5QOMwYo
+  default_config_hash: oGkVaBYKYomHuP2Z9rfQhrLtOz__N6ss2_GoosejYLk
 name: binary
 label: Binary
-group: Islandora
-description: 'Islandora binary objects'
+group: Display
+description: 'Binary Object Display'
 requireAllConditions: false
 disabled: false
 conditions:
   node_has_term:
     id: node_has_term
     negate: 0
-    uuid: f84aa317-a681-4a1e-8a40-2fe2b6868ea8
     tids:
       -
         target_id: '5'
     context_mapping:
       node: '@node.node_route_context:node'
     uri: 'http://purl.org/coar/resource_type/c_1843'
+    logic: and
 reactions:
   view_mode_alter:
     id: view_mode_alter
     mode: node.binary
     saved: false
-weight: -5
+weight: 0

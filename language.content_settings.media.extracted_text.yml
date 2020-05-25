@@ -1,0 +1,13 @@
+uuid: d8c0e8c6-da94-4f76-8357-00e91012d888
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.extracted_text
+_core:
+  default_config_hash: Sho24q3VnqeUBg62y66W5yjse20gWWa8_OO9xLUSmtI
+id: media.extracted_text
+target_entity_type_id: media
+target_bundle: extracted_text
+default_langcode: site_default
+language_alterable: false

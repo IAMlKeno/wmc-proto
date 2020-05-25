@@ -12,7 +12,7 @@ dependencies:
     - serialization
     - user
 _core:
-  default_config_hash: eiWvL2BGwgjvVyChL8eDE-4nC6DwpJPTvo_Xb8-RpS8
+  default_config_hash: Zwu8JUsBiYaxPko_9DbJJhA-ZZSGOm81I9XtT9NH3M4
 id: manage_members
 label: 'Manage members'
 module: views
@@ -296,7 +296,7 @@ display:
       path: node/%node/members
       menu:
         type: tab
-        title: Members
+        title: Children
         description: ''
         expanded: false
         parent: ''

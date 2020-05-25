@@ -10,11 +10,12 @@ dependencies:
     - field.field.media.file.field_media_of
     - field.field.media.file.field_media_use
     - field.field.media.file.field_mime_type
+    - field.field.media.file.field_original_name
     - media.type.file
   module:
     - pdf
 _core:
-  default_config_hash: MXPSFlR8xoxcezuwsRjgnDlx8Q5Z1x8Oikklf1BmQKA
+  default_config_hash: PZaIIWkXbfvvBYE9K8KmowscOHs80noZtxzo8AVn2Dc
 id: media.file.pdfjs
 targetEntityType: media
 bundle: file
@@ -43,6 +44,7 @@ hidden:
   field_media_of: true
   field_media_use: true
   field_mime_type: true
+  field_original_name: true
   langcode: true
   name: true
   thumbnail: true
