@@ -6,11 +6,14 @@ dependencies:
     - core.entity_view_mode.media.pdfjs
     - field.field.media.document.field_access_terms
     - field.field.media.document.field_file_size
+    - field.field.media.document.field_media_document
     - field.field.media.document.field_media_of
     - field.field.media.document.field_media_use
     - field.field.media.document.field_mime_type
     - field.field.media.document.field_original_name
     - media.type.document
+  module:
+    - pdf
 _core:
   default_config_hash: Ch-_aGJLI1hSTCXhjpjOVb5zZ39Z1KHd0pGHbU7Wn4E
 id: media.document.pdfjs
