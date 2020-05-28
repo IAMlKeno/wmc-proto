@@ -30,12 +30,14 @@ process:
   description: description
   field_external_uri: '@_encoded_uri'
   tid:
-    - plugin: entity_lookup
+    -
+      plugin: entity_lookup
       ignore_case: true
       source: '@_encoded_uri'
       entity_type: taxonomy_term
       value_key: field_external_uri
-    - plugin: skip_on_empty
+    -
+      plugin: skip_on_empty
       method: process
 destination:
   plugin: 'entity:taxonomy_term'
