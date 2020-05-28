@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.resource_types.field_authority_link
     - field.field.taxonomy_term.resource_types.field_external_authority_link
+    - field.field.taxonomy_term.resource_types.field_external_uri
     - taxonomy.vocabulary.resource_types
   module:
     - controlled_access_terms
@@ -33,4 +35,6 @@ content:
       target: _blank
     third_party_settings: {  }
 hidden:
+  field_authority_link: true
+  field_external_uri: true
   langcode: true
