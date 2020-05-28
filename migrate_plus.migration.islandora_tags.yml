@@ -5,6 +5,7 @@ dependencies:
   enforced:
     module:
       - islandora_core_feature
+      - migrate_plus
 _core:
   default_config_hash: 3ugHR5IP2Kjsq6B6ujB-y88les0uNW5pIUAcw97bMMY
 id: islandora_tags
@@ -21,12 +22,21 @@ source:
   keys:
     - external_uri
 process:
+  _encoded_uri:
+    plugin: urlencode
+    source: external_uri
   name: name
   vid: vid
   description: description
-  field_external_uri:
-    plugin: urlencode
-    source: external_uri
+  field_external_uri: '@_encoded_uri'
+  tid:
+    - plugin: entity_lookup
+      ignore_case: true
+      source: '@_encoded_uri'
+      entity_type: taxonomy_term
+      value_key: field_external_uri
+    - plugin: skip_on_empty
+      method: process
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies:
