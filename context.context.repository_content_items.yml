@@ -57,6 +57,7 @@ conditions:
     uri: 'http://purl.org/dc/dcmitype/Collection'
     context_mapping:
       node: '@node.node_route_context:node'
+    logic: and
 reactions:
   blocks:
     blocks:
