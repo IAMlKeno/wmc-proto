@@ -231,7 +231,6 @@ reactions:
     id: regions
     regions:
       classy: {  }
-      bartik: {  }
       seven: {  }
       stable: {  }
       adminimal_theme: {  }

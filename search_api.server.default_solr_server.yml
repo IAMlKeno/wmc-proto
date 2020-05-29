@@ -25,7 +25,8 @@ backend_config:
     scheme: http
     host: 127.0.0.1
     port: 8983
-    core: ISLANDORA
+    path: /
+    core: islandora8
     timeout: 5
     index_timeout: 10
     optimize_timeout: 15
@@ -34,11 +35,12 @@ backend_config:
     solr_version: ''
     http_method: AUTO
     jmx: false
+    solr_install_dir: ../../..
+  disabled_field_types: {  }
   retrieve_data: false
   highlight_data: false
   skip_schema_check: false
-  domain: generic
-  site_hash: true
   server_prefix: ''
+  domain: generic
   optimize: false
-  disabled_field_types: {  }
+  site_hash: true
