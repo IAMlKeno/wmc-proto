@@ -6,9 +6,9 @@ dependencies:
     - field.storage.media.field_media_file
     - field.storage.media.field_media_image
   module:
+    - dgi_i8_helper
     - file
     - image
-    - islandora_iiif
     - media
     - node
     - rest
@@ -356,6 +356,8 @@ display:
       tags:
         - 'config:field.storage.media.field_media_file'
         - 'config:field.storage.media.field_media_image'
+        - env
+        - extensions
   rest_export_1:
     display_plugin: rest_export
     id: rest_export_1
@@ -381,6 +383,10 @@ display:
             name:
               alias: ''
               raw_output: false
+      auth:
+        - basic_auth
+        - jwt_auth
+        - cookie
     cache_metadata:
       max-age: -1
       contexts:
@@ -391,3 +397,5 @@ display:
       tags:
         - 'config:field.storage.media.field_media_file'
         - 'config:field.storage.media.field_media_image'
+        - env
+        - extensions
