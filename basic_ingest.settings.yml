@@ -10,7 +10,7 @@ map:
     media_type: null
   -
     uri: 'https://schema.org/DigitalDocument'
-    media_type: file
+    media_type: document
     display_hints:
       - 'http://mozilla.github.io/pdf.js'
   -
@@ -33,4 +33,4 @@ map:
     uri: 'http://purl.org/coar/resource_type/c_12ce'
     media_type: video
 _core:
-  default_config_hash: axv9fJm-jYmCkyilE0ItDfSOZD1KL5IMcN5Qg1G2dRc
+  default_config_hash: 0BWMgM-enCumGuQmGAr74pzQl2w3Nnh7N9lRHW58_Y4
