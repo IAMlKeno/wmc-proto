@@ -1,11 +1,12 @@
+uuid: 02255d7f-31fc-41d9-8207-e67ba2373db4
 langcode: en
+status: true
+dependencies: {  }
 _core:
   default_config_hash: GbwamktrK8GXKxWeEk8m8o_PWXbPj2vOiFqIANDYIEc
 id: search_form_content
-uuid: 02255d7f-31fc-41d9-8207-e67ba2373db4
 label: 'Search Form (content tab)'
 selector: ''
-status: true
 minChar: 3
 autoSubmit: true
 autoRedirect: true
