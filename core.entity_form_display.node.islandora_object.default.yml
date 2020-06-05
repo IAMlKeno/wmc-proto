@@ -303,4 +303,24 @@ content:
       placeholder: ''
       match_limit: 10
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_classification: true
+  field_coordinates: true
+  field_coordinates_text: true
+  field_dewey_classification: true
+  field_edition: true
+  field_genre: true
+  field_geographic_subject: true
+  field_isbn: true
+  field_language: true
+  field_lcc_classification: true
+  field_local_identifier: true
+  field_note: true
+  field_oclc_number: true
+  field_physical_form: true
+  field_place_published: true
+  field_place_published_country: true
+  field_subjects_name: true
+  field_table_of_contents: true
+  field_temporal_subject: true
+  field_weight: true

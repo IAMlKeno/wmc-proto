@@ -10,7 +10,7 @@ map:
     media_type: null
   -
     uri: 'https://schema.org/DigitalDocument'
-    media_type: file
+    media_type: document
     display_hints:
       - 'http://mozilla.github.io/pdf.js'
   -
@@ -19,7 +19,18 @@ map:
     display_hints:
       - 'http://openseadragon.github.io'
   -
+    uri: 'http://id.loc.gov/ontologies/bibframe/part'
+    media_type: image
+    display_hints:
+      - 'http://openseadragon.github.io'
+  -
+    uri: 'https://schema.org/Book'
+    media_type: null
+  -
+    uri: 'https://schema.org/PublicationIssue'
+    media_type: null
+  -
     uri: 'http://purl.org/coar/resource_type/c_12ce'
     media_type: video
 _core:
-  default_config_hash: 6GYzgjx_5QIXnG6enLsvTdew6DTBZo8X8K5-sBbYjnw
+  default_config_hash: 0BWMgM-enCumGuQmGAr74pzQl2w3Nnh7N9lRHW58_Y4

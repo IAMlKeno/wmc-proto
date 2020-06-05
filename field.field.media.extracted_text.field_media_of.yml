@@ -1,0 +1,33 @@
+uuid: c82cf7a4-c020-4f5f-a8f7-8845c216ae56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_of
+    - media.type.extracted_text
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+_core:
+  default_config_hash: y9R5H1jor6fE99GN9mvpbOkNiq3_xWCt-ROho5REz2U
+id: media.extracted_text.field_media_of
+field_name: field_media_of
+entity_type: media
+bundle: extracted_text
+label: 'Media of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -12,7 +12,7 @@ dependencies:
     - serialization
     - user
 _core:
-  default_config_hash: eiWvL2BGwgjvVyChL8eDE-4nC6DwpJPTvo_Xb8-RpS8
+  default_config_hash: Zwu8JUsBiYaxPko_9DbJJhA-ZZSGOm81I9XtT9NH3M4
 id: manage_members
 label: 'Manage members'
 module: views
@@ -227,7 +227,19 @@ display:
           entity_type: node
           plugin_id: entity_operations
       filters: {  }
-      sorts: {  }
+      sorts:
+        field_weight_value:
+          id: field_weight_value
+          table: node__field_weight
+          field: field_weight_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: Weight
+          plugin_id: standard
       title: 'Manage members'
       header: {  }
       footer: {  }
@@ -296,7 +308,7 @@ display:
       path: node/%node/members
       menu:
         type: tab
-        title: Members
+        title: Children
         description: ''
         expanded: false
         parent: ''

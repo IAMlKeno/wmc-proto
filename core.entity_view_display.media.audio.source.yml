@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.source
+    - field.field.media.audio.field_access_terms
     - field.field.media.audio.field_file_size
     - field.field.media.audio.field_media_audio_file
     - field.field.media.audio.field_media_of
     - field.field.media.audio.field_media_use
     - field.field.media.audio.field_mime_type
+    - field.field.media.audio.field_original_name
     - media.type.audio
   enforced:
     module:
@@ -16,7 +18,7 @@ dependencies:
   module:
     - file
 _core:
-  default_config_hash: GfFDDy6q0EKmOsy72gL8zyNBAlNTdVaRNRja3hXfpBg
+  default_config_hash: tDCyYVpxmp1mDsORGEQYEKD7w9ouL0h8HzMl9SFjPYo
 id: media.audio.source
 targetEntityType: media
 bundle: audio
@@ -41,6 +43,7 @@ hidden:
   field_media_of: true
   field_media_use: true
   field_mime_type: true
+  field_original_name: true
   langcode: true
   name: true
   thumbnail: true

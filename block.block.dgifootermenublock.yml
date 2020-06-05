@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - react_block
+    - request_data_conditions
   theme:
     - dgi_i8_base
 id: dgifootermenublock
@@ -18,4 +19,28 @@ settings:
   provider: react_block
   label_display: '0'
   pdb_configuration: null
-visibility: {  }
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

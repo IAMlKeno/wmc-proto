@@ -5,23 +5,24 @@ dependencies:
   module:
     - islandora
 _core:
-  default_config_hash: uiJT4Jf_lPSOOgkcU9EvuoVEqd0PWu3hBFrAOw0j9sk
+  default_config_hash: 0ipt7H647M0BLxXJETg1ktGLwD1IsWRJvjveTP-PCKA
 name: all_media
 label: 'All Media'
-group: Islandora
+group: Indexing
 description: 'All media, regardless of where it lives'
 requireAllConditions: false
 disabled: false
 conditions:
-  entity_bundle:
-    id: entity_bundle
+  islandora_entity_bundle:
+    id: islandora_entity_bundle
     bundles:
       audio: audio
+      document: document
+      extracted_text: extracted_text
       file: file
       image: image
       video: video
     negate: 0
-    uuid: ae973920-edc3-40c4-a1d6-f2039ede8648
     context_mapping:
       media: '@islandora.media_route_context_provider:media'
 reactions:
@@ -33,4 +34,4 @@ reactions:
     id: islandora_map_uri_predicate
     drupal_uri_predicate: 'iana:describedby'
     saved: false
-weight: -7
+weight: -8

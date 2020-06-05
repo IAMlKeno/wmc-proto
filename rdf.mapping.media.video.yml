@@ -10,7 +10,7 @@ dependencies:
   module:
     - media
 _core:
-  default_config_hash: bONjXQhdzf1bmQEc5BOuDwyeqBNz4oUk0-QaVQZ6TnQ
+  default_config_hash: 515HB3jhDCZuv_0K14VGKI6hiHebbV4angQpAFr2rl4
 id: media.video
 targetEntityType: media
 bundle: video
@@ -19,7 +19,7 @@ types:
 fieldMappings:
   name:
     properties:
-      - 'dc:title'
+      - 'dcterms:title'
       - 'rdf:label'
   created:
     properties:
@@ -42,7 +42,13 @@ fieldMappings:
     properties:
       - 'pcdm:fileOf'
     mapping_type: rel
+  field_original_name:
+    properties:
+      - 'premis3:originalName'
   field_tags:
     properties:
       - 'schema:additionalType'
     mapping_type: rel
+  field_file_size:
+    properties:
+      - 'premis:hasSize'

@@ -61,21 +61,41 @@ hidden:
   display_media_service_file: true
   field_access_terms: true
   field_alternative_title: true
+  field_classification: true
+  field_coordinates: true
+  field_coordinates_text: true
   field_description: true
+  field_dewey_classification: true
   field_display_hints: true
+  field_edition: true
   field_edtf_date: true
   field_edtf_date_created: true
   field_edtf_date_issued: true
   field_extent: true
+  field_genre: true
+  field_geographic_subject: true
   field_identifier: true
+  field_isbn: true
+  field_language: true
+  field_lcc_classification: true
   field_linked_agent: true
+  field_local_identifier: true
   field_member_of: true
   field_model: true
+  field_note: true
+  field_oclc_number: true
+  field_physical_form: true
   field_pid: true
+  field_place_published: true
+  field_place_published_country: true
   field_representative_image: true
   field_resource_type: true
   field_rights: true
   field_subject: true
+  field_subjects_name: true
+  field_table_of_contents: true
+  field_temporal_subject: true
+  field_weight: true
   langcode: true
   members_eva_entity_view_1: true
   openseadragon_media_evas_entity_view_1: true

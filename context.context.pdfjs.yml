@@ -5,10 +5,10 @@ dependencies:
   module:
     - islandora
 _core:
-  default_config_hash: L7r-lh2T-cZ5xs4cY8FjXqc-sZu80qUxEAFdPRxwpjw
+  default_config_hash: Tr1c1AVZTJkM0732yQxi9xQuBpCN7X6V_CWkbKwjrN8
 name: pdfjs
-label: PDFjs
-group: Islandora
+label: 'PDFjs Viewer'
+group: Display
 description: 'Displays file using the PDFjs viewer'
 requireAllConditions: false
 disabled: false
@@ -16,10 +16,10 @@ conditions:
   node_has_term:
     id: node_has_term
     negate: 0
-    uuid: f77caead-2e84-41e3-bcd5-11368f0342b2
     uri: 'http://mozilla.github.io/pdf.js'
     context_mapping:
       node: '@node.node_route_context:node'
+    logic: and
 reactions:
   view_mode_alter:
     id: view_mode_alter
