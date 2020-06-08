@@ -1,0 +1,19 @@
+uuid: 1dfcfa60-2567-4f53-9f30-0ff592c6f5a7
+langcode: en
+status: true
+dependencies: {  }
+id: base
+label: Base
+description: 'Base configuration which is likely to be configured.'
+folder: ''
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - core.menu.static_menu_link_overrides
+  - system.site
+  - system.theme
+  - system.theme.global
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
