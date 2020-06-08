@@ -7,6 +7,8 @@ label: Dev
 description: 'Development modules.'
 folder: /opt/www/d8_configs/default/splits/dev
 module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   devel: 0
   drupalmoduleupgrader: 0
   kint: 0
