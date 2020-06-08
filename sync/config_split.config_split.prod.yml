@@ -9,9 +9,9 @@ folder: /opt/www/d8_configs/default/splits/prod
 module:
   eu_cookie_compliance: 1001
 theme: {  }
-blacklist:
+blacklist: {  }
+graylist:
   - system.performance
-graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
