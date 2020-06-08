@@ -1,3 +1,4 @@
-split_configs: {  }
+split_configs:
+  - config_split.config_split.base
 _core:
   default_config_hash: WBzhc9pk0rN-n2UeGp-xalmZ1-ZAw8rb4dccmPbCbl0
