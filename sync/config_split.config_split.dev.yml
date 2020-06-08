@@ -8,6 +8,7 @@ description: 'Development modules.'
 folder: /opt/www/d8_configs/default/splits/dev
 module:
   devel: 0
+  drupalmoduleupgrader: 0
   kint: 0
 theme: {  }
 blacklist: {  }
@@ -15,4 +16,4 @@ graylist:
   - system.performance
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0
+weight: 1
