@@ -25,6 +25,7 @@ permissions:
   - 'edit own remote_video media'
   - 'edit own video media'
   - 'execute graphql requests'
+  - 'ingest with islandora spreadsheet ingest'
   - 'update media'
   - 'use text format basic_html'
   - 'use text format restricted_html'
