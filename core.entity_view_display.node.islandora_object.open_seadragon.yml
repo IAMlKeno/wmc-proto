@@ -69,8 +69,8 @@ hidden:
   field_subject: true
   langcode: true
   links: true
-  openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true

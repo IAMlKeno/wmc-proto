@@ -1,11 +1,12 @@
+uuid: fdc968a1-6ea2-47ea-831c-a7ff5023f13c
 langcode: en
+status: true
+dependencies: {  }
 _core:
   default_config_hash: 2lo0hIx3RV2AgnE1fkdPLRQcYWGamMyouBoe2OiYk24
 id: search_block
-uuid: fdc968a1-6ea2-47ea-831c-a7ff5023f13c
 label: 'Search Block'
 selector: ''
-status: true
 minChar: 3
 autoSubmit: true
 autoRedirect: true

@@ -1,11 +1,12 @@
+uuid: 66ccf6b0-8b77-4bad-a5a5-a335ece6cfe7
 langcode: en
+status: true
+dependencies: {  }
 _core:
   default_config_hash: g9NCIjKoz0Dn_IvvhopquSEzIXLlP7zRFEy_27ZxZYA
 id: search_form_users
-uuid: 66ccf6b0-8b77-4bad-a5a5-a335ece6cfe7
 label: 'Search Form (users tab)'
 selector: ''
-status: true
 minChar: 3
 autoSubmit: true
 autoRedirect: true
