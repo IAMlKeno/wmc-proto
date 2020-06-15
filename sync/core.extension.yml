@@ -19,7 +19,9 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_filter: 0
   config_override: 0
+  config_split: 0
   config_translation: 0
   config_update: 0
   contact: 0
@@ -39,6 +41,7 @@ module:
   dblog: 0
   dgi_header: 0
   dgi_i8_helper: 0
+  dgi_i8_helper_config_split_exporter: 0
   dgi_i8_helper_flysystem_s3: 0
   dgi_i8_helper_standard_workaround: 0
   dgi_migrate: 0
@@ -157,7 +160,6 @@ module:
   content_translation: 10
   views: 10
   minimal: 1000
-  eu_cookie_compliance: 1001
 theme:
   stable: 0
   classy: 0

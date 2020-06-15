@@ -1,0 +1,17 @@
+uuid: a1aafe3a-9491-4322-aad1-a5cd14259c58
+langcode: en
+status: true
+dependencies: {  }
+id: prod
+label: Prod
+description: 'Modules to and settings for production envs.'
+folder: /opt/www/d8_configs/default/splits/prod
+module:
+  eu_cookie_compliance: 1001
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.performance
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
