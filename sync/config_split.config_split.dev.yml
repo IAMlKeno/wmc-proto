@@ -13,7 +13,6 @@ module:
   config_override_warn: 0
   devel: 0
   drupalmoduleupgrader: 0
-  kint: 0
 theme: {  }
 blacklist: {  }
 graylist:
