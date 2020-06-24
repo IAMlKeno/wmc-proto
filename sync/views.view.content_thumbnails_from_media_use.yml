@@ -251,7 +251,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<a href="/node/{{ raw_arguments.field_media_of_target_id }}" title="Islandora content (missing thumbnail)"><img src="/themes/custom/dgi_i8_base/images/missing_image.png"></img></a>'
+            value: '<a href="/node/{{ raw_arguments.field_media_of_target_id }}" title="Islandora content (missing thumbnail)"><img src="/themes/contrib/dgi_i8_base/images/missing_image.png"></img></a>'
             format: basic_html
           plugin_id: text
       relationships:
