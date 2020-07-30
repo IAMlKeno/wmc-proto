@@ -14,7 +14,6 @@ module:
   blockgroup: 0
   breadcrumbs: 0
   breakpoint: 0
-  cas: 0
   ckeditor: 0
   clamav: 0
   color: 0
@@ -59,7 +58,6 @@ module:
   entity_reference: 0
   eva: 0
   expand_collapse_formatter: 0
-  externalauth: 0
   facets: 0
   features: 0
   features_ui: 0
