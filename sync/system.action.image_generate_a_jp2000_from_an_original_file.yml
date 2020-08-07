@@ -16,5 +16,5 @@ configuration:
   mimetype: image/jp2
   args: '-define numrlvls=7 -define jp2:tilewidth=1024 -define jp2:tileheight=1024 -define jp2:rate=0.02348 -define jp2:prg=rpcl -define jp2:mode=int -define jp2:prcwidth=16383 -define jp2:prcheight=16383 -define jp2:cblkwidth=64 -define jp2:cblkheight=64 -define jp2:sop'
   destination_media_type: image
-  scheme: public
+  scheme: repo-service
   path: '[date:custom:Y]-[date:custom:m]/[node:nid]-[term:name].jp2'
