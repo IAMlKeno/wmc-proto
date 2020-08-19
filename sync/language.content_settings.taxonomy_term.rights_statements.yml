@@ -1,0 +1,11 @@
+uuid: 4bd9ac1b-5d55-4887-8bc0-8d9a30e5735f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.rights_statements
+id: taxonomy_term.rights_statements
+target_entity_type_id: taxonomy_term
+target_bundle: rights_statements
+default_langcode: site_default
+language_alterable: false

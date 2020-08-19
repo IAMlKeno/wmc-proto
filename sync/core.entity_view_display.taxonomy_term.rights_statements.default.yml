@@ -1,0 +1,47 @@
+uuid: dbdaff84-89d2-40a9-b967-3a7ac9574f04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.rights_statements.field_image_rights
+    - field.field.taxonomy_term.rights_statements.field_uri
+    - taxonomy.vocabulary.rights_statements
+  module:
+    - image
+    - link
+    - text
+id: taxonomy_term.rights_statements.default
+targetEntityType: taxonomy_term
+bundle: rights_statements
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image_rights:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_uri:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true

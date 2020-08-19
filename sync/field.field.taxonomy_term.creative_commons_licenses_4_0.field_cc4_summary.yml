@@ -1,0 +1,26 @@
+uuid: 9083041b-0320-4629-b876-60c77c02c5f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cc4_summary
+    - taxonomy.vocabulary.creative_commons_licenses_4_0
+  module:
+    - custom_add_another
+    - text
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: taxonomy_term.creative_commons_licenses_4_0.field_cc4_summary
+field_name: field_cc4_summary
+entity_type: taxonomy_term
+bundle: creative_commons_licenses_4_0
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

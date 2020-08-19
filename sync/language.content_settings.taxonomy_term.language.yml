@@ -1,3 +1,4 @@
+uuid: bff72618-e688-4fbd-9253-91c742ebb0f3
 langcode: en
 status: true
 dependencies:
@@ -15,4 +16,3 @@ target_entity_type_id: taxonomy_term
 target_bundle: language
 default_langcode: site_default
 language_alterable: true
-
