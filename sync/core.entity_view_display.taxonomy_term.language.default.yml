@@ -1,24 +1,15 @@
+uuid: ce50374b-fa9e-4449-baba-e7eddabbea8b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.language.field_authority_link
+    - field.field.taxonomy_term.language.field_id
     - taxonomy.vocabulary.language
-  module:
-    - controlled_access_terms
-    - text
 id: taxonomy_term.language.default
 targetEntityType: taxonomy_term
 bundle: language
 mode: default
 content:
-  description:
-    label: hidden
-    type: text_default
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_authority_sources:
     weight: 1
     label: above
@@ -31,5 +22,14 @@ content:
     third_party_settings: {  }
     type: authority_formatter_default
     region: content
+  field_id:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden:
+  description: true
   langcode: true

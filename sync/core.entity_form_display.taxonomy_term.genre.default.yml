@@ -1,3 +1,4 @@
+uuid: 7eb1ca99-33f7-4e59-aadb-be8da6494ecd
 langcode: en
 status: true
 dependencies:
@@ -50,4 +51,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

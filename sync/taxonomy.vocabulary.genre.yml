@@ -1,3 +1,4 @@
+uuid: 7417d723-ef0f-4024-aa54-89a689e698f7
 langcode: en
 status: true
 dependencies: {  }
@@ -5,4 +6,3 @@ name: Genre
 vid: genre
 description: 'A term or terms that designate a category characterizing a particular style, form, or content, such as artistic, musical, literary composition, etc.'
 weight: 0
-

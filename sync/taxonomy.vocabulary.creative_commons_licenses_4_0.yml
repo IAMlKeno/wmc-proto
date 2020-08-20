@@ -1,0 +1,8 @@
+uuid: 2b18cf80-54d4-4bc9-800a-73dafbab64d5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Creative Commons Licenses 4.0'
+vid: creative_commons_licenses_4_0
+description: 'See https://creativecommons.org/licenses/.'
+weight: 0

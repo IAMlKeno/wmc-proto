@@ -1,0 +1,11 @@
+uuid: 28c8417a-dbf1-4cbf-b029-3b06f3ae10f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.creative_commons_licenses_4_0
+id: taxonomy_term.creative_commons_licenses_4_0
+target_entity_type_id: taxonomy_term
+target_bundle: creative_commons_licenses_4_0
+default_langcode: site_default
+language_alterable: false
