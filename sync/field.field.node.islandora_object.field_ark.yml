@@ -1,0 +1,28 @@
+uuid: 69375aa1-9f5e-4733-8c97-36825dd7b2c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ark
+    - node.type.islandora_object
+  module:
+    - custom_add_another
+    - link
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
+id: node.islandora_object.field_ark
+field_name: field_ark
+entity_type: node
+bundle: islandora_object
+label: ARK
+description: 'ARK identifier.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

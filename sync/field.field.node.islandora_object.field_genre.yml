@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_genre
     - node.type.islandora_object
+    - taxonomy.vocabulary.genre
   module:
     - custom_add_another
 third_party_settings:
@@ -18,7 +19,7 @@ field_name: field_genre
 entity_type: node
 bundle: islandora_object
 label: Genre
-description: ''
+description: 'This property relates a resource with the concepts it belongs to in a suitable type system that captures categories of objects in a given field.'
 required: false
 translatable: false
 default_value: {  }

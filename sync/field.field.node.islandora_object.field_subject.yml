@@ -22,8 +22,8 @@ id: node.islandora_object.field_subject
 field_name: field_subject
 entity_type: node
 bundle: islandora_object
-label: Subject
-description: ''
+label: Topic
+description: 'The topic of the resource.'
 required: false
 translatable: true
 default_value: {  }

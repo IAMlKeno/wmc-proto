@@ -19,7 +19,7 @@ field_name: field_resource_type
 entity_type: node
 bundle: islandora_object
 label: 'Resource Type'
-description: ''
+description: 'A term that specifies the characteristics and general type of content of the resource.'
 required: false
 translatable: false
 default_value: {  }

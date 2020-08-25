@@ -18,7 +18,7 @@ field_name: field_extent
 entity_type: node
 bundle: islandora_object
 label: Extent
-description: ''
+description: 'The size or duration of a resource.'
 required: false
 translatable: false
 default_value:

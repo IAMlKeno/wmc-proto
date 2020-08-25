@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_physical_form
     - node.type.islandora_object
+    - taxonomy.vocabulary.physical_form
   module:
     - custom_add_another
 third_party_settings:
@@ -17,8 +18,8 @@ id: node.islandora_object.field_physical_form
 field_name: field_physical_form
 entity_type: node
 bundle: islandora_object
-label: 'Physical Form'
-description: ''
+label: Form
+description: 'Physical medium or dimensions of described resource.'
 required: false
 translatable: false
 default_value: {  }

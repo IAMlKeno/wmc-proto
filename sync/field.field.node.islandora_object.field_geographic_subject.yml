@@ -18,8 +18,8 @@ id: node.islandora_object.field_geographic_subject
 field_name: field_geographic_subject
 entity_type: node
 bundle: islandora_object
-label: 'Geographic Subject'
-description: ''
+label: Location
+description: 'Spatial characteristics of described resource, such as a country, city, region, address or other geographical term. Captures aboutness.'
 required: false
 translatable: false
 default_value: {  }
