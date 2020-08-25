@@ -2,6 +2,8 @@ uuid: 46d6aba9-e82b-4977-8084-f3c3dd527f6e
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.admin
   module:
     - file
     - filehash
@@ -386,6 +388,15 @@ display:
     display_options:
       display_extenders: {  }
       path: duplicate-file-checksum-report
+      menu:
+        type: normal
+        title: 'Checksum Duplicate Files Listing'
+        description: 'Checksum Duplicate Files Listing'
+        expanded: false
+        parent: system.admin_reports
+        weight: 0
+        context: '0'
+        menu_name: admin
     cache_metadata:
       max-age: -1
       contexts:
