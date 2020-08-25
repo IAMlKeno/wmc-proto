@@ -1,6 +1,6 @@
 uuid: b026397f-186c-4dbb-a148-cd3b8b0dc715
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.repository_item_bottom_metadata
