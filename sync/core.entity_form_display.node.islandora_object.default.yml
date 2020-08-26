@@ -61,6 +61,7 @@ third_party_settings:
         - field_model
         - field_representative_image
         - field_member_of
+        - field_display_hints
       parent_name: ''
       weight: 0
       format_type: details
@@ -148,6 +149,12 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_display_hints:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_edtf_date_created:
     type: edtf_default
@@ -362,7 +369,6 @@ hidden:
   field_coordinates: true
   field_coordinates_text: true
   field_dewey_classification: true
-  field_display_hints: true
   field_edition: true
   field_edtf_date: true
   field_edtf_date_issued: true
