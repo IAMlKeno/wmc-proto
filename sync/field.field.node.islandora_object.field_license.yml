@@ -17,7 +17,7 @@ field_name: field_license
 entity_type: node
 bundle: islandora_object
 label: License
-description: 'A legal document giving official permission to do something with the recource.'
+description: 'A legal document giving official permission to do something with the resource.'
 required: true
 translatable: false
 default_value: {  }
