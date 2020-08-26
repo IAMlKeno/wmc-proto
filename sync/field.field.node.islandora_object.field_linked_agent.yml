@@ -22,7 +22,7 @@ field_name: field_linked_agent
 entity_type: node
 bundle: islandora_object
 label: 'Linked Agent'
-description: ''
+description: 'An agent, e.g. person or organization, with a specific relationship to the item being catalogued.'
 required: false
 translatable: false
 default_value: {  }

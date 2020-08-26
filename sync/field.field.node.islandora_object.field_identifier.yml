@@ -18,8 +18,8 @@ field_name: field_identifier
 entity_type: node
 bundle: islandora_object
 label: Identifier
-description: ''
-required: false
+description: 'ID of a described resource within a given context.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

@@ -1,4 +1,4 @@
-uuid: 11c3c8d3-b8be-4f3e-a7c3-835fc5446470
+uuid: fc51d9fb-dda9-4000-997c-998d972cd83c
 langcode: en
 status: true
 dependencies:
@@ -8,10 +8,8 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: public
-_core:
-  default_config_hash: noZJ0WqBZpCIy5pez4AWHq-V3VIUIqpIkMcKghZk_Nc
-id: node.field_extent
-field_name: field_extent
+id: node.field_publisher
+field_name: field_publisher
 entity_type: node
 type: string
 settings:

@@ -1,26 +1,24 @@
-uuid: 2a31172e-c688-4e48-9d7d-ac51e38fe1d3
+uuid: cd254b45-d94c-4e9e-8446-cd7b94aef005
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_temporal_subject
+    - field.storage.node.field_license
     - node.type.islandora_object
-    - taxonomy.vocabulary.temporal
+    - taxonomy.vocabulary.creative_commons_licenses_4_0
   module:
     - custom_add_another
 third_party_settings:
   custom_add_another:
     custom_add_another: ''
     custom_remove: ''
-_core:
-  default_config_hash: f1r4oukwPfUm0tknZKr2GZvvKxsyuK2NrMAcPK0xeV0
-id: node.islandora_object.field_temporal_subject
-field_name: field_temporal_subject
+id: node.islandora_object.field_license
+field_name: field_license
 entity_type: node
 bundle: islandora_object
-label: 'Time Period'
-description: 'Temporal characteristics of the resource.'
-required: false
+label: License
+description: 'A legal document giving official permission to do something with the resource.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -28,10 +26,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      temporal: temporal
+      creative_commons_licenses_4_0: creative_commons_licenses_4_0
     sort:
       field: name
       direction: asc
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference
