@@ -1,24 +1,31 @@
-uuid: fc4d4691-f3a4-4d0d-ab73-84a64621e1aa
+uuid: 276d97a8-29ae-43ca-b392-f76205c831e3
 langcode: en
-status: false
+status: true
 dependencies:
+  config:
+    - views.view.content_counts
   module:
-    - react_block
+    - block_class
     - request_data_conditions
+    - views
   theme:
     - dgi_i8_base
-id: dgifootermenublock
+third_party_settings:
+  block_class:
+    classes: content-counts-block
+id: views_block__content_counts_block_1
 theme: dgi_i8_base
-region: footer
+region: sidr
 weight: 0
 provider: null
-plugin: 'react_block:dgi_footer_menu_block'
+plugin: 'views_block:content_counts-block_1'
 settings:
-  id: 'react_block:dgi_footer_menu_block'
-  label: 'DGI Footer Menu Block'
-  provider: react_block
+  id: 'views_block:content_counts-block_1'
+  label: ''
+  provider: views
   label_display: '0'
-  pdb_configuration: null
+  views_label: ''
+  items_per_page: none
 visibility:
   http_headers:
     id: http_headers

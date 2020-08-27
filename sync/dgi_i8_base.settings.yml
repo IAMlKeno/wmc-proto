@@ -5,7 +5,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://discoverygarden-vagrant-i8.local/themes/custom/dgi_i8_base/favicon.ico'
+  url: 'http://discoverygarden-vsphere-i8.dgi/themes/contrib/dgi_i8_base/favicon.ico'
   use_default: true
 schemas:
   bootstrap: 8000
@@ -21,15 +21,15 @@ region_wells:
   sidr_bottom: ''
   highlighted: ''
   help: ''
+  viewer: ''
   content: ''
-  object_more: ''
-  object_actions: ''
-  object_lower: ''
   sidebar_first: ''
   sidebar_second: ''
   pre_footer: ''
   footer: ''
   footer_bottom: ''
+  collection_metadata_and_actions: ''
+  search_facet_header: ''
 cdn_theme: ''
 cdn_cache_ttl_versions: 0
 cdn_cache_ttl_themes: 0
@@ -37,6 +37,10 @@ cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
 reset_http_request_cache: ''
 table: ''
+secondary_logo: 'public://Screen Shot 2020-07-21 at 11.26.47 AM.png'
+popover_placement: bottom
+popover_html: 1
+popover_enabled: 1
 features:
   comment_user_picture: true
   comment_user_verification: true
