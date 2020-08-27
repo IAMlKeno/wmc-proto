@@ -21,7 +21,7 @@ field_name: field_description
 entity_type: node
 bundle: islandora_object
 label: Description
-description: ''
+description: 'A summary of the content of the resource.'
 required: false
 translatable: true
 default_value: {  }
