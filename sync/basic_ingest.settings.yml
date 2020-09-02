@@ -32,5 +32,6 @@ map:
   -
     uri: 'http://purl.org/coar/resource_type/c_12ce'
     media_type: video
-_core:
-  default_config_hash: 0BWMgM-enCumGuQmGAr74pzQl2w3Nnh7N9lRHW58_Y4
+  -
+    uri: 'http://www.w3.org/1999/xhtml#video'
+    media_type: html5_video
