@@ -18,6 +18,7 @@ module:
   clamav: 0
   color: 0
   comment: 0
+  ctools: 0
   conditional_fields: 0
   config: 0
   config_filter: 0
