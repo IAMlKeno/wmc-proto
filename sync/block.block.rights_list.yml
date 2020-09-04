@@ -1,28 +1,29 @@
-uuid: 8fb80626-eb80-4aa3-8aa0-8ab6160ab531
+uuid: de0c6cfd-2322-40df-8e21-a71aa1ac7e40
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.access_control_grid
-    - blockgroup.block_group_content.grid_facets
+    - facets.facet.rights_list
+    - blockgroup.block_group_content.list_facets
   module:
     - facets
     - request_data_conditions
+    - user
     - blockgroup
   theme:
     - dgi_i8_base
-id: access_control_grid
+id: rights_list
 theme: dgi_i8_base
-region: grid_facets
-weight: -5
+region: list_facets
+weight: -10
 provider: null
-plugin: 'facet_block:access_control_grid'
+plugin: 'facet_block:rights_list'
 settings:
-  id: 'facet_block:access_control_grid'
-  label: 'Access Control'
+  id: 'facet_block:rights_list'
+  label: Rights
   provider: facets
   label_display: visible
-  block_id: access_control_grid
+  block_id: rights_list
 visibility:
   http_headers:
     id: http_headers
@@ -48,3 +49,10 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      repository_administrator: repository_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

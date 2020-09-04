@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - facets.facet.topic_grid
-    - blockgroup.block_group_content.search_facet_header
+    - blockgroup.block_group_content.grid_facets
   module:
     - facets
     - request_data_conditions
@@ -13,7 +13,7 @@ dependencies:
     - dgi_i8_base
 id: topic_grid
 theme: dgi_i8_base
-region: search_facet_header
+region: grid_facets
 weight: -10
 provider: null
 plugin: 'facet_block:topic_grid'

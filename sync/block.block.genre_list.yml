@@ -1,28 +1,28 @@
-uuid: 8fb80626-eb80-4aa3-8aa0-8ab6160ab531
+uuid: f6501193-6a88-4261-817b-35aaaca01a47
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.access_control_grid
-    - blockgroup.block_group_content.grid_facets
+    - facets.facet.genre_list
+    - blockgroup.block_group_content.list_facets
   module:
     - facets
     - request_data_conditions
     - blockgroup
   theme:
     - dgi_i8_base
-id: access_control_grid
+id: genre_list
 theme: dgi_i8_base
-region: grid_facets
-weight: -5
+region: list_facets
+weight: -12
 provider: null
-plugin: 'facet_block:access_control_grid'
+plugin: 'facet_block:genre_list'
 settings:
-  id: 'facet_block:access_control_grid'
-  label: 'Access Control'
+  id: 'facet_block:genre_list'
+  label: Genre
   provider: facets
   label_display: visible
-  block_id: access_control_grid
+  block_id: genre_list
 visibility:
   http_headers:
     id: http_headers

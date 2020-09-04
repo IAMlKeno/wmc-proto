@@ -1,28 +1,28 @@
-uuid: 8fb80626-eb80-4aa3-8aa0-8ab6160ab531
+uuid: 525e3a12-f2c7-4b55-a683-214da5eaad36
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.access_control_grid
-    - blockgroup.block_group_content.grid_facets
+    - facets.facet.form_list
+    - blockgroup.block_group_content.list_facets
   module:
     - facets
     - request_data_conditions
     - blockgroup
   theme:
     - dgi_i8_base
-id: access_control_grid
+id: form_list
 theme: dgi_i8_base
-region: grid_facets
-weight: -5
+region: list_facets
+weight: -13
 provider: null
-plugin: 'facet_block:access_control_grid'
+plugin: 'facet_block:form_list'
 settings:
-  id: 'facet_block:access_control_grid'
-  label: 'Access Control'
+  id: 'facet_block:form_list'
+  label: Form
   provider: facets
   label_display: visible
-  block_id: access_control_grid
+  block_id: form_list
 visibility:
   http_headers:
     id: http_headers
