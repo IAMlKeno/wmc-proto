@@ -73,13 +73,6 @@ name: 'Default Solr content index'
 description: 'Default content index created by the Solr Search Defaults module'
 read_only: false
 field_settings:
-  aggregated_field:
-    label: 'Aggregated field'
-    property_path: aggregated_field
-    type: string
-    configuration:
-      type: union
-      fields: {  }
   author:
     label: 'Author name'
     datasource_id: 'entity:node'
@@ -420,7 +413,6 @@ processor_settings:
   ignore_character:
     all_fields: true
     fields:
-      - aggregated_field
       - author
       - bundle
       - field_edtf_date_created
