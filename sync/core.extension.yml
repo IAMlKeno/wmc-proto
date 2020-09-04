@@ -14,6 +14,7 @@ module:
   blockgroup: 0
   breadcrumbs: 0
   breakpoint: 0
+  cas: 0
   ckeditor: 0
   clamav: 0
   color: 0
@@ -38,6 +39,7 @@ module:
   controlled_access_terms: 0
   controlled_access_terms_defaults: 0
   custom_add_another: 0
+  externalauth: 0
   datetime: 0
   dblog: 0
   dgi_header: 0
