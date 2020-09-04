@@ -1010,7 +1010,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: checksum-related-media
+      path: admin/reports/duplicate-file-checksum-report/%
     cache_metadata:
       max-age: -1
       contexts:
