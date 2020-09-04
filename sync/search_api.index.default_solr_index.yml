@@ -4,25 +4,29 @@ status: true
 dependencies:
   module:
     - search_api_solr
-    - node
-    - user
-    - taxonomy
     - media
+    - node
+    - taxonomy
+    - user
     - search_api
   config:
+    - field.storage.media.field_media_file
+    - field.storage.media.field_file_size
+    - field.storage.media.field_media_of
+    - field.storage.node.field_access_terms
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
-    - field.storage.media.field_file_size
-    - field.storage.media.field_media_file
-    - field.storage.media.field_media_of
-    - field.storage.node.field_tags
-    - field.storage.node.field_resource_type
-    - field.storage.taxonomy_term.field_type
-    - field.storage.node.field_model
-    - field.storage.taxonomy_term.field_relationships
+    - field.storage.node.field_physical_form
+    - field.storage.node.field_genre
     - field.storage.node.field_linked_agent
-    - field.storage.node.field_subject
     - field.storage.node.field_member_of
+    - field.storage.node.field_model
+    - field.storage.node.field_resource_type
+    - field.storage.taxonomy_term.field_relationships
+    - field.storage.taxonomy_term.field_type
+    - field.storage.node.field_rights
+    - field.storage.node.field_subject
+    - field.storage.node.field_tags
     - search_api.server.default_solr_server
     - core.entity_view_mode.node.search_index
 third_party_settings:
@@ -69,6 +73,13 @@ name: 'Default Solr content index'
 description: 'Default content index created by the Solr Search Defaults module'
 read_only: false
 field_settings:
+  aggregated_field:
+    label: 'Aggregated field'
+    property_path: aggregated_field
+    type: string
+    configuration:
+      type: union
+      fields: {  }
   author:
     label: 'Author name'
     datasource_id: 'entity:node'
@@ -210,6 +221,50 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_subject
+      module:
+        - taxonomy
+        - taxonomy
+  name_4:
+    label: 'Form » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_physical_form:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_physical_form
+      module:
+        - taxonomy
+        - taxonomy
+  name_5:
+    label: 'Genre » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_genre:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_genre
+      module:
+        - taxonomy
+        - taxonomy
+  name_6:
+    label: 'Rights » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_rights:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_rights
+      module:
+        - taxonomy
+        - taxonomy
+  name_7:
+    label: 'Access Control » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_access_terms:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_access_terms
       module:
         - taxonomy
         - taxonomy
@@ -365,6 +420,7 @@ processor_settings:
   ignore_character:
     all_fields: true
     fields:
+      - aggregated_field
       - author
       - bundle
       - field_edtf_date_created
@@ -374,6 +430,10 @@ processor_settings:
       - name_1
       - name_2
       - name_3
+      - name_4
+      - name_5
+      - name_6
+      - name_7
       - rendered_item
       - title
       - title_1

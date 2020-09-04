@@ -1,0 +1,50 @@
+uuid: 8fb80626-eb80-4aa3-8aa0-8ab6160ab531
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.access_control_grid
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - dgi_i8_base
+id: access_control_grid
+theme: dgi_i8_base
+region: search_facet_header
+weight: -5
+provider: null
+plugin: 'facet_block:access_control_grid'
+settings:
+  id: 'facet_block:access_control_grid'
+  label: 'Access Control'
+  provider: facets
+  label_display: visible
+  block_id: access_control_grid
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

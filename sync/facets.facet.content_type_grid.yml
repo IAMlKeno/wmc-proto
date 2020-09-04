@@ -1,4 +1,4 @@
-uuid: 00d0ed74-03e4-441b-b2c0-dceec2b94213
+uuid: 2ce01faa-088a-4734-97eb-248d39f2269e
 langcode: en
 status: true
 dependencies:
@@ -7,24 +7,24 @@ dependencies:
     - views.view.solr_search_content
   module:
     - search_api
-id: date_created
-name: 'Date Created'
-url_alias: date_created
+id: content_type_grid
+name: 'Content Type'
+url_alias: content_type
 weight: 0
 min_count: 1
 show_only_one_result: true
-field_identifier: field_edtf_date_created
-facet_source_id: 'search_api:views_page__solr_search_content__page_2'
+field_identifier: name
+facet_source_id: 'search_api:views_page__solr_search_content__page_1'
 widget:
   type: dropdown
   config:
-    show_numbers: false
-    default_option_label: 'All Time'
-query_operator: or
+    show_numbers: true
+    default_option_label: Choose
+query_operator: and
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 15
+hard_limit: 0
 exclude: false
 only_visible_when_facet_source_is_visible: true
 processor_configs:
@@ -54,4 +54,4 @@ processor_configs:
     settings: {  }
 empty_behavior:
   behavior: none
-show_title: true
+show_title: false

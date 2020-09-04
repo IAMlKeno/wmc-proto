@@ -39,7 +39,6 @@ module:
   controlled_access_terms: 0
   controlled_access_terms_defaults: 0
   custom_add_another: 0
-  externalauth: 0
   datetime: 0
   dblog: 0
   dgi_header: 0
@@ -60,6 +59,7 @@ module:
   entity_reference: 0
   eva: 0
   expand_collapse_formatter: 0
+  externalauth: 0
   facets: 0
   features: 0
   features_ui: 0

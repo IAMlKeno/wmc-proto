@@ -1,4 +1,4 @@
-uuid: 056ca381-65ea-4a6d-9be9-f7db83319ca2
+uuid: 0a3374a3-3233-486e-a527-2acb55f27ee6
 langcode: en
 status: true
 dependencies:
@@ -7,24 +7,24 @@ dependencies:
     - views.view.solr_search_content
   module:
     - search_api
-id: subject_grid_
-name: Subject
-url_alias: subject
-weight: 0
+id: access_control_grid
+name: 'Access Control'
+url_alias: access_control
+weight: 2
 min_count: 1
 show_only_one_result: true
-field_identifier: name_3
+field_identifier: name_7
 facet_source_id: 'search_api:views_page__solr_search_content__page_1'
 widget:
   type: dropdown
   config:
-    show_numbers: false
-    default_option_label: 'All Subjects'
-query_operator: or
+    show_numbers: true
+    default_option_label: Choose
+query_operator: and
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 15
+hard_limit: 0
 exclude: false
 only_visible_when_facet_source_is_visible: true
 processor_configs:
@@ -54,4 +54,4 @@ processor_configs:
     settings: {  }
 empty_behavior:
   behavior: none
-show_title: true
+show_title: false
