@@ -28,4 +28,5 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  addtoany: true
   langcode: true

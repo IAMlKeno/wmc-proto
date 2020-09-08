@@ -1,3 +1,4 @@
+uuid: ea053324-7d22-4c82-86a1-7bd310b03207
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.genre
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: taxonomy_term.genre.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term

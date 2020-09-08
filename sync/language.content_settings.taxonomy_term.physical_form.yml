@@ -1,3 +1,4 @@
+uuid: c87c32d8-89b2-4d2b-8ce6-3d8ecb5b5818
 langcode: en
 status: true
 dependencies:
@@ -15,4 +16,3 @@ target_entity_type_id: taxonomy_term
 target_bundle: physical_form
 default_langcode: site_default
 language_alterable: true
-

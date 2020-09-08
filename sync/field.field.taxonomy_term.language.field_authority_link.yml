@@ -1,3 +1,4 @@
+uuid: 9cc7d7ab-c207-471e-807c-0a7047db962c
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.language
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: taxonomy_term.language.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term
