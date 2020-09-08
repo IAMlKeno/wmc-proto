@@ -8,6 +8,7 @@ dependencies:
   module:
     - facets
     - request_data_conditions
+    - user
     - blockgroup
   theme:
     - dgi_i8_base
@@ -48,3 +49,10 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      repository_administrator: repository_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
