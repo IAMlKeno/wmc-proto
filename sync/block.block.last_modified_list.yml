@@ -1,28 +1,29 @@
-uuid: 525e3a12-f2c7-4b55-a683-214da5eaad36
+uuid: ca492f3d-cdfc-43ce-8e66-7f83208644c6
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.form_list
+    - facets.facet.last_modified_list
     - blockgroup.block_group_content.list_facets
   module:
     - facets
     - request_data_conditions
+    - user
     - blockgroup
   theme:
     - dgi_i8_base
-id: form_list
+id: last_modified_list
 theme: dgi_i8_base
 region: list_facets
-weight: -15
+weight: -11
 provider: null
-plugin: 'facet_block:form_list'
+plugin: 'facet_block:last_modified_list'
 settings:
-  id: 'facet_block:form_list'
-  label: Form
+  id: 'facet_block:last_modified_list'
+  label: 'Last Modified'
   provider: facets
   label_display: visible
-  block_id: form_list
+  block_id: last_modified_list
 visibility:
   http_headers:
     id: http_headers
@@ -48,3 +49,10 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      repository_administrator: repository_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,9 +1,9 @@
-uuid: 525e3a12-f2c7-4b55-a683-214da5eaad36
+uuid: b9df1f5b-09eb-4377-bc77-74c685a74260
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.form_list
+    - facets.facet.date_added_list
     - blockgroup.block_group_content.list_facets
   module:
     - facets
@@ -11,18 +11,18 @@ dependencies:
     - blockgroup
   theme:
     - dgi_i8_base
-id: form_list
+id: date_added_list
 theme: dgi_i8_base
 region: list_facets
-weight: -15
+weight: -12
 provider: null
-plugin: 'facet_block:form_list'
+plugin: 'facet_block:date_added_list'
 settings:
-  id: 'facet_block:form_list'
-  label: Form
+  id: 'facet_block:date_added_list'
+  label: 'Date Added'
   provider: facets
   label_display: visible
-  block_id: form_list
+  block_id: date_added_list
 visibility:
   http_headers:
     id: http_headers

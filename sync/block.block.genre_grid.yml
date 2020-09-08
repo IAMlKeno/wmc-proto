@@ -14,7 +14,7 @@ dependencies:
 id: genre_grid
 theme: dgi_i8_base
 region: grid_facets
-weight: -8
+weight: -13
 provider: null
 plugin: 'facet_block:genre_grid'
 settings:

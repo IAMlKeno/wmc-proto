@@ -14,7 +14,7 @@ dependencies:
 id: collection_list
 theme: dgi_i8_base
 region: list_facets
-weight: -15
+weight: -17
 provider: null
 plugin: 'facet_block:collection_list'
 settings:

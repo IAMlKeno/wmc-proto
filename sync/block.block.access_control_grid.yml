@@ -15,7 +15,7 @@ dependencies:
 id: access_control_grid
 theme: dgi_i8_base
 region: grid_facets
-weight: -5
+weight: -8
 provider: null
 plugin: 'facet_block:access_control_grid'
 settings:

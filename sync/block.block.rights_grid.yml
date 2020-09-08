@@ -15,7 +15,7 @@ dependencies:
 id: rights_grid
 theme: dgi_i8_base
 region: grid_facets
-weight: -6
+weight: -9
 provider: null
 plugin: 'facet_block:rights_grid'
 settings:
