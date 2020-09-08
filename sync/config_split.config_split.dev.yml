@@ -18,6 +18,7 @@ blacklist: {  }
 graylist:
   - system.logging
   - system.performance
+  - views.settings
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 1
