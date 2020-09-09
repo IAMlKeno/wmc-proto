@@ -34,7 +34,6 @@ cdn_cache_ttl_versions: 0
 cdn_cache_ttl_themes: 0
 cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
-secondary_logo: 'public://Screen Shot 2020-07-21 at 11.26.47 AM.png'
 popover_placement: bottom
 popover_html: 1
 popover_enabled: 0
