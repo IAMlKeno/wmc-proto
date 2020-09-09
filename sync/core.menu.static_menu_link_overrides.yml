@@ -23,5 +23,11 @@ definitions:
     weight: 0
     expanded: false
     enabled: true
+  user_current_paths__edit_redirect:
+    menu_name: account
+    parent: ''
+    weight: -9
+    expanded: false
+    enabled: true
 _core:
   default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
