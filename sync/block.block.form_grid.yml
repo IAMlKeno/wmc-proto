@@ -1,0 +1,50 @@
+uuid: 25fc8f73-6a7e-479f-81e6-5f659f090547
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.form_grid
+    - blockgroup.block_group_content.grid_facets
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - dgi_i8_base
+id: form_grid
+theme: dgi_i8_base
+region: grid_facets
+weight: -14
+provider: null
+plugin: 'facet_block:form_grid'
+settings:
+  id: 'facet_block:form_grid'
+  label: Form
+  provider: facets
+  label_display: visible
+  block_id: form_grid
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

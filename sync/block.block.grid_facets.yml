@@ -1,0 +1,48 @@
+uuid: 51f8ea9b-92fc-4383-99a2-22d9685962fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.grid_facets
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - blockgroup
+    - request_data_conditions
+  theme:
+    - dgi_i8_base
+id: grid_facets
+theme: dgi_i8_base
+region: search_facet_header
+weight: 0
+provider: null
+plugin: 'block_group:grid_facets'
+settings:
+  id: 'block_group:grid_facets'
+  label: 'Grid Facets'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,50 @@
+uuid: 6a4b8c39-6d3d-4ba0-8ba1-cc5d9e076296
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.genre_grid
+    - blockgroup.block_group_content.grid_facets
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - dgi_i8_base
+id: genre_grid
+theme: dgi_i8_base
+region: grid_facets
+weight: -13
+provider: null
+plugin: 'facet_block:genre_grid'
+settings:
+  id: 'facet_block:genre_grid'
+  label: Genre
+  provider: facets
+  label_display: visible
+  block_id: genre_grid
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
