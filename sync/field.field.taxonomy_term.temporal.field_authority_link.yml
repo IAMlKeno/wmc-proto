@@ -1,3 +1,4 @@
+uuid: ae786d59-422c-4bdd-b601-737ac56c1687
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,11 @@ dependencies:
     - taxonomy.vocabulary.temporal
   module:
     - controlled_access_terms
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: ''
+    custom_remove: ''
 id: taxonomy_term.temporal.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term
