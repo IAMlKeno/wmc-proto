@@ -180,6 +180,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -187,6 +189,10 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 0
@@ -195,8 +201,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -212,6 +216,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - processed
             - title
           plugin_id: search_api_fulltext
         name_1:
