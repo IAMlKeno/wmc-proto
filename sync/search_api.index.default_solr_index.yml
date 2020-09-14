@@ -10,6 +10,7 @@ dependencies:
     - user
     - search_api
   config:
+    - field.storage.media.field_edited_text
     - field.storage.media.field_media_file
     - field.storage.media.field_file_size
     - field.storage.media.field_media_of
@@ -298,6 +299,20 @@ field_settings:
     indexed_locked: true
     type_locked: true
     hidden: true
+  processed:
+    label: 'Reverse reference: <em class="placeholder">Media</em> using <em class="placeholder">Media of</em> » Edited Text » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'search_api_reverse_entity_references_media__field_media_of:field_edited_text:processed'
+    type: text
+    boost: !!float 2
+  processed_1:
+    label: 'Edited Text » Processed text'
+    datasource_id: 'entity:media'
+    property_path: 'field_edited_text:processed'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_edited_text
   rendered_item:
     label: 'Rendered item'
     property_path: rendered_item
@@ -426,6 +441,8 @@ processor_settings:
       - name_5
       - name_6
       - name_7
+      - processed
+      - processed_1
       - rendered_item
       - title
       - title_1
