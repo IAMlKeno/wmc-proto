@@ -19,7 +19,6 @@ module:
   clamav: 0
   color: 0
   comment: 0
-  ctools: 0
   conditional_fields: 0
   config: 0
   config_filter: 0
@@ -39,6 +38,7 @@ module:
   contextual: 0
   controlled_access_terms: 0
   controlled_access_terms_defaults: 0
+  ctools: 0
   custom_add_another: 0
   datetime: 0
   dblog: 0
@@ -78,6 +78,7 @@ module:
   fontawesome: 0
   geolocation: 0
   google_analytics: 0
+  google_tag: 0
   graphql: 0
   graphql_core: 0
   hal: 0
@@ -122,8 +123,8 @@ module:
   options: 0
   page_cache: 0
   path: 0
-  pathauto: 0
   path_alias: 0
+  pathauto: 0
   pdb: 0
   pdf: 0
   php_ffmpeg: 0
