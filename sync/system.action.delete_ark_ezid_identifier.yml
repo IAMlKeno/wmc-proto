@@ -1,0 +1,16 @@
+uuid: d785f012-163b-418e-81ac-0086fe5fd025
+langcode: en
+status: true
+dependencies:
+  module:
+    - dgi_actions_ark_identifier
+id: delete_ark_ezid_identifier
+label: 'Delete ARK EZID Identifier'
+type: entity
+plugin: dgi_actions_delete_ark_identifier
+configuration:
+  label: 'Delete ARK EZID Identifier'
+  id: delete_ark_ezid_identifier
+  plugin: dgi_actions_delete_ark_identifier
+  type: entity
+  identifier_type: dgi_actions.identifier.ark
