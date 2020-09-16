@@ -5,10 +5,14 @@ dependencies:
   config:
     - views.view.solr_search_content
   module:
+    - block_class
     - request_data_conditions
     - views
   theme:
     - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: exposed-search-form
 id: exposedformsolr_search_contentpage_1
 theme: dgi_i8_base
 region: sidr
@@ -20,7 +24,7 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: 'Digital Repository'
+  views_label: 'The Islandora'
 visibility:
   http_headers:
     id: http_headers

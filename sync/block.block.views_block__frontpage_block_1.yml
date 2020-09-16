@@ -1,24 +1,28 @@
-uuid: fc4d4691-f3a4-4d0d-ab73-84a64621e1aa
+uuid: 5a41b97d-38e5-4bcd-832f-5318049d8369
 langcode: en
-status: false
+status: true
 dependencies:
+  config:
+    - views.view.frontpage
   module:
-    - react_block
     - request_data_conditions
+    - system
+    - views
   theme:
     - dgi_i8_base
-id: dgifootermenublock
+id: views_block__frontpage_block_1
 theme: dgi_i8_base
-region: footer
-weight: 0
+region: highlighted
+weight: -15
 provider: null
-plugin: 'react_block:dgi_footer_menu_block'
+plugin: 'views_block:frontpage-block_1'
 settings:
-  id: 'react_block:dgi_footer_menu_block'
-  label: 'DGI Footer Menu Block'
-  provider: react_block
+  id: 'views_block:frontpage-block_1'
+  label: ''
+  provider: views
   label_display: '0'
-  pdb_configuration: null
+  views_label: ''
+  items_per_page: none
 visibility:
   http_headers:
     id: http_headers
@@ -42,5 +46,10 @@ visibility:
     id: url_query_parameters
     conditions: {  }
     require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
     negate: false
     context_mapping: {  }
