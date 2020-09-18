@@ -20,7 +20,7 @@ disabled: false
 conditions:
   node_has_term:
     id: node_has_term
-    negate: 0
+    negate: false
     uuid: 30424693-e24a-444f-8aeb-11ab527ed233
     context_mapping:
       node: '@node.node_route_context:node'
@@ -29,7 +29,7 @@ conditions:
   request_path:
     id: request_path
     pages: '/node/*'
-    negate: 0
+    negate: false
     uuid: 1ef014fb-a76c-40bf-975d-c4d3f25ded9a
     context_mapping: {  }
   url_query_parameters:
@@ -65,7 +65,7 @@ reactions:
         id: system_messages_block
         label: Messages
         provider: system
-        label_display: 0
+        label_display: '0'
         region: content
         weight: '1'
         context_mapping: {  }
@@ -117,7 +117,7 @@ reactions:
         id: 'block_group:c8b952c6-721f-469a-a509-46795d7983e3'
         label: 'Collection Metadata and Actions'
         provider: blockgroup
-        label_display: 0
+        label_display: '0'
         region: content
         weight: '-1'
         context_mapping: {  }
@@ -130,12 +130,13 @@ reactions:
         id: dgi_header
         label: 'DGI Header Block'
         provider: dgi_header
-        label_display: 0
+        label_display: '0'
         menu: dgi-header
         search:
           view: solr_search_content
           display_id: page_1
           parameter: search_api_fulltext
+        second_logo: null
         region: navigation
         weight: '0'
         admin_label: ''
@@ -149,7 +150,7 @@ reactions:
         id: 'react_block:dgi_footer_menu_block'
         label: 'DGI Footer Menu Block'
         provider: react_block
-        label_display: 0
+        label_display: '0'
         region: footer
         weight: '0'
         pdb_configuration: null
@@ -163,7 +164,7 @@ reactions:
         id: 'views_block:repository_item_content_blocks-repository_item_viewer'
         label: ''
         provider: views
-        label_display: 0
+        label_display: '0'
         views_label: ''
         items_per_page: none
         region: content
@@ -178,7 +179,7 @@ reactions:
         id: 'views_block:collection_representative_object-block_1'
         label: ''
         provider: views
-        label_display: 0
+        label_display: '0'
         views_label: ''
         items_per_page: none
         region: content
