@@ -34,11 +34,6 @@ targetEntityType: node
 bundle: islandora_object
 mode: teaser
 content:
-  display_media_thumbnail:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   links:
     weight: 1
     region: content
