@@ -11,7 +11,7 @@ _core:
 id: dgi_i8_base_messages
 theme: dgi_i8_base
 region: highlighted
-weight: -100
+weight: -14
 provider: null
 plugin: system_messages_block
 settings:
