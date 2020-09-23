@@ -73,6 +73,7 @@ module:
   flysystem: 0
   flysystem_s3: 0
   fontawesome: 0
+  fontawesome_menu_icons: 0
   geolocation: 0
   graphql: 0
   graphql_core: 0
@@ -150,6 +151,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  user_current_paths: 0
   view_mode_selector: 0
   views_autocomplete_filters: 0
   views_bootstrap: 0

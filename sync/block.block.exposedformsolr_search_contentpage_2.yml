@@ -1,24 +1,26 @@
-uuid: fc4d4691-f3a4-4d0d-ab73-84a64621e1aa
+uuid: f55cde94-d197-4370-9e52-2fa9d8911aba
 langcode: en
-status: false
+status: true
 dependencies:
+  config:
+    - views.view.solr_search_content
   module:
-    - react_block
     - request_data_conditions
+    - views
   theme:
     - dgi_i8_base
-id: dgifootermenublock
+id: exposedformsolr_search_contentpage_2
 theme: dgi_i8_base
-region: footer
+region: sidr
 weight: 0
 provider: null
-plugin: 'react_block:dgi_footer_menu_block'
+plugin: 'views_exposed_filter_block:solr_search_content-page_2'
 settings:
-  id: 'react_block:dgi_footer_menu_block'
-  label: 'DGI Footer Menu Block'
-  provider: react_block
+  id: 'views_exposed_filter_block:solr_search_content-page_2'
+  label: ''
+  provider: views
   label_display: '0'
-  pdb_configuration: null
+  views_label: ''
 visibility:
   http_headers:
     id: http_headers
