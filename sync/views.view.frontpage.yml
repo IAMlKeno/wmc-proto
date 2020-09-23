@@ -378,132 +378,6 @@ display:
         - 'config:field.storage.node.field_elevated_title'
         - env
         - extensions
-  block_1:
-    display_plugin: block
-    id: block_1
-    display_title: 'Front page Block'
-    position: 3
-    display_options:
-      display_extenders: {  }
-      title: 'Front Page block'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-      display_description: ''
-      filters:
-        uuid:
-          id: uuid
-          table: node
-          field: uuid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: 45474c8a-8011-45f2-b8b1-a120aff0844c
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-            autocomplete_filter: 0
-            autocomplete_min_chars: '0'
-            autocomplete_items: '10'
-            autocomplete_field: ''
-            autocomplete_raw_suggestion: 1
-            autocomplete_raw_dropdown: 1
-            autocomplete_dependent: 0
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: uuid
-          plugin_id: views_autocomplete_filters_string
-        uuid_1:
-          id: uuid_1
-          table: node
-          field: uuid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: e9d14d09-fec8-45bf-bcb7-2ff0d4945d0c
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-            autocomplete_filter: 0
-            autocomplete_min_chars: '0'
-            autocomplete_items: '10'
-            autocomplete_field: ''
-            autocomplete_raw_suggestion: 1
-            autocomplete_raw_dropdown: 1
-            autocomplete_dependent: 0
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: uuid
-          plugin_id: views_autocomplete_filters_string
-      filter_groups:
-        operator: AND
-        groups:
-          1: OR
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_display_block_images'
-        - 'config:field.storage.node.field_elevated_title'
-        - env
-        - extensions
   feed_1:
     display_plugin: feed
     id: feed_1
@@ -649,13 +523,10 @@ display:
       defaults:
         filters: false
         filter_groups: false
-        empty: false
       filter_groups:
         operator: AND
         groups:
-          1: AND
-      enabled: true
-      empty: {  }
+          1: OR
     display_plugin: page
     display_title: Page
     id: page_1

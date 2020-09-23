@@ -1,6 +1,6 @@
 uuid: fc4d4691-f3a4-4d0d-ab73-84a64621e1aa
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - react_block
