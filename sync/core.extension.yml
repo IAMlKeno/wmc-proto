@@ -60,8 +60,11 @@ module:
   entity_reference: 0
   eva: 0
   event_log_track: 0
+  event_log_track_file: 0
   event_log_track_media: 0
   event_log_track_node: 0
+  event_log_track_taxonomy: 0
+  event_log_track_workflows: 0
   expand_collapse_formatter: 0
   externalauth: 0
   facets: 0
@@ -171,6 +174,7 @@ module:
   views_exposed_filter_blocks: 0
   views_field_view: 0
   views_ui: 0
+  workflows: 0
   menu_link_content: 1
   content_translation: 10
   views: 10
