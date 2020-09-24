@@ -17,7 +17,6 @@ permissions:
   - 'access media overview'
   - 'access site reports'
   - 'access taxonomy overview'
-  - 'access toolbar'
   - 'access tour'
   - 'access user contact forms'
   - 'access user profiles'
