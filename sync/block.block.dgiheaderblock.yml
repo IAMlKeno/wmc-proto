@@ -27,7 +27,6 @@ settings:
     view: solr_search_content
     display_id: page_1
     parameter: search_api_fulltext
-  second_logo: null
   default_second_logo: 1
   second_logo_wrapper:
     second_logo: {  }
