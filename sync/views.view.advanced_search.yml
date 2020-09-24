@@ -7,7 +7,9 @@ dependencies:
     - field.storage.node.field_member_of
     - field.storage.node.field_subjects_name
     - node.type.islandora_object
+    - system.menu.explore
     - taxonomy.vocabulary.genre
+    - taxonomy.vocabulary.islandora_models
     - taxonomy.vocabulary.person
     - taxonomy.vocabulary.subject
   module:
@@ -870,6 +872,108 @@ display:
           entity_type: taxonomy_term
           entity_field: tid
           plugin_id: taxonomy_index_tid
+        field_model_target_id:
+          id: field_model_target_id
+          table: node__field_model
+          field: field_model_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: not
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_model_target_id_op
+            label: not_type
+            description: ''
+            use_operator: false
+            operator: field_model_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: not_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: islandora_models
+          hierarchy: false
+          error_message: false
+          plugin_id: taxonomy_index_tid
+        field_model_target_id_1:
+          id: field_model_target_id_1
+          table: node__field_model
+          field: field_model_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: and
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_model_target_id_1_op
+            label: is_type
+            description: ''
+            use_operator: false
+            operator: field_model_target_id_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: is_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: islandora_models
+          hierarchy: false
+          error_message: false
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -894,7 +998,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: '# Results'
           empty: true
           tokenize: false
           content:
@@ -907,11 +1011,11 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Content type'
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"[view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>"
+            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\" [view:url]?title=[current-page:query:title]&field_genre_target_id=[current-page:query:field_genre_target_id]&field_subject_target_id=[current-page:query:field_subject_target_id]&tid=[current-page:query:tid]&is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\" [view:url]?title=[current-page:query:title]&field_genre_target_id=[current-page:query:field_genre_target_id]&field_subject_target_id=[current-page:query:field_subject_target_id]&tid=[current-page:query:tid]&is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"[view:url]?title=[current-page:query:title]&field_genre_target_id=[current-page:query:field_genre_target_id]&field_subject_target_id=[current-page:query:field_subject_target_id]&tid=[current-page:query:tid]&is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>"
             format: full_html
           plugin_id: text
         display_link:
@@ -920,7 +1024,7 @@ display:
           field: display_link
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Link to list view'
           empty: true
           display_id: page_2
           label: List
@@ -931,7 +1035,7 @@ display:
           field: display_link
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Link to grid view'
           empty: true
           display_id: page_1
           label: Grid
@@ -1867,8 +1971,19 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      path: advanced-search/grid
+      path: advanced-search
       exposed_block: true
+      menu:
+        type: normal
+        title: 'Advanced Search'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: explore
+      defaults:
+        header: true
     cache_metadata:
       max-age: -1
       contexts:
