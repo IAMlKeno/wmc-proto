@@ -53,7 +53,17 @@ id: node.islandora_object.repository_item_top_viewer
 targetEntityType: node
 bundle: islandora_object
 mode: repository_item_top_viewer
-content: {  }
+content:
+  display_media_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_paged_content_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   addtoany: true
   display_media_entity_view_1: true

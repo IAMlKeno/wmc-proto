@@ -34,6 +34,11 @@ targetEntityType: node
 bundle: islandora_object
 mode: pdfjs
 content:
+  openseadragon_paged_content_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   pdfjs_media_evas_entity_view_1:
     weight: 0
     region: content

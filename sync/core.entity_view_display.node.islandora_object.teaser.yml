@@ -34,11 +34,21 @@ targetEntityType: node
 bundle: islandora_object
 mode: teaser
 content:
+  display_media_thumbnail:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
+  openseadragon_paged_content_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   solr_search_content_entity_view_1:
     weight: 10
     region: content
