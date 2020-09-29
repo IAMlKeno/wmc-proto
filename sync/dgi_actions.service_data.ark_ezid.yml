@@ -2,6 +2,4 @@ langcode: en
 data:
   label: 'ARK CDL EZID Service Data'
   host: 'https://ezid.cdlib.org'
-  username: apitest
-  password: apitest
   shoulder: 'ark:/99999/fk4'
