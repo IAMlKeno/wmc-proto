@@ -46,6 +46,7 @@ dependencies:
     module:
       - islandora_defaults
   module:
+    - controlled_access_terms
     - field_group
     - user
 third_party_settings:
@@ -67,8 +68,20 @@ third_party_settings:
       children:
         - field_alternative_title
         - field_description
+        - field_model
         - field_member_of
         - field_subject
+        - field_pid
+        - field_access_terms
+        - langcode
+        - field_edtf_date
+        - field_edtf_date_created
+        - field_edtf_date_issued
+        - field_extent
+        - field_identifier
+        - field_linked_agent
+        - field_resource_type
+        - field_rights
       parent_name: group_metadata
       weight: 20
       format_type: field_group_table
@@ -94,6 +107,14 @@ targetEntityType: node
 bundle: islandora_object
 mode: repository_item_bottom_metadata
 content:
+  field_access_terms:
+    type: entity_reference_label
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
   field_alternative_title:
     type: string
     weight: 0
@@ -104,26 +125,124 @@ content:
     third_party_settings: {  }
   field_description:
     type: basic_string
-    weight: 0
+    weight: 1
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_member_of:
-    type: entity_reference_label
-    weight: 15
+  field_edtf_date:
+    type: edtf_default
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+    third_party_settings: {  }
+  field_edtf_date_created:
+    type: edtf_default
+    weight: 9
+    region: content
+    label: hidden
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+    third_party_settings: {  }
+  field_edtf_date_issued:
+    type: edtf_default
+    weight: 10
+    region: content
+    label: hidden
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+    third_party_settings: {  }
+  field_extent:
+    type: string
+    weight: 11
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_identifier:
+    type: string
+    weight: 12
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_linked_agent:
+    type: typed_relation_default
+    weight: 13
     region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-  field_subject:
+  field_member_of:
     type: entity_reference_label
-    weight: 21
+    weight: 3
     region: content
     label: hidden
     settings:
       link: true
+    third_party_settings: {  }
+  field_model:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_pid:
+    type: string
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_resource_type:
+    type: entity_reference_label
+    weight: 14
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_rights:
+    type: string
+    weight: 15
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_subject:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
     third_party_settings: {  }
   openseadragon_paged_content_entity_view_1:
     weight: 10
@@ -136,40 +255,28 @@ hidden:
   display_media_entity_view_2: true
   display_media_service_file: true
   display_media_thumbnail: true
-  field_access_terms: true
   field_classification: true
   field_coordinates: true
   field_coordinates_text: true
   field_dewey_classification: true
   field_display_hints: true
   field_edition: true
-  field_edtf_date: true
-  field_edtf_date_created: true
-  field_edtf_date_issued: true
-  field_extent: true
   field_genre: true
   field_geographic_subject: true
-  field_identifier: true
   field_isbn: true
   field_language: true
   field_lcc_classification: true
-  field_linked_agent: true
   field_local_identifier: true
-  field_model: true
   field_note: true
   field_oclc_number: true
   field_physical_form: true
-  field_pid: true
   field_place_published: true
   field_place_published_country: true
   field_representative_image: true
-  field_resource_type: true
-  field_rights: true
   field_subjects_name: true
   field_table_of_contents: true
   field_temporal_subject: true
   field_weight: true
-  langcode: true
   links: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true

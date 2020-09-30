@@ -140,7 +140,7 @@ reactions:
         label: Share
         provider: addtoany
         label_display: visible
-        weight: '8'
+        weight: '7'
         region: sidebar_second
         parent_wrapper:
           parent: ''
