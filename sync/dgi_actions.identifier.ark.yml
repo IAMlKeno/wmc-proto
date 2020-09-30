@@ -1,6 +1,7 @@
 langcode: en
 status: true
-dependencies: { field.field.node.islandora_object.field_ark }
+dependencies:
+  - field.field.node.islandora_object.field_ark
 id: ark
 label: 'ARK Identifier'
 field: field_ark
