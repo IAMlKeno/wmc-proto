@@ -1984,55 +1984,7 @@ display:
         menu_name: explore
       defaults:
         header: false
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: '# Results'
-          empty: false
-          tokenize: false
-          content:
-            value: "  <div class=\"results-title\">\r\n    <h2>[view:total-rows] <span class=\"_plural-text\"></span></h2>\r\n  </div>\r\n<script>\r\n  var word = [view:total-rows] == 1 ? 'result' : 'results';\r\n  document.getElementsByClassName('_plural-text')[0].innerHTML = word;\r\n</script>"
-            format: full_html
-          plugin_id: text
-        area_1:
-          id: area_1
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: 'Content type'
-          empty: false
-          tokenize: false
-          content:
-            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\" [view:url]?title=[current-page:query:title]&field_genre_target_id=[current-page:query:field_genre_target_id]&field_subject_target_id=[current-page:query:field_subject_target_id]&tid=[current-page:query:tid]&is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\" [view:url]?title=[current-page:query:title]&field_genre_target_id=[current-page:query:field_genre_target_id]&field_subject_target_id=[current-page:query:field_subject_target_id]&tid=[current-page:query:tid]&is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"[view:url]?title=[current-page:query:title]&field_genre_target_id=[current-page:query:field_genre_target_id]&field_subject_target_id=[current-page:query:field_subject_target_id]&tid=[current-page:query:tid]&is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>"
-            format: full_html
-          plugin_id: text
-        display_link:
-          id: display_link
-          table: views
-          field: display_link
-          relationship: none
-          group_type: group
-          admin_label: 'Link to list view'
-          empty: false
-          display_id: page_2
-          label: List
-          plugin_id: display_link
-        display_link_1:
-          id: display_link_1
-          table: views
-          field: display_link
-          relationship: none
-          group_type: group
-          admin_label: 'Link to grid view'
-          empty: false
-          display_id: page_1
-          label: Grid
-          plugin_id: display_link
+      header: {  }
     cache_metadata:
       max-age: -1
       contexts:
