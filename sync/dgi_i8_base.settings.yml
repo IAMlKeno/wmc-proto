@@ -5,7 +5,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://discoverygarden-vsphere-i8.dgi/themes/contrib/dgi_i8_base/favicon.ico'
+  url: 'http://discoverygarden-vsphere-i8-search.dgi/themes/contrib/dgi_i8_base/favicon.ico'
   use_default: true
 schemas:
   bootstrap: 8000
@@ -40,7 +40,7 @@ table: ''
 secondary_logo: 'public://Screen Shot 2020-07-21 at 11.26.47 AM.png'
 popover_placement: bottom
 popover_html: 1
-popover_enabled: 1
+popover_enabled: 0
 features:
   comment_user_picture: true
   comment_user_verification: true

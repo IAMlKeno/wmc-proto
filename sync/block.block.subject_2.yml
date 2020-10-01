@@ -13,7 +13,7 @@ dependencies:
 id: subject_2
 theme: dgi_i8_base
 region: search_facet_header
-weight: 0
+weight: -6
 provider: null
 plugin: 'facet_block:subject'
 settings:

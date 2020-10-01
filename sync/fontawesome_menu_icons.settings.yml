@@ -1,0 +1,53 @@
+menu_link_icons:
+  user_current_paths_edit_redirect:
+    icon: fa-cog
+    prefix: fas
+    tag: i
+    appearance: before
+  dgi_header_logout:
+    icon: fa-sign-out-alt
+    prefix: fas
+    tag: i
+    appearance: before
+  browsebytype_all:
+    icon: 'fal fa-ball-pile'
+    prefix: fa
+    tag: i
+    appearance: before
+  browsebytype_software:
+    icon: 'fal fa-laptop-code'
+    prefix: fa
+    tag: i
+    appearance: before
+  browsebytype_dataset:
+    icon: fa-layer-group
+    prefix: fa
+    tag: i
+    appearance: before
+  browsebytype_audio:
+    icon: 'fal fa-headphones-alt'
+    prefix: fa
+    tag: i
+    appearance: before
+  browsebytype_text:
+    icon: 'fal fa-text'
+    prefix: fa
+    tag: i
+    appearance: before
+  browsebytype_video:
+    icon: 'fal fa-video'
+    prefix: fa
+    tag: i
+    appearance: before
+  browsebytype_image:
+    icon: 'fal fa-image'
+    prefix: fa
+    tag: i
+    appearance: before
+  browsebytype_other:
+    icon: 'fal fa-inventory'
+    prefix: fa
+    tag: i
+    appearance: before
+_core:
+  default_config_hash: 5TDl2QyTY-mHHJ0_VrmcxVDwhp4oqkLTzDI03yXvhAI

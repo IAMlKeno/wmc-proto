@@ -13,7 +13,7 @@ dependencies:
 id: datecreated_2
 theme: dgi_i8_base
 region: search_facet_header
-weight: 0
+weight: -13
 provider: null
 plugin: 'facet_block:date_created'
 settings:

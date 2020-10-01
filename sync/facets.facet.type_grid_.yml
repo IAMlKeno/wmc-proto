@@ -1,4 +1,4 @@
-uuid: f3e561c2-4421-4563-94e1-5da01abf127c
+uuid: e8d1eea2-32d0-4ab2-9fd0-661fc8fea7ad
 langcode: en
 status: true
 dependencies:
@@ -7,30 +7,30 @@ dependencies:
     - views.view.solr_search_content
   module:
     - search_api
-id: member_of_grid_
-name: 'Member of'
-url_alias: member_of
+id: type_grid_
+name: 'Type (Grid)'
+url_alias: type_grid_
 weight: 0
 min_count: 1
-show_only_one_result: true
-field_identifier: title_1
+show_only_one_result: false
+field_identifier: bundle_1
 facet_source_id: 'search_api:views_page__solr_search_content__page_1'
 widget:
-  type: checkbox
+  type: links
   config:
-    show_numbers: false
+    show_numbers: true
     soft_limit: 0
     soft_limit_settings:
       show_less_label: 'Show less'
       show_more_label: 'Show more'
-    show_reset_link: false
-    reset_text: 'Show all'
+    show_reset_link: true
+    reset_text: All
     hide_reset_when_no_selection: false
 query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 15
+hard_limit: 0
 exclude: false
 only_visible_when_facet_source_is_visible: true
 processor_configs:

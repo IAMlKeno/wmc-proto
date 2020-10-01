@@ -13,7 +13,7 @@ dependencies:
 id: linkedagent_2
 theme: dgi_i8_base
 region: search_facet_header
-weight: 0
+weight: -11
 provider: null
 plugin: 'facet_block:linked_agent'
 settings:
