@@ -27,11 +27,10 @@ settings:
     view: solr_search_content
     display_id: page_1
     parameter: search_api_fulltext
-  second_logo: null
-  user_menu: account
   default_second_logo: 1
   second_logo_wrapper:
     second_logo: {  }
+  user_menu: account
 visibility:
   http_headers:
     id: http_headers

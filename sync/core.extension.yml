@@ -58,6 +58,8 @@ module:
   drupalmoduleupgrader: 0
   dynamic_page_cache: 0
   editor: 0
+  embargoes: 0
+  embargoes_log_views: 0
   embed: 0
   entity_browser: 0
   entity_browser_enhanced: 0

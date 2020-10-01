@@ -1,4 +1,4 @@
-uuid: 1899e8c4-ae87-42e9-9955-25e3dfcfe84c
+uuid: 2fd96869-dafa-4bca-8cd5-bbaa0c37471d
 langcode: en
 status: true
 dependencies:
@@ -31,7 +31,7 @@ reactions:
   derivative:
     id: derivative
     actions:
-      image_generate_a_service_file_from_an_original_file: image_generate_a_service_file_from_an_original_file
       image_generate_a_thumbnail_from_an_original_file: image_generate_a_thumbnail_from_an_original_file
+      image_generate_a_jp2000_from_an_original_file: image_generate_a_jp2000_from_an_original_file
     saved: false
 weight: -3
