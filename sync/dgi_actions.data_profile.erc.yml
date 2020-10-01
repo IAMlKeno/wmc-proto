@@ -1,3 +1,5 @@
+label: 'ERC Data Profile'
+id: erc
 data:
   -
     key: erc.who
@@ -8,5 +10,3 @@ data:
   -
     key: erc.when
     source_field: field_edtf_date_created
-label: 'ERC Data Profile'
-id: erc
