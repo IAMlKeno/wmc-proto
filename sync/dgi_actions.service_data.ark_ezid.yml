@@ -1,5 +1,6 @@
 langcode: en
+label: 'ARK EZID Service Data'
+id: ark_ezid
 data:
-  label: 'ARK CDL EZID Service Data'
   host: 'https://ezid.cdlib.org'
   shoulder: 'ark:/99999/fk4'
