@@ -1,0 +1,37 @@
+node_types:
+  - about
+  - article
+  - block_display
+  - islandora_object
+  - page
+view_modes:
+  - binary
+  - content_browser
+  - diff
+  - display_block
+  - full
+  - open_seadragon
+  - pdfjs
+  - repository_item_bottom_metadata
+  - repository_item_collection_description
+  - repository_item_collections
+  - repository_item_collections_grid
+  - repository_item_top_viewer
+  - rss
+  - search_index
+  - search_result
+  - teaser
+  - token
+  - view_mode_selector
+user_roles:
+  - anonymous
+  - authenticated
+  - editor
+  - ingester
+  - repository_administrator
+  - site_administrator
+  - administrator
+excluded_user_roles: {  }
+logs_life_time: 0
+_core:
+  default_config_hash: Dw6pPSSwZLS5mLMTC-z_JJqKy0BXOQvDmHLMcrWfB88

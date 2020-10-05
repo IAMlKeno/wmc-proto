@@ -69,6 +69,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  solr_search_content_entity_view_1_form:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  solr_search_content_entity_view_2_form:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   addtoany: true
   display_media_entity_view_1: true
@@ -100,6 +110,7 @@ hidden:
   field_model: true
   field_note: true
   field_oclc_number: true
+  field_original_file_reference: true
   field_physical_form: true
   field_pid: true
   field_place_published: true

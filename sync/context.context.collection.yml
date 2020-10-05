@@ -67,7 +67,7 @@ reactions:
         provider: system
         label_display: 0
         region: content
-        weight: '1'
+        weight: '-7'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -80,7 +80,7 @@ reactions:
         provider: system
         label_display: visible
         region: content
-        weight: '-4'
+        weight: '-9'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -100,32 +100,6 @@ reactions:
         unique: 0
         context_id: collection
         uuid: 9c0c6077-d281-494f-a901-0c224d050c0b
-      4f528deb-7b52-4856-a7f8-b75a16606a89:
-        id: page_title_block
-        label: 'Page title'
-        provider: core
-        label_display: visible
-        region: content
-        weight: '-3'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: 4f528deb-7b52-4856-a7f8-b75a16606a89
-      7ef5289a-5a33-4d7f-841d-8afc846eeac2:
-        id: 'block_group:c8b952c6-721f-469a-a509-46795d7983e3'
-        label: 'Collection Metadata and Actions'
-        provider: blockgroup
-        label_display: 0
-        region: content
-        weight: '-1'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: 7ef5289a-5a33-4d7f-841d-8afc846eeac2
       fb50bc6d-885b-43e6-96de-3be4ae1bbee9:
         id: dgi_header
         label: 'DGI Header Block'
@@ -157,7 +131,7 @@ reactions:
         label_display: 0
         views_label: ''
         items_per_page: none
-        region: content
+        region: viewer
         weight: '-2'
         context_mapping: {  }
         theme: dgi_i8_base
@@ -174,7 +148,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-8'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
