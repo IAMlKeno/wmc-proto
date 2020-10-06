@@ -6,11 +6,10 @@ dependencies:
     - search_api_solr
     - node
     - user
-    - media
     - taxonomy
+    - media
     - search_api
   config:
-    - field.storage.node.field_original_file_reference
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
     - field.storage.media.field_file_size
@@ -85,17 +84,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: 'search_api_reverse_entity_references_media__field_media_of:bundle'
     type: string
-  bundle_1:
-    label: 'Original file reference » Media » Media type'
-    datasource_id: 'entity:node'
-    property_path: 'field_original_file_reference:entity:bundle'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_original_file_reference
-      module:
-        - media
-        - media
   changed:
     label: Changed
     datasource_id: 'entity:node'
@@ -379,7 +367,6 @@ processor_settings:
     fields:
       - author
       - bundle
-      - bundle_1
       - field_edtf_date_created
       - field_media_file
       - field_type
