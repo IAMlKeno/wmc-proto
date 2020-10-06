@@ -3935,7 +3935,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -4016,6 +4016,7 @@ display:
         exposed_form: false
         filters: true
         filter_groups: true
+        query: false
       relationships: {  }
       css_class: 'solr-search-content--grid solr-search-content'
       style:
@@ -4131,6 +4132,12 @@ display:
           view_mode: default
           bypass_access: false
           plugin_id: entity
+      query:
+        type: search_api_query
+        options:
+          skip_access: false
+          bypass_access: false
+          preserve_facet_query_args: false
     cache_metadata:
       contexts:
         - 'languages:language_content'
