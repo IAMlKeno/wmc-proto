@@ -174,8 +174,8 @@ module:
   views_exposed_filter_blocks: 0
   views_field_view: 0
   views_ui: 0
-  workflows: 0
   wmcdora: 0
+  workflows: 0
   menu_link_content: 1
   content_translation: 10
   views: 10
