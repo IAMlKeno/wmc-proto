@@ -246,6 +246,7 @@ display:
       allow:
         items_per_page: false
       block_description: ''
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
