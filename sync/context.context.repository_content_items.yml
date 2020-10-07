@@ -71,9 +71,9 @@ reactions:
         id: page_title_block
         label: 'Page title'
         provider: core
-        label_display: '0'
+        label_display: 0
         weight: '1'
-        region: content
+        region: viewer
         parent_wrapper:
           parent: ''
         all_parents: {  }
@@ -155,17 +155,17 @@ reactions:
         id: 'views_block:node_views_count_statistics-block_1'
         label: ''
         provider: views
-        label_display: '0'
+        label_display: 0
         views_label: ''
         items_per_page: none
         weight: '6'
-        region: sidebar_second
+        region: viewer
         parent_wrapper:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
         theme: dgi_i8_base
-        css_class: view-node-views-count-statistics
+        css_class: 'view-node-views-count-statistics col-md-2'
         unique: 0
         context_id: repository_content_items
         uuid: a5f58dc8-ebcd-40f0-a11f-6548f0ae77e8
