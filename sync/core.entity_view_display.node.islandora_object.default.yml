@@ -5,21 +5,41 @@ dependencies:
   config:
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_classification
+    - field.field.node.islandora_object.field_coordinates
+    - field.field.node.islandora_object.field_coordinates_text
     - field.field.node.islandora_object.field_description
+    - field.field.node.islandora_object.field_dewey_classification
     - field.field.node.islandora_object.field_display_hints
+    - field.field.node.islandora_object.field_edition
     - field.field.node.islandora_object.field_edtf_date
     - field.field.node.islandora_object.field_edtf_date_created
     - field.field.node.islandora_object.field_edtf_date_issued
     - field.field.node.islandora_object.field_extent
+    - field.field.node.islandora_object.field_genre
+    - field.field.node.islandora_object.field_geographic_subject
     - field.field.node.islandora_object.field_identifier
+    - field.field.node.islandora_object.field_isbn
+    - field.field.node.islandora_object.field_language
+    - field.field.node.islandora_object.field_lcc_classification
     - field.field.node.islandora_object.field_linked_agent
+    - field.field.node.islandora_object.field_local_identifier
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
+    - field.field.node.islandora_object.field_note
+    - field.field.node.islandora_object.field_oclc_number
+    - field.field.node.islandora_object.field_physical_form
     - field.field.node.islandora_object.field_pid
+    - field.field.node.islandora_object.field_place_published
+    - field.field.node.islandora_object.field_place_published_country
     - field.field.node.islandora_object.field_representative_image
     - field.field.node.islandora_object.field_resource_type
     - field.field.node.islandora_object.field_rights
     - field.field.node.islandora_object.field_subject
+    - field.field.node.islandora_object.field_subjects_name
+    - field.field.node.islandora_object.field_table_of_contents
+    - field.field.node.islandora_object.field_temporal_subject
+    - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
   enforced:
     module:
@@ -31,17 +51,17 @@ third_party_settings:
   field_group:
     group_metadata:
       children:
-        - repository_item_content_blocks_metadata
         - repository_item_content_blocks_classification
+        - repository_item_content_blocks_metadata
       parent_name: ''
-      weight: 0
+      weight: 53
       format_type: fieldset
       format_settings:
-        label: Metadata
         description: ''
         id: ''
         classes: metadata
       label: Metadata
+      region: hidden
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
 id: node.islandora_object.default
@@ -49,22 +69,17 @@ targetEntityType: node
 bundle: islandora_object
 mode: default
 content:
-  repository_item_content_blocks_classification:
-    weight: 2
-    region: content
+  openseadragon_paged_content_entity_view_1:
+    weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
   repository_item_content_blocks_entity_view_2:
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   repository_item_content_blocks_entity_view_3:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  repository_item_content_blocks_metadata:
     weight: 1
     region: content
     settings: {  }
@@ -120,5 +135,7 @@ hidden:
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
+  repository_item_content_blocks_classification: true
+  repository_item_content_blocks_metadata: true
   solr_search_content_entity_view_1: true
   solr_search_content_entity_view_2: true
