@@ -12,7 +12,7 @@ _core:
 id: dgi_i8_base_local_tasks
 theme: dgi_i8_base
 region: content
-weight: -6
+weight: -17
 provider: null
 plugin: local_tasks_block
 settings:
