@@ -1,31 +1,28 @@
-uuid: 276d97a8-29ae-43ca-b392-f76205c831e3
+uuid: ea142e07-3d7d-48f1-a40d-683d38e7bd4b
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.content_counts
+    - facets.facet.model_collection_list
+    - blockgroup.block_group_content.search_facet_header
   module:
-    - block_class
+    - facets
     - request_data_conditions
-    - views
+    - blockgroup
   theme:
     - dgi_i8_base
-third_party_settings:
-  block_class:
-    classes: content-counts-block
-id: views_block__content_counts_block_1
+id: modelcollectionlist
 theme: dgi_i8_base
-region: sidr
-weight: -16
+region: search_facet_header
+weight: -11
 provider: null
-plugin: 'views_block:content_counts-block_1'
+plugin: 'facet_block:model_collection_list'
 settings:
-  id: 'views_block:content_counts-block_1'
-  label: ''
-  provider: views
+  id: 'facet_block:model_collection_list'
+  label: 'Model Collection List'
+  provider: facets
   label_display: '0'
-  views_label: ''
-  items_per_page: none
+  block_id: modelcollectionlist
 visibility:
   http_headers:
     id: http_headers

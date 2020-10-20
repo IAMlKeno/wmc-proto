@@ -13,7 +13,7 @@ dependencies:
 id: datecreatedgrid
 theme: dgi_i8_base
 region: search_facet_header
-weight: -14
+weight: -19
 provider: null
 plugin: 'facet_block:date_created_grid_'
 settings:

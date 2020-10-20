@@ -1,30 +1,24 @@
-uuid: 1b360bc3-4289-410e-a03b-ce38add16417
+uuid: ee0230cd-f314-4bd0-96ec-335b1be5e6e0
 langcode: en
 status: true
 dependencies:
   module:
-    - dgi_i8_filter_collection
     - request_data_conditions
-    - blockgroup
+    - views_exposed_filter_blocks
   theme:
     - dgi_i8_base
-  config:
-    - blockgroup.block_group_content.search_facet_header
-id: dgiviewsearchform
+id: viewsexposedfilterblock
 theme: dgi_i8_base
-region: search_facet_header
-weight: -18
+region: sidr
+weight: 0
 provider: null
-plugin: dgi_view_search_form
+plugin: views_exposed_filter_blocks_block
 settings:
-  id: dgi_view_search_form
-  label: 'Filter collection'
-  provider: dgi_i8_filter_collection
-  label_display: visible
-  search:
-    view: solr_search_content
-    display_id: page_1
-    parameter: search_api_fulltext
+  id: views_exposed_filter_blocks_block
+  label: 'Views exposed filter block'
+  provider: views_exposed_filter_blocks
+  label_display: '0'
+  view_display: 'solr_search_content:block_3'
 visibility:
   http_headers:
     id: http_headers

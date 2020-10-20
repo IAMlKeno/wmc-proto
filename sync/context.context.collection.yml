@@ -166,8 +166,8 @@ reactions:
         context_id: collection
         uuid: bca40d6a-c98c-4ed6-92b5-fab5a0b5ca40
         override: {  }
-      9b244ead-734a-440d-a0ee-f288875ccfe0:
-        id: 'views_block:solr_search_content-block_2'
+      d155148e-f921-43ce-bd05-cddb7275c486:
+        id: 'views_block:solr_search_content-block_4'
         label: ''
         provider: views
         label_display: 0
@@ -180,8 +180,7 @@ reactions:
         css_class: ''
         unique: 0
         context_id: collection
-        uuid: 9b244ead-734a-440d-a0ee-f288875ccfe0
-        override: {  }
+        uuid: d155148e-f921-43ce-bd05-cddb7275c486
     id: blocks
     saved: false
     uuid: 379baa20-03b9-4402-8a5c-20a3201f239b

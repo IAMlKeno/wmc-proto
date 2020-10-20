@@ -13,7 +13,7 @@ dependencies:
 id: modelgrid
 theme: dgi_i8_base
 region: search_facet_header
-weight: -7
+weight: -9
 provider: null
 plugin: 'facet_block:model_grid_'
 settings:
