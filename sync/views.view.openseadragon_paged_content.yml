@@ -2,10 +2,13 @@ uuid: ea7a9b09-8ebd-4d77-a9da-736369ae44af
 langcode: en
 status: true
 dependencies:
+  config:
+    - block.block.openseadragonblock
   module:
     - eva
     - node
     - user
+    - views_autocomplete_filters
 id: openseadragon_paged_content
 label: 'Openseadragon Paged Content'
 module: views
@@ -75,8 +78,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: ' '
             make_link: false
             path: ''
             absolute: false
@@ -130,36 +133,59 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-      filters: {  }
-      sorts:
-        created:
-          id: created
+      filters:
+        title:
+          id: title
           table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
+          operator: '='
+          value: not_a_title_that_exists
+          group: 1
           exposed: false
           expose:
+            operator_id: ''
             label: ''
-          granularity: second
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            autocomplete_filter: 0
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: ''
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+      sorts: {  }
       header: {  }
-      footer:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: 'testing things'
-          plugin_id: text_custom
+      footer: {  }
+      empty:
         entity_block:
           id: entity_block
           table: views
@@ -167,13 +193,12 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           tokenize: true
-          target: openseadragon_block
+          target: openseadragonblock
           view_mode: default
           bypass_access: false
           plugin_id: entity
-      empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
