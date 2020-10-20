@@ -244,11 +244,6 @@ content:
       link_to_entity: false
       native_language: false
     third_party_settings: {  }
-  openseadragon_paged_content_entity_view_1:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
   addtoany: true
   display_media_entity_view_1: true
@@ -281,6 +276,7 @@ hidden:
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
+  openseadragon_paged_content_entity_view_1: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
