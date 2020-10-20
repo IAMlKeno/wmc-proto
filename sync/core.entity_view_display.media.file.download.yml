@@ -1,0 +1,65 @@
+uuid: 7c108ccb-9ae1-490e-bcbb-2547da80c3a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.download
+    - field.field.media.file.field_access_terms
+    - field.field.media.file.field_file_size
+    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_of
+    - field.field.media.file.field_media_use
+    - field.field.media.file.field_mime_type
+    - field.field.media.file.field_original_name
+    - media.type.file
+  module:
+    - field_group
+    - file
+third_party_settings:
+  field_group:
+    group_d:
+      children:
+        - field_media_file
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: true
+        label_element: label
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: dgi-download-media
+      label: Download
+_core:
+  default_config_hash: 5HGHWtGLH5W_p2zLKU2NNlbvyyYHz1U9hUIxVUUZdjA
+id: media.file.download
+targetEntityType: media
+bundle: file
+mode: download
+content:
+  field_media_file:
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
