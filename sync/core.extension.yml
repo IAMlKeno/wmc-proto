@@ -1,8 +1,6 @@
 module:
   action: 0
   addtoany: 0
-  admin_toolbar: 0
-  admin_toolbar_tools: 0
   apollo: 0
   automated_cron: 0
   basic_auth: 0
@@ -22,9 +20,7 @@ module:
   comment: 0
   config: 0
   config_filter: 0
-  config_inspector: 0
   config_override: 0
-  config_override_warn: 0
   config_split: 0
   config_translation: 0
   config_update: 0
@@ -35,7 +31,6 @@ module:
   content_sync: 0
   content_sync_helper: 0
   context: 0
-  context_active_trail: 0
   context_groups: 0
   context_ui: 0
   contextual: 0
@@ -44,7 +39,6 @@ module:
   custom_add_another: 0
   datetime: 0
   dblog: 0
-  devel: 0
   dgi_header: 0
   dgi_i8_helper: 0
   dgi_i8_helper_config_split_exporter: 0
@@ -54,9 +48,10 @@ module:
   dgi_migrate: 0
   dgi_react_components: 0
   diff: 0
-  drupalmoduleupgrader: 0
   dynamic_page_cache: 0
   editor: 0
+  embargoes: 0
+  embargoes_log_views: 0
   embed: 0
   entity_browser: 0
   entity_browser_enhanced: 0
