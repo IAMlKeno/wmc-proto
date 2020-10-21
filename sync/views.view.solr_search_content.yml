@@ -64,7 +64,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 2
+          items_per_page: 0
           offset: 0
           id: 0
           total_pages: null
@@ -3430,7 +3430,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
+          default: title_1
           empty_table: false
       defaults:
         style: false
@@ -4292,7 +4292,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           tokenize: false
           content:
             value: "<a class=\"views-display-link\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link is-active\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle active disabled\"></i>"
@@ -4349,18 +4349,6 @@ display:
           exposed: true
           expose:
             label: 'Member of'
-          plugin_id: search_api
-        title:
-          id: title
-          table: search_api_index_default_solr_index
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
           plugin_id: search_api
       relationships: {  }
       title: 'Collection (List)'
@@ -4824,7 +4812,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           tokenize: false
           content:
             value: '<i class="fal fa-info-circle"></i>'
@@ -6048,7 +6036,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           tokenize: false
           content:
             value: '<i class="fal fa-info-circle active disabled"></i>'
