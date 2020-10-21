@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - context_active_trail
     - islandora
     - node
     - request_data_conditions
@@ -188,10 +187,4 @@ reactions:
     id: body_class
     body_class: islandora-collection-grid
     saved: false
-  active_trail:
-    id: active_trail
-    trail: 'dgi-header:dgi_header.explore'
-    breadcrumbs: 0
-    breadcrumb_title: 0
-    uuid: 08dedbc0-7823-4d12-830b-2069b5ed5587
 weight: -4
