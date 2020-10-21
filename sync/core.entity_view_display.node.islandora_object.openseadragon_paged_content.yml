@@ -1,9 +1,9 @@
-uuid: 1fcd8ff9-d413-4aff-9a73-6fa298a27a45
+uuid: 47a8fad0-4886-4fd7-809b-d7b0efadd8e6
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.open_seadragon
+    - core.entity_view_mode.node.openseadragon_paged_content
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_classification
@@ -46,21 +46,55 @@ dependencies:
     module:
       - islandora_defaults
   module:
+    - field_group
     - user
+third_party_settings:
+  field_group:
+    group_metadata:
+      children:
+        - repository_item_content_blocks_classification
+        - repository_item_content_blocks_metadata
+      parent_name: ''
+      weight: 53
+      format_type: fieldset
+      format_settings:
+        description: ''
+        id: ''
+        classes: metadata
+      label: Metadata
+      region: hidden
+    group_preview:
+      children:
+        - openseadragon_paged_content_entity_view_1
+      parent_name: ''
+      weight: 20
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        id: ''
+        classes: ''
+      label: Preview
 _core:
-  default_config_hash: mPp1vEJs4FqdSUFadcVwL1lQyATNL96yhZ0Na3Xkfvs
-id: node.islandora_object.open_seadragon
+  default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
+id: node.islandora_object.openseadragon_paged_content
 targetEntityType: node
 bundle: islandora_object
-mode: open_seadragon
+mode: openseadragon_paged_content
 content:
-  display_media_entity_view_3:
-    weight: 4
+  openseadragon_paged_content_entity_view_1:
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  openseadragon_media_evas_service_file:
-    weight: 0
+  repository_item_content_blocks_entity_view_2:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  repository_item_content_blocks_entity_view_3:
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -111,13 +145,11 @@ hidden:
   links: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
-  openseadragon_paged_content_entity_view_1: true
+  openseadragon_media_evas_service_file: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
   repository_item_content_blocks_classification: true
-  repository_item_content_blocks_entity_view_2: true
-  repository_item_content_blocks_entity_view_3: true
   repository_item_content_blocks_metadata: true
   solr_search_content_entity_view_1: true
   solr_search_content_entity_view_2: true
