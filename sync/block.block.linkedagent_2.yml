@@ -1,6 +1,6 @@
 uuid: b440c4b0-47eb-47b6-9736-eb0ce552999f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.linked_agent
