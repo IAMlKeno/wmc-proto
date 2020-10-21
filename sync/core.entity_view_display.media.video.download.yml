@@ -1,0 +1,65 @@
+uuid: f6077cd4-335a-4163-bb6d-b8aeb6f83639
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.download
+    - field.field.media.video.field_access_terms
+    - field.field.media.video.field_file_size
+    - field.field.media.video.field_media_of
+    - field.field.media.video.field_media_use
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_mime_type
+    - field.field.media.video.field_original_name
+    - media.type.video
+  module:
+    - field_group
+    - file
+third_party_settings:
+  field_group:
+    group_download:
+      children:
+        - field_media_video_file
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: dgi-download-media
+        element: div
+        show_label: true
+        label_element: label
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Download
+_core:
+  default_config_hash: vLzYRJOw7vN__DvPOfqESPVCf5PekD5_yup5dPJnI4g
+id: media.video.download
+targetEntityType: media
+bundle: video
+mode: download
+content:
+  field_media_video_file:
+    type: file_default
+    weight: 1
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

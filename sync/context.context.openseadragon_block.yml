@@ -28,7 +28,7 @@ reactions:
         id: openseadragon_block
         label: 'Openseadragon block'
         provider: openseadragon
-        label_display: 0
+        label_display: '0'
         region: content
         weight: '-1'
         iiif_manifest_url: 'http://localhost:8000/node/[node:nid]/manifest'
@@ -57,8 +57,8 @@ reactions:
         label: 'Openseadragon block'
         provider: openseadragon
         label_display: 0
-        region: viewer
-        weight: '0'
+        region: content
+        weight: '1'
         iiif_manifest_url: '[node:url:unaliased:absolute]/manifest'
         context_mapping: {  }
         theme: dgi_i8_base
