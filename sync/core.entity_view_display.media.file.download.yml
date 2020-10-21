@@ -63,7 +63,7 @@ content:
   field_media_file:
     label: visually_hidden
     settings:
-      link_text: '[media:field_media_use:entity:name] ([file:extension]) [file:size]'
+      link_text: '[media:field_media_use:entity:name] ([file:extension]) — [file:size]'
       new_tab: true
       force_download: true
       custom_classes: dgi-file-download
