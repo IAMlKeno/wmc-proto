@@ -5,14 +5,11 @@ dependencies:
   config:
     - block.block.collectionfacetsgrid
     - block.block.collectionfacetslist
-    - block.block.datecreated_2
     - block.block.exposedformsolr_search_contentpage_1
     - block.block.exposedformsolr_search_contentpage_2
-    - block.block.linkedagent_2
     - block.block.memberof_2
     - block.block.model_2
     - block.block.searchfacetheader
-    - block.block.subject_2
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_identifier
     - field.storage.node.field_model
