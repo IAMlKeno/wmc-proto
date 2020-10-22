@@ -484,7 +484,7 @@ display:
           group_type: count
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''

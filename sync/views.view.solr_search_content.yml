@@ -4014,8 +4014,8 @@ display:
         footer: false
         use_ajax: false
         exposed_form: false
-        filters: true
-        filter_groups: true
+        filters: false
+        filter_groups: false
       relationships: {  }
       css_class: 'solr-search-content--grid solr-search-content'
       style:
@@ -4131,6 +4131,276 @@ display:
           view_mode: default
           bypass_access: false
           plugin_id: entity
+      filters:
+        type:
+          id: type
+          table: search_api_index_default_solr_index
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            islandora_object: islandora_object
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: search_api_options
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_default_solr_index
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_fulltext
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 0
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: null
+          fields:
+            - title
+          plugin_id: search_api_fulltext
+        name_1:
+          id: name_1
+          table: search_api_index_default_solr_index
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_1_op
+            label: 'is not equal to'
+            description: ''
+            use_operator: false
+            operator: name_1_op
+            identifier: not_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        name:
+          id: name
+          table: search_api_index_default_solr_index
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_op
+            label: 'Is equal to'
+            description: ''
+            use_operator: false
+            operator: name_op
+            identifier: is_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+        changed:
+          id: changed
+          table: search_api_index_default_solr_index
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: changed_op
+            label: Changed
+            description: null
+            use_operator: false
+            operator: changed_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: changed
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+            min_placeholder: null
+            max_placeholder: null
+          is_grouped: true
+          group_info:
+            label: Changed
+            description: ''
+            identifier: changed
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Last week'
+                operator: '>='
+                value:
+                  type: offset
+                  value: '-7 day'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Last month'
+                operator: '>='
+                value:
+                  type: offset
+                  value: '-30 day'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Last year'
+                operator: '>='
+                value:
+                  type: offset
+                  value: '-365 day'
+                  min: ''
+                  max: ''
+          plugin_id: search_api_date
+      filter_groups:
+        operator: OR
+        groups:
+          1: AND
     cache_metadata:
       contexts:
         - 'languages:language_content'
