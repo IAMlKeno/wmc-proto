@@ -14,12 +14,12 @@ dependencies:
     - media.type.video
   module:
     - field_group
-    - file
+    - file_download_link
 third_party_settings:
   field_group:
     group_download:
       children:
-        - field_media_video_file
+        - group_b
       parent_name: ''
       weight: 20
       format_type: html_element
@@ -35,6 +35,24 @@ third_party_settings:
         effect: none
         speed: fast
       label: Download
+    group_b:
+      children:
+        - field_media_video_file
+      parent_name: group_download
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: dgi-download-block-content-wrapper
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'block content wrapper'
 _core:
   default_config_hash: vLzYRJOw7vN__DvPOfqESPVCf5PekD5_yup5dPJnI4g
 id: media.video.download
@@ -43,11 +61,14 @@ bundle: video
 mode: download
 content:
   field_media_video_file:
-    type: file_default
+    type: file_download_link
     weight: 1
     label: visually_hidden
     settings:
-      use_description_as_link_text: true
+      link_text: '[media:field_media_use:entity:name] ([file:extension]) — [file:size]'
+      new_tab: true
+      force_download: true
+      custom_classes: dgi-video-download
     third_party_settings: {  }
     region: content
 hidden:

@@ -165,7 +165,7 @@ reactions:
         all_parents: {  }
         context_mapping: {  }
         theme: dgi_i8_base
-        css_class: 'view-node-views-count-statistics col-md-3'
+        css_class: 'view-node-views-count-statistics col-sm-3'
         unique: 0
         context_id: repository_content_items
         uuid: a5f58dc8-ebcd-40f0-a11f-6548f0ae77e8
