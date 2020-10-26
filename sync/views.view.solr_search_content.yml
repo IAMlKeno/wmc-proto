@@ -3,14 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block.block.collectionfacetsgrid
-    - block.block.collectionfacetslist
     - block.block.datecreated_2
     - block.block.exposedformsolr_search_contentpage_1
     - block.block.exposedformsolr_search_contentpage_2
     - block.block.linkedagent_2
     - block.block.memberof_2
+    - block.block.memberofgrid
+    - block.block.memberofgridxx
+    - block.block.memberoflistxx
     - block.block.model_2
+    - block.block.modelgrid
+    - block.block.modelgridxx
+    - block.block.modellistxx
     - block.block.searchfacetheader
     - block.block.subject_2
     - field.storage.node.field_edtf_date_created
@@ -3011,8 +3015,8 @@ display:
           not: false
           plugin_id: search_api
       footer:
-        entity_block:
-          id: entity_block
+        entity_block_1:
+          id: entity_block_1
           table: views
           field: entity_block
           relationship: none
@@ -3020,7 +3024,20 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          target: collectionfacetsgrid
+          target: memberofgridxx
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_2:
+          id: entity_block_2
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: modelgridxx
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -3590,8 +3607,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: 'solr-search/content/list?f[0]=identifier_page_list:{{ field_identifier }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -4300,16 +4317,29 @@ display:
           plugin_id: text
       use_ajax: true
       footer:
-        entity_block:
-          id: entity_block
+        entity_block_1:
+          id: entity_block_1
           table: views
           field: entity_block
           relationship: none
           group_type: group
           admin_label: ''
-          empty: true
+          empty: false
           tokenize: true
-          target: collectionfacetslist
+          target: memberoflistxx
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_2:
+          id: entity_block_2
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: modellistxx
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -4735,8 +4765,21 @@ display:
         type: none
       arguments: {  }
       footer:
-        entity_block:
-          id: entity_block
+        entity_block_1:
+          id: entity_block_1
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: true
+          target: memberofgrid
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_2:
+          id: entity_block_2
           table: views
           field: entity_block
           relationship: none
@@ -4744,7 +4787,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          target: searchfacetheader
+          target: modelgrid
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -5342,8 +5385,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: 'solr-search/content/list?f[0]=identifier_page_list:{{ field_identifier }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -6057,16 +6100,29 @@ display:
           plugin_id: entity
       use_ajax: false
       footer:
-        entity_block:
-          id: entity_block
+        entity_block_1:
+          id: entity_block_1
           table: views
           field: entity_block
           relationship: none
           group_type: group
           admin_label: ''
-          empty: true
+          empty: false
           tokenize: true
-          target: searchfacetheader
+          target: memberof_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block_2:
+          id: entity_block_2
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: model_2
           view_mode: default
           bypass_access: false
           plugin_id: entity
