@@ -44,6 +44,7 @@ module:
   dgi_i8_helper_config_split_exporter: 0
   dgi_i8_helper_flysystem_s3: 0
   dgi_i8_helper_standard_workaround: 0
+  dgi_i8_selectboxit: 0
   dgi_migrate: 0
   dgi_react_components: 0
   diff: 0
