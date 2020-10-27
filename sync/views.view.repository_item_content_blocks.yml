@@ -15,6 +15,7 @@ dependencies:
     - field.storage.node.field_linked_agent
     - field.storage.node.field_rights
   module:
+    - better_exposed_filters
     - controlled_access_terms
     - eva
     - expand_collapse_formatter
@@ -62,7 +63,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 1
+          items_per_page: 0
           offset: 0
       style:
         type: default
@@ -202,6 +203,60 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'Repository Item: Collection Viewer'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: 'Repository item content, top viewer display'
+      block_category: 'Repository Item Content Blocks'
+      allow:
+        items_per_page: true
+      defaults:
+        css_class: true
+        pager: false
+        exposed_form: false
+      pager:
+        type: some
+        options:
+          items_per_page: 0
+          offset: 0
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: null
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            sort:
+              plugin_id: default
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+    deleted: false
   classification:
     display_plugin: entity_view
     id: classification
@@ -1266,6 +1321,8 @@ display:
         items_per_page: true
       defaults:
         css_class: true
+        title: false
+      title: 'Top Viewer'
     cache_metadata:
       max-age: -1
       contexts:

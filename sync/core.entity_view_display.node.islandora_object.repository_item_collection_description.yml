@@ -56,11 +56,11 @@ third_party_settings:
       weight: 1
       format_type: fieldset
       format_settings:
-        label: Metadata
         description: ''
         id: ''
         classes: metadata
       label: Metadata
+      region: hidden
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
 id: node.islandora_object.repository_item_collection_description
@@ -142,6 +142,7 @@ hidden:
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
+  openseadragon_paged_content_entity_view_1: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
