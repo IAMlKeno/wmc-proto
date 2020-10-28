@@ -13,7 +13,7 @@ dependencies:
 id: memberofgrid
 theme: dgi_i8_base
 region: search_facet_header
-weight: 0
+weight: -12
 provider: null
 plugin: 'facet_block:member_of_grid_'
 settings:
