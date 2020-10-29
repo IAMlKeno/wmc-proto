@@ -28,11 +28,10 @@ third_party_settings:
       format_type: details
       region: content
       format_settings:
-        id: ''
-        classes: ''
         description: ''
         open: true
-        required_fields: false
+        id: islandora_audio_preview
+        classes: ''
       label: Preview
 _core:
   default_config_hash: tDCyYVpxmp1mDsORGEQYEKD7w9ouL0h8HzMl9SFjPYo

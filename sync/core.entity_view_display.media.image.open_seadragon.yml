@@ -30,11 +30,10 @@ third_party_settings:
       format_type: details
       region: content
       format_settings:
-        id: ''
-        classes: ''
         description: ''
         open: true
-        required_fields: false
+        id: islandora_image_preview
+        classes: ''
       label: Preview
 _core:
   default_config_hash: eh47H7rkaD3xK-hM_DEodnS-m01pYTWtYpG0-58F7ZA
