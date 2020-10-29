@@ -5004,19 +5004,12 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-<<<<<<< HEAD
             label: 'Fulltext search'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-=======
-            label: ''
-            description: ''
-            use_operator: false
-            operator: search_api_fulltext_op
->>>>>>> 3e6b73be8ddbe6e682536c2da69e5b4664f376b8
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -5024,13 +5017,6 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-<<<<<<< HEAD
-              editor: '0'
-              ingester: '0'
-              repository_administrator: '0'
-              site_administrator: '0'
-=======
->>>>>>> 3e6b73be8ddbe6e682536c2da69e5b4664f376b8
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 0
@@ -5039,11 +5025,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-<<<<<<< HEAD
-=======
-            operator_limit_selection: false
-            operator_list: {  }
->>>>>>> 3e6b73be8ddbe6e682536c2da69e5b4664f376b8
           is_grouped: false
           group_info:
             label: ''
@@ -5056,18 +5037,11 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-<<<<<<< HEAD
-          parse_mode: phrase
-          min_length: null
-          fields: {  }
-          plugin_id: views_autocomplete_filters_search_api_fulltext
-=======
           parse_mode: terms
           min_length: null
           fields:
             - title
           plugin_id: search_api_fulltext
->>>>>>> 3e6b73be8ddbe6e682536c2da69e5b4664f376b8
         name_1:
           id: name_1
           table: search_api_index_default_solr_index
@@ -5238,11 +5212,7 @@ display:
                   max: ''
           plugin_id: search_api_date
       filter_groups:
-<<<<<<< HEAD
-        operator: OR
-=======
         operator: AND
->>>>>>> 3e6b73be8ddbe6e682536c2da69e5b4664f376b8
         groups:
           1: AND
     cache_metadata:
