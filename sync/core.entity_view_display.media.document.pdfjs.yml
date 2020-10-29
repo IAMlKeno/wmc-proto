@@ -27,7 +27,7 @@ third_party_settings:
       format_settings:
         description: ''
         open: true
-        id: ''
+        id: islandora_document_preview
         classes: ''
       label: Preview
 _core:
