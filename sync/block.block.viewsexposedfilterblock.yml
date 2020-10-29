@@ -1,31 +1,24 @@
-uuid: 276d97a8-29ae-43ca-b392-f76205c831e3
+uuid: ee0230cd-f314-4bd0-96ec-335b1be5e6e0
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.content_counts
   module:
-    - block_class
     - request_data_conditions
-    - views
+    - views_exposed_filter_blocks
   theme:
     - dgi_i8_base
-third_party_settings:
-  block_class:
-    classes: content-counts-block
-id: views_block__content_counts_block_1
+id: viewsexposedfilterblock
 theme: dgi_i8_base
 region: sidr
-weight: -16
+weight: 0
 provider: null
-plugin: 'views_block:content_counts-block_1'
+plugin: views_exposed_filter_blocks_block
 settings:
-  id: 'views_block:content_counts-block_1'
-  label: ''
-  provider: views
+  id: views_exposed_filter_blocks_block
+  label: 'Views exposed filter block'
+  provider: views_exposed_filter_blocks
   label_display: '0'
-  views_label: ''
-  items_per_page: none
+  view_display: 'solr_search_content:block_3'
 visibility:
   http_headers:
     id: http_headers

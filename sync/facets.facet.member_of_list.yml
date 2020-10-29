@@ -1,4 +1,4 @@
-uuid: 056ca381-65ea-4a6d-9be9-f7db83319ca2
+uuid: 9c144aaf-3854-4b69-b1a1-2905ca7f40c9
 langcode: en
 status: true
 dependencies:
@@ -7,14 +7,14 @@ dependencies:
     - views.view.solr_search_content
   module:
     - search_api
-id: subject_grid_
-name: Subject
-url_alias: subject
+id: member_of_list
+name: 'Member of'
+url_alias: member_of_list
 weight: 0
 min_count: 1
 show_only_one_result: true
-field_identifier: name_3
-facet_source_id: 'search_api:views_page__solr_search_content__page_1'
+field_identifier: title_1
+facet_source_id: 'search_api:views_block__solr_search_content__block_4'
 widget:
   type: checkbox
   config:
@@ -30,9 +30,9 @@ query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 15
+hard_limit: 0
 exclude: false
-only_visible_when_facet_source_is_visible: true
+only_visible_when_facet_source_is_visible: false
 processor_configs:
   active_widget_order:
     processor_id: active_widget_order
@@ -40,13 +40,6 @@ processor_configs:
       sort: 20
     settings:
       sort: DESC
-  count_limit:
-    processor_id: count_limit
-    weights:
-      build: 50
-    settings:
-      minimum_items: 1
-      maximum_items: null
   count_widget_order:
     processor_id: count_widget_order
     weights:

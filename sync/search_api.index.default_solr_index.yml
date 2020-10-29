@@ -15,6 +15,10 @@ dependencies:
     - field.storage.media.field_media_of
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
+<<<<<<< HEAD
+=======
+    - field.storage.node.field_identifier
+>>>>>>> 3e6b73be8ddbe6e682536c2da69e5b4664f376b8
     - field.storage.node.field_linked_agent
     - field.storage.node.field_member_of
     - field.storage.node.field_model
@@ -124,6 +128,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.media.field_file_size
+  field_identifier:
+    label: Identifier
+    datasource_id: 'entity:node'
+    property_path: field_identifier
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_identifier
   field_media_file:
     label: File
     datasource_id: 'entity:media'
@@ -368,6 +380,7 @@ processor_settings:
       - author
       - bundle
       - field_edtf_date_created
+      - field_identifier
       - field_media_file
       - field_type
       - name

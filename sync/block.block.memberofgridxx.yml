@@ -1,31 +1,28 @@
-uuid: 276d97a8-29ae-43ca-b392-f76205c831e3
+uuid: a6ed2a08-97f3-4640-beb3-d111ec25361e
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.content_counts
+    - facets.facet.member_of_collection_grid
+    - blockgroup.block_group_content.collection_facets_grid
   module:
-    - block_class
+    - facets
     - request_data_conditions
-    - views
+    - blockgroup
   theme:
     - dgi_i8_base
-third_party_settings:
-  block_class:
-    classes: content-counts-block
-id: views_block__content_counts_block_1
+id: memberofgridxx
 theme: dgi_i8_base
-region: sidr
-weight: -16
+region: collection_facets_grid
+weight: 0
 provider: null
-plugin: 'views_block:content_counts-block_1'
+plugin: 'facet_block:member_of_collection_grid'
 settings:
-  id: 'views_block:content_counts-block_1'
-  label: ''
-  provider: views
+  id: 'facet_block:member_of_collection_grid'
+  label: 'Member of grid'
+  provider: facets
   label_display: '0'
-  views_label: ''
-  items_per_page: none
+  block_id: memberofgridxx
 visibility:
   http_headers:
     id: http_headers

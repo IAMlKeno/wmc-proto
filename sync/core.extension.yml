@@ -158,7 +158,6 @@ module:
   user_current_paths: 0
   view_mode_selector: 0
   views_autocomplete_filters: 0
-  views_autosubmit: 0
   views_bootstrap: 0
   views_bulk_edit: 0
   views_bulk_operations: 0
