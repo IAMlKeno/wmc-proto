@@ -1,0 +1,10 @@
+uuid: 14c27262-f523-426f-b1c0-d58be7f38c74
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.technical_metadata
+label: 'Technical Metadata'
+targetEntityType: media
+cache: true

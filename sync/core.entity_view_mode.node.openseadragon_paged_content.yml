@@ -1,0 +1,10 @@
+uuid: ebb5c072-dcef-403f-8228-12c8e2e8dc2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.openseadragon_paged_content
+label: 'Openseadragon Paged Content'
+targetEntityType: node
+cache: true

@@ -1,0 +1,86 @@
+uuid: b94851fc-71dd-4c12-b74f-3adfe75d5f97
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.download
+    - field.field.media.document.field_access_terms
+    - field.field.media.document.field_file_size
+    - field.field.media.document.field_media_document
+    - field.field.media.document.field_media_of
+    - field.field.media.document.field_media_use
+    - field.field.media.document.field_mime_type
+    - field.field.media.document.field_original_name
+    - media.type.document
+  module:
+    - field_group
+    - file_download_link
+third_party_settings:
+  field_group:
+    group_download:
+      children:
+        - group_block_c
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: dgi-download-media
+        element: div
+        show_label: true
+        label_element: label
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Download
+    group_block_c:
+      children:
+        - field_media_document
+      parent_name: group_download
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: dgi-download-block-content-wrapper
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'block content wrapper'
+_core:
+  default_config_hash: 1Glqg2dZip5Lw9MI3YGyAoHa4NetYx_euABZznTm0AI
+id: media.document.download
+targetEntityType: media
+bundle: document
+mode: download
+content:
+  field_media_document:
+    label: visually_hidden
+    settings:
+      link_text: '[media:field_media_use:entity:name] ([file:extension]) — [file:size]'
+      new_tab: true
+      force_download: true
+      custom_classes: dgi-document-download
+    third_party_settings: {  }
+    type: file_download_link
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
