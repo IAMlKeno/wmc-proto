@@ -552,7 +552,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 6
           offset: 0
     cache_metadata:
       contexts:
