@@ -1,4 +1,4 @@
-uuid: 2228004f-9af4-455e-8c5e-dc20626f9097
+uuid: ff2fc4d2-fa68-4dda-8b73-be19c896fa43
 langcode: en
 status: true
 dependencies:
@@ -7,26 +7,32 @@ dependencies:
     - views.view.solr_search_content
   module:
     - search_api
-id: linked_agent_grid_
-name: 'Linked Agent'
-url_alias: linked_agent
+id: model_collection_list
+name: Model
+url_alias: model_collection_list
 weight: 0
 min_count: 1
 show_only_one_result: true
-field_identifier: name_2
-facet_source_id: 'search_api:views_page__solr_search_content__page_1'
+field_identifier: name
+facet_source_id: 'search_api:views_block__solr_search_content__block_3'
 widget:
-  type: dropdown
+  type: checkbox
   config:
-    show_numbers: false
-    default_option_label: 'All Linked Agents'
+    show_numbers: true
+    soft_limit: 0
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+    show_reset_link: false
+    reset_text: All
+    hide_reset_when_no_selection: false
 query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 15
+hard_limit: 0
 exclude: false
-only_visible_when_facet_source_is_visible: true
+only_visible_when_facet_source_is_visible: false
 processor_configs:
   active_widget_order:
     processor_id: active_widget_order

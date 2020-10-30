@@ -1,4 +1,4 @@
-uuid: aab595fe-8ce4-4507-83a0-5b433d8f057a
+uuid: 9c144aaf-3854-4b69-b1a1-2905ca7f40c9
 langcode: en
 status: true
 dependencies:
@@ -7,26 +7,32 @@ dependencies:
     - views.view.solr_search_content
   module:
     - search_api
-id: date_created_grid_
-name: 'Date Created'
-url_alias: date_created
+id: member_of_list
+name: 'Member of'
+url_alias: member_of_list
 weight: 0
 min_count: 1
 show_only_one_result: true
-field_identifier: field_edtf_date_created
-facet_source_id: 'search_api:views_page__solr_search_content__page_1'
+field_identifier: title_1
+facet_source_id: 'search_api:views_block__solr_search_content__block_4'
 widget:
-  type: dropdown
+  type: checkbox
   config:
-    show_numbers: false
-    default_option_label: 'All Time'
+    show_numbers: true
+    soft_limit: 0
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+    show_reset_link: false
+    reset_text: 'Show all'
+    hide_reset_when_no_selection: false
 query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 15
+hard_limit: 0
 exclude: false
-only_visible_when_facet_source_is_visible: true
+only_visible_when_facet_source_is_visible: false
 processor_configs:
   active_widget_order:
     processor_id: active_widget_order

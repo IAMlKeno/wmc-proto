@@ -146,35 +146,10 @@ reactions:
         unique: 0
         context_id: collection
         uuid: fb50bc6d-885b-43e6-96de-3be4ae1bbee9
-      770ef067-0d40-4806-85c2-cb4611dad672:
-        id: 'react_block:dgi_footer_menu_block'
-        label: 'DGI Footer Menu Block'
-        provider: react_block
-        label_display: '0'
-        region: footer
-        weight: '0'
-        pdb_configuration: null
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: 770ef067-0d40-4806-85c2-cb4611dad672
-      2a7dabee-f6b7-44ec-b55c-f49771cc35db:
-        id: 'views_block:repository_item_content_blocks-repository_item_viewer'
-        label: ''
-        provider: views
-        label_display: '0'
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: 2a7dabee-f6b7-44ec-b55c-f49771cc35db
+        user_menu: account
+        default_second_logo: 0
+        second_logo_wrapper:
+          second_logo: {  }
       bca40d6a-c98c-4ed6-92b5-fab5a0b5ca40:
         id: 'views_block:collection_representative_object-block_1'
         label: ''
@@ -190,6 +165,22 @@ reactions:
         unique: 0
         context_id: collection
         uuid: bca40d6a-c98c-4ed6-92b5-fab5a0b5ca40
+        override: {  }
+      d155148e-f921-43ce-bd05-cddb7275c486:
+        id: 'views_block:solr_search_content-block_4'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: dgi_i8_base
+        css_class: ''
+        unique: 0
+        context_id: collection
+        uuid: d155148e-f921-43ce-bd05-cddb7275c486
     id: blocks
     saved: false
     uuid: 379baa20-03b9-4402-8a5c-20a3201f239b
