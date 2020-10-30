@@ -2,8 +2,8 @@ preset_accent_color: custom
 preset_focus_color: accent
 enable_darkmode: false
 classic_toolbar: vertical
-icon_default: true
-icon_path: ''
+icon_default: false
+icon_path: themes/contrib/dgi_i8_base/DG+Coaster+Blue.png
 high_contrast_mode: false
 third_party_settings:
   shortcut:
@@ -17,8 +17,8 @@ features:
   favicon: true
 favicon:
   use_default: false
-  path: themes/contrib/dgi_i8_base/favicon.ico
-  mimetype: image/vnd.microsoft.icon
+  path: themes/contrib/dgi_i8_base/DG+Coaster+Blue.png
+  mimetype: image/png
 accent_color: '#00436A'
 focus_color: ''
 icon_upload: ''

@@ -3,10 +3,10 @@ region_wells-sidebar_first: ''
 _core:
   default_config_hash: 8Kd7wP_1eLByvuacvFyVnjKNv0THG9DHOYykRgzGjY8
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
-  url: 'http://discoverygarden-vsphere-i8-i8ir.dgi/themes/contrib/dgi_i8_base/favicon.ico'
-  use_default: true
+  mimetype: image/png
+  path: themes/contrib/dgi_i8_base/DG+Coaster+Blue.png
+  url: 'http://jojo-vsphere-i8-gin.dgi/themes/contrib/dgi_i8_base/favicon.ico'
+  use_default: false
 schemas:
   bootstrap: 8000
   dgi_i8_base: 8000
@@ -36,7 +36,6 @@ cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
 popover_placement: bottom
 popover_html: 1
-popover_enabled: 0
 features:
   comment_user_picture: true
   comment_user_verification: true
