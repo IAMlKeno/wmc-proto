@@ -351,6 +351,7 @@ display:
         row: false
         fields: false
         arguments: false
+        empty: false
       row:
         type: fields
         options:
@@ -404,7 +405,7 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           view: collection_member_count
@@ -456,7 +457,7 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
@@ -521,8 +522,8 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
+          hide_empty: true
+          empty_zero: true
           hide_alter_empty: true
           set_precision: false
           precision: 0
@@ -578,7 +579,7 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           text: view
@@ -623,6 +624,7 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: node_nid
+      empty: {  }
     cache_metadata:
       max-age: -1
       contexts:
