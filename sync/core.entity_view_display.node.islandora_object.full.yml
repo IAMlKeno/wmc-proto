@@ -121,7 +121,6 @@ hidden:
   field_model: true
   field_note: true
   field_oclc_number: true
-  field_original_file_reference: true
   field_physical_form: true
   field_pid: true
   field_place_published: true

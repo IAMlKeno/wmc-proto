@@ -274,7 +274,6 @@ hidden:
   field_local_identifier: true
   field_note: true
   field_oclc_number: true
-  field_original_file_reference: true
   field_physical_form: true
   field_place_published: true
   field_place_published_country: true
