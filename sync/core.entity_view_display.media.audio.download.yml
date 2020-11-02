@@ -1,0 +1,86 @@
+uuid: 2d3026bb-5054-42da-a2f8-592a473b6ac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.download
+    - field.field.media.audio.field_access_terms
+    - field.field.media.audio.field_file_size
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_of
+    - field.field.media.audio.field_media_use
+    - field.field.media.audio.field_mime_type
+    - field.field.media.audio.field_original_name
+    - media.type.audio
+  module:
+    - field_group
+    - file_download_link
+third_party_settings:
+  field_group:
+    group_download:
+      children:
+        - group_block_content_wrapper
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: dgi-download-media
+        element: div
+        show_label: true
+        label_element: label
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Download
+    group_block_content_wrapper:
+      children:
+        - field_media_audio_file
+      parent_name: group_download
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: dgi-download-block-content-wrapper
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'block content wrapper'
+_core:
+  default_config_hash: xt3UReb12XCFyxeNDriZOtGMGhgK64yZgps6pRnFii8
+id: media.audio.download
+targetEntityType: media
+bundle: audio
+mode: download
+content:
+  field_media_audio_file:
+    type: file_download_link
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_text: '[media:field_media_use:entity:name] ([file:extension]) — [file:size]'
+      new_tab: true
+      force_download: true
+      custom_classes: dgi-audio-download
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

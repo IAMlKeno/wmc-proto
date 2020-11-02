@@ -15,7 +15,7 @@ disabled: false
 conditions:
   node_has_term:
     id: node_has_term
-    negate: 0
+    negate: false
     uuid: 4121b7b5-7f48-4173-b097-d1fdb9482ebe
     uri: 'http://purl.org/dc/dcmitype/Collection'
     context_mapping:
@@ -25,7 +25,7 @@ conditions:
     id: node_type
     bundles:
       islandora_object: islandora_object
-    negate: 0
+    negate: false
     uuid: 2de1678d-e461-4e02-badc-0284f841856f
     context_mapping:
       node: '@node.node_route_context:node'
@@ -47,7 +47,7 @@ reactions:
         id: dgi_header
         label: 'DGI Header Block'
         provider: dgi_header
-        label_display: 0
+        label_display: '0'
         menu: dgi-header
         search:
           view: solr_search_content
@@ -84,7 +84,7 @@ reactions:
         id: 'views_block:collection_representative_object-block_1'
         label: ''
         provider: views
-        label_display: 0
+        label_display: '0'
         views_label: ''
         items_per_page: none
         region: viewer
@@ -113,7 +113,7 @@ reactions:
         id: 'views_block:solr_search_content-block_1'
         label: ''
         provider: views
-        label_display: 0
+        label_display: '0'
         views_label: ''
         items_per_page: none
         region: content

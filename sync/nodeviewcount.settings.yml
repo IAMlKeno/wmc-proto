@@ -1,9 +1,5 @@
 node_types:
-  - about
-  - article
-  - block_display
   - islandora_object
-  - page
 view_modes:
   - binary
   - content_browser
@@ -26,11 +22,6 @@ view_modes:
 user_roles:
   - anonymous
   - authenticated
-  - editor
-  - ingester
-  - repository_administrator
-  - site_administrator
-  - administrator
 excluded_user_roles: {  }
 logs_life_time: 0
 _core:

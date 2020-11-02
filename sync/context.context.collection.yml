@@ -20,7 +20,7 @@ disabled: false
 conditions:
   node_has_term:
     id: node_has_term
-    negate: 0
+    negate: false
     uuid: 30424693-e24a-444f-8aeb-11ab527ed233
     context_mapping:
       node: '@node.node_route_context:node'
@@ -29,7 +29,7 @@ conditions:
   request_path:
     id: request_path
     pages: '/node/*'
-    negate: 0
+    negate: false
     uuid: 1ef014fb-a76c-40bf-975d-c4d3f25ded9a
     context_mapping: {  }
   url_query_parameters:
@@ -65,7 +65,7 @@ reactions:
         id: system_messages_block
         label: Messages
         provider: system
-        label_display: 0
+        label_display: '0'
         region: content
         weight: '-7'
         context_mapping: {  }
@@ -91,7 +91,7 @@ reactions:
         id: dgi_header
         label: 'DGI Header Block'
         provider: dgi_header
-        label_display: 0
+        label_display: '0'
         menu: dgi-header
         search:
           view: solr_search_content
@@ -115,7 +115,7 @@ reactions:
         id: 'views_block:collection_representative_object-block_1'
         label: ''
         provider: views
-        label_display: 0
+        label_display: '0'
         views_label: ''
         items_per_page: none
         region: viewer
@@ -127,11 +127,11 @@ reactions:
         context_id: collection
         uuid: bca40d6a-c98c-4ed6-92b5-fab5a0b5ca40
         override: {  }
-      9b244ead-734a-440d-a0ee-f288875ccfe0:
-        id: 'views_block:solr_search_content-block_2'
+      d155148e-f921-43ce-bd05-cddb7275c486:
+        id: 'views_block:solr_search_content-block_4'
         label: ''
         provider: views
-        label_display: 0
+        label_display: '0'
         views_label: ''
         items_per_page: none
         region: content

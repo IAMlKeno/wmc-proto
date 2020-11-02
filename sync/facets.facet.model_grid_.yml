@@ -24,7 +24,7 @@ widget:
       show_less_label: 'Show less'
       show_more_label: 'Show more'
     show_reset_link: false
-    reset_text: 'Show all'
+    reset_text: All
     hide_reset_when_no_selection: false
 query_operator: or
 use_hierarchy: false
@@ -50,6 +50,12 @@ processor_configs:
     processor_id: display_value_widget_order
     weights:
       sort: 40
+    settings:
+      sort: ASC
+  raw_value_widget_order:
+    processor_id: raw_value_widget_order
+    weights:
+      sort: 50
     settings:
       sort: ASC
   url_processor_handler:

@@ -1,4 +1,4 @@
-uuid: f55cde94-d197-4370-9e52-2fa9d8911aba
+uuid: d7a2765e-92ae-4fcd-bd48-5ddb3e430790
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: exposedformsolr_search_contentpage_2
 theme: dgi_i8_base
 region: sidr
-weight: 0
+weight: -17
 provider: null
 plugin: 'views_exposed_filter_block:solr_search_content-page_2'
 settings:
