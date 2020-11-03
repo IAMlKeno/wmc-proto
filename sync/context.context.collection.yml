@@ -20,7 +20,7 @@ disabled: false
 conditions:
   node_has_term:
     id: node_has_term
-    negate: false
+    negate: 0
     uuid: 30424693-e24a-444f-8aeb-11ab527ed233
     context_mapping:
       node: '@node.node_route_context:node'
@@ -29,7 +29,7 @@ conditions:
   request_path:
     id: request_path
     pages: '/node/*'
-    negate: false
+    negate: 0
     uuid: 1ef014fb-a76c-40bf-975d-c4d3f25ded9a
     context_mapping: {  }
   url_query_parameters:
@@ -99,7 +99,7 @@ reactions:
           parameter: search_api_fulltext
         second_logo: null
         region: navigation
-        weight: '0'
+        weight: '-2'
         admin_label: ''
         context_mapping: {  }
         theme: dgi_i8_base
@@ -149,7 +149,7 @@ reactions:
         provider: system
         label_display: 0
         region: navigation
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
