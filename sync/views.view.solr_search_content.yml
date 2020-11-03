@@ -5252,13 +5252,22 @@ display:
           summary: ''
           description: ''
           columns:
+            counter: counter
             title_1: title_1
+            field_identifier: field_identifier
             nid: nid
-            field_model: field_model
-            field_edtf_date_created: field_edtf_date_created
             name: name
+            changed: changed
             author: author
+            title_content: title_content
           info:
+            counter:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             title_1:
               sortable: true
               default_sort_order: asc
@@ -5266,19 +5275,12 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            field_identifier:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             nid:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_model:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_edtf_date_created:
-              sortable: true
-              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
@@ -5290,6 +5292,11 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            changed:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             author:
               sortable: true
               default_sort_order: asc
@@ -5297,7 +5304,14 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
+            title_content:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: title_content
           empty_table: false
       defaults:
         style: false

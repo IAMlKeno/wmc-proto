@@ -151,24 +151,6 @@ reactions:
         unique: 1
         context_id: repository_content_items
         uuid: 50e99afd-9b9a-4e76-bf1c-e676012bbd84
-      a5f58dc8-ebcd-40f0-a11f-6548f0ae77e8:
-        id: 'views_block:node_views_count_statistics-block_1'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        weight: '3'
-        region: viewer
-        parent_wrapper:
-          parent: ''
-        all_parents: {  }
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: 'view-node-views-count-statistics col-sm-3'
-        unique: 0
-        context_id: repository_content_items
-        uuid: a5f58dc8-ebcd-40f0-a11f-6548f0ae77e8
       c187cbfe-042a-4546-8906-3a765f070cd2:
         id: embargoes_embargo_notification_block
         label: 'Embargo Notifications'
