@@ -6234,18 +6234,6 @@ display:
           expose:
             label: 'Member of'
           plugin_id: search_api
-        title:
-          id: title
-          table: search_api_index_default_solr_index
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: search_api
       relationships: {  }
     cache_metadata:
       contexts:
