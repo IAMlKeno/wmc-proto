@@ -53,7 +53,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
+          items_per_page: 1
           offset: 0
       style:
         type: default
@@ -665,22 +665,36 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.media.audio.default'
+        - 'config:core.entity_view_display.media.audio.download'
         - 'config:core.entity_view_display.media.audio.source'
+        - 'config:core.entity_view_display.media.audio.technical_metadata'
         - 'config:core.entity_view_display.media.document.default'
+        - 'config:core.entity_view_display.media.document.download'
         - 'config:core.entity_view_display.media.document.pdfjs'
         - 'config:core.entity_view_display.media.document.source'
+        - 'config:core.entity_view_display.media.document.technical_metadata'
         - 'config:core.entity_view_display.media.extracted_text.default'
+        - 'config:core.entity_view_display.media.extracted_text.download'
+        - 'config:core.entity_view_display.media.extracted_text.technical_metadata'
         - 'config:core.entity_view_display.media.file.default'
+        - 'config:core.entity_view_display.media.file.download'
         - 'config:core.entity_view_display.media.file.open_seadragon'
         - 'config:core.entity_view_display.media.file.pdfjs'
         - 'config:core.entity_view_display.media.file.source'
+        - 'config:core.entity_view_display.media.file.technical_metadata'
         - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.download'
         - 'config:core.entity_view_display.media.image.open_seadragon'
         - 'config:core.entity_view_display.media.image.representative_object_media'
         - 'config:core.entity_view_display.media.image.source'
+        - 'config:core.entity_view_display.media.image.technical_metadata'
         - 'config:core.entity_view_display.media.remote_video.default'
+        - 'config:core.entity_view_display.media.remote_video.download'
+        - 'config:core.entity_view_display.media.remote_video.technical_metadata'
         - 'config:core.entity_view_display.media.video.default'
+        - 'config:core.entity_view_display.media.video.download'
         - 'config:core.entity_view_display.media.video.source'
+        - 'config:core.entity_view_display.media.video.technical_metadata'
         - 'config:field.storage.node.field_description'
         - env
         - extensions
@@ -826,10 +840,19 @@ display:
         - 'config:core.entity_view_display.media.audio.default'
         - env
         - extensions
+        - 'config:core.entity_view_display.media.audio.download'
+        - env
+        - extensions
         - 'config:core.entity_view_display.media.audio.source'
         - env
         - extensions
+        - 'config:core.entity_view_display.media.audio.technical_metadata'
+        - env
+        - extensions
         - 'config:core.entity_view_display.media.document.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.document.download'
         - env
         - extensions
         - 'config:core.entity_view_display.media.document.pdfjs'
@@ -838,10 +861,22 @@ display:
         - 'config:core.entity_view_display.media.document.source'
         - env
         - extensions
+        - 'config:core.entity_view_display.media.document.technical_metadata'
+        - env
+        - extensions
         - 'config:core.entity_view_display.media.extracted_text.default'
         - env
         - extensions
+        - 'config:core.entity_view_display.media.extracted_text.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.extracted_text.technical_metadata'
+        - env
+        - extensions
         - 'config:core.entity_view_display.media.file.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.file.download'
         - env
         - extensions
         - 'config:core.entity_view_display.media.file.open_seadragon'
@@ -853,7 +888,13 @@ display:
         - 'config:core.entity_view_display.media.file.source'
         - env
         - extensions
+        - 'config:core.entity_view_display.media.file.technical_metadata'
+        - env
+        - extensions
         - 'config:core.entity_view_display.media.image.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.image.download'
         - env
         - extensions
         - 'config:core.entity_view_display.media.image.open_seadragon'
@@ -865,12 +906,27 @@ display:
         - 'config:core.entity_view_display.media.image.source'
         - env
         - extensions
+        - 'config:core.entity_view_display.media.image.technical_metadata'
+        - env
+        - extensions
         - 'config:core.entity_view_display.media.remote_video.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.remote_video.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.remote_video.technical_metadata'
         - env
         - extensions
         - 'config:core.entity_view_display.media.video.default'
         - env
         - extensions
+        - 'config:core.entity_view_display.media.video.download'
+        - env
+        - extensions
         - 'config:core.entity_view_display.media.video.source'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.video.technical_metadata'
         - env
         - extensions

@@ -53,7 +53,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
+          items_per_page: 1
           offset: 0
       style:
         type: default
@@ -665,22 +665,36 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.media.audio.default'
+        - 'config:core.entity_view_display.media.audio.download'
         - 'config:core.entity_view_display.media.audio.source'
+        - 'config:core.entity_view_display.media.audio.technical_metadata'
         - 'config:core.entity_view_display.media.document.default'
+        - 'config:core.entity_view_display.media.document.download'
         - 'config:core.entity_view_display.media.document.pdfjs'
         - 'config:core.entity_view_display.media.document.source'
+        - 'config:core.entity_view_display.media.document.technical_metadata'
         - 'config:core.entity_view_display.media.extracted_text.default'
+        - 'config:core.entity_view_display.media.extracted_text.download'
+        - 'config:core.entity_view_display.media.extracted_text.technical_metadata'
         - 'config:core.entity_view_display.media.file.default'
+        - 'config:core.entity_view_display.media.file.download'
         - 'config:core.entity_view_display.media.file.open_seadragon'
         - 'config:core.entity_view_display.media.file.pdfjs'
         - 'config:core.entity_view_display.media.file.source'
+        - 'config:core.entity_view_display.media.file.technical_metadata'
         - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.download'
         - 'config:core.entity_view_display.media.image.open_seadragon'
         - 'config:core.entity_view_display.media.image.representative_object_media'
         - 'config:core.entity_view_display.media.image.source'
+        - 'config:core.entity_view_display.media.image.technical_metadata'
         - 'config:core.entity_view_display.media.remote_video.default'
+        - 'config:core.entity_view_display.media.remote_video.download'
+        - 'config:core.entity_view_display.media.remote_video.technical_metadata'
         - 'config:core.entity_view_display.media.video.default'
+        - 'config:core.entity_view_display.media.video.download'
         - 'config:core.entity_view_display.media.video.source'
+        - 'config:core.entity_view_display.media.video.technical_metadata'
         - 'config:field.storage.node.field_description'
         - env
         - extensions
@@ -1038,9 +1052,9 @@ display:
           hide_empty: true
           empty_zero: false
           hide_alter_empty: true
-          view: collection_member_count
+          view: node_views_count_statistics
           display: block_1
-          arguments: ''
+          arguments: '{{ raw_fields.nid }}'
           plugin_id: view
         view_1:
           id: view_1
@@ -1090,8 +1104,8 @@ display:
           hide_empty: true
           empty_zero: false
           hide_alter_empty: true
-          view: repository_item_content_blocks
-          display: repository_item_viewer
+          view: collection_item_content_blocks
+          display: block_1
           arguments: '{{ raw_fields.nid }}'
           plugin_id: view
         view_2:
@@ -1143,7 +1157,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           view: representative_object
-          display: default
+          display: block_2
           arguments: '{{ raw_fields.nid }}'
           plugin_id: view
         nothing_1:
@@ -1157,7 +1171,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"rep-obj-outer-content-wrapper\">\r\n<div class=\"rep-obj-stats col-lg-2 col-md-2 col-lg-push-10 col-md-push-10 col-sm-3 col-sm-push-9\">\r\n  <div class=\"rep-obj-stats--inner\">\r\n    <div class=\"edit-node\">{{ edit_node }}</div>\r\n    <div class=\"inner-stats\">\r\n      <div class=\"view-count\">{{ view }}</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"rep-obj-basic-data col-lg-10 col-md-10 col-lg-pull-2 col-md-pull-2 col-sm-9 col-sm-pull-3\">\r\n  <div class=\"rep-obj-basic-data--inner\">\r\n    {{ view_1 }}\r\n    <div class=\"last-updated\">{{ last_updated }}</div>\r\n    <div class=\"description\">{{ field_description }}</div>\r\n  </div>\r\n</div>\r\n\r\n</div>\r\n\r\n"
+            text: "<div class=\"rep-obj-outer-content-wrapper\">\r\n<div class=\"rep-obj-stats col-lg-2 col-md-2 col-lg-push-10 col-md-push-10 col-sm-3 col-sm-push-9\">\r\n  <div class=\"rep-obj-stats--inner\">\r\n    <div class=\"edit-node\">{{ edit_node }}</div>\r\n    <div class=\"inner-stats\">\r\n      <div class=\"view-count\">x1x1x1{{ view }}</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"rep-obj-basic-data col-lg-10 col-md-10 col-lg-pull-2 col-md-pull-2 col-sm-9 col-sm-pull-3\">\r\n  <div class=\"rep-obj-basic-data--inner\">\r\n    {{ view_1 }}\r\n    <div class=\"last-updated\">{{ last_updated }}</div>\r\n    <div class=\"description\">{{ field_description }}</div>\r\n  </div>\r\n</div>\r\n\r\n</div>\r\n\r\n"
             make_link: false
             path: ''
             absolute: false

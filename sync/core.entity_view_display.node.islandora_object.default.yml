@@ -51,10 +51,11 @@ third_party_settings:
   field_group:
     group_metadata:
       children:
+        - collection_page_title_entity_view_1
         - repository_item_content_blocks_classification
         - repository_item_content_blocks_metadata
       parent_name: ''
-      weight: 53
+      weight: 52
       format_type: fieldset
       format_settings:
         description: ''
@@ -79,11 +80,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  repository_item_content_blocks_metadata:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   solr_search_content_entity_view_1_form:
     weight: 9
     settings: {  }
@@ -96,6 +92,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true

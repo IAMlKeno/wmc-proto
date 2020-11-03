@@ -108,7 +108,7 @@ reactions:
         label_display: '0'
         views_label: ''
         items_per_page: none
-        weight: '2'
+        weight: '4'
         region: content
         parent_wrapper:
           parent: ''
@@ -124,7 +124,7 @@ reactions:
         label: 'Main page content'
         provider: system
         label_display: '0'
-        weight: '4'
+        weight: '6'
         region: content
         parent_wrapper:
           parent: ''
@@ -140,7 +140,7 @@ reactions:
         label: Share
         provider: addtoany
         label_display: visible
-        weight: '9'
+        weight: '10'
         region: sidebar_second
         parent_wrapper:
           parent: ''
@@ -158,7 +158,7 @@ reactions:
         label_display: 0
         views_label: ''
         items_per_page: none
-        weight: '6'
+        weight: '3'
         region: viewer
         parent_wrapper:
           parent: ''
@@ -174,7 +174,7 @@ reactions:
         label: 'Embargo Notifications'
         provider: embargoes
         label_display: '0'
-        weight: '5'
+        weight: '7'
         region: content
         parent_wrapper:
           parent: ''
@@ -192,7 +192,7 @@ reactions:
         label_display: 0
         views_label: ''
         items_per_page: none
-        weight: '3'
+        weight: '5'
         region: content
         parent_wrapper:
           parent: ''
@@ -210,7 +210,7 @@ reactions:
         label_display: visible
         views_label: ''
         items_per_page: none
-        weight: '7'
+        weight: '8'
         region: sidebar_second
         parent_wrapper:
           parent: ''
@@ -228,7 +228,7 @@ reactions:
         label_display: visible
         views_label: ''
         items_per_page: none
-        weight: '8'
+        weight: '9'
         region: sidebar_second
         parent_wrapper:
           parent: ''
@@ -239,6 +239,24 @@ reactions:
         unique: 0
         context_id: repository_content_items
         uuid: e3bb8087-b719-43d4-b756-42c4cfd91f97
+      0bae8f2d-f363-4f64-95d5-e58afdc53fb0:
+        id: 'views_block:node_views_count_statistics-block_2'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        weight: '2'
+        region: viewer
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: dgi_i8_base
+        css_class: 'view-node-views-count-statistics col-sm-3'
+        unique: 0
+        context_id: repository_content_items
+        uuid: 0bae8f2d-f363-4f64-95d5-e58afdc53fb0
     id: blocks
     saved: false
     uuid: e90aa662-f44c-472a-b91c-647d459d21a2

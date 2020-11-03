@@ -55,7 +55,7 @@ third_party_settings:
         - repository_item_content_blocks_classification
         - repository_item_content_blocks_metadata
       parent_name: ''
-      weight: 53
+      weight: 52
       format_type: fieldset
       format_settings:
         description: ''
@@ -67,7 +67,7 @@ third_party_settings:
       children:
         - openseadragon_paged_content_entity_view_1
       parent_name: ''
-      weight: 20
+      weight: 0
       format_type: details
       region: content
       format_settings:
@@ -100,6 +100,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true

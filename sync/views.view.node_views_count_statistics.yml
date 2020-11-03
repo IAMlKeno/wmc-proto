@@ -380,12 +380,6 @@ display:
           grouping: {  }
           row_class: ''
           default_row_class: true
-      defaults:
-        style: false
-        row: false
-        fields: false
-        arguments: false
-        empty: false
       row:
         type: fields
         options:
@@ -519,9 +513,9 @@ display:
           group_type: count
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: true
+            alter_text: false
             text: "<div class=\"field-content-node-count\">\r\n  <span class=\"node-count-count\">{{ nid }}</span>\r\n  <span class=\"node-count-text\">views</span>\r\n</div>"
             make_link: false
             path: ''
@@ -689,6 +683,25 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Block 2'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      title: 'Node views count statistics object'
+      defaults:
+        title: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions

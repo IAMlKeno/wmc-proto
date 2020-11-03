@@ -54,11 +54,6 @@ targetEntityType: node
 bundle: islandora_object
 mode: repository_item_collections
 content:
-  collection_page_title_entity_view_1:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   repository_item_content_blocks_entity_view_2:
     weight: 2
     region: content
@@ -81,6 +76,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true

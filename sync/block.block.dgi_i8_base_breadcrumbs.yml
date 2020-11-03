@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - request_data_conditions
     - system
   theme:
     - dgi_i8_base
@@ -22,6 +23,30 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/solr-search/content/*"
     negate: true
+    context_mapping: {  }
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
     context_mapping: {  }

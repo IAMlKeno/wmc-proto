@@ -3,8 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block.block.collectionfacetsgrid
-    - block.block.collectionfacetslist
     - block.block.exposedformsolr_search_contentpage_1
     - block.block.exposedformsolr_search_contentpage_2
     - block.block.memberof_2
@@ -1640,7 +1638,7 @@ display:
         operator: AND
         groups:
           1: AND
-      enabled: false
+      enabled: true
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -2600,7 +2598,7 @@ display:
           plugin_id: entity
       block_description: 'Collection Content (List)'
       title: 'Collection Content (List)'
-      enabled: false
+      enabled: true
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -5004,7 +5002,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Fulltext search'
+            label: ''
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -5017,6 +5015,10 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 0

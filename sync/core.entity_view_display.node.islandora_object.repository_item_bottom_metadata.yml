@@ -55,7 +55,7 @@ third_party_settings:
       children:
         - group_metadata_table_data
       parent_name: ''
-      weight: 20
+      weight: 0
       format_type: details
       region: content
       format_settings:
@@ -213,7 +213,7 @@ content:
     third_party_settings: {  }
   field_resource_type:
     type: entity_reference_label
-    weight: 14
+    weight: 15
     region: content
     label: hidden
     settings:
@@ -221,7 +221,7 @@ content:
     third_party_settings: {  }
   field_rights:
     type: string
-    weight: 15
+    weight: 16
     region: content
     label: hidden
     settings:
@@ -235,6 +235,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
   solr_search_content_entity_view_1_form:
     weight: 9
     settings: {  }
@@ -245,17 +254,9 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  langcode:
-    type: language
-    weight: 7
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
 hidden:
   addtoany: true
+  collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true
