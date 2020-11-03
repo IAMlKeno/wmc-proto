@@ -3,8 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block.block.collectionfacetsgrid
-    - block.block.collectionfacetslist
     - block.block.exposedformsolr_search_contentpage_1
     - block.block.exposedformsolr_search_contentpage_2
     - block.block.memberof_2
@@ -67,7 +65,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 0
+          items_per_page: 15
           offset: 0
           id: 0
           total_pages: null
@@ -1640,7 +1638,7 @@ display:
         operator: AND
         groups:
           1: AND
-      enabled: false
+      enabled: true
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -2600,7 +2598,7 @@ display:
           plugin_id: entity
       block_description: 'Collection Content (List)'
       title: 'Collection Content (List)'
-      enabled: false
+      enabled: true
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -4730,6 +4728,76 @@ display:
                 view_mode: default
           entity_type: node
           plugin_id: search_api_field
+        title_1:
+          id: title_1
+          table: search_api_index_default_solr_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
       defaults:
         fields: false
         relationships: false
@@ -4938,6 +5006,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -4945,6 +5015,10 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 0
@@ -4953,8 +5027,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -5180,13 +5252,22 @@ display:
           summary: ''
           description: ''
           columns:
+            counter: counter
             title_1: title_1
+            field_identifier: field_identifier
             nid: nid
-            field_model: field_model
-            field_edtf_date_created: field_edtf_date_created
             name: name
+            changed: changed
             author: author
+            title_content: title_content
           info:
+            counter:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             title_1:
               sortable: true
               default_sort_order: asc
@@ -5194,19 +5275,12 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            field_identifier:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             nid:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_model:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_edtf_date_created:
-              sortable: true
-              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
@@ -5218,6 +5292,11 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            changed:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             author:
               sortable: true
               default_sort_order: asc
@@ -5225,7 +5304,14 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
+            title_content:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: title_content
           empty_table: false
       defaults:
         style: false
@@ -6161,18 +6247,6 @@ display:
           exposed: true
           expose:
             label: 'Member of'
-          plugin_id: search_api
-        title:
-          id: title
-          table: search_api_index_default_solr_index
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
           plugin_id: search_api
       relationships: {  }
     cache_metadata:

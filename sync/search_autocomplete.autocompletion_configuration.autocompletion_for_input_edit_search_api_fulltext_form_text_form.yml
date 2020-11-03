@@ -9,10 +9,10 @@ minChar: 1
 autoSubmit: true
 autoRedirect: false
 maxSuggestions: 10
-noResultLabel: 'No results found for [search-phrase]. Click to perform full search.'
+noResultLabel: Search
 noResultValue: '[search-phrase]'
 noResultLink: ''
-moreResultsLabel: 'View all results for [search-phrase].'
+moreResultsLabel: Search
 moreResultsValue: '[search-phrase]'
 moreResultsLink: ''
 source: 'solr_search_autocompletion_callbacks::solr_search_autocompletion_callback'

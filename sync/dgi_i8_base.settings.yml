@@ -36,6 +36,7 @@ cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
 popover_placement: bottom
 popover_html: 1
+breadcrumb_home: 1
 features:
   comment_user_picture: true
   comment_user_verification: true

@@ -15,7 +15,7 @@ disabled: false
 conditions:
   node_has_term:
     id: node_has_term
-    negate: false
+    negate: 0
     uuid: 4121b7b5-7f48-4173-b097-d1fdb9482ebe
     uri: 'http://purl.org/dc/dcmitype/Collection'
     context_mapping:
@@ -25,7 +25,7 @@ conditions:
     id: node_type
     bundles:
       islandora_object: islandora_object
-    negate: false
+    negate: 0
     uuid: 2de1678d-e461-4e02-badc-0284f841856f
     context_mapping:
       node: '@node.node_route_context:node'
@@ -55,7 +55,7 @@ reactions:
           parameter: search_api_fulltext
         second_logo: null
         region: navigation
-        weight: '-10'
+        weight: '-3'
         admin_label: ''
         context_mapping: {  }
         theme: dgi_i8_base
@@ -73,39 +73,13 @@ reactions:
         provider: system
         label_display: visible
         region: sidr
-        weight: '-4'
+        weight: '-9'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
         unique: 0
         context_id: collection_grid_
         uuid: 811fbfc1-f508-48cb-a92a-80f5e6b2168c
-      88512e85-a0b4-43a7-bbbf-65f62891c04c:
-        id: system_breadcrumb_block
-        label: Breadcrumbs
-        provider: system
-        label_display: visible
-        region: content
-        weight: '-4'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection_grid_
-        uuid: 88512e85-a0b4-43a7-bbbf-65f62891c04c
-      52da9145-5a6c-4eeb-aede-2f91ffef6be4:
-        id: page_title_block
-        label: 'Page title'
-        provider: core
-        label_display: '0'
-        region: content
-        weight: '-3'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection_grid_
-        uuid: 52da9145-5a6c-4eeb-aede-2f91ffef6be4
       e3d3e615-f7fb-41c3-9146-8d0be93bc8ea:
         id: 'views_block:collection_representative_object-block_1'
         label: ''
@@ -113,7 +87,7 @@ reactions:
         label_display: '0'
         views_label: ''
         items_per_page: none
-        region: content
+        region: viewer
         weight: '-2'
         context_mapping: {  }
         theme: dgi_i8_base
@@ -128,41 +102,41 @@ reactions:
         provider: system
         label_display: visible
         region: content
-        weight: '2'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection_grid_
-        uuid: 2cda43ec-65f8-4bb9-9747-5289c900579c
-      afd3ff8b-8193-4bb7-9595-de2a32c86e36:
-        id: 'block_group:collection_metadata_and_actions'
-        label: 'Collection Metadata and Actions'
-        provider: blockgroup
-        label_display: 0
-        region: content
         weight: '-1'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
         unique: 0
         context_id: collection_grid_
-        uuid: afd3ff8b-8193-4bb7-9595-de2a32c86e36
-      77ce42c3-f09c-4a39-bd38-50e9392bc048:
-        id: 'views_block:solr_search_content-block_3'
-        label: ''
-        provider: views
-        label_display: '0'
-        views_label: ''
-        items_per_page: none
-        region: content
+        uuid: 2cda43ec-65f8-4bb9-9747-5289c900579c
+      6945719f-26b8-483d-96b2-feea4ba0a5c1:
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: 0
+        region: navigation
         weight: '0'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
         unique: 0
         context_id: collection_grid_
-        uuid: 77ce42c3-f09c-4a39-bd38-50e9392bc048
+        uuid: 6945719f-26b8-483d-96b2-feea4ba0a5c1
+      8d754e0f-dc2b-4bb7-b568-057e5fff9ca1:
+        id: 'views_block:solr_search_content-block_3'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: dgi_i8_base
+        css_class: ''
+        unique: 0
+        context_id: collection_grid_
+        uuid: 8d754e0f-dc2b-4bb7-b568-057e5fff9ca1
     id: blocks
     saved: false
     uuid: 0a05b6aa-813a-49cc-9c63-95aa0784fca1
