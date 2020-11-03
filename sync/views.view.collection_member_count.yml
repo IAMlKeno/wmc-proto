@@ -204,7 +204,20 @@ display:
       title: 'Collection Member Count'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<span class=''count-num''>0</span><span class=''count-text''> Items</span>'
+            format: full_html
+          plugin_id: text
       relationships: {  }
       arguments:
         field_member_of_target_id:
