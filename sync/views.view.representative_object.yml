@@ -1,4 +1,4 @@
-uuid: cfc4353d-f8a3-4931-a540-756cc8fe2167
+uuid: ee17855b-471a-4b0c-9867-1e889c43811f
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,8 @@ dependencies:
     - node
     - user
     - views_field_view
-id: collection_representative_object
-label: 'Collection: Representative Object'
+id: representative_object
+label: 'Representative Object'
 module: views
 description: ''
 tag: ''
@@ -698,10 +698,10 @@ display:
         - 'config:field.storage.node.field_description'
         - env
         - extensions
-  block_1:
+  block_2:
     display_plugin: block
-    id: block_1
-    display_title: 'Collection: Rep object data'
+    id: block_2
+    display_title: 'Collection Rep Image: Proper'
     position: 1
     display_options:
       display_extenders: {  }
@@ -772,299 +772,15 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: field
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
+        rendered_entity:
+          id: rendered_entity
+          table: media
+          field: rendered_entity
+          relationship: field_representative_image
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h1
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-        last_updated:
-          id: last_updated
-          table: comment_entity_statistics
-          field: last_updated
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          date_format: custom
-          custom_date_format: 'F j, Y'
-          timezone: ''
-          plugin_id: comment_ces_last_updated
-        field_description:
-          id: field_description
-          table: node__field_description
-          field: field_description
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: basic_string
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        edit_node:
-          id: edit_node
-          table: node
-          field: edit_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: true
-            text: '<i class="fal fa-folder"></i>{{ edit_node }} '
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: Edit
-          output_url_as_text: false
-          absolute: false
-          entity_type: node
-          plugin_id: entity_link_edit
-        view:
-          id: view
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: '<span class=''count-num''>0</span><span class=''count-text''> Items</span>'
-          hide_empty: false
-          empty_zero: true
-          hide_alter_empty: false
-          view: node_views_count_statistics
-          display: block_1
-          arguments: '{{ raw_fields.nid }}'
-          plugin_id: view
-        view_1:
-          id: view_1
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -1102,120 +818,16 @@ display:
           element_default_classes: true
           empty: ''
           hide_empty: true
-          empty_zero: false
+          empty_zero: true
           hide_alter_empty: true
-          view: collection_item_content_blocks
-          display: block_1
-          arguments: '{{ raw_fields.nid }}'
-          plugin_id: view
-        view_2:
-          id: view_2
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          view: representative_object
-          display: block_2
-          arguments: '{{ raw_fields.nid }}'
-          plugin_id: view
-        nothing_1:
-          id: nothing_1
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "<div class=\"rep-obj-outer-content-wrapper\">\r\n<div class=\"rep-obj-stats col-lg-2 col-md-2 col-lg-push-10 col-md-push-10 col-sm-3 col-sm-push-9\">\r\n  <div class=\"rep-obj-stats--inner\">\r\n    <div class=\"edit-node\">{{ edit_node }}</div>\r\n    <div class=\"inner-stats\">\r\n      <div class=\"view-count\">{{ view }}</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"rep-obj-basic-data col-lg-10 col-md-10 col-lg-pull-2 col-md-pull-2 col-sm-9 col-sm-pull-3\">\r\n  <div class=\"rep-obj-basic-data--inner\">\r\n    {{ view_1 }}\r\n    <div class=\"last-updated\">{{ last_updated }}</div>\r\n    <div class=\"description\">{{ field_description }}</div>\r\n  </div>\r\n</div>\r\n\r\n</div>\r\n\r\n"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: field-rep-object-data
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
+          view_mode: representative_object_media
+          entity_type: media
+          plugin_id: rendered_entity
       defaults:
         fields: false
-        relationships: false
         title: false
-      relationships: {  }
       display_description: ''
-      title: 'Collection: Rep object data'
+      title: 'Collection: Rep image proper'
     cache_metadata:
       max-age: -1
       contexts:
@@ -1225,6 +837,96 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_description'
+        - 'config:core.entity_view_display.media.audio.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.audio.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.audio.source'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.audio.technical_metadata'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.document.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.document.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.document.pdfjs'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.document.source'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.document.technical_metadata'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.extracted_text.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.extracted_text.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.extracted_text.technical_metadata'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.file.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.file.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.file.open_seadragon'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.file.pdfjs'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.file.source'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.file.technical_metadata'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.image.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.image.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.image.open_seadragon'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.image.representative_object_media'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.image.source'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.image.technical_metadata'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.remote_video.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.remote_video.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.remote_video.technical_metadata'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.video.default'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.video.download'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.video.source'
+        - env
+        - extensions
+        - 'config:core.entity_view_display.media.video.technical_metadata'
         - env
         - extensions

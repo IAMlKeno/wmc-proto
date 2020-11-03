@@ -53,7 +53,7 @@ third_party_settings:
     group_metadata:
       children: {  }
       parent_name: ''
-      weight: 1
+      weight: 54
       format_type: fieldset
       format_settings:
         description: ''
@@ -97,6 +97,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true
