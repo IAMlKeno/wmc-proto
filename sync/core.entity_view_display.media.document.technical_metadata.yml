@@ -58,7 +58,7 @@ content:
     region: content
     label: above
     settings:
-      date_format: medium
+      date_format: html_date
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }

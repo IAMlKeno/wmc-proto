@@ -12,21 +12,19 @@ dependencies:
     - media.type.extracted_text
   module:
     - field_group
-    - text
     - user
 third_party_settings:
   field_group:
     group_technical_metadata:
       children:
         - langcode
+        - uid
         - name
         - field_media_use
         - field_mime_type
-        - uid
         - created
-        - field_edited_text
       parent_name: ''
-      weight: 20
+      weight: 0
       format_type: field_group_table
       region: content
       format_settings:
@@ -56,16 +54,9 @@ content:
     weight: 1
     region: content
     settings:
-      date_format: medium
+      date_format: html_date
       custom_date_format: ''
       timezone: ''
-    third_party_settings: {  }
-  field_edited_text:
-    type: text_default
-    weight: 3
-    region: content
-    label: above
-    settings: {  }
     third_party_settings: {  }
   field_media_use:
     type: entity_reference_label
@@ -109,6 +100,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_edited_text: true
   field_media_file: true
   field_media_of: true
   thumbnail: true
