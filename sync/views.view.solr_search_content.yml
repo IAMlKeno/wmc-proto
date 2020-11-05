@@ -5213,10 +5213,10 @@ display:
                   min: ''
                   max: ''
           plugin_id: search_api_date
-        nid_2:
-          id: nid_2
+        member_of_id:
+          id: member_of_id
           table: search_api_index_default_solr_index
-          field: nid_2
+          field: member_of_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -5232,7 +5232,7 @@ display:
             label: 'Member of » Content » ID'
             description: ''
             use_operator: true
-            operator: nid_2_op
+            operator: member_of_id_op
             operator_limit_selection: true
             operator_list:
               '=': '='
