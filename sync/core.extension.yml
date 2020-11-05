@@ -43,6 +43,7 @@ module:
   dgi_i8_helper: 0
   dgi_i8_helper_config_split_exporter: 0
   dgi_i8_helper_flysystem_s3: 0
+  dgi_i8_helper_solr_click_sort: 0
   dgi_i8_helper_standard_workaround: 0
   dgi_i8_selectboxit: 0
   dgi_migrate: 0
