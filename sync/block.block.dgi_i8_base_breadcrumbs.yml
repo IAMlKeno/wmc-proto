@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - node
     - request_data_conditions
     - system
   theme:
@@ -50,3 +51,13 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      block_display: block_display
+      islandora_object: islandora_object
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
