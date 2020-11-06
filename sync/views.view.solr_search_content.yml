@@ -5213,6 +5213,60 @@ display:
                   min: ''
                   max: ''
           plugin_id: search_api_date
+        member_of_id:
+          id: member_of_id
+          table: search_api_index_default_solr_index
+          field: member_of_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: member_of_op
+            label: 'Member of » Content » ID'
+            description: ''
+            use_operator: true
+            operator: member_of_id_op
+            operator_limit_selection: true
+            operator_list:
+              '=': '='
+              '!=': '!='
+              empty: empty
+              'not empty': 'not empty'
+            identifier: member_of
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_numeric
       filter_groups:
         operator: AND
         groups:
