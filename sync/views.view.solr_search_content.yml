@@ -3,6 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block.block.authoredon
+    - block.block.created_3
+    - block.block.createdblocklist
+    - block.block.createdgridblock
     - block.block.exposedformsolr_search_contentpage_1
     - block.block.exposedformsolr_search_contentpage_2
     - block.block.memberof_2
@@ -3038,6 +3042,19 @@ display:
           view_mode: default
           bypass_access: false
           plugin_id: entity
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: createdgridblock
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
       use_ajax: true
       exposed_form:
         type: basic
@@ -4176,6 +4193,19 @@ display:
           view_mode: default
           bypass_access: false
           plugin_id: entity
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: createdblocklist
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
       sorts:
         search_api_relevance:
           id: search_api_relevance
@@ -4691,6 +4721,19 @@ display:
           empty: false
           tokenize: true
           target: modelgrid
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: authoredon
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -5934,6 +5977,19 @@ display:
           empty: false
           tokenize: true
           target: model_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: created_3
           view_mode: default
           bypass_access: false
           plugin_id: entity
