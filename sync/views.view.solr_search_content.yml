@@ -3,6 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block.block.authoredon
+    - block.block.created_3
+    - block.block.createdblocklist
+    - block.block.createdgridblock
     - block.block.exposedformsolr_search_contentpage_1
     - block.block.exposedformsolr_search_contentpage_2
     - block.block.memberof_2
@@ -2981,10 +2985,10 @@ display:
       cache:
         type: none
       arguments:
-        nid_2:
-          id: nid_2
+        member_of_id:
+          id: member_of_id
           table: search_api_index_default_solr_index
-          field: nid_2
+          field: member_of_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -3038,6 +3042,19 @@ display:
           view_mode: default
           bypass_access: false
           plugin_id: entity
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: createdgridblock
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
       use_ajax: true
       exposed_form:
         type: basic
@@ -3060,19 +3077,6 @@ display:
           empty: true
           content: '<div class="result-count">@total <span class="result-text-content">Result<span class="plural-@total">s</span></span></div>'
           plugin_id: result
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\"?is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\"?is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"?is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>"
-            format: full_html
-          plugin_id: text
         area_1:
           id: area_1
           table: views
@@ -3286,75 +3290,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_string
-        changed:
-          id: changed
-          table: search_api_index_default_solr_index
-          field: changed
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: changed_op
-            label: Changed
-            description: null
-            use_operator: false
-            operator: changed_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: changed
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: null
-            min_placeholder: null
-            max_placeholder: null
-          is_grouped: true
-          group_info:
-            label: Changed
-            description: ''
-            identifier: changed
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: 'Last week'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-7 day'
-                  min: ''
-                  max: ''
-              2:
-                title: 'Last month'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-30 day'
-                  min: ''
-                  max: ''
-              3:
-                title: 'Last year'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-365 day'
-                  min: ''
-                  max: ''
-          plugin_id: search_api_date
       filter_groups:
         operator: AND
         groups:
@@ -4171,84 +4106,15 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_string
-        changed:
-          id: changed
-          table: search_api_index_default_solr_index
-          field: changed
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: changed_op
-            label: Changed
-            description: null
-            use_operator: false
-            operator: changed_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: changed
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: null
-            min_placeholder: null
-            max_placeholder: null
-          is_grouped: true
-          group_info:
-            label: Changed
-            description: ''
-            identifier: changed
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: 'Last week'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-7 day'
-                  min: ''
-                  max: ''
-              2:
-                title: 'Last month'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-30 day'
-                  min: ''
-                  max: ''
-              3:
-                title: 'Last year'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-365 day'
-                  min: ''
-                  max: ''
-          plugin_id: search_api_date
       filter_groups:
         operator: AND
         groups:
           1: AND
       arguments:
-        nid_2:
-          id: nid_2
+        member_of_id:
+          id: member_of_id
           table: search_api_index_default_solr_index
-          field: nid_2
+          field: member_of_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -4286,19 +4152,6 @@ display:
           empty: true
           content: '<div class="result-count">@total <span class="result-text-content">Result<span class="plural-@total">s</span></span></div>'
           plugin_id: result
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\"?is_type=&not_type=&display=list\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\"?is_type=Collection&not_type=&display=list\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"?is_type=&not_type=Collection&display=list\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>"
-            format: full_html
-          plugin_id: text
         area_1:
           id: area_1
           table: views
@@ -4337,6 +4190,19 @@ display:
           empty: false
           tokenize: true
           target: modellistxx
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: createdblocklist
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -4858,6 +4724,19 @@ display:
           view_mode: default
           bypass_access: false
           plugin_id: entity
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: authoredon
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
       use_ajax: false
       exposed_form:
         type: basic
@@ -4880,19 +4759,6 @@ display:
           empty: true
           content: '<div class="result-count">@total <span class="result-text-content">Result<span class="plural-@total">s</span></span></div>'
           plugin_id: result
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"[view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>\r\n"
-            format: full_html
-          plugin_id: text
         display_link_1:
           id: display_link_1
           table: views
@@ -5144,75 +5010,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_string
-        changed:
-          id: changed
-          table: search_api_index_default_solr_index
-          field: changed
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: changed_op
-            label: Changed
-            description: null
-            use_operator: false
-            operator: changed_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: changed
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: null
-            min_placeholder: null
-            max_placeholder: null
-          is_grouped: true
-          group_info:
-            label: Changed
-            description: ''
-            identifier: changed
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: 'Last week'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-7 day'
-                  min: ''
-                  max: ''
-              2:
-                title: 'Last month'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-30 day'
-                  min: ''
-                  max: ''
-              3:
-                title: 'Last year'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-365 day'
-                  min: ''
-                  max: ''
-          plugin_id: search_api_date
         member_of_id:
           id: member_of_id
           table: search_api_index_default_solr_index
@@ -6091,75 +5888,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_string
-        changed:
-          id: changed
-          table: search_api_index_default_solr_index
-          field: changed
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 1
-          exposed: true
-          expose:
-            operator_id: changed_op
-            label: Changed
-            description: null
-            use_operator: false
-            operator: changed_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: changed
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: null
-            min_placeholder: null
-            max_placeholder: null
-          is_grouped: true
-          group_info:
-            label: Changed
-            description: ''
-            identifier: changed
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: 'Last week'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-7 day'
-                  min: ''
-                  max: ''
-              2:
-                title: 'Last month'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-30 day'
-                  min: ''
-                  max: ''
-              3:
-                title: 'Last year'
-                operator: '>='
-                value:
-                  type: offset
-                  value: '-365 day'
-                  min: ''
-                  max: ''
-          plugin_id: search_api_date
       filter_groups:
         operator: AND
         groups:
@@ -6176,19 +5904,6 @@ display:
           empty: true
           content: '<div class="result-count">@total <span class="result-text-content">Result<span class="plural-@total">s</span></span></div>'
           plugin_id: result
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: "<div class=\"solr-search-header\">\r\n  <div class=\"islandora-type-switch\">\r\n    <a class=\"solr-search-all\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=\" title=\"all\">All</a>\r\n    <a class=\"solr-search-collections\" href=\" [view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=Collection&not_type=\" title=\"collections\">Collections</a>\r\n    <a class=\"solr-search-grid\" href=\"[view:url]?search_api_fulltext=[current-page:query:search_api_fulltext]&is_type=&not_type=Collection\" title=\"objects\">Objects</a>\r\n  </div>\r\n</div>\r\n"
-            format: full_html
-          plugin_id: text
         display_link_1:
           id: display_link_1
           table: views
@@ -6262,6 +5977,19 @@ display:
           empty: false
           tokenize: true
           target: model_2
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: created_3
           view_mode: default
           bypass_access: false
           plugin_id: entity
