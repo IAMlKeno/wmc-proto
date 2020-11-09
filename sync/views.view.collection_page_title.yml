@@ -65,8 +65,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<h1 class="page-title" title="{{ title__value }}">{{ title }}</h1>'
             make_link: false
             path: ''
             absolute: false
@@ -83,12 +83,12 @@ display:
             nl2br: false
             max_length: 200
             word_boundary: true
-            ellipsis: true
+            ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: false
-            trim: true
+            trim: false
             preserve_tags: ''
             html: false
           element_type: h1
