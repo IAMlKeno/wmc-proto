@@ -66,8 +66,8 @@ reactions:
         label: Messages
         provider: system
         label_display: '0'
-        region: content
-        weight: '-7'
+        region: highlighted
+        weight: '-2'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -135,7 +135,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-8'
+        weight: '-9'
         context_mapping: {  }
         theme: dgi_i8_base
         css_class: ''
@@ -167,6 +167,7 @@ reactions:
   regions:
     id: regions
     regions:
+      claro: {  }
       classy: {  }
       seven: {  }
       stable: {  }
@@ -174,6 +175,7 @@ reactions:
       bootstrap: {  }
       dgi_i8_base:
         - sidr
+      gin: {  }
     saved: false
     uuid: aa32ef52-3b97-45fd-98c8-d62353daa83f
   body_class:
