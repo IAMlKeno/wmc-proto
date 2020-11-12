@@ -1,7 +1,6 @@
 module:
   action: 0
   addtoany: 0
-  apollo: 0
   automated_cron: 0
   basic_auth: 0
   basic_ingest: 0
@@ -47,7 +46,6 @@ module:
   dgi_i8_helper_standard_workaround: 0
   dgi_i8_selectboxit: 0
   dgi_migrate: 0
-  dgi_react_components: 0
   diff: 0
   dynamic_page_cache: 0
   editor: 0
@@ -81,8 +79,6 @@ module:
   geolocation: 0
   gin_login: 0
   gin_toolbar: 0
-  graphql: 0
-  graphql_core: 0
   hal: 0
   help: 0
   history: 0
