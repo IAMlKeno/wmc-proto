@@ -1,4 +1,4 @@
-uuid: f376311f-d0d4-4f60-b318-de894c017c69
+uuid: 6d5878c3-a6ad-4673-a39b-31eff3ac1940
 langcode: en
 status: true
 dependencies:
@@ -13,4 +13,4 @@ configuration:
   id: mint_ark_ezid_identifier
   plugin: dgi_actions_mint_ark_identifier
   type: entity
-  identifier_type: dgi_actions.identifier.ark
+  identifier_type: dgi_actions.identifier.ark_ezid

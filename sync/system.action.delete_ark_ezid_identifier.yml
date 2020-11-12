@@ -1,4 +1,4 @@
-uuid: d785f012-163b-418e-81ac-0086fe5fd025
+uuid: ef02e2cb-f473-4f4e-9564-286664de6286
 langcode: en
 status: true
 dependencies:
@@ -13,4 +13,4 @@ configuration:
   id: delete_ark_ezid_identifier
   plugin: dgi_actions_delete_ark_identifier
   type: entity
-  identifier_type: dgi_actions.identifier.ark
+  identifier_type: dgi_actions.identifier.ark_ezid

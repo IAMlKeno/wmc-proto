@@ -1,0 +1,19 @@
+uuid: 02b80a72-d3ea-4aad-a778-6bed2037b65a
+langcode: en
+status: true
+dependencies: {  }
+id: ark_ezid_erc
+label: 'ARK EZID ERC'
+entity: node
+bundle: islandora_object
+dataprofile: dgi_actions.data_profile_type.erc
+data:
+  erc_who:
+    key: erc.who
+    source_field: field_publisher
+  erc_what:
+    key: erc.what
+    source_field: title
+  erc_when:
+    key: erc.when
+    source_field: field_edtf_date
