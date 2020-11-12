@@ -1,4 +1,4 @@
-uuid: ea025e61-9f71-41fb-8afa-da8064d6c559
+uuid: 6b99fe4d-fb62-432e-aa82-cb85338f26d6
 langcode: en
 status: true
 dependencies:
@@ -13,9 +13,9 @@ disabled: false
 conditions:
   dgi_actions_entity_persistent_identifier_populated:
     id: dgi_actions_entity_persistent_identifier_populated
-    identifier: dgi_actions.identifier.ark
+    identifier: dgi_actions.identifier.ark_ezid
     negate: 0
-    uuid: 7d64a5d2-630d-425c-94ee-bb9c6587419d
+    uuid: 65258489-e6d6-4f99-a714-ce15c468ea5a
     context_mapping:
       entity: '@entity_route_context.entity_route_context:canonical_entity'
 reactions:
