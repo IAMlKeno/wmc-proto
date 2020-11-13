@@ -1,0 +1,8 @@
+uuid: 13ed0bc5-ac93-400d-9d8e-a58448edd595
+langcode: en
+status: true
+dependencies: {  }
+id: footer-menu-column-1
+label: 'Footer Menu Column 1'
+description: 'Left-most column of menu links in the footer.'
+locked: false

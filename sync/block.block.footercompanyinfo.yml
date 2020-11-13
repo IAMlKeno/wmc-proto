@@ -1,0 +1,54 @@
+uuid: ec04e2d8-0e49-4055-891a-bd5513a6a5f9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c6bd9659-fa9f-4054-bc04-b65a9bafa5e6'
+  module:
+    - block_class
+    - block_content
+    - request_data_conditions
+  theme:
+    - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: dgi-footer-info
+id: footercompanyinfo
+theme: dgi_i8_base
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c6bd9659-fa9f-4054-bc04-b65a9bafa5e6'
+settings:
+  id: 'block_content:c6bd9659-fa9f-4054-bc04-b65a9bafa5e6'
+  label: 'Placeholder Company'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

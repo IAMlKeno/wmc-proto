@@ -1,0 +1,54 @@
+uuid: df8ee3d0-288f-41d3-ad45-3dd42463c768
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bef0a4d9-c7c3-4bc4-b4c0-99a1f96fe0b2'
+  module:
+    - block_class
+    - block_content
+    - request_data_conditions
+  theme:
+    - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: dgi-footer-bottom-info
+id: footerbottomcompanyinfo
+theme: dgi_i8_base
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:bef0a4d9-c7c3-4bc4-b4c0-99a1f96fe0b2'
+settings:
+  id: 'block_content:bef0a4d9-c7c3-4bc4-b4c0-99a1f96fe0b2'
+  label: 'Footer Bottom Company Info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
