@@ -12,11 +12,11 @@ dependencies:
     - dgi_i8_base
 third_party_settings:
   block_class:
-    classes: dgi-footer-bottom-left
+    classes: 'dgi-footer-bottom-left col-md-4'
 id: footerbottomleft
 theme: dgi_i8_base
 region: footer_bottom
-weight: 0
+weight: -21
 provider: null
 plugin: 'system_menu_block:footer-bottom-left'
 settings:

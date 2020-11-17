@@ -12,11 +12,11 @@ dependencies:
     - dgi_i8_base
 third_party_settings:
   block_class:
-    classes: dgi-footer-bottom-info
+    classes: 'dgi-footer-bottom-info col-lg-8'
 id: footerbottomcompanyinfo
 theme: dgi_i8_base
 region: footer_bottom
-weight: 0
+weight: -20
 provider: null
 plugin: 'block_content:bef0a4d9-c7c3-4bc4-b4c0-99a1f96fe0b2'
 settings:

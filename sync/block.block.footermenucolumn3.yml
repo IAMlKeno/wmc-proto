@@ -12,11 +12,11 @@ dependencies:
     - dgi_i8_base
 third_party_settings:
   block_class:
-    classes: dgi-footer-menu-col
+    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
 id: footermenucolumn3
 theme: dgi_i8_base
 region: footer
-weight: 0
+weight: -18
 provider: null
 plugin: 'system_menu_block:footer-menu-column-3'
 settings:
