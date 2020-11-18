@@ -8,15 +8,18 @@ dependencies:
     - block_class
     - block_content
     - request_data_conditions
+    - blockgroup
   theme:
     - dgi_i8_base
+  config:
+    - blockgroup.block_group_content.basic_footer_columns
 third_party_settings:
   block_class:
     classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
 id: footercompanyinfo
 theme: dgi_i8_base
-region: footer
-weight: -21
+region: basic_footer_columns
+weight: -22
 provider: null
 plugin: 'block_content:c6bd9659-fa9f-4054-bc04-b65a9bafa5e6'
 settings:

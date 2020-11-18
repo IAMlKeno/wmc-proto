@@ -1,34 +1,29 @@
-uuid: 09dfe7ce-22e4-47f1-9e9a-6671bca799a0
+uuid: 326b68a9-193f-4cd4-b969-be1f2281ba33
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-menu-column-2
     - blockgroup.block_group_content.basic_footer_columns
   module:
     - block_class
-    - request_data_conditions
-    - system
     - blockgroup
+    - request_data_conditions
   theme:
     - dgi_i8_base
 third_party_settings:
   block_class:
-    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
-id: footermenucolumn2
+    classes: col-lg-9
+id: basicfootercolumns
 theme: dgi_i8_base
-region: basic_footer_columns
-weight: -20
+region: footer
+weight: -21
 provider: null
-plugin: 'system_menu_block:footer-menu-column-2'
+plugin: 'block_group:basic_footer_columns'
 settings:
-  id: 'system_menu_block:footer-menu-column-2'
-  label: 'Footer Menu Column 2'
-  provider: system
-  label_display: visible
-  level: 1
-  depth: 0
-  expand_all_items: false
+  id: 'block_group:basic_footer_columns'
+  label: 'Basic Footer Columns'
+  provider: blockgroup
+  label_display: '0'
 visibility:
   http_headers:
     id: http_headers
