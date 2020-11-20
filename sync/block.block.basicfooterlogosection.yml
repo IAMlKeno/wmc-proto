@@ -16,14 +16,14 @@ third_party_settings:
 id: basicfooterlogosection
 theme: dgi_i8_base
 region: footer
-weight: -22
+weight: -23
 provider: null
 plugin: 'block_group:basic_footer_logo_section'
 settings:
   id: 'block_group:basic_footer_logo_section'
   label: 'Basic Footer Logo Section'
   provider: blockgroup
-  label_display: visible
+  label_display: '0'
 visibility:
   http_headers:
     id: http_headers

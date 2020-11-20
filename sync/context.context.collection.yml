@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: N6lOE1Ui_bmilXMN8Iw_sD3EC1nM-Ua40rnmyKVEf9Y
 name: collection
-label: Collection
+label: 'Collection (List)'
 group: Islandora
 description: 'Islandora collections'
 requireAllConditions: true
@@ -87,30 +87,6 @@ reactions:
         unique: 0
         context_id: collection
         uuid: 9c0c6077-d281-494f-a901-0c224d050c0b
-      fb50bc6d-885b-43e6-96de-3be4ae1bbee9:
-        id: dgi_header
-        label: 'DGI Header Block'
-        provider: dgi_header
-        label_display: '0'
-        menu: dgi-header
-        search:
-          view: solr_search_content
-          display_id: page_1
-          parameter: search_api_fulltext
-        second_logo: null
-        region: navigation
-        weight: '-2'
-        admin_label: ''
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: dgi-header-max-height
-        unique: 0
-        context_id: collection
-        uuid: fb50bc6d-885b-43e6-96de-3be4ae1bbee9
-        user_menu: account
-        default_second_logo: 0
-        second_logo_wrapper:
-          second_logo: {  }
       bca40d6a-c98c-4ed6-92b5-fab5a0b5ca40:
         id: 'views_block:collection_representative_object-block_1'
         label: ''
@@ -143,23 +119,10 @@ reactions:
         context_id: collection
         uuid: 9b244ead-734a-440d-a0ee-f288875ccfe0
         override: {  }
-      5a69df95-5793-43c9-9afc-0308c9abdd67:
-        id: system_breadcrumb_block
-        label: Breadcrumbs
-        provider: system
-        label_display: 0
-        region: navigation
-        weight: '-1'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: 5a69df95-5793-43c9-9afc-0308c9abdd67
     id: blocks
     saved: false
     uuid: 379baa20-03b9-4402-8a5c-20a3201f239b
-    include_default_blocks: 0
+    include_default_blocks: 1
   view_mode_alter:
     id: view_mode_alter
     mode: node.repository_item_collections

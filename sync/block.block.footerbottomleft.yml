@@ -16,7 +16,7 @@ third_party_settings:
 id: footerbottomleft
 theme: dgi_i8_base
 region: footer_bottom
-weight: -21
+weight: -22
 provider: null
 plugin: 'system_menu_block:footer-bottom-left'
 settings:

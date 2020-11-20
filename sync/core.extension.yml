@@ -36,10 +36,12 @@ module:
   contextual: 0
   controlled_access_terms: 0
   controlled_access_terms_defaults: 0
+  copyright_footer: 0
   custom_add_another: 0
   datetime: 0
   dblog: 0
   dgi_header: 0
+  dgi_i8_custom_blocks: 0
   dgi_i8_helper: 0
   dgi_i8_helper_config_split_exporter: 0
   dgi_i8_helper_flysystem_s3: 0
