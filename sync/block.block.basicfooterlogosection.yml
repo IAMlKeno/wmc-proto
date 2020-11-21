@@ -1,6 +1,6 @@
 uuid: ac2940dc-2d94-4028-a073-53e7db032af2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - blockgroup.block_group_content.basic_footer_logo_section

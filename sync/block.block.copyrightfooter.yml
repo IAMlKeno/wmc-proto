@@ -1,6 +1,6 @@
 uuid: df2bea4c-c90e-45cd-b6ad-0ba043ae45f1
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - block_class
