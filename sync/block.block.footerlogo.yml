@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - block_class
     - dgi_i8_custom_blocks
     - request_data_conditions
     - blockgroup
@@ -11,9 +10,6 @@ dependencies:
     - dgi_i8_base
   config:
     - blockgroup.block_group_content.basic_footer_logo_section
-third_party_settings:
-  block_class:
-    classes: 'dgi-footer-logo col-lg-3 col-md-12'
 id: footerlogo
 theme: dgi_i8_base
 region: basic_footer_logo_section
