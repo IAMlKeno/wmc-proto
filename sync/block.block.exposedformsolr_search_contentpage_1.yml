@@ -24,7 +24,7 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: 'The Islandora'
+  views_label: 'Digital Archives'
 visibility:
   http_headers:
     id: http_headers

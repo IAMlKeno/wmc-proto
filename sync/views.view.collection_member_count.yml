@@ -22,7 +22,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'administer modules'
       cache:
         type: tag
         options: {  }
@@ -215,7 +215,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<span class=''count-num''>0</span><span class=''count-text''> Items</span>'
+            value: '<span class=''count-num xx''>0</span><span class=''count-text''> Items</span>'
             format: full_html
           plugin_id: text
       relationships: {  }

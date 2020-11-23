@@ -1110,7 +1110,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: '<span class=''count-num''>0</span><span class=''count-text''> Items</span>'
+          empty: ''
           hide_empty: false
           empty_zero: true
           hide_alter_empty: false
