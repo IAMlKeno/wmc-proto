@@ -13,7 +13,7 @@ dependencies:
     - blockgroup.block_group_content.basic_footer_columns
 third_party_settings:
   block_class:
-    classes: 'dgi-footer-menu-col col-lg-3 col-md-4 col-sm-6'
+    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
 id: informationdisplay_2
 theme: dgi_i8_base
 region: basic_footer_columns
@@ -25,7 +25,7 @@ settings:
   label: 'Placeholder Company'
   provider: dgi_i8_custom_blocks
   label_display: visible
-  display_info: "<p>DiscoveryGarden Inc.<br />\r\n42 Something St.<br />\r\nCharlottetown, PE</p>\r\n"
+  display_info: "<p>Company Name<br />\r\n42 Something St.<br />\r\nCity, State/Province</p>\r\n"
 visibility:
   http_headers:
     id: http_headers

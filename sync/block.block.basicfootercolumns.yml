@@ -12,7 +12,7 @@ dependencies:
     - dgi_i8_base
 third_party_settings:
   block_class:
-    classes: col-lg-9
+    classes: 'col-lg-9 col-md-12'
 id: basicfootercolumns
 theme: dgi_i8_base
 region: footer

@@ -22,7 +22,7 @@ settings:
   label: 'Information Display'
   provider: dgi_i8_custom_blocks
   label_display: '0'
-  display_info: "<p>(902)-222-2222&nbsp;&nbsp;info@discoverygarden.ca</p>\r\n"
+  display_info: "<p>(902)-222-2222&nbsp;&nbsp;some email address</p>\r\n"
 visibility:
   http_headers:
     id: http_headers
