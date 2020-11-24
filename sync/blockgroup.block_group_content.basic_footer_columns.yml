@@ -1,0 +1,6 @@
+uuid: 67c622f5-ff27-4e36-9a01-2af2168016db
+langcode: en
+status: true
+dependencies: {  }
+id: basic_footer_columns
+label: 'Basic Footer Columns'
