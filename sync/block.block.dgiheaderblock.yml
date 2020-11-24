@@ -10,7 +10,7 @@ dependencies:
     - dgi_i8_base
 third_party_settings:
   block_class:
-    classes: dgi-header-max-height
+    classes: 'dgi-header-max-height visible-sm-block visible-md-block visible-lg-block'
 id: dgiheaderblock
 theme: dgi_i8_base
 region: navigation

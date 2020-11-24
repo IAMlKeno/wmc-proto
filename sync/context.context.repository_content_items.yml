@@ -108,7 +108,7 @@ reactions:
         label_display: '0'
         views_label: ''
         items_per_page: none
-        weight: '4'
+        weight: '3'
         region: content
         parent_wrapper:
           parent: ''
@@ -124,7 +124,7 @@ reactions:
         label: 'Main page content'
         provider: system
         label_display: '0'
-        weight: '6'
+        weight: '5'
         region: content
         parent_wrapper:
           parent: ''
@@ -135,28 +135,12 @@ reactions:
         unique: 0
         context_id: repository_content_items
         uuid: a9d31932-f5d1-4c9a-8e46-0bf3226685fc
-      50e99afd-9b9a-4e76-bf1c-e676012bbd84:
-        id: addtoany_block
-        label: Share
-        provider: addtoany
-        label_display: visible
-        weight: '10'
-        region: sidebar_second
-        parent_wrapper:
-          parent: ''
-        all_parents: {  }
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: 'add-to-any-block block-sidebar-menu'
-        unique: 1
-        context_id: repository_content_items
-        uuid: 50e99afd-9b9a-4e76-bf1c-e676012bbd84
       c187cbfe-042a-4546-8906-3a765f070cd2:
         id: embargoes_embargo_notification_block
         label: 'Embargo Notifications'
         provider: embargoes
         label_display: '0'
-        weight: '7'
+        weight: '6'
         region: content
         parent_wrapper:
           parent: ''
@@ -174,7 +158,7 @@ reactions:
         label_display: 0
         views_label: ''
         items_per_page: none
-        weight: '5'
+        weight: '4'
         region: content
         parent_wrapper:
           parent: ''
@@ -185,42 +169,6 @@ reactions:
         unique: 0
         context_id: repository_content_items
         uuid: d75cfdcb-9cc2-4fbd-86e4-74edc13f094d
-      6556e97e-b251-403d-9f01-31ca126c673d:
-        id: 'views_block:technical_metadata-block_1'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        weight: '8'
-        region: sidebar_second
-        parent_wrapper:
-          parent: ''
-        all_parents: {  }
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: repository_content_items
-        uuid: 6556e97e-b251-403d-9f01-31ca126c673d
-      e3bb8087-b719-43d4-b756-42c4cfd91f97:
-        id: 'views_block:download_original_file-block_1'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        weight: '9'
-        region: sidebar_second
-        parent_wrapper:
-          parent: ''
-        all_parents: {  }
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: dgi-download-block
-        unique: 0
-        context_id: repository_content_items
-        uuid: e3bb8087-b719-43d4-b756-42c4cfd91f97
       0bae8f2d-f363-4f64-95d5-e58afdc53fb0:
         id: 'views_block:node_views_count_statistics-block_2'
         label: ''
@@ -239,6 +187,22 @@ reactions:
         unique: 0
         context_id: repository_content_items
         uuid: 0bae8f2d-f363-4f64-95d5-e58afdc53fb0
+      8a972e56-c731-4d52-93e8-b6e7afce1bdd:
+        id: 'block_group:object_page_split_sidebar'
+        label: 'Object Page: Split Sidebar'
+        provider: blockgroup
+        label_display: 0
+        weight: '10'
+        region: sidebar_second
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: dgi_i8_base
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: 8a972e56-c731-4d52-93e8-b6e7afce1bdd
     id: blocks
     saved: false
     uuid: e90aa662-f44c-472a-b91c-647d459d21a2
@@ -246,6 +210,7 @@ reactions:
   regions:
     id: regions
     regions:
+      claro: {  }
       classy: {  }
       seven: {  }
       stable: {  }
@@ -253,6 +218,7 @@ reactions:
       bootstrap: {  }
       dgi_i8_base:
         - header
+      gin: {  }
     saved: false
     uuid: 4c566c65-9a6e-4a9a-8142-3e102af99a6d
   body_class:

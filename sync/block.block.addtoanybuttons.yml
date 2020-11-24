@@ -1,30 +1,30 @@
-uuid: 4a183bae-d9e8-4b9c-85dc-9d9898e733a8
+uuid: 9086355d-31d7-43d3-949f-8343c6a6daa5
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.solr_search_content
   module:
+    - addtoany
     - block_class
     - request_data_conditions
-    - views
+    - blockgroup
   theme:
     - dgi_i8_base
+  config:
+    - blockgroup.block_group_content.object_page_split_sidebar
 third_party_settings:
   block_class:
-    classes: exposed-search-form
-id: exposedformsolr_search_contentpage_1
+    classes: 'add-to-any-block block-sidebar-menu col-md-6  col-lg-12'
+id: addtoanybuttons
 theme: dgi_i8_base
-region: sidr
+region: object_page_split_sidebar
 weight: -18
 provider: null
-plugin: 'views_exposed_filter_block:solr_search_content-page_1'
+plugin: addtoany_block
 settings:
-  id: 'views_exposed_filter_block:solr_search_content-page_1'
-  label: ''
-  provider: views
+  id: addtoany_block
+  label: Share
+  provider: addtoany
   label_display: visible
-  views_label: 'Digital Archives'
 visibility:
   http_headers:
     id: http_headers
@@ -38,14 +38,14 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
-  url_query_parameters:
-    id: url_query_parameters
+  cookie_values:
+    id: cookie_values
     conditions: {  }
     require_all_params: 1
     negate: false
     context_mapping: {  }
-  cookie_values:
-    id: cookie_values
+  url_query_parameters:
+    id: url_query_parameters
     conditions: {  }
     require_all_params: 1
     negate: false

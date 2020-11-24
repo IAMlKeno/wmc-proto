@@ -43,30 +43,6 @@ conditions:
 reactions:
   blocks:
     blocks:
-      30d40b2d-a27e-476e-b8eb-b29a636915d6:
-        id: dgi_header
-        label: 'DGI Header Block'
-        provider: dgi_header
-        label_display: 0
-        menu: dgi-header
-        search:
-          view: solr_search_content
-          display_id: page_1
-          parameter: search_api_fulltext
-        second_logo: null
-        region: navigation
-        weight: '-3'
-        admin_label: ''
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: dgi-header-max-height
-        unique: 0
-        context_id: collection_grid_
-        uuid: 30d40b2d-a27e-476e-b8eb-b29a636915d6
-        user_menu: account
-        default_second_logo: 0
-        second_logo_wrapper:
-          second_logo: {  }
       811fbfc1-f508-48cb-a92a-80f5e6b2168c:
         id: system_main_block
         label: 'Main page content'
@@ -109,19 +85,6 @@ reactions:
         unique: 0
         context_id: collection_grid_
         uuid: 2cda43ec-65f8-4bb9-9747-5289c900579c
-      6945719f-26b8-483d-96b2-feea4ba0a5c1:
-        id: system_breadcrumb_block
-        label: Breadcrumbs
-        provider: system
-        label_display: 0
-        region: navigation
-        weight: '0'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection_grid_
-        uuid: 6945719f-26b8-483d-96b2-feea4ba0a5c1
       8d754e0f-dc2b-4bb7-b568-057e5fff9ca1:
         id: 'views_block:solr_search_content-block_3'
         label: ''
@@ -140,7 +103,7 @@ reactions:
     id: blocks
     saved: false
     uuid: 0a05b6aa-813a-49cc-9c63-95aa0784fca1
-    include_default_blocks: 0
+    include_default_blocks: 1
   regions:
     id: regions
     regions:

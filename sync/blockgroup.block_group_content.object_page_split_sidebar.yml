@@ -1,0 +1,6 @@
+uuid: 86a39d99-34bb-4490-9ba9-74a76d1564eb
+langcode: en
+status: true
+dependencies: {  }
+id: object_page_split_sidebar
+label: 'Object Page: Split Sidebar'
