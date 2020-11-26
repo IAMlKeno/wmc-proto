@@ -5,14 +5,18 @@ dependencies:
   config:
     - views.view.solr_search_content
   module:
+    - block_class
     - request_data_conditions
     - views
   theme:
     - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: exposed-search-form
 id: exposedformsolr_search_contentpage_1
 theme: dgi_i8_base
 region: sidr
-weight: -6
+weight: -18
 provider: null
 plugin: 'views_exposed_filter_block:solr_search_content-page_1'
 settings:
@@ -20,7 +24,7 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: 'Digital Repository'
+  views_label: 'Digital Archives'
 visibility:
   http_headers:
     id: http_headers

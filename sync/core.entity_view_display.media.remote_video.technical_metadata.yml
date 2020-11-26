@@ -1,0 +1,82 @@
+uuid: 4bbbd079-704c-49e8-acf8-c491b6187a13
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.technical_metadata
+    - field.field.media.remote_video.field_media_oembed_video
+    - media.type.remote_video
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_technical_metadata:
+      children:
+        - langcode
+        - uid
+        - name
+        - created
+      parent_name: ''
+      weight: 20
+      format_type: field_group_table
+      region: content
+      format_settings:
+        id: dgi-technical-metadata-block
+        classes: ''
+        label_visibility: '2'
+        desc: ''
+        desc_visibility: '2'
+        first_column: ''
+        second_column: ''
+        empty_label_behavior: '1'
+        table_row_striping: 0
+        always_show_field_label: 0
+        always_show_field_value: 0
+        empty_field_placeholder: ''
+      label: 'Technical Metadata'
+_core:
+  default_config_hash: gUaDZKMQD3lmLKWPn727X3JHVdKJ525g4EJCCcDVAqk
+id: media.remote_video.technical_metadata
+targetEntityType: media
+bundle: remote_video
+mode: technical_metadata
+content:
+  created:
+    type: timestamp
+    weight: 0
+    region: content
+    label: above
+    settings:
+      date_format: html_date
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_media_oembed_video: true
+  thumbnail: true

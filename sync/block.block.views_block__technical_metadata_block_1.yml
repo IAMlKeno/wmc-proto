@@ -1,0 +1,56 @@
+uuid: 0272d52e-bbb2-4af7-8c59-3634be937596
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.technical_metadata
+    - blockgroup.block_group_content.object_page_split_sidebar
+  module:
+    - block_class
+    - request_data_conditions
+    - views
+    - blockgroup
+  theme:
+    - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: 'col-md-6 technical-metadata col-lg-12'
+id: views_block__technical_metadata_block_1
+theme: dgi_i8_base
+region: object_page_split_sidebar
+weight: -20
+provider: null
+plugin: 'views_block:technical_metadata-block_1'
+settings:
+  id: 'views_block:technical_metadata-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
