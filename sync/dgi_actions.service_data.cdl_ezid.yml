@@ -8,3 +8,4 @@ service_data_type: dgi_actions.service_data_type.cdl_ezid
 data:
   host: 'https://ezid.cdlib.org'
   namespace: 'ark:/99999/fk4'
+  state_key: dgi_actions.service_data.cdl_ezid
