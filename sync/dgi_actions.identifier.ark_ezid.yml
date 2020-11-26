@@ -1,9 +1,11 @@
-uuid: bb0d3d0f-b29f-48ac-9409-131be712d2f3
+uuid: 56e081d6-7ecf-4395-9e95-78b8fc3870b9
 langcode: en
 status: true
 dependencies: {  }
 id: ark_ezid
 label: 'ARK EZID'
+entity: node
+bundle: islandora_object
 field: field_ark
 service_data: dgi_actions.service_data.cdl_ezid
 data_profile: dgi_actions.data_profile.ark_ezid_erc
