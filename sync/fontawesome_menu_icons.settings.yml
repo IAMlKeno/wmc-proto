@@ -5,8 +5,13 @@ menu_link_icons:
     tag: i
     appearance: before
   dgi_header_logout:
-    icon: fa-sign-out-alt
-    prefix: fas
+    icon: fa-arrow-from-right
+    prefix: fal
+    tag: i
+    appearance: before
+  user_page:
+    icon: fa-sliders-v-square
+    prefix: fal
     tag: i
     appearance: before
 _core:
