@@ -5,7 +5,7 @@ _core:
 favicon:
   mimetype: image/png
   path: themes/contrib/dgi_i8_base/DG+Coaster+Blue.png
-  url: 'http://discoverygarden-vsphere-i8-repimg.dgi/themes/contrib/dgi_i8_base/DG%2BCoaster%2BBlue.png'
+  url: 'http://jojo-vsphere-i8-footer.dgi/themes/contrib/dgi_i8_base/DG%2BCoaster%2BBlue.png'
   use_default: false
 schemas:
   bootstrap: 8000
@@ -29,6 +29,8 @@ region_wells:
   footer_bottom: ''
   navigation_collapsible: ''
   navigation_collapsible_search: ''
+  basic_footer_columns: ''
+  basic_footer_logo_section: ''
   collection_facets_grid: ''
   collection_facets_list: ''
   collection_metadata_and_actions: ''
@@ -43,6 +45,7 @@ popover_placement: bottom
 popover_html: 1
 breadcrumb_home: 1
 popover_enabled: 0
+use_default_footer_logo: 1
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -52,5 +55,6 @@ logo:
   path: ''
   url: ''
   use_default: true
+footer_logo_path: themes/contrib/dgi_i8_base/footer_logo.svg
 reset_http_request_cache: ''
 table: ''

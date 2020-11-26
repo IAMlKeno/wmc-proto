@@ -1,0 +1,51 @@
+uuid: ac2940dc-2d94-4028-a073-53e7db032af2
+langcode: en
+status: false
+dependencies:
+  config:
+    - blockgroup.block_group_content.basic_footer_logo_section
+  module:
+    - block_class
+    - blockgroup
+    - request_data_conditions
+  theme:
+    - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: 'col-lg-3 col-md-12'
+id: basicfooterlogosection
+theme: dgi_i8_base
+region: footer
+weight: -23
+provider: null
+plugin: 'block_group:basic_footer_logo_section'
+settings:
+  id: 'block_group:basic_footer_logo_section'
+  label: 'Basic Footer Logo Section'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
