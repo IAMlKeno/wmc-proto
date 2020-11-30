@@ -12,7 +12,6 @@ dependencies:
   module:
     - file
     - text
-    - user
 _core:
   default_config_hash: 98rg2WZr7qjNh0gmlzYQcToIh749Znv-1ZYBDHYSAwc
 id: media.extracted_text.default
@@ -20,50 +19,28 @@ targetEntityType: media
 bundle: extracted_text
 mode: default
 content:
-  created:
-    label: hidden
-    type: timestamp
-    weight: 1
-    region: content
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
   field_edited_text:
     type: text_default
-    weight: 3
+    weight: 1
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_media_file:
     type: file_default
-    weight: 2
+    weight: 0
     region: content
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-  field_media_of:
-    type: entity_reference_label
-    weight: 4
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  uid:
-    label: hidden
-    type: author
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   addtoany: true
+  created: true
+  field_media_of: true
   field_media_use: true
   field_mime_type: true
   langcode: true
   name: true
   thumbnail: true
+  uid: true

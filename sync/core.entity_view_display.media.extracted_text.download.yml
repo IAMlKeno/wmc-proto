@@ -1,0 +1,82 @@
+uuid: 98d83f85-dbdf-4315-9052-aad90c472402
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.download
+    - field.field.media.extracted_text.field_edited_text
+    - field.field.media.extracted_text.field_media_file
+    - field.field.media.extracted_text.field_media_of
+    - field.field.media.extracted_text.field_media_use
+    - field.field.media.extracted_text.field_mime_type
+    - media.type.extracted_text
+  module:
+    - field_group
+    - file_download_link
+third_party_settings:
+  field_group:
+    group_download:
+      children:
+        - group_b
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: dgi-download-media
+        element: div
+        show_label: true
+        label_element: label
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Download
+    group_b:
+      children:
+        - field_media_file
+      parent_name: group_download
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: dgi-download-block-content-wrapper
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'block content wrapper'
+_core:
+  default_config_hash: 98rg2WZr7qjNh0gmlzYQcToIh749Znv-1ZYBDHYSAwc
+id: media.extracted_text.download
+targetEntityType: media
+bundle: extracted_text
+mode: download
+content:
+  field_media_file:
+    type: file_download_link
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_text: '[media:field_media_use:entity:name] ([file:extension]) — [file:size]'
+      new_tab: true
+      force_download: true
+      custom_classes: dgi-extractedtext-download
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  created: true
+  field_edited_text: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

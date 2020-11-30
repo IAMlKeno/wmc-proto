@@ -1,0 +1,54 @@
+uuid: 8d0d0dc3-abf0-4d25-a806-8d5d9af97cd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - block_class
+    - request_data_conditions
+    - system
+  theme:
+    - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: 'hidden-md hidden-lg hidden-sm'
+id: useraccountmenu_2
+theme: dgi_i8_base
+region: navigation_collapsible
+weight: -19
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

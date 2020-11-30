@@ -1,0 +1,55 @@
+uuid: df2bea4c-c90e-45cd-b6ad-0ba043ae45f1
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - copyright_footer
+    - request_data_conditions
+  theme:
+    - dgi_i8_base
+third_party_settings:
+  block_class:
+    classes: col-lg-4
+id: copyrightfooter
+theme: dgi_i8_base
+region: footer_bottom
+weight: -20
+provider: null
+plugin: copyright_footer
+settings:
+  id: copyright_footer
+  label: 'Copyright Footer'
+  provider: copyright_footer
+  label_display: '0'
+  organization_name: ''
+  organization_url: ''
+  year_origin: null
+  year_to_date: null
+  version: ''
+  version_url: ''
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

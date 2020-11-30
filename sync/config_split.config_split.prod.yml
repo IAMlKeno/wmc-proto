@@ -6,8 +6,7 @@ id: prod
 label: Prod
 description: 'Modules to and settings for production envs.'
 folder: /opt/www/d8_configs/default/splits/prod
-module:
-  eu_cookie_compliance: 1001
+module: {  }
 theme: {  }
 blacklist: {  }
 graylist:

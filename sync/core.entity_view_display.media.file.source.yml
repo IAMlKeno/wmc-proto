@@ -15,28 +15,19 @@ dependencies:
   enforced:
     module:
       - islandora_core_feature
-  module:
-    - file
 _core:
   default_config_hash: z2VqdgGMguFn_u-N2KgXxb67fxyEjesU-Yn7nyLFG9E
 id: media.file.source
 targetEntityType: media
 bundle: file
 mode: source
-content:
-  field_media_file:
-    label: hidden
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    type: file_default
-    weight: 0
-    region: content
+content: {  }
 hidden:
   addtoany: true
   created: true
   field_access_terms: true
   field_file_size: true
+  field_media_file: true
   field_media_of: true
   field_media_use: true
   field_mime_type: true

@@ -1,0 +1,6 @@
+uuid: 673e34d7-c2df-4bd2-b092-b8c13a3443f2
+langcode: en
+status: true
+dependencies: {  }
+id: basic_footer_logo_section
+label: 'Basic Footer Logo Section'

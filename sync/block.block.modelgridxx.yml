@@ -1,0 +1,50 @@
+uuid: 3135105c-fc41-4cf3-a723-e7cb8afb8dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.model_collection_list
+    - blockgroup.block_group_content.collection_facets_grid
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - dgi_i8_base
+id: modelgridxx
+theme: dgi_i8_base
+region: collection_facets_grid
+weight: 0
+provider: null
+plugin: 'facet_block:model_collection_list'
+settings:
+  id: 'facet_block:model_collection_list'
+  label: 'Model grid'
+  provider: facets
+  label_display: '0'
+  block_id: modelgridxx
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
