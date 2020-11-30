@@ -27,11 +27,14 @@ region_wells:
   pre_footer: ''
   footer: ''
   footer_bottom: ''
+  navigation_collapsible: ''
+  navigation_collapsible_search: ''
   basic_footer_columns: ''
   basic_footer_logo_section: ''
   collection_facets_grid: ''
   collection_facets_list: ''
   collection_metadata_and_actions: ''
+  object_page_split_sidebar: ''
   search_facet_header: ''
 cdn_theme: ''
 cdn_cache_ttl_versions: 0
@@ -41,6 +44,7 @@ cdn_cache_ttl_library: 0
 popover_placement: bottom
 popover_html: 1
 breadcrumb_home: 1
+popover_enabled: 0
 use_default_footer_logo: 1
 features:
   comment_user_picture: true

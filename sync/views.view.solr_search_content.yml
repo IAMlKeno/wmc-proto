@@ -79,9 +79,9 @@ display:
             first: '« '
             last: ' »'
           expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '1, 5, 10, 15, 20, 25'
+            items_per_page: true
+            items_per_page_label: Results
+            items_per_page_options: '15, 25, 50, 100'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- All -'
             offset: false
@@ -5110,7 +5110,6 @@ display:
             name: name
             changed: changed
             author: author
-            title_content: title_content
           info:
             counter:
               sortable: false
@@ -5155,14 +5154,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            title_content:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: title_content
+          default: '-1'
           empty_table: false
       defaults:
         style: false
