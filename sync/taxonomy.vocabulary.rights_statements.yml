@@ -1,0 +1,8 @@
+uuid: cd1ef0bd-b8b3-4a3d-b6a0-10d1668427dd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Rights Statements'
+vid: rights_statements
+description: 'See https://rightsstatements.org.'
+weight: 0
