@@ -54,6 +54,11 @@ display:
         type: default
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: true
       fields:
         title:
           id: title
@@ -91,8 +96,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h1
-          element_class: page-title
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
