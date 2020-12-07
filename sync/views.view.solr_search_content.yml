@@ -2710,6 +2710,77 @@ display:
               - '@count'
           entity_type: node
           plugin_id: search_api_field
+        title_1:
+          id: title_1
+          table: search_api_datasource_default_solr_index_entity_node
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
         view:
           id: view
           table: views
@@ -2760,7 +2831,7 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
-          arguments: '{{ raw_fields.nid }}'
+          arguments: '{{ raw_fields.nid }},{{ raw_fields.title_1 }}'
           plugin_id: view
         title:
           id: title
@@ -3417,8 +3488,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<span title="column row count row {{ counter }}" aria-label="column row count row {{ counter }}">{{ counter }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -3457,147 +3528,6 @@ display:
           hide_alter_empty: true
           counter_start: 1
           plugin_id: counter
-        title_1:
-          id: title_1
-          table: search_api_index_default_solr_index
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: TITLE
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          plugin_id: search_api_field
-        field_identifier:
-          id: field_identifier
-          table: search_api_datasource_default_solr_index_entity_node
-          field: field_identifier
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: KEYWORDS
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: 'solr-search/content/list?f[0]=identifier_page_list:{{ field_identifier }}'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: ul
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          entity_type: node
-          plugin_id: search_api_field
         nid:
           id: nid
           table: search_api_datasource_default_solr_index_entity_node
@@ -3681,6 +3611,147 @@ display:
               - '@count'
           entity_type: node
           plugin_id: search_api_field
+        title_1:
+          id: title_1
+          table: search_api_index_default_solr_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: TITLE
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="/node/{{ nid }}" aria-label="Column title value {{ title_1 }}" title="{{ title_1 }}">{{ title_1 }}</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
+        field_identifier:
+          id: field_identifier
+          table: search_api_datasource_default_solr_index_entity_node
+          field: field_identifier
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: KEYWORDS
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="/solr-search/content/list?f[0]=identifier_page_list:{{ field_identifier }}" aria-label="Column keywords value {{ field_identifier }}" title="{{ field_identifier }}">{{ field_identifier }}</a>'
+            make_link: false
+            path: 'solr-search/content/list?f[0]=identifier_page_list:{{ field_identifier }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: ul
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
         name:
           id: name
           table: search_api_index_default_solr_index
@@ -3691,8 +3762,8 @@ display:
           label: TYPE
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<span title="{{ name }}" aria-label="column type value {{ name }}">{{ name }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -3743,7 +3814,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          field_rendering: true
+          field_rendering: false
           fallback_handler: search_api
           fallback_options:
             link_to_item: false
@@ -3761,8 +3832,8 @@ display:
           label: DATE
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<span title="{{ changed }}" aria-label="column date value {{ changed }}">{{ changed }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -3837,8 +3908,8 @@ display:
           label: AUTHOR
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<span title="{{ author }}" aria-label="column author value {{ author }}">{{ author }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -4353,6 +4424,77 @@ display:
               - '@count'
           entity_type: node
           plugin_id: search_api_field
+        title_2:
+          id: title_2
+          table: search_api_datasource_default_solr_index_entity_node
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
         view:
           id: view
           table: views
@@ -4403,7 +4545,7 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
-          arguments: '{{ raw_fields.nid }}'
+          arguments: '{{ raw_fields.nid }},{{ raw_fields.title_2 }}'
           plugin_id: view
         title:
           id: title
@@ -4416,15 +4558,15 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
-            make_link: false
-            path: ''
+            text: '<a href="/node/{{ nid }}" title="{{ title__value }}" aria-label="select to visit the {{ title__value }} page">{{ title__value }}</a>'
+            make_link: true
+            path: '/node/{{ nid }}'
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
+            alt: 'Select to visit the {{ title }} page'
             rel: ''
             link_class: ''
             prefix: ''
@@ -4470,7 +4612,7 @@ display:
           field_rendering: false
           fallback_handler: search_api
           fallback_options:
-            link_to_item: true
+            link_to_item: false
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
@@ -4746,8 +4888,8 @@ display:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Ascending
+          sort_desc_label: Descending
       header:
         result:
           id: result
@@ -4768,7 +4910,7 @@ display:
           admin_label: ''
           empty: true
           display_id: page_1
-          label: Grid
+          label: 'Select to view search results as a grid'
           plugin_id: display_link
         display_link:
           id: display_link
@@ -4779,7 +4921,7 @@ display:
           admin_label: ''
           empty: true
           display_id: page_2
-          label: List
+          label: 'Select to view search results as a list'
           plugin_id: display_link
         area_1:
           id: area_1
@@ -5116,43 +5258,43 @@ display:
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: true
               responsive: ''
             title_1:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: true
               responsive: ''
             field_identifier:
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: true
               responsive: ''
             nid:
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: true
               responsive: ''
             name:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: true
               responsive: ''
             changed:
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: true
               responsive: ''
             author:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: true
               responsive: ''
           default: '-1'
           empty_table: false
@@ -5191,8 +5333,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<span title="column row count row {{ counter }}" aria-label="column row count row {{ counter }}">{{ counter }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -5231,147 +5373,6 @@ display:
           hide_alter_empty: true
           counter_start: 1
           plugin_id: counter
-        title_1:
-          id: title_1
-          table: search_api_index_default_solr_index
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: TITLE
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          plugin_id: search_api_field
-        field_identifier:
-          id: field_identifier
-          table: search_api_datasource_default_solr_index_entity_node
-          field: field_identifier
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: KEYWORDS
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: 'solr-search/content/list?f[0]=identifier_page_list:{{ field_identifier }}'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: ul
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          entity_type: node
-          plugin_id: search_api_field
         nid:
           id: nid
           table: search_api_datasource_default_solr_index_entity_node
@@ -5455,6 +5456,147 @@ display:
               - '@count'
           entity_type: node
           plugin_id: search_api_field
+        title_1:
+          id: title_1
+          table: search_api_index_default_solr_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: TITLE
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="/node/{{ nid }}" aria-label="Column title value {{ title_1 }}" title="{{ title_1 }}">{{ title_1 }}</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
+        field_identifier:
+          id: field_identifier
+          table: search_api_datasource_default_solr_index_entity_node
+          field: field_identifier
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: KEYWORDS
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="/solr-search/content/list?f[0]=identifier_page_list:{{ field_identifier }}" aria-label="Column keywords value {{ field_identifier }}" title="{{ field_identifier }}">{{ field_identifier }}</a>'
+            make_link: false
+            path: 'solr-search/content/list?f[0]=identifier_page_list:{{ field_identifier }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: ul
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
         name:
           id: name
           table: search_api_index_default_solr_index
@@ -5465,8 +5607,8 @@ display:
           label: TYPE
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<span title="{{ name }}" aria-label="column type value {{ name }}">{{ name }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -5517,7 +5659,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          field_rendering: true
+          field_rendering: false
           fallback_handler: search_api
           fallback_options:
             link_to_item: false
@@ -5535,8 +5677,8 @@ display:
           label: DATE
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<span title="{{ changed }}" aria-label="column date value {{ changed }}">{{ changed }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -5611,8 +5753,8 @@ display:
           label: AUTHOR
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<span title="{{ author }}" aria-label="column author value {{ author }}">{{ author }}</span>'
             make_link: false
             path: ''
             absolute: false
