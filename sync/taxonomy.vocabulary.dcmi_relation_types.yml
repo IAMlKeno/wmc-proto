@@ -1,0 +1,8 @@
+uuid: 3665a794-e07c-42f6-a6b1-2365bdd1d346
+langcode: en
+status: true
+dependencies: {  }
+name: 'DCMI Relation Types'
+vid: dcmi_relation_types
+description: 'See https://www.dublincore.org/specifications/dublin-core/rdf-relation-types/.'
+weight: 0
