@@ -4,14 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.download
-    - taxonomy.vocabulary.islandora_media_use
-  content:
-    - 'taxonomy_term:islandora_media_use:98a3a373-71f9-42e3-9f0e-ee11d19dea61'
   module:
     - media
     - node
     - taxonomy
     - user
+    - views_autocomplete_filters
 id: download_original_file
 label: 'Download Original File'
 module: views
@@ -130,16 +128,15 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
-        field_media_use_target_id:
-          id: field_media_use_target_id
-          table: media__field_media_use
-          field: field_media_use_target_id
-          relationship: none
+        field_external_uri_uri:
+          id: field_external_uri_uri
+          table: taxonomy_term__field_external_uri
+          field: field_external_uri_uri
+          relationship: field_media_use
           group_type: group
           admin_label: ''
-          operator: or
-          value:
-            8: 8
+          operator: '='
+          value: 'http://pcdm.org/use#OriginalFile'
           group: 1
           exposed: false
           expose:
@@ -156,7 +153,14 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
+            placeholder: ''
+            autocomplete_filter: 0
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: ''
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -169,13 +173,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: islandora_media_use
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
+          plugin_id: views_autocomplete_filters_string
       sorts: {  }
       header: {  }
       footer: {  }
@@ -188,6 +186,15 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_media_of: Content'
+          required: true
+          plugin_id: standard
+        field_media_use:
+          id: field_media_use
+          table: media__field_media_use
+          field: field_media_use
+          relationship: none
+          group_type: group
+          admin_label: 'field_media_use: Taxonomy term'
           required: true
           plugin_id: standard
       arguments:
@@ -227,13 +234,16 @@ display:
           plugin_id: numeric
       display_extenders: {  }
       title: ''
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - user.permissions
       tags: {  }
   block_1:
@@ -253,6 +263,5 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - user.permissions
       tags: {  }
