@@ -4,15 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.islandora_object
-    - taxonomy.vocabulary.islandora_models
-  content:
-    - 'taxonomy_term:islandora_models:344125ab-e4a7-41a4-9465-075c192f2301'
-    - 'taxonomy_term:islandora_models:bb6334f6-f0c9-45b6-818f-4926bdaa04ef'
-    - 'taxonomy_term:islandora_models:f5774c0d-d0e0-493b-8118-01c7d59c4dfd'
   module:
     - node
     - taxonomy
     - user
+    - views_autocomplete_filters
 id: content_counts
 label: 'Repo Content Counts'
 module: views
@@ -138,7 +134,16 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_model:
+          id: field_model
+          table: node__field_model
+          field: field_model
+          relationship: none
+          group_type: group
+          admin_label: 'field_model: Taxonomy term'
+          required: true
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       group_by: true
@@ -157,16 +162,15 @@ display:
     display_options:
       display_extenders: {  }
       filters:
-        field_model_target_id:
-          id: field_model_target_id
-          table: node__field_model
-          field: field_model_target_id
-          relationship: none
+        field_external_uri_uri:
+          id: field_external_uri_uri
+          table: taxonomy_term__field_external_uri
+          field: field_external_uri_uri
+          relationship: field_model
           group_type: group
           admin_label: ''
-          operator: or
-          value:
-            10: 10
+          operator: '='
+          value: 'https://schema.org/DigitalDocument'
           group: 1
           exposed: false
           expose:
@@ -183,7 +187,14 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
+            placeholder: ''
+            autocomplete_filter: 0
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: ''
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -196,13 +207,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: islandora_models
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
+          plugin_id: views_autocomplete_filters_string
       defaults:
         filters: false
         filter_groups: false
@@ -358,7 +363,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -370,16 +374,15 @@ display:
     display_options:
       display_extenders: {  }
       filters:
-        field_model_target_id:
-          id: field_model_target_id
-          table: node__field_model
-          field: field_model_target_id
-          relationship: none
+        field_external_uri_uri:
+          id: field_external_uri_uri
+          table: taxonomy_term__field_external_uri
+          field: field_external_uri_uri
+          relationship: field_model
           group_type: group
           admin_label: ''
-          operator: or
-          value:
-            15: 15
+          operator: '='
+          value: 'http://purl.org/dc/dcmitype/Collection'
           group: 1
           exposed: false
           expose:
@@ -396,7 +399,14 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
+            placeholder: ''
+            autocomplete_filter: 0
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: ''
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -409,13 +419,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: islandora_models
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
+          plugin_id: views_autocomplete_filters_string
       defaults:
         filters: false
         filter_groups: false
@@ -423,8 +427,7 @@ display:
         css_class: false
       filter_groups:
         operator: AND
-        groups:
-          1: AND
+        groups: {  }
       displays:
         block_1: block_1
       attachment_position: after
@@ -571,7 +574,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -583,16 +585,15 @@ display:
     display_options:
       display_extenders: {  }
       filters:
-        field_model_target_id:
-          id: field_model_target_id
-          table: node__field_model
-          field: field_model_target_id
-          relationship: none
+        field_external_uri_uri:
+          id: field_external_uri_uri
+          table: taxonomy_term__field_external_uri
+          field: field_external_uri_uri
+          relationship: field_model
           group_type: group
           admin_label: ''
-          operator: or
-          value:
-            29: 29
+          operator: '='
+          value: 'https://schema.org/PublicationIssue'
           group: 1
           exposed: false
           expose:
@@ -609,7 +610,14 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
+            placeholder: ''
+            autocomplete_filter: 0
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: ''
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -622,13 +630,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: islandora_models
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
+          plugin_id: views_autocomplete_filters_string
       defaults:
         filters: false
         filter_groups: false
@@ -636,8 +638,7 @@ display:
         css_class: false
       filter_groups:
         operator: AND
-        groups:
-          1: AND
+        groups: {  }
       displays:
         block_1: block_1
       attachment_position: after
@@ -784,7 +785,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
