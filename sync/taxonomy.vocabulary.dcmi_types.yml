@@ -1,0 +1,8 @@
+uuid: 07420836-679c-4b07-aa37-2d6786f99129
+langcode: en
+status: true
+dependencies: {  }
+name: 'DCMI Types'
+vid: dcmi_types
+description: 'See https://dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/'
+weight: 0
