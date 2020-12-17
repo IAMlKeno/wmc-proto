@@ -26,14 +26,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-<<<<<<< HEAD
-hidden:
-  description: true
-  langcode: true
-  path: true
-  status: true
-  translation: true
-=======
   path:
     type: path
     weight: 30
@@ -53,4 +45,3 @@ hidden:
     third_party_settings: {  }
     region: content
 hidden: {  }
->>>>>>> bdaa49e97d37e016d7149574ebd110785fed87fc
