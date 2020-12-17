@@ -73,8 +73,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  solr_search_content_entity_view_2_form:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   addtoany: true
+  collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true
@@ -125,10 +131,13 @@ hidden:
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
+  openseadragon_paged_content_entity_view_1: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
   repository_item_content_blocks_classification: true
   repository_item_content_blocks_metadata: true
+  solr_search_content_entity_view_1: true
   solr_search_content_entity_view_1_form: true
   solr_search_content_entity_view_2: true
+  solr_search_content_entity_view_2_form: true

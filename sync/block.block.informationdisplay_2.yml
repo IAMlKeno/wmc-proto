@@ -1,0 +1,53 @@
+uuid: a185f1ed-4e5e-4723-abb6-df38a900fd22
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - dgi_i8_custom_blocks
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - dgi_i8_base
+  config:
+    - blockgroup.block_group_content.basic_footer_columns
+third_party_settings:
+  block_class:
+    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
+id: informationdisplay_2
+theme: dgi_i8_base
+region: basic_footer_columns
+weight: -23
+provider: null
+plugin: dgi_info_block
+settings:
+  id: dgi_info_block
+  label: 'Placeholder Company'
+  provider: dgi_i8_custom_blocks
+  label_display: visible
+  display_info: "<p>Company Name<br />\r\n42 Something St.<br />\r\nCity, State/Province</p>\r\n"
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

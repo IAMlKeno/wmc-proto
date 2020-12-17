@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 uuid: ce50374b-fa9e-4449-baba-e7eddabbea8b
+=======
+uuid: c00826a1-1122-4ae0-8fb9-5bde4004b685
+>>>>>>> bdaa49e97d37e016d7149574ebd110785fed87fc
 langcode: en
 status: true
 dependencies:
@@ -31,5 +35,9 @@ content:
     type: string
     region: content
 hidden:
+<<<<<<< HEAD
   description: true
+=======
+  field_authority_link: true
+>>>>>>> bdaa49e97d37e016d7149574ebd110785fed87fc
   langcode: true

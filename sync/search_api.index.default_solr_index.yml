@@ -11,14 +11,15 @@ dependencies:
     - search_api
   config:
     - field.storage.media.field_edited_text
+    - field.storage.node.field_access_terms
+    - field.storage.node.field_physical_form
+    - field.storage.node.field_genre
     - field.storage.media.field_media_file
     - field.storage.media.field_file_size
     - field.storage.media.field_media_of
-    - field.storage.node.field_access_terms
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
-    - field.storage.node.field_physical_form
-    - field.storage.node.field_genre
+    - field.storage.node.field_identifier
     - field.storage.node.field_linked_agent
     - field.storage.node.field_member_of
     - field.storage.node.field_model
@@ -129,6 +130,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.media.field_file_size
+  field_identifier:
+    label: Identifier
+    datasource_id: 'entity:node'
+    property_path: field_identifier
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_identifier
   field_media_file:
     label: File
     datasource_id: 'entity:media'
@@ -164,6 +173,17 @@ field_settings:
         - field.storage.taxonomy_term.field_type
       module:
         - taxonomy
+  member_of_id:
+    label: 'Member of » Content » ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_member_of:entity:nid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_member_of
+      module:
+        - node
+        - node
   mid:
     label: ID
     datasource_id: 'entity:media'
@@ -281,17 +301,6 @@ field_settings:
     dependencies:
       module:
         - node
-  nid_2:
-    label: 'Member of » Content » ID'
-    datasource_id: 'entity:node'
-    property_path: 'field_member_of:entity:nid'
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_member_of
-      module:
-        - node
-        - node
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -347,7 +356,7 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
-    type: text
+    type: 'solr_text_custom:ngram'
     boost: !!float 8
     dependencies:
       module:
@@ -431,6 +440,7 @@ processor_settings:
       - author
       - bundle
       - field_edtf_date_created
+      - field_identifier
       - field_media_file
       - field_type
       - name

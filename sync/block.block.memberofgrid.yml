@@ -1,0 +1,25 @@
+uuid: 1a083ee1-2b26-48a9-aca0-9319670b5896
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.member_of_grid_
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - blockgroup
+  theme:
+    - dgi_i8_base
+id: memberofgrid
+theme: dgi_i8_base
+region: search_facet_header
+weight: -12
+provider: null
+plugin: 'facet_block:member_of_grid_'
+settings:
+  id: 'facet_block:member_of_grid_'
+  label: 'Member of'
+  provider: facets
+  label_display: '0'
+  block_id: memberofgrid
+visibility: {  }

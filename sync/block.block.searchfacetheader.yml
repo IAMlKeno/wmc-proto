@@ -1,0 +1,47 @@
+uuid: b2585b2c-443f-497a-b011-093309a91d9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - blockgroup
+    - request_data_conditions
+  theme:
+    - dgi_i8_base
+id: searchfacetheader
+theme: dgi_i8_base
+region: sidr
+weight: -14
+provider: null
+plugin: 'block_group:search_facet_header'
+settings:
+  id: 'block_group:search_facet_header'
+  label: 'Search Facet Header'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

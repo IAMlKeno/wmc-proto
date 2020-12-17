@@ -1,0 +1,8 @@
+uuid: ef7d3a5e-a346-4d30-8984-aa8a7d262895
+langcode: en
+status: true
+dependencies: {  }
+id: footer-bottom-left
+label: 'Footer Bottom Left'
+description: 'Left-most menu links in the bottom section of the footer.'
+locked: false
