@@ -147,7 +147,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/node/{{ raw_arguments.field_media_of_target_id }}'
             absolute: false
             external: false
@@ -187,7 +187,7 @@ display:
           type: image
           settings:
             image_style: solr_grid_thumbnail
-            image_link: content
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
