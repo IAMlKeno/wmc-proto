@@ -2891,11 +2891,7 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
-<<<<<<< HEAD
-          arguments: '{{ raw_fields.nid }}'
-=======
           arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_1 }}'
->>>>>>> 2b7bd574a173eff98f282b5c26654a5c9fc09cec
           plugin_id: view
         title:
           id: title
@@ -4488,8 +4484,6 @@ display:
               - '@count'
           entity_type: node
           plugin_id: search_api_field
-<<<<<<< HEAD
-=======
         base_url:
           id: base_url
           table: views
@@ -4620,7 +4614,6 @@ display:
             multi_separator: ', '
           entity_type: node
           plugin_id: search_api_field
->>>>>>> 2b7bd574a173eff98f282b5c26654a5c9fc09cec
         view:
           id: view
           table: views
@@ -4671,11 +4664,7 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
-<<<<<<< HEAD
-          arguments: '{{ raw_fields.nid }}'
-=======
           arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_2 }}'
->>>>>>> 2b7bd574a173eff98f282b5c26654a5c9fc09cec
           plugin_id: view
         title:
           id: title
