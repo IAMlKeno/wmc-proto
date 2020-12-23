@@ -27,6 +27,7 @@ dependencies:
     - file
     - search_api
     - views_autocomplete_filters
+    - views_base_url
     - views_field_view
 _core:
   default_config_hash: HOLKQFo9Gxd0-FHu9o5XZeZbGOFMmJpFCwDguu0nGgI
@@ -2710,6 +2711,136 @@ display:
               - '@count'
           entity_type: node
           plugin_id: search_api_field
+        base_url:
+          id: base_url
+          table: views
+          field: base_url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          show_link: false
+          show_link_options:
+            link_path: ''
+            link_text: ''
+            link_class: ''
+            link_title: ''
+            link_rel: ''
+            link_fragment: ''
+            link_query: ''
+            link_target: ''
+          plugin_id: base_url
+        title_1:
+          id: title_1
+          table: search_api_datasource_default_solr_index_entity_node
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
         view:
           id: view
           table: views
@@ -2760,7 +2891,11 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
+<<<<<<< HEAD
           arguments: '{{ raw_fields.nid }}'
+=======
+          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_1 }}'
+>>>>>>> 2b7bd574a173eff98f282b5c26654a5c9fc09cec
           plugin_id: view
         title:
           id: title
@@ -4353,6 +4488,139 @@ display:
               - '@count'
           entity_type: node
           plugin_id: search_api_field
+<<<<<<< HEAD
+=======
+        base_url:
+          id: base_url
+          table: views
+          field: base_url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          show_link: false
+          show_link_options:
+            link_path: ''
+            link_text: ''
+            link_class: ''
+            link_title: ''
+            link_rel: ''
+            link_fragment: ''
+            link_query: ''
+            link_target: ''
+          plugin_id: base_url
+        title_2:
+          id: title_2
+          table: search_api_datasource_default_solr_index_entity_node
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
+>>>>>>> 2b7bd574a173eff98f282b5c26654a5c9fc09cec
         view:
           id: view
           table: views
@@ -4403,7 +4671,11 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
+<<<<<<< HEAD
           arguments: '{{ raw_fields.nid }}'
+=======
+          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_2 }}'
+>>>>>>> 2b7bd574a173eff98f282b5c26654a5c9fc09cec
           plugin_id: view
         title:
           id: title
