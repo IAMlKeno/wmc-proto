@@ -1,0 +1,63 @@
+uuid: 7ee0a3f0-47f8-45fa-9b49-30039a774ec9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - request_data_conditions
+    - system
+  theme:
+    - wmc_i8_subtheme
+_core:
+  default_config_hash: gJIY1Qtuq8yxK8coDyscLxO4RW7IagOmVBkXy6PR2Vc
+id: wmc_i8_subtheme_breadcrumbs
+theme: wmc_i8_subtheme
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/solr-search/content/*"
+    negate: true
+    context_mapping: {  }
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      block_display: block_display
+      islandora_object: islandora_object
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

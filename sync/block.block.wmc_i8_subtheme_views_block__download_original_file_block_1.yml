@@ -1,0 +1,56 @@
+uuid: 362cafdf-6450-49cc-88d8-85fc0c38cfe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.download_original_file
+    - blockgroup.block_group_content.object_page_split_sidebar
+  module:
+    - block_class
+    - request_data_conditions
+    - views
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: 'dgi-download-block col-md-6  col-lg-12'
+id: wmc_i8_subtheme_views_block__download_original_file_block_1
+theme: wmc_i8_subtheme
+region: object_page_split_sidebar
+weight: -19
+provider: null
+plugin: 'views_block:download_original_file-block_1'
+settings:
+  id: 'views_block:download_original_file-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

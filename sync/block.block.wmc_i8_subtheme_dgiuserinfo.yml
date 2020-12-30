@@ -1,0 +1,55 @@
+uuid: cc182150-48f4-45e3-963f-ebca935b73bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - dgi_header
+    - request_data_conditions
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: 'hidden-md hidden-lg hidden-sm'
+id: wmc_i8_subtheme_dgiuserinfo
+theme: wmc_i8_subtheme
+region: navigation_collapsible
+weight: -21
+provider: null
+plugin: dgi_user_info
+settings:
+  id: dgi_user_info
+  label: 'DGI User Info'
+  provider: dgi_header
+  label_display: '0'
+  menu: dgi-header
+  search:
+    view: null
+    display_id: null
+    parameter: null
+  second_logo: null
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

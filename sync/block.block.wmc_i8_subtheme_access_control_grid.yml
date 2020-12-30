@@ -1,0 +1,58 @@
+uuid: 5bcba575-6e1c-4cbb-b649-e9029105d407
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.access_control_grid
+    - blockgroup.block_group_content.grid_facets
+  module:
+    - facets
+    - request_data_conditions
+    - user
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_access_control_grid
+theme: wmc_i8_subtheme
+region: grid_facets
+weight: -8
+provider: null
+plugin: 'facet_block:access_control_grid'
+settings:
+  id: 'facet_block:access_control_grid'
+  label: 'Access Control'
+  provider: facets
+  label_display: visible
+  block_id: access_control_grid
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      repository_administrator: repository_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

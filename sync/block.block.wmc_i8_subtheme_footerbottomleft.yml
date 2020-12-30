@@ -1,0 +1,54 @@
+uuid: 5343d03e-e64f-42d5-9805-b0760c07908a
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer-bottom-left
+  module:
+    - block_class
+    - request_data_conditions
+    - system
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: 'dgi-footer-bottom-left col-md-4'
+id: wmc_i8_subtheme_footerbottomleft
+theme: wmc_i8_subtheme
+region: footer_bottom
+weight: -22
+provider: null
+plugin: 'system_menu_block:footer-bottom-left'
+settings:
+  id: 'system_menu_block:footer-bottom-left'
+  label: 'Footer Bottom Left'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

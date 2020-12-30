@@ -1,0 +1,59 @@
+uuid: edfcf982-3718-4d89-833f-e1a7d273dbff
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - dgi_header
+    - request_data_conditions
+    - system
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: 'hidden-md hidden-lg hidden-sm'
+id: wmc_i8_subtheme_dgiviewsearchform
+theme: wmc_i8_subtheme
+region: navigation_collapsible_search
+weight: 0
+provider: null
+plugin: dgi_view_search_form
+settings:
+  id: dgi_view_search_form
+  label: 'DGI View Search Form'
+  provider: dgi_header
+  label_display: '0'
+  search:
+    view: solr_search_content
+    display_id: page_1
+    parameter: search_api_fulltext
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

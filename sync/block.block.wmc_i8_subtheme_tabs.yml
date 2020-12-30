@@ -1,0 +1,53 @@
+uuid: 716554d9-b079-47f0-abdd-a26659da3530
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+  config:
+    - blockgroup.block_group_content.collection_metadata_and_actions
+third_party_settings:
+  block_class:
+    classes: col-lg-6
+id: wmc_i8_subtheme_tabs
+theme: wmc_i8_subtheme
+region: collection_metadata_and_actions
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

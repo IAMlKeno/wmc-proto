@@ -1,0 +1,51 @@
+uuid: e4219e97-2bcd-4f7b-b09b-a2d36b2f2dc1
+langcode: en
+status: false
+dependencies:
+  config:
+    - blockgroup.block_group_content.basic_footer_columns
+  module:
+    - block_class
+    - blockgroup
+    - request_data_conditions
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: 'col-lg-9 col-md-12'
+id: wmc_i8_subtheme_basicfootercolumns
+theme: wmc_i8_subtheme
+region: footer
+weight: -22
+provider: null
+plugin: 'block_group:basic_footer_columns'
+settings:
+  id: 'block_group:basic_footer_columns'
+  label: 'Basic Footer Columns'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

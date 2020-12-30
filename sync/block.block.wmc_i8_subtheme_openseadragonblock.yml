@@ -1,0 +1,46 @@
+uuid: 70b7c51d-a704-4d42-a21e-849299c5d659
+langcode: en
+status: true
+dependencies:
+  module:
+    - openseadragon
+    - request_data_conditions
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_openseadragonblock
+theme: wmc_i8_subtheme
+region: pre_footer
+weight: -16
+provider: null
+plugin: openseadragon_block
+settings:
+  id: openseadragon_block
+  label: 'Openseadragon block'
+  provider: openseadragon
+  label_display: '0'
+  iiif_manifest_url: 'node/[node:nid]/manifest'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

@@ -103,6 +103,7 @@ hidden:
   display_media_thumbnail: true
   field_access_terms: true
   field_alternative_title: true
+  field_ark: true
   field_classification: true
   field_coordinates: true
   field_coordinates_text: true
@@ -120,6 +121,7 @@ hidden:
   field_isbn: true
   field_language: true
   field_lcc_classification: true
+  field_license: true
   field_linked_agent: true
   field_local_identifier: true
   field_member_of: true
@@ -130,6 +132,8 @@ hidden:
   field_pid: true
   field_place_published: true
   field_place_published_country: true
+  field_provenance: true
+  field_publisher: true
   field_representative_image: true
   field_resource_type: true
   field_rights: true

@@ -1,0 +1,50 @@
+uuid: 2146d140-61e4-46fa-ac54-b47b0c8e3e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.topic_list
+    - blockgroup.block_group_content.list_facets
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_topic_list
+theme: wmc_i8_subtheme
+region: list_facets
+weight: -16
+provider: null
+plugin: 'facet_block:topic_list'
+settings:
+  id: 'facet_block:topic_list'
+  label: Topic
+  provider: facets
+  label_display: visible
+  block_id: topic_list
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: bb95de31-2160-43df-83bc-e5f0f95d1f26
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wmc_i8_subtheme
+_core:
+  default_config_hash: qoUfzBmYbbC9mVSNDhqod7XEh3LKx5iTwKEoxKNGy9c
+id: wmc_i8_subtheme_messages
+theme: wmc_i8_subtheme
+region: highlighted
+weight: -14
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
