@@ -1,24 +1,28 @@
-uuid: fc4d4691-f3a4-4d0d-ab73-84a64621e1aa
+uuid: 0dbba94c-9260-4a96-83d4-a104a7368829
 langcode: en
-status: true
+status: false
 dependencies:
   module:
-    - react_block
+    - block_class
+    - dgi_i8_custom_blocks
     - request_data_conditions
   theme:
     - dgi_i8_base
-id: dgifootermenublock
+third_party_settings:
+  block_class:
+    classes: col-lg-4
+id: informationdisplay
 theme: dgi_i8_base
-region: footer
-weight: 0
+region: footer_bottom
+weight: -21
 provider: null
-plugin: 'react_block:dgi_footer_menu_block'
+plugin: dgi_info_block
 settings:
-  id: 'react_block:dgi_footer_menu_block'
-  label: 'DGI Footer Menu Block'
-  provider: react_block
+  id: dgi_info_block
+  label: 'Information Display'
+  provider: dgi_i8_custom_blocks
   label_display: '0'
-  pdb_configuration: null
+  display_info: "<p>(902)-222-2222&nbsp;&nbsp;some email address</p>\r\n"
 visibility:
   http_headers:
     id: http_headers

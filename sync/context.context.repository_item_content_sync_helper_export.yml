@@ -16,7 +16,7 @@ conditions:
     id: node_type
     bundles:
       islandora_object: islandora_object
-    negate: 0
+    negate: false
     uuid: 562187e6-545a-484f-be88-58af12217da4
     context_mapping:
       node: '@node.node_route_context:node'

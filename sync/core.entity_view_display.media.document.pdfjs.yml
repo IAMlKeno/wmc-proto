@@ -13,7 +13,23 @@ dependencies:
     - field.field.media.document.field_original_name
     - media.type.document
   module:
+    - field_group
     - pdf
+third_party_settings:
+  field_group:
+    group_preview:
+      children:
+        - field_media_document
+      parent_name: ''
+      weight: 20
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        id: islandora_document_preview
+        classes: ''
+      label: Preview
 _core:
   default_config_hash: Ch-_aGJLI1hSTCXhjpjOVb5zZ39Z1KHd0pGHbU7Wn4E
 id: media.document.pdfjs

@@ -1,0 +1,27 @@
+uuid: 7bee9f44-56e3-49d8-ae29-568501bfce5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+name: openseadragon_page_object
+label: 'OpenSeadragon Page Object'
+group: Display
+description: 'Display Page objects using OpenSeadragon'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_has_term:
+    id: node_has_term
+    logic: and
+    negate: 0
+    uuid: fed98ba1-fd74-4b08-a15b-357d80b903c8
+    uri: 'http://id.loc.gov/ontologies/bibframe/part'
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  view_mode_alter:
+    id: view_mode_alter
+    mode: node.open_seadragon
+    saved: false
+weight: 0

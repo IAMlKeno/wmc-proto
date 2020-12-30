@@ -1,4 +1,4 @@
-uuid: ce50374b-fa9e-4449-baba-e7eddabbea8b
+uuid: c00826a1-1122-4ae0-8fb9-5bde4004b685
 langcode: en
 status: true
 dependencies:
@@ -31,5 +31,5 @@ content:
     type: string
     region: content
 hidden:
-  description: true
+  field_authority_link: true
   langcode: true

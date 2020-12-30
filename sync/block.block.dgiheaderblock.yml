@@ -10,7 +10,7 @@ dependencies:
     - dgi_i8_base
 third_party_settings:
   block_class:
-    classes: dgi-header-max-height
+    classes: 'dgi-header-max-height visible-sm-block visible-md-block visible-lg-block'
 id: dgiheaderblock
 theme: dgi_i8_base
 region: navigation
@@ -27,6 +27,11 @@ settings:
     view: solr_search_content
     display_id: page_1
     parameter: search_api_fulltext
+  second_logo: null
+  user_menu: account
+  default_second_logo: 0
+  second_logo_wrapper:
+    second_logo: {  }
 visibility:
   http_headers:
     id: http_headers

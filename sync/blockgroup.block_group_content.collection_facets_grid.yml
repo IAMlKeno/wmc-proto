@@ -1,0 +1,6 @@
+uuid: bba995d7-9cb8-4239-8a94-dd4797eb1e12
+langcode: en
+status: true
+dependencies: {  }
+id: collection_facets_grid
+label: 'Collection Facets Grid'

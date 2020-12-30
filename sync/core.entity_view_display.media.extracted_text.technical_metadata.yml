@@ -1,0 +1,106 @@
+uuid: 486b7e27-90a4-42f3-b319-7e83b288c32f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.technical_metadata
+    - field.field.media.extracted_text.field_edited_text
+    - field.field.media.extracted_text.field_media_file
+    - field.field.media.extracted_text.field_media_of
+    - field.field.media.extracted_text.field_media_use
+    - field.field.media.extracted_text.field_mime_type
+    - media.type.extracted_text
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_technical_metadata:
+      children:
+        - langcode
+        - uid
+        - name
+        - field_media_use
+        - field_mime_type
+        - created
+      parent_name: ''
+      weight: 0
+      format_type: field_group_table
+      region: content
+      format_settings:
+        id: dgi-technical-metadata-block
+        classes: ''
+        label_visibility: '2'
+        desc: ''
+        desc_visibility: '2'
+        first_column: ''
+        second_column: ''
+        empty_label_behavior: '1'
+        table_row_striping: 0
+        always_show_field_label: 0
+        always_show_field_value: 0
+        empty_field_placeholder: ''
+      label: 'Technical Metadata'
+_core:
+  default_config_hash: 98rg2WZr7qjNh0gmlzYQcToIh749Znv-1ZYBDHYSAwc
+id: media.extracted_text.technical_metadata
+targetEntityType: media
+bundle: extracted_text
+mode: technical_metadata
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 1
+    region: content
+    settings:
+      date_format: html_date
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_media_use:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_mime_type:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_edited_text: true
+  field_media_file: true
+  field_media_of: true
+  thumbnail: true

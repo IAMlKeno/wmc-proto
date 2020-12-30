@@ -7,12 +7,12 @@ label: 'Autocompletion for input#edit-search-api-fulltext.form-text.form-control
 selector: 'input#edit-search-api-fulltext.form-text.form-control, input#edit-terms.form-text.form-control, input#edit-terms--2.form-text.form-control'
 minChar: 1
 autoSubmit: true
-autoRedirect: false
+autoRedirect: true
 maxSuggestions: 10
-noResultLabel: 'No results found for [search-phrase]. Click to perform full search.'
+noResultLabel: Search
 noResultValue: '[search-phrase]'
 noResultLink: ''
-moreResultsLabel: 'View all results for [search-phrase].'
+moreResultsLabel: Search
 moreResultsValue: '[search-phrase]'
 moreResultsLink: ''
 source: 'solr_search_autocompletion_callbacks::solr_search_autocompletion_callback'
