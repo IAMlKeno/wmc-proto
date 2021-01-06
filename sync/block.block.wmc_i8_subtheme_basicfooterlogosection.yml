@@ -1,6 +1,6 @@
 uuid: d5138193-9ab6-490b-8774-601ac874bf99
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - blockgroup.block_group_content.basic_footer_logo_section

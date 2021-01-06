@@ -1,6 +1,6 @@
 uuid: e4219e97-2bcd-4f7b-b09b-a2d36b2f2dc1
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - blockgroup.block_group_content.basic_footer_columns

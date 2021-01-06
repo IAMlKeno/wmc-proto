@@ -3,10 +3,10 @@ schemas:
   dgi_i8_base: 8000
   wmc_i8_subtheme: 8000
 favicon:
-  mimetype: image/png
-  path: themes/contrib/dgi_i8_base/DG+Coaster+Blue.png
-  url: 'http://jojo-vsphere-wmc-46.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
-  use_default: 1
+  mimetype: image/vnd.microsoft.icon
+  path: themes/contrib/wmc_i8_subtheme/favicon.ico
+  url: 'http://jojo-vsphere-wmc-46.dgi/themes/contrib/wmc_i8_subtheme/favicon-white.png'
+  use_default: 0
 features:
   comment_user_picture: 1
   comment_user_verification: 1
