@@ -1,0 +1,48 @@
+uuid: e87eb279-a6cf-4d0d-9b7e-e0fc636e7f82
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr_search_content
+  module:
+    - request_data_conditions
+    - views
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_exposedformsolr_search_contentpage_2
+theme: wmc_i8_subtheme
+region: sidr
+weight: -17
+provider: null
+plugin: 'views_exposed_filter_block:solr_search_content-page_2'
+settings:
+  id: 'views_exposed_filter_block:solr_search_content-page_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

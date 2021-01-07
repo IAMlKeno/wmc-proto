@@ -1,0 +1,50 @@
+uuid: 02829767-512b-4d18-85d7-b0ea155c3d75
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type_grid
+    - blockgroup.block_group_content.grid_facets
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_content_type_grid
+theme: wmc_i8_subtheme
+region: grid_facets
+weight: -12
+provider: null
+plugin: 'facet_block:content_type_grid'
+settings:
+  id: 'facet_block:content_type_grid'
+  label: 'Content Type'
+  provider: facets
+  label_display: visible
+  block_id: content_type_grid
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

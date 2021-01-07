@@ -15,7 +15,7 @@ third_party_settings:
       region: content_bottom
       parent: ''
       weight: '3'
-      theme: dgi_i8_base
+      theme: wmc_i8_subtheme
       class: 'col-md-12 row bottom'
       all_parents: {  }
 name: repository_content_items
@@ -62,7 +62,7 @@ reactions:
         all_parents:
           - metadata
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: repository_content_items
@@ -78,7 +78,7 @@ reactions:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: repository_content_items
@@ -96,7 +96,7 @@ reactions:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 1
         context_id: repository_content_items
@@ -114,7 +114,7 @@ reactions:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: repository_content_items
@@ -130,7 +130,7 @@ reactions:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: repository_content_items
@@ -146,7 +146,7 @@ reactions:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: repository_content_items
@@ -164,7 +164,7 @@ reactions:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: repository_content_items
@@ -182,7 +182,7 @@ reactions:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: 'view-node-views-count-statistics col-sm-3'
         unique: 0
         context_id: repository_content_items
@@ -198,7 +198,7 @@ reactions:
           parent: ''
         all_parents: {  }
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: repository_content_items
@@ -216,7 +216,7 @@ reactions:
       stable: {  }
       adminimal_theme: {  }
       bootstrap: {  }
-      dgi_i8_base:
+      wmc_i8_subtheme:
         - header
       gin: {  }
     saved: false

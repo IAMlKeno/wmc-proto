@@ -69,7 +69,7 @@ reactions:
         region: highlighted
         weight: '-2'
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: collection
@@ -82,7 +82,7 @@ reactions:
         region: sidr
         weight: '-4'
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: collection
@@ -97,7 +97,7 @@ reactions:
         region: viewer
         weight: '-2'
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: collection
@@ -113,7 +113,7 @@ reactions:
         region: content
         weight: '-9'
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: collection
@@ -136,7 +136,7 @@ reactions:
       stable: {  }
       adminimal_theme: {  }
       bootstrap: {  }
-      dgi_i8_base:
+      wmc_i8_subtheme:
         - sidr
       gin: {  }
     saved: false
