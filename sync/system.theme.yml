@@ -1,4 +1,4 @@
 admin: gin
-default: dgi_i8_base
+default: wmc_i8_subtheme
 _core:
   default_config_hash: fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg
