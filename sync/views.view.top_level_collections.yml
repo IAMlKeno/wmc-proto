@@ -1121,6 +1121,7 @@ display:
           plugin_id: custom
       defaults:
         fields: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

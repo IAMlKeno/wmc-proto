@@ -574,6 +574,7 @@ display:
           plugin_id: search_api
       defaults:
         sorts: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

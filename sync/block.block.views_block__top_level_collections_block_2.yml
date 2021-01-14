@@ -17,7 +17,7 @@ third_party_settings:
 id: views_block__top_level_collections_block_2
 theme: wmc_i8_subtheme
 region: content
-weight: 0
+weight: -31
 provider: null
 plugin: 'views_block:top_level_collections-block_2'
 settings:
