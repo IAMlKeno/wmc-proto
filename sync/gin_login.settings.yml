@@ -1,6 +1,6 @@
 logo:
   use_default: 0
-  path: themes/contrib/dgi_i8_base/DG+Coaster+Blue.png
+  path: themes/contrib/wmc_i8_subtheme/favicon.ico
 brand_image:
   use_default: 1
 _core:
