@@ -10,19 +10,19 @@ dependencies:
     - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: col-lg-4
+    classes: wm-contact-info
 id: wmc_i8_subtheme_informationdisplay
 theme: wmc_i8_subtheme
 region: footer_bottom
-weight: -21
+weight: -35
 provider: null
 plugin: dgi_info_block
 settings:
   id: dgi_info_block
-  label: 'Information Display'
+  label: 'Contact Info'
   provider: dgi_i8_custom_blocks
   label_display: '0'
-  display_info: "<p>(902)-222-2222&nbsp;&nbsp;some email address</p>\r\n"
+  display_info: "<a href=\"tel:+17572213072\">(757)-221-3072</a><a href=\"mailto:libraries@wm.edu\">libraries@wm.edu</a>\r\n"
 visibility:
   http_headers:
     id: http_headers

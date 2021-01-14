@@ -1,31 +1,34 @@
-uuid: 367de780-4460-4d79-b788-24c2ee69bae1
+uuid: 8b7a1ace-8658-4882-b74c-7bd422581140
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.follow
+    - blockgroup.block_group_content.basic_footer_logo_section
   module:
     - block_class
-    - dgi_i8_custom_blocks
     - request_data_conditions
+    - system
     - blockgroup
   theme:
     - wmc_i8_subtheme
-  config:
-    - blockgroup.block_group_content.basic_footer_columns
 third_party_settings:
   block_class:
-    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
-id: wmc_i8_subtheme_informationdisplay_2
+    classes: social-media-menu-icon
+id: follow
 theme: wmc_i8_subtheme
-region: basic_footer_columns
-weight: -23
+region: basic_footer_logo_section
+weight: -36
 provider: null
-plugin: dgi_info_block
+plugin: 'system_menu_block:follow'
 settings:
-  id: dgi_info_block
-  label: 'W&M LIBRARIES'
-  provider: dgi_i8_custom_blocks
-  label_display: visible
-  display_info: "<p>Earl Gregg Swem Library</br>\r\nWilliam & Mary</br>\r\n400 Landrum Drive</br>\r\nWilliamsburg, VA 23186</p>\r\n\r\n<p>Phone: <a href=\"tel:+17572213072\">757-221-3072</a></br>\r\nEmail: <a href=\"mailto:libraries@wm.edu\">libraries@wm.edu</a></p>\r\n"
+  id: 'system_menu_block:follow'
+  label: Follow
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility:
   http_headers:
     id: http_headers
