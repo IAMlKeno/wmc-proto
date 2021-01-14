@@ -16,7 +16,7 @@ third_party_settings:
 id: wmc_i8_subtheme_footerbottomleft
 theme: wmc_i8_subtheme
 region: footer_bottom
-weight: -22
+weight: -38
 provider: null
 plugin: 'system_menu_block:footer-bottom-left'
 settings:

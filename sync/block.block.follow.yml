@@ -18,7 +18,7 @@ third_party_settings:
 id: follow
 theme: wmc_i8_subtheme
 region: basic_footer_logo_section
-weight: -36
+weight: -37
 provider: null
 plugin: 'system_menu_block:follow'
 settings:

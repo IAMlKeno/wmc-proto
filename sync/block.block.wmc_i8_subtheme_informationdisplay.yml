@@ -14,7 +14,7 @@ third_party_settings:
 id: wmc_i8_subtheme_informationdisplay
 theme: wmc_i8_subtheme
 region: footer_bottom
-weight: -35
+weight: -36
 provider: null
 plugin: dgi_info_block
 settings:

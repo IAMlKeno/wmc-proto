@@ -23,7 +23,7 @@ provider: null
 plugin: 'system_menu_block:footer-menu-column-2'
 settings:
   id: 'system_menu_block:footer-menu-column-2'
-  label: 'Footer Menu Column 2'
+  label: 'OTHER RESOURCES'
   provider: system
   label_display: visible
   level: 1

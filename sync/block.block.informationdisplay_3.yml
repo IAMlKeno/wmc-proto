@@ -14,7 +14,7 @@ third_party_settings:
 id: informationdisplay_3
 theme: wmc_i8_subtheme
 region: footer_bottom
-weight: 0
+weight: -35
 provider: null
 plugin: dgi_info_block
 settings:

@@ -10,7 +10,7 @@ dependencies:
 id: wmc_i8_subtheme_copyrightfooter
 theme: wmc_i8_subtheme
 region: footer_bottom
-weight: -36
+weight: -37
 provider: null
 plugin: copyright_footer
 settings:
