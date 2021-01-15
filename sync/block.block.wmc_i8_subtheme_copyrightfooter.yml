@@ -5,12 +5,15 @@ dependencies:
   module:
     - copyright_footer
     - request_data_conditions
+    - blockgroup
   theme:
     - wmc_i8_subtheme
+  config:
+    - blockgroup.block_group_content.footer_bottom_center
 id: wmc_i8_subtheme_copyrightfooter
 theme: wmc_i8_subtheme
-region: footer_bottom
-weight: -37
+region: footer_bottom_center
+weight: -38
 provider: null
 plugin: copyright_footer
 settings:

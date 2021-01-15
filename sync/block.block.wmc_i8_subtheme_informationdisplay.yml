@@ -6,15 +6,18 @@ dependencies:
     - block_class
     - dgi_i8_custom_blocks
     - request_data_conditions
+    - blockgroup
   theme:
     - wmc_i8_subtheme
+  config:
+    - blockgroup.block_group_content.footer_bottom_center
 third_party_settings:
   block_class:
     classes: wm-contact-info
 id: wmc_i8_subtheme_informationdisplay
 theme: wmc_i8_subtheme
-region: footer_bottom
-weight: -36
+region: footer_bottom_center
+weight: -37
 provider: null
 plugin: dgi_info_block
 settings:
@@ -22,7 +25,7 @@ settings:
   label: 'Contact Info'
   provider: dgi_i8_custom_blocks
   label_display: '0'
-  display_info: "<a href=\"tel:+17572213072\">(757)-221-3072</a><a href=\"mailto:libraries@wm.edu\">libraries@wm.edu</a>\r\n"
+  display_info: "<p><a href=\"tel:+17572213072\">(757)-221-3072</a><a href=\"mailto:libraries@wm.edu\">libraries@wm.edu</a></p>\r\n"
 visibility:
   http_headers:
     id: http_headers

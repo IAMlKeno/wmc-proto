@@ -5,7 +5,7 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: themes/contrib/wmc_i8_subtheme/favicon.ico
-  url: 'http://jojo-vsphere-wmc-123.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
+  url: 'http://jojo-vsphere-wmc-124.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
   use_default: 0
 features:
   comment_user_picture: 1
@@ -42,6 +42,7 @@ region_wells:
   collection_facets_grid: ''
   collection_facets_list: ''
   collection_metadata_and_actions: ''
+  footer_bottom_center: ''
   grid_facets: ''
   list_facets: ''
   meta: ''

@@ -12,7 +12,7 @@ dependencies:
     - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: 'dgi-footer-bottom-left col-md-4'
+    classes: dgi-footer-bottom-left
 id: wmc_i8_subtheme_footerbottomleft
 theme: wmc_i8_subtheme
 region: footer_bottom
