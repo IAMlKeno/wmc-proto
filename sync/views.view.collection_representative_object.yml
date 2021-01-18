@@ -682,6 +682,8 @@ display:
         - 'config:core.entity_view_display.media.file.pdfjs'
         - 'config:core.entity_view_display.media.file.source'
         - 'config:core.entity_view_display.media.file.technical_metadata'
+        - 'config:core.entity_view_display.media.html5_video.default'
+        - 'config:core.entity_view_display.media.html5_video.source'
         - 'config:core.entity_view_display.media.image.default'
         - 'config:core.entity_view_display.media.image.download'
         - 'config:core.entity_view_display.media.image.open_seadragon'
@@ -1024,7 +1026,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<i class="fal fa-folder"></i>{{ edit_node }} '
+            text: '{{ edit_node }} '
             make_link: false
             path: ''
             absolute: false
@@ -1233,7 +1235,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"rep-obj-outer-content-wrapper\">\r\n<div class=\"rep-obj-stats col-lg-2 col-md-2 col-lg-push-10 col-md-push-10 col-sm-3 col-sm-push-9\">\r\n  <div class=\"rep-obj-stats--inner\">\r\n    <div class=\"edit-node\">{{ edit_node }}</div>\r\n    <div class=\"inner-stats\">\r\n      <div class=\"view-count\">{{ view }}</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"rep-obj-basic-data col-lg-10 col-md-10 col-lg-pull-2 col-md-pull-2 col-sm-9 col-sm-pull-3\">\r\n  <div class=\"rep-obj-basic-data--inner\">\r\n    {{ view_1 }}\r\n    <div class=\"last-updated\">{{ last_updated }}</div>\r\n    {{ field_description }}\r\n  </div>\r\n</div>\r\n\r\n</div>\r\n\r\n"
+            text: "<div class=\"rep-obj-outer-content-wrapper\">\r\n<div class=\"rep-obj-stats col-lg-2 col-md-2 col-lg-push-10 col-md-push-10 col-sm-3 col-sm-push-9\">\r\n  <div class=\"rep-obj-stats--inner\">\r\n    <div class=\"edit-node\">{{ edit_node }}</div>\r\n    <div class=\"inner-stats\">\r\n      <div class=\"view-count\">{{ view }}</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"rep-obj-basic-data col-lg-10 col-md-10 col-lg-pull-2 col-md-pull-2 col-sm-9 col-sm-pull-3\">\r\n  <div class=\"rep-obj-basic-data--inner\">\r\n    {{ view_1 }}\r\n    <div class=\"last-updated\">{{ last_updated }}</div>\r\n    {{ field_description }}\r\n  </div>\r\n</div>\r\n</div>\r\n\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -1271,6 +1273,58 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+        view_3:
+          id: view_3
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: 'collection-content-counts content-counts-block'
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view: collection_content_counts
+          display: block_1
+          arguments: '{{ raw_fields.nid }}'
+          plugin_id: view
       defaults:
         fields: false
         relationships: false
