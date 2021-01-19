@@ -5,7 +5,7 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: themes/contrib/wmc_i8_subtheme/favicon.ico
-  url: 'http://jojo-vsphere-wmc-123.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
+  url: 'http://discoverygarden-vsphere-wmc-wmc126.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
   use_default: 0
 features:
   comment_user_picture: 1
@@ -48,7 +48,7 @@ region_wells:
   object_page_split_sidebar: ''
   search_facet_header: ''
 use_different_front_header_logo: 1
-front_header_logo_path: themes/contrib/wmc_i8_subtheme/logo-front.png
+front_header_logo_path: themes/contrib/wmc_i8_subtheme/logo-front.svg
 use_different_mobile_header_logo: 1
 mobile_header_logo_path: themes/contrib/wmc_i8_subtheme/favicon-white.png
 logo_link: 'https://www.wm.edu/'
