@@ -1,30 +1,32 @@
-uuid: 4a183bae-d9e8-4b9c-85dc-9d9898e733a8
+uuid: ac86809f-f8bd-4f49-8e46-a4c446a91d14
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.solr_search_content
+    - views.view.recent_items
   module:
     - block_class
     - request_data_conditions
+    - system
     - views
   theme:
-    - dgi_i8_base
+    - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: 'exposed-search-form pull-left'
-id: exposedformsolr_search_contentpage_1
-theme: dgi_i8_base
-region: sidr
-weight: -18
+    classes: recent-items
+id: views_block__recent_items_block_1
+theme: wmc_i8_subtheme
+region: content
+weight: -32
 provider: null
-plugin: 'views_exposed_filter_block:solr_search_content-page_1'
+plugin: 'views_block:recent_items-block_1'
 settings:
-  id: 'views_exposed_filter_block:solr_search_content-page_1'
+  id: 'views_block:recent_items-block_1'
   label: ''
   provider: views
   label_display: visible
-  views_label: 'Digital Collections'
+  views_label: ''
+  items_per_page: none
 visibility:
   http_headers:
     id: http_headers
@@ -38,15 +40,20 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
   url_query_parameters:
     id: url_query_parameters
     conditions: {  }
     require_all_params: 1
     negate: false
     context_mapping: {  }
-  cookie_values:
-    id: cookie_values
-    conditions: {  }
-    require_all_params: 1
+  request_path:
+    id: request_path
+    pages: '<front>'
     negate: false
     context_mapping: {  }
