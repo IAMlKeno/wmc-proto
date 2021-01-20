@@ -23,7 +23,7 @@ provider: null
 plugin: 'system_menu_block:footer-menu-column-1'
 settings:
   id: 'system_menu_block:footer-menu-column-1'
-  label: 'Footer Menu Column 1'
+  label: 'DIGITAL COLLECTIONS'
   provider: system
   label_display: visible
   level: 1

@@ -18,6 +18,36 @@ logo:
   use_default: 0
 use_default_footer_logo: 0
 footer_logo_path: themes/contrib/wmc_i8_subtheme/footer_logo.png
+region_wells:
+  navigation: ''
+  header: ''
+  header_left: ''
+  header_center: ''
+  header_right: ''
+  sidr: ''
+  sidr_bottom: ''
+  highlighted: ''
+  help: ''
+  viewer: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  pre_footer: ''
+  footer: ''
+  footer_bottom: ''
+  navigation_collapsible: ''
+  navigation_collapsible_search: ''
+  basic_footer_columns: ''
+  basic_footer_logo_section: ''
+  collection_facets_grid: ''
+  collection_facets_list: ''
+  collection_metadata_and_actions: ''
+  footer_bottom_center: ''
+  grid_facets: ''
+  list_facets: ''
+  meta: ''
+  object_page_split_sidebar: ''
+  search_facet_header: ''
 use_different_front_header_logo: 1
 front_header_logo_path: themes/contrib/wmc_i8_subtheme/logo-front.svg
 use_different_mobile_header_logo: 1

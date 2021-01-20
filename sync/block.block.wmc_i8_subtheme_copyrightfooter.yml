@@ -3,18 +3,17 @@ langcode: en
 status: true
 dependencies:
   module:
-    - block_class
     - copyright_footer
     - request_data_conditions
+    - blockgroup
   theme:
     - wmc_i8_subtheme
-third_party_settings:
-  block_class:
-    classes: col-lg-4
+  config:
+    - blockgroup.block_group_content.footer_bottom_center
 id: wmc_i8_subtheme_copyrightfooter
 theme: wmc_i8_subtheme
-region: footer_bottom
-weight: -20
+region: footer_bottom_center
+weight: -38
 provider: null
 plugin: copyright_footer
 settings:
@@ -22,7 +21,7 @@ settings:
   label: 'Copyright Footer'
   provider: copyright_footer
   label_display: '0'
-  organization_name: ''
+  organization_name: 'William & Mary Libraries'
   organization_url: ''
   year_origin: null
   year_to_date: null

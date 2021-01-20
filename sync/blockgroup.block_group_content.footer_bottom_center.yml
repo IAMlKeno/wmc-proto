@@ -1,0 +1,6 @@
+uuid: 12bec703-af58-4647-b752-df3cf5e42ceb
+langcode: en
+status: true
+dependencies: {  }
+id: footer_bottom_center
+label: 'Footer Bottom Center'
