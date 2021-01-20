@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.openseadragon_paged_content
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_ark
     - field.field.node.islandora_object.field_classification
     - field.field.node.islandora_object.field_coordinates
     - field.field.node.islandora_object.field_coordinates_text
@@ -23,6 +24,7 @@ dependencies:
     - field.field.node.islandora_object.field_isbn
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_lcc_classification
+    - field.field.node.islandora_object.field_license
     - field.field.node.islandora_object.field_linked_agent
     - field.field.node.islandora_object.field_local_identifier
     - field.field.node.islandora_object.field_member_of
@@ -33,6 +35,8 @@ dependencies:
     - field.field.node.islandora_object.field_pid
     - field.field.node.islandora_object.field_place_published
     - field.field.node.islandora_object.field_place_published_country
+    - field.field.node.islandora_object.field_provenance
+    - field.field.node.islandora_object.field_publisher
     - field.field.node.islandora_object.field_representative_image
     - field.field.node.islandora_object.field_resource_type
     - field.field.node.islandora_object.field_rights
@@ -74,7 +78,7 @@ third_party_settings:
         description: ''
         open: true
         id: ''
-        classes: ''
+        classes: object-preview-panel
       label: Preview
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
