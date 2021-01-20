@@ -33,7 +33,7 @@ third_party_settings:
         description: ''
         open: true
         id: islandora_image_preview
-        classes: ''
+        classes: object-preview-panel
       label: Preview
 _core:
   default_config_hash: eh47H7rkaD3xK-hM_DEodnS-m01pYTWtYpG0-58F7ZA

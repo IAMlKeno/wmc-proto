@@ -31,7 +31,7 @@ third_party_settings:
         description: ''
         open: true
         id: islandora_audio_preview
-        classes: ''
+        classes: object-preview-panel
       label: Preview
 _core:
   default_config_hash: tDCyYVpxmp1mDsORGEQYEKD7w9ouL0h8HzMl9SFjPYo
