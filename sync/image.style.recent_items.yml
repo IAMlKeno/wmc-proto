@@ -11,13 +11,5 @@ effects:
     weight: 1
     data:
       width: 426
-      height: 156
-      upscale: true
-  ce54e3a8-8dbe-4c1c-ae7d-8b87f14bdbd5:
-    uuid: ce54e3a8-8dbe-4c1c-ae7d-8b87f14bdbd5
-    id: image_scale_and_crop
-    weight: 2
-    data:
-      width: 426
-      height: 156
-      anchor: center-center
+      height: null
+      upscale: false
