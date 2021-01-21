@@ -1985,6 +1985,8 @@ display:
       defaults:
         header: false
         exposed_form: false
+        filters: true
+        filter_groups: true
       header: {  }
       exposed_form:
         type: input_required
