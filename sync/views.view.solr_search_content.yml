@@ -8,9 +8,6 @@ dependencies:
     - block.block.createdblocklist
     - block.block.createdgridblock
     - block.block.dgisearchinresults
-    - block.block.dgisearchinresults_2
-    - block.block.dgisearchinresults_3
-    - block.block.dgisearchinresults_4
     - block.block.exposedformsolr_search_contentpage_1
     - block.block.exposedformsolr_search_contentpage_2
     - block.block.memberof_2
@@ -3260,7 +3257,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          target: dgisearchinresults_3
+          target: dgisearchinresults
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -4533,7 +4530,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          target: dgisearchinresults_4
+          target: dgisearchinresults
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -6715,7 +6712,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          target: dgisearchinresults_2
+          target: dgisearchinresults
           view_mode: default
           bypass_access: false
           plugin_id: entity

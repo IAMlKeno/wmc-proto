@@ -18,7 +18,7 @@ provider: null
 plugin: dgi_search_in_results
 settings:
   id: dgi_search_in_results
-  label: 'DGI Search in Results Grid'
+  label: 'DGI Search in Results'
   provider: dgi_i8_custom_blocks
   label_display: '0'
   search:
