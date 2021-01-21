@@ -1,28 +1,30 @@
-uuid: 13774ed8-f345-4249-8b18-8fef999bb5f4
+uuid: dc2333c5-f227-4c35-aeb6-e75978c11c3e
 langcode: en
 status: true
 dependencies:
-  config:
-    - facets.facet.created_block_list
-    - blockgroup.block_group_content.search_facet_header
   module:
-    - facets
+    - dgi_i8_custom_blocks
     - request_data_conditions
     - blockgroup
   theme:
     - wmc_i8_subtheme
-id: wmc_i8_subtheme_createdblocklist
+  config:
+    - blockgroup.block_group_content.search_facet_header
+id: dgisearchinresults_3
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: -29
+weight: -39
 provider: null
-plugin: 'facet_block:created_block_list'
+plugin: dgi_search_in_results
 settings:
-  id: 'facet_block:created_block_list'
-  label: 'Created Block List'
-  provider: facets
+  id: dgi_search_in_results
+  label: 'DGI Search in Results Collection Grid'
+  provider: dgi_i8_custom_blocks
   label_display: '0'
-  block_id: createdblocklist
+  search:
+    view: solr_search_content
+    display_id: block_3
+    parameter: search_api_fulltext_1
 visibility:
   http_headers:
     id: http_headers

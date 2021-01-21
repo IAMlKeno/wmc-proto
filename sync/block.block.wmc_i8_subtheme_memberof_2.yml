@@ -13,7 +13,7 @@ dependencies:
 id: wmc_i8_subtheme_memberof_2
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: -38
+weight: -36
 provider: null
 plugin: 'facet_block:member_of'
 settings:

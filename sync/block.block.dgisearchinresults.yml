@@ -13,14 +13,14 @@ dependencies:
 id: dgisearchinresults
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: -40
+weight: -41
 provider: null
 plugin: dgi_search_in_results
 settings:
   id: dgi_search_in_results
-  label: 'DGI Search in Results'
+  label: 'DGI Search in Results Grid'
   provider: dgi_i8_custom_blocks
-  label_display: visible
+  label_display: '0'
   search:
     view: solr_search_content
     display_id: page_1

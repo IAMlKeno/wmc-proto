@@ -14,7 +14,7 @@ dependencies:
 id: wmc_i8_subtheme_modelcollectionlist
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: -36
+weight: -34
 provider: null
 plugin: 'facet_block:model_collection_list'
 settings:
