@@ -12,7 +12,7 @@ dependencies:
 id: wmc_i8_subtheme_searchfacetheader
 theme: wmc_i8_subtheme
 region: sidr
-weight: -14
+weight: -38
 provider: null
 plugin: 'block_group:search_facet_header'
 settings:

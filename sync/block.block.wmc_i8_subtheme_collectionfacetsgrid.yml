@@ -12,7 +12,7 @@ dependencies:
 id: wmc_i8_subtheme_collectionfacetsgrid
 theme: wmc_i8_subtheme
 region: sidr
-weight: 0
+weight: -37
 provider: null
 plugin: 'block_group:collection_facets_grid'
 settings:

@@ -1,26 +1,30 @@
-uuid: d6ab9b92-93b5-4c63-bce1-40d44e8cd8bf
+uuid: e75c8881-381b-44ec-b437-c6d607e401eb
 langcode: en
 status: true
 dependencies:
-  config:
-    - blockgroup.block_group_content.list_facets
-    - blockgroup.block_group_content.search_facet_header
   module:
-    - blockgroup
+    - dgi_i8_custom_blocks
     - request_data_conditions
+    - blockgroup
   theme:
     - wmc_i8_subtheme
-id: wmc_i8_subtheme_listfacets
+  config:
+    - blockgroup.block_group_content.search_facet_header
+id: dgisearchinresults
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: -27
+weight: -40
 provider: null
-plugin: 'block_group:list_facets'
+plugin: dgi_search_in_results
 settings:
-  id: 'block_group:list_facets'
-  label: 'List Facets'
-  provider: blockgroup
-  label_display: '0'
+  id: dgi_search_in_results
+  label: 'DGI Search in Results'
+  provider: dgi_i8_custom_blocks
+  label_display: visible
+  search:
+    view: solr_search_content
+    display_id: page_1
+    parameter: search_api_fulltext_1
 visibility:
   http_headers:
     id: http_headers
@@ -34,14 +38,14 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
-  url_query_parameters:
-    id: url_query_parameters
+  cookie_values:
+    id: cookie_values
     conditions: {  }
     require_all_params: 1
     negate: false
     context_mapping: {  }
-  cookie_values:
-    id: cookie_values
+  url_query_parameters:
+    id: url_query_parameters
     conditions: {  }
     require_all_params: 1
     negate: false
