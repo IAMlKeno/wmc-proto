@@ -28,8 +28,8 @@ dependencies:
     - controlled_access_terms
     - csv_serialization
     - file
-    - rest
     - media
+    - rest
     - search_api
     - serialization
     - views_autocomplete_filters
@@ -3322,7 +3322,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<a class=\"views-display-link is-active\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle\"></i>"
+            value: "<a class=\"views-display-link is-active grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle\"></i>"
             format: full_html
           plugin_id: text
       query:
@@ -4398,7 +4398,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<a class=\"views-display-link\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link is-active\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle active disabled\"></i>"
+            value: "<a class=\"views-display-link grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link is-active list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle active disabled\"></i>"
             format: full_html
           plugin_id: text
       use_ajax: true
@@ -4503,13 +4503,13 @@ display:
     display_options:
       display_extenders: {  }
       displays:
+        page_1: page_1
         page_2: page_2
         default: '0'
         block_1: '0'
         block_2: '0'
         block_3: '0'
         block_4: '0'
-        page_1: '0'
       path: export
       filename: export.csv
       automatic_download: true
@@ -4557,11 +4557,11 @@ display:
     display_options:
       display_extenders: {  }
       displays:
+        block_3: block_3
         block_4: block_4
         default: '0'
         block_1: '0'
         block_2: '0'
-        block_3: '0'
         page_1: '0'
         page_2: '0'
       path: export
