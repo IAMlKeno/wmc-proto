@@ -1,10 +1,10 @@
-uuid: 176372fd-f36d-4db5-a821-3266533b5fd7
+uuid: 8b7a1ace-8658-4882-b74c-7bd422581140
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-menu-column-2
-    - blockgroup.block_group_content.basic_footer_columns
+    - system.menu.follow
+    - blockgroup.block_group_content.basic_footer_logo_section
   module:
     - block_class
     - request_data_conditions
@@ -14,18 +14,18 @@ dependencies:
     - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
-id: wmc_i8_subtheme_footermenucolumn2
+    classes: social-media-menu-icon
+id: follow
 theme: wmc_i8_subtheme
-region: basic_footer_columns
-weight: -20
+region: basic_footer_logo_section
+weight: -37
 provider: null
-plugin: 'system_menu_block:footer-menu-column-2'
+plugin: 'system_menu_block:follow'
 settings:
-  id: 'system_menu_block:footer-menu-column-2'
-  label: 'OTHER RESOURCES'
+  id: 'system_menu_block:follow'
+  label: Follow
   provider: system
-  label_display: visible
+  label_display: '0'
   level: 1
   depth: 0
   expand_all_items: false

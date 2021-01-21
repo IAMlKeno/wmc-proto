@@ -13,7 +13,7 @@ dependencies:
 id: wmc_i8_subtheme_footerlogo
 theme: wmc_i8_subtheme
 region: basic_footer_logo_section
-weight: 0
+weight: -38
 provider: null
 plugin: dgi_footer_logo_block
 settings:

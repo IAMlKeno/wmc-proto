@@ -1,34 +1,25 @@
-uuid: 176372fd-f36d-4db5-a821-3266533b5fd7
+uuid: 62eb85c4-53b4-4f64-b82a-e53eaa8eb0f7
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-menu-column-2
-    - blockgroup.block_group_content.basic_footer_columns
+    - blockgroup.block_group_content.footer_bottom_center
   module:
-    - block_class
-    - request_data_conditions
-    - system
     - blockgroup
+    - request_data_conditions
   theme:
     - wmc_i8_subtheme
-third_party_settings:
-  block_class:
-    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
-id: wmc_i8_subtheme_footermenucolumn2
+id: footerbottomcenter
 theme: wmc_i8_subtheme
-region: basic_footer_columns
-weight: -20
+region: footer_bottom
+weight: -37
 provider: null
-plugin: 'system_menu_block:footer-menu-column-2'
+plugin: 'block_group:footer_bottom_center'
 settings:
-  id: 'system_menu_block:footer-menu-column-2'
-  label: 'OTHER RESOURCES'
-  provider: system
-  label_display: visible
-  level: 1
-  depth: 0
-  expand_all_items: false
+  id: 'block_group:footer_bottom_center'
+  label: 'Footer Bottom Center'
+  provider: blockgroup
+  label_display: '0'
 visibility:
   http_headers:
     id: http_headers

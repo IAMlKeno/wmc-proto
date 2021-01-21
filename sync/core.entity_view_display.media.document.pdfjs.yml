@@ -28,7 +28,7 @@ third_party_settings:
         description: ''
         open: true
         id: islandora_document_preview
-        classes: ''
+        classes: object-preview-panel
       label: Preview
 _core:
   default_config_hash: Ch-_aGJLI1hSTCXhjpjOVb5zZ39Z1KHd0pGHbU7Wn4E

@@ -1,34 +1,32 @@
-uuid: 176372fd-f36d-4db5-a821-3266533b5fd7
+uuid: 9d406086-c106-4ad6-9643-0601b99f1a55
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-menu-column-2
-    - blockgroup.block_group_content.basic_footer_columns
+    - views.view.top_level_collections
   module:
     - block_class
     - request_data_conditions
     - system
-    - blockgroup
+    - views
   theme:
     - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
-id: wmc_i8_subtheme_footermenucolumn2
+    classes: top-level-collections
+id: views_block__top_level_collections_block_2
 theme: wmc_i8_subtheme
-region: basic_footer_columns
-weight: -20
+region: content
+weight: -31
 provider: null
-plugin: 'system_menu_block:footer-menu-column-2'
+plugin: 'views_block:top_level_collections-block_2'
 settings:
-  id: 'system_menu_block:footer-menu-column-2'
-  label: 'OTHER RESOURCES'
-  provider: system
+  id: 'views_block:top_level_collections-block_2'
+  label: 'Top Level Collections'
+  provider: views
   label_display: visible
-  level: 1
-  depth: 0
-  expand_all_items: false
+  views_label: 'Top Level Collections'
+  items_per_page: none
 visibility:
   http_headers:
     id: http_headers
@@ -52,5 +50,10 @@ visibility:
     id: url_query_parameters
     conditions: {  }
     require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
     negate: false
     context_mapping: {  }

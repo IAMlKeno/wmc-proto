@@ -1,34 +1,28 @@
-uuid: 176372fd-f36d-4db5-a821-3266533b5fd7
+uuid: 2e2e1b0d-c608-4162-aa1b-ddd78b423624
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.footer-menu-column-2
-    - blockgroup.block_group_content.basic_footer_columns
   module:
     - block_class
+    - dgi_i8_custom_blocks
     - request_data_conditions
-    - system
-    - blockgroup
   theme:
     - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
-id: wmc_i8_subtheme_footermenucolumn2
+    classes: wm-libraries-logo
+id: informationdisplay_3
 theme: wmc_i8_subtheme
-region: basic_footer_columns
-weight: -20
+region: footer_bottom
+weight: -34
 provider: null
-plugin: 'system_menu_block:footer-menu-column-2'
+plugin: dgi_info_block
 settings:
-  id: 'system_menu_block:footer-menu-column-2'
-  label: 'OTHER RESOURCES'
-  provider: system
-  label_display: visible
-  level: 1
-  depth: 0
-  expand_all_items: false
+  id: dgi_info_block
+  label: 'W&M Libraries Logo'
+  provider: dgi_i8_custom_blocks
+  label_display: '0'
+  display_info: "<p><a href=\"https://libraries.wm.edu/\"><img src=\"/themes/contrib/wmc_i8_subtheme/logo_fdlp_green_2x.png\" /></a></p>\r\n"
 visibility:
   http_headers:
     id: http_headers

@@ -52,7 +52,7 @@ dependencies:
   module:
     - controlled_access_terms
     - field_group
-    - link
+    - taxonomy
     - user
 third_party_settings:
   field_group:
@@ -71,6 +71,10 @@ third_party_settings:
       label: Metadata
     group_metadata_table_data:
       children:
+        - field_genre
+        - field_geographic_subject
+        - field_publisher
+        - field_temporal_subject
         - field_alternative_title
         - field_description
         - field_model
@@ -87,6 +91,9 @@ third_party_settings:
         - field_linked_agent
         - field_resource_type
         - field_rights
+        - field_license
+        - field_provenance
+        - field_physical_form
       parent_name: group_metadata
       weight: 20
       format_type: field_group_table
@@ -176,6 +183,22 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_genre:
+    type: entity_reference_label
+    weight: 23
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_geographic_subject:
+    type: entity_reference_label
+    weight: 22
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_identifier:
     type: string
     weight: 12
@@ -183,6 +206,14 @@ content:
     label: above
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  field_license:
+    type: entity_reference_label
+    weight: 17
+    region: content
+    label: above
+    settings:
+      link: true
     third_party_settings: {  }
   field_linked_agent:
     type: typed_relation_default
@@ -208,9 +239,32 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  field_physical_form:
+    type: entity_reference_label
+    weight: 19
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_pid:
     type: string
     weight: 5
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_provenance:
+    type: basic_string
+    weight: 18
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_publisher:
+    type: string
+    weight: 21
     region: content
     label: above
     settings:
@@ -225,16 +279,23 @@ content:
       link: true
     third_party_settings: {  }
   field_rights:
-    type: string
+    type: entity_reference_rss_category
     weight: 16
     region: content
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
   field_subject:
     type: entity_reference_label
     weight: 4
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_temporal_subject:
+    type: entity_reference_label
+    weight: 20
     region: content
     label: above
     settings:
@@ -273,24 +334,17 @@ hidden:
   field_dewey_classification: true
   field_display_hints: true
   field_edition: true
-  field_genre: true
-  field_geographic_subject: true
   field_isbn: true
   field_language: true
   field_lcc_classification: true
-  field_license: true
   field_local_identifier: true
   field_note: true
   field_oclc_number: true
-  field_physical_form: true
   field_place_published: true
   field_place_published_country: true
-  field_provenance: true
-  field_publisher: true
   field_representative_image: true
   field_subjects_name: true
   field_table_of_contents: true
-  field_temporal_subject: true
   field_weight: true
   links: true
   openseadragon_media_evas_entity_view_1: true

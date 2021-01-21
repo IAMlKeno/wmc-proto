@@ -23,7 +23,7 @@ third_party_settings:
         description: ''
         open: true
         id: islandora_video_preview
-        classes: ''
+        classes: object-preview-panel
       label: Preview
 id: media.html5_video.source
 targetEntityType: media

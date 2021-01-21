@@ -10,8 +10,8 @@ _core:
   default_config_hash: qoUfzBmYbbC9mVSNDhqod7XEh3LKx5iTwKEoxKNGy9c
 id: wmc_i8_subtheme_messages
 theme: wmc_i8_subtheme
-region: highlighted
-weight: -14
+region: content
+weight: -30
 provider: null
 plugin: system_messages_block
 settings:
