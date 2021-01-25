@@ -9,7 +9,7 @@ dependencies:
     - search_api
 id: model_list
 name: Model
-url_alias: model_list
+url_alias: model_collection_list
 weight: 0
 min_count: 1
 show_only_one_result: true

@@ -5,7 +5,7 @@ _core:
 favicon:
   mimetype: image/png
   path: themes/contrib/dgi_i8_base/DG+Coaster+Blue.png
-  url: 'http://discoverygarden-vsphere-wmc-125.dgi/themes/contrib/dgi_i8_base/DG%2BCoaster%2BBlue.png'
+  url: 'http://discoverygarden-vsphere-wmc-tst.dgi/themes/contrib/dgi_i8_base/DG%2BCoaster%2BBlue.png'
   use_default: false
 schemas:
   bootstrap: 8000
@@ -34,6 +34,7 @@ region_wells:
   collection_facets_grid: ''
   collection_facets_list: ''
   collection_metadata_and_actions: ''
+  footer_bottom_center: ''
   grid_facets: ''
   list_facets: ''
   meta: ''
@@ -54,7 +55,6 @@ use_different_front_header_logo: 0
 front_header_logo_path: null
 use_different_mobile_header_logo: 0
 mobile_header_logo_path: null
-front_page_sub_title: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
