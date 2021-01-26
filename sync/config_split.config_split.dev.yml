@@ -12,6 +12,7 @@ module:
   config_inspector: 0
   config_override_warn: 0
   devel: 0
+  devel_php: 0
   drupalmoduleupgrader: 0
 theme: {  }
 blacklist: {  }

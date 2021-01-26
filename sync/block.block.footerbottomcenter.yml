@@ -1,0 +1,47 @@
+uuid: 62eb85c4-53b4-4f64-b82a-e53eaa8eb0f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.footer_bottom_center
+  module:
+    - blockgroup
+    - request_data_conditions
+  theme:
+    - wmc_i8_subtheme
+id: footerbottomcenter
+theme: wmc_i8_subtheme
+region: footer_bottom
+weight: -37
+provider: null
+plugin: 'block_group:footer_bottom_center'
+settings:
+  id: 'block_group:footer_bottom_center'
+  label: 'Footer Bottom Center'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

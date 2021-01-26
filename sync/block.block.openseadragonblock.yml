@@ -1,0 +1,46 @@
+uuid: 51befbce-62ca-419d-825d-ffad7d8dc23f
+langcode: en
+status: true
+dependencies:
+  module:
+    - openseadragon
+    - request_data_conditions
+  theme:
+    - dgi_i8_base
+id: openseadragonblock
+theme: dgi_i8_base
+region: pre_footer
+weight: -16
+provider: null
+plugin: openseadragon_block
+settings:
+  id: openseadragon_block
+  label: 'Openseadragon block'
+  provider: openseadragon
+  label_display: '0'
+  iiif_manifest_url: 'node/[node:nid]/manifest'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

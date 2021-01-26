@@ -16,7 +16,23 @@ dependencies:
     module:
       - islandora_core_feature
   module:
+    - field_group
     - file
+third_party_settings:
+  field_group:
+    group_preview:
+      children:
+        - field_media_audio_file
+      parent_name: ''
+      weight: 20
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        id: islandora_audio_preview
+        classes: object-preview-panel
+      label: Preview
 _core:
   default_config_hash: tDCyYVpxmp1mDsORGEQYEKD7w9ouL0h8HzMl9SFjPYo
 id: media.audio.source

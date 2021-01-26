@@ -1,0 +1,25 @@
+uuid: bb2ea6a0-4b00-4e4a-9680-0758b51fa667
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.model_grid_
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_modelgrid
+theme: wmc_i8_subtheme
+region: search_facet_header
+weight: -9
+provider: null
+plugin: 'facet_block:model_grid_'
+settings:
+  id: 'facet_block:model_grid_'
+  label: Model
+  provider: facets
+  label_display: '0'
+  block_id: modelgrid
+visibility: {  }

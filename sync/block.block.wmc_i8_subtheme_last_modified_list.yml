@@ -1,0 +1,58 @@
+uuid: 66c64dee-6c3e-4f35-beb0-e51b1965dbf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.last_modified_list
+    - blockgroup.block_group_content.list_facets
+  module:
+    - facets
+    - request_data_conditions
+    - user
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_last_modified_list
+theme: wmc_i8_subtheme
+region: list_facets
+weight: -11
+provider: null
+plugin: 'facet_block:last_modified_list'
+settings:
+  id: 'facet_block:last_modified_list'
+  label: 'Last Modified'
+  provider: facets
+  label_display: visible
+  block_id: last_modified_list
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      repository_administrator: repository_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,51 @@
+uuid: a8b26f4b-3929-4345-ac5e-59d3c3ed4440
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.source
+    - field.field.media.html5_video.field_media_of
+    - field.field.media.html5_video.field_media_video_embed_field
+    - media.type.html5_video
+  module:
+    - field_group
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_preview:
+      children:
+        - field_media_video_embed_field
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        id: islandora_video_preview
+        classes: object-preview-panel
+      label: Preview
+id: media.html5_video.source
+targetEntityType: media
+bundle: html5_video
+mode: source
+content:
+  field_media_video_embed_field:
+    label: visually_hidden
+    weight: 1
+    settings:
+      width: 640
+      height: 480
+      autoplay: false
+      responsive: false
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_media_of: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

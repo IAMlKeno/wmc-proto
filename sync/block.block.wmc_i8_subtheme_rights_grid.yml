@@ -1,0 +1,58 @@
+uuid: 4c124fd3-f8e1-4ffc-9a3d-cb98a2dc917b
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.rights_grid
+    - blockgroup.block_group_content.grid_facets
+  module:
+    - facets
+    - request_data_conditions
+    - user
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_rights_grid
+theme: wmc_i8_subtheme
+region: grid_facets
+weight: -9
+provider: null
+plugin: 'facet_block:rights_grid'
+settings:
+  id: 'facet_block:rights_grid'
+  label: Rights
+  provider: facets
+  label_display: visible
+  block_id: rights_grid
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      repository_administrator: repository_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

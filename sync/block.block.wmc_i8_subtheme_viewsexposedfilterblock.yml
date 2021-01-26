@@ -1,0 +1,46 @@
+uuid: 3e9e801b-a0b5-4d8c-a98d-41195c9a5b87
+langcode: en
+status: true
+dependencies:
+  module:
+    - request_data_conditions
+    - views_exposed_filter_blocks
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_viewsexposedfilterblock
+theme: wmc_i8_subtheme
+region: sidr
+weight: 0
+provider: null
+plugin: views_exposed_filter_blocks_block
+settings:
+  id: views_exposed_filter_blocks_block
+  label: 'Views exposed filter block'
+  provider: views_exposed_filter_blocks
+  label_display: '0'
+  view_display: 'solr_search_content:block_3'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

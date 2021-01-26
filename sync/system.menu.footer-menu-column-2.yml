@@ -1,0 +1,8 @@
+uuid: 968ffabc-c885-4e38-b124-aa932c7bb0a4
+langcode: en
+status: true
+dependencies: {  }
+id: footer-menu-column-2
+label: 'Footer Menu Column 2'
+description: 'Center column of menu links in the footer.'
+locked: false

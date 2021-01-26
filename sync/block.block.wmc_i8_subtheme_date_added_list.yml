@@ -1,0 +1,50 @@
+uuid: a4a5393a-b4ce-49e5-be4c-8d92dd4f0f19
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date_added_list
+    - blockgroup.block_group_content.list_facets
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_date_added_list
+theme: wmc_i8_subtheme
+region: list_facets
+weight: -12
+provider: null
+plugin: 'facet_block:date_added_list'
+settings:
+  id: 'facet_block:date_added_list'
+  label: 'Date Added'
+  provider: facets
+  label_display: visible
+  block_id: date_added_list
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

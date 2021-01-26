@@ -1,0 +1,27 @@
+uuid: 47c8e0c4-c5f2-48c4-84cd-826577327cba
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wmc_i8_subtheme
+_core:
+  default_config_hash: 5el0pvO6r0xKjseMWvYZUnp_hfDq_-g8SiW7gJFaUgc
+id: wmc_i8_subtheme_page_title
+theme: wmc_i8_subtheme
+region: content
+weight: -38
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/*\r\n/user/*\r\n<front>\r\n/solr-search/*"
+    negate: true
+    context_mapping: {  }

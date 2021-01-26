@@ -1,0 +1,56 @@
+uuid: d2c82ab5-13db-4c3c-91fb-408f9ade5426
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu-column-1
+    - blockgroup.block_group_content.basic_footer_columns
+  module:
+    - block_class
+    - request_data_conditions
+    - system
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: 'dgi-footer-menu-col col-md-3 col-sm-4 col-xs-6'
+id: wmc_i8_subtheme_footermenucolumn1
+theme: wmc_i8_subtheme
+region: basic_footer_columns
+weight: -21
+provider: null
+plugin: 'system_menu_block:footer-menu-column-1'
+settings:
+  id: 'system_menu_block:footer-menu-column-1'
+  label: 'DIGITAL COLLECTIONS'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

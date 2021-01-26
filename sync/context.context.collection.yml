@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: N6lOE1Ui_bmilXMN8Iw_sD3EC1nM-Ua40rnmyKVEf9Y
 name: collection
-label: Collection
+label: 'Collection (List)'
 group: Islandora
 description: 'Islandora collections'
 requireAllConditions: true
@@ -65,28 +65,15 @@ reactions:
         id: system_messages_block
         label: Messages
         provider: system
-        label_display: 0
-        region: content
-        weight: '1'
+        label_display: '0'
+        region: highlighted
+        weight: '-2'
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: collection
         uuid: e30494e1-92c1-4c1b-8353-a3d0c1855ae0
-      aee4f7ff-cd32-40b5-9179-d5221e0d1580:
-        id: system_breadcrumb_block
-        label: Breadcrumbs
-        provider: system
-        label_display: visible
-        region: content
-        weight: '-4'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: aee4f7ff-cd32-40b5-9179-d5221e0d1580
       9c0c6077-d281-494f-a901-0c224d050c0b:
         id: system_main_block
         label: 'Main page content'
@@ -95,104 +82,47 @@ reactions:
         region: sidr
         weight: '-4'
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: collection
         uuid: 9c0c6077-d281-494f-a901-0c224d050c0b
-      4f528deb-7b52-4856-a7f8-b75a16606a89:
-        id: page_title_block
-        label: 'Page title'
-        provider: core
-        label_display: visible
-        region: content
-        weight: '-3'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: 4f528deb-7b52-4856-a7f8-b75a16606a89
-      fb50bc6d-885b-43e6-96de-3be4ae1bbee9:
-        id: dgi_header
-        label: 'DGI Header Block'
-        provider: dgi_header
-        label_display: 0
-        menu: dgi-header
-        search:
-          view: solr_search_content
-          display_id: page_1
-          parameter: search_api_fulltext
-        region: navigation
-        weight: '0'
-        admin_label: ''
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: dgi-header-max-height
-        unique: 0
-        context_id: collection
-        uuid: fb50bc6d-885b-43e6-96de-3be4ae1bbee9
-      770ef067-0d40-4806-85c2-cb4611dad672:
-        id: 'react_block:dgi_footer_menu_block'
-        label: 'DGI Footer Menu Block'
-        provider: react_block
-        label_display: 0
-        region: footer
-        weight: '0'
-        pdb_configuration: null
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: 770ef067-0d40-4806-85c2-cb4611dad672
-      2a7dabee-f6b7-44ec-b55c-f49771cc35db:
-        id: 'views_block:repository_item_content_blocks-repository_item_viewer'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: dgi_i8_base
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: 2a7dabee-f6b7-44ec-b55c-f49771cc35db
       bca40d6a-c98c-4ed6-92b5-fab5a0b5ca40:
         id: 'views_block:collection_representative_object-block_1'
         label: ''
         provider: views
-        label_display: 0
+        label_display: '0'
         views_label: ''
         items_per_page: none
-        region: content
+        region: viewer
         weight: '-2'
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: collection
         uuid: bca40d6a-c98c-4ed6-92b5-fab5a0b5ca40
-      549765fb-df01-4563-a6ee-5031da5843cd:
-        id: 'block_group:collection_metadata_and_actions'
-        label: 'Collection Metadata and Actions'
-        provider: blockgroup
-        label_display: 0
+        override: {  }
+      d155148e-f921-43ce-bd05-cddb7275c486:
+        id: 'views_block:solr_search_content-block_4'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
         region: content
-        weight: '0'
+        weight: '-9'
         context_mapping: {  }
-        theme: dgi_i8_base
+        theme: wmc_i8_subtheme
         css_class: ''
         unique: 0
         context_id: collection
-        uuid: 549765fb-df01-4563-a6ee-5031da5843cd
+        uuid: 9b244ead-734a-440d-a0ee-f288875ccfe0
+        override: {  }
     id: blocks
     saved: false
     uuid: 379baa20-03b9-4402-8a5c-20a3201f239b
-    include_default_blocks: 0
+    include_default_blocks: 1
   view_mode_alter:
     id: view_mode_alter
     mode: node.repository_item_collections
@@ -200,13 +130,15 @@ reactions:
   regions:
     id: regions
     regions:
+      claro: {  }
       classy: {  }
       seven: {  }
       stable: {  }
       adminimal_theme: {  }
       bootstrap: {  }
-      dgi_i8_base:
+      wmc_i8_subtheme:
         - sidr
+      gin: {  }
     saved: false
     uuid: aa32ef52-3b97-45fd-98c8-d62353daa83f
   body_class:

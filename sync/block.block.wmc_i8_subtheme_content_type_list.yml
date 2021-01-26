@@ -1,0 +1,50 @@
+uuid: e2417bfb-bb45-4c01-a7a7-81bdd206b0ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type_list
+    - blockgroup.block_group_content.list_facets
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_content_type_list
+theme: wmc_i8_subtheme
+region: list_facets
+weight: -13
+provider: null
+plugin: 'facet_block:content_type_list'
+settings:
+  id: 'facet_block:content_type_list'
+  label: 'Content Type'
+  provider: facets
+  label_display: visible
+  block_id: content_type_list
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

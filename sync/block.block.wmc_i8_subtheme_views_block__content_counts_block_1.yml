@@ -1,0 +1,53 @@
+uuid: 90d5e3a9-a10c-4247-93fa-becf3f0a9462
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_counts
+  module:
+    - block_class
+    - request_data_conditions
+    - views
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: content-counts-block
+id: wmc_i8_subtheme_views_block__content_counts_block_1
+theme: wmc_i8_subtheme
+region: sidr
+weight: -16
+provider: null
+plugin: 'views_block:content_counts-block_1'
+settings:
+  id: 'views_block:content_counts-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

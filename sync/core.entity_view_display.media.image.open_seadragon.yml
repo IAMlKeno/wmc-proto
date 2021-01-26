@@ -18,7 +18,23 @@ dependencies:
     module:
       - islandora_defaults
   module:
+    - field_group
     - openseadragon
+third_party_settings:
+  field_group:
+    group_preview:
+      children:
+        - field_media_image
+      parent_name: ''
+      weight: 20
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        id: islandora_image_preview
+        classes: object-preview-panel
+      label: Preview
 _core:
   default_config_hash: eh47H7rkaD3xK-hM_DEodnS-m01pYTWtYpG0-58F7ZA
 id: media.image.open_seadragon

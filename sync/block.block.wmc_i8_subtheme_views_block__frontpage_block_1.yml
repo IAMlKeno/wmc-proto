@@ -1,0 +1,55 @@
+uuid: 04124ac7-c03a-4ee2-ae37-ccdbc262c590
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.frontpage
+  module:
+    - request_data_conditions
+    - system
+    - views
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_views_block__frontpage_block_1
+theme: wmc_i8_subtheme
+region: highlighted
+weight: -15
+provider: null
+plugin: 'views_block:frontpage-block_1'
+settings:
+  id: 'views_block:frontpage-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
