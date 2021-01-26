@@ -3248,19 +3248,6 @@ display:
           not: false
           plugin_id: search_api
       footer:
-        entity_block_3:
-          id: entity_block_3
-          table: views
-          field: entity_block
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: true
-          target: dgisearchinresults
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
         entity_block_1:
           id: entity_block_1
           table: views
@@ -4521,19 +4508,6 @@ display:
           plugin_id: text
       use_ajax: true
       footer:
-        entity_block_3:
-          id: entity_block_3
-          table: views
-          field: entity_block
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: true
-          target: dgisearchinresults
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
         entity_block_1:
           id: entity_block_1
           table: views
