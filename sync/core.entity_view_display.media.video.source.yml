@@ -31,7 +31,7 @@ third_party_settings:
         description: ''
         open: true
         id: islandora_video_preview
-        classes: ''
+        classes: object-preview-panel
       label: Preview
 _core:
   default_config_hash: 2M-aYtI4eDlwWYDmfUiwO-JnX1MRa4IrqzxzGfZIjls
