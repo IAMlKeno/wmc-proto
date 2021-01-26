@@ -42,6 +42,8 @@ module:
   custom_add_another: 0
   datetime: 0
   dblog: 0
+  dgi_actions: 0
+  dgi_actions_ark_identifier: 0
   dgi_header: 0
   dgi_i8_custom_blocks: 0
   dgi_i8_helper: 0
@@ -62,6 +64,7 @@ module:
   entity_browser_enhanced: 0
   entity_embed: 0
   entity_reference: 0
+  entity_route_context: 0
   eva: 0
   event_log_track: 0
   event_log_track_file: 0
