@@ -859,18 +859,18 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: true
+            alter_text: false
             text: ''
             make_link: false
-            path: ''
+            path: '{{ base_url }}/node/{{ nid }}'
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
+            alt: 'Select to visit the {{ title }} page'
             rel: ''
             link_class: ''
             prefix: ''
@@ -903,7 +903,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: recent_items_collections
-            image_link: content
+            image_link: ''
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -917,7 +917,7 @@ display:
           field_rendering: true
           fallback_handler: search_api_entity
           fallback_options:
-            link_to_item: false
+            link_to_item: true
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
@@ -938,8 +938,8 @@ display:
                 display_method: label
                 view_mode: default
               image:
-                display_method: label
-                view_mode: default
+                display_method: id
+                view_mode: source
               remote_video:
                 display_method: label
                 view_mode: default
@@ -1081,7 +1081,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h3>{{ title_1 }}</h3>\r\n<span class=\"view-description\">{{ field_description }}</span>"
+            text: "<a href=\"{{ base_url }}/node/{{ nid }}\" title=\"Select to visit the {{ title }} page\">{{ field_representative_image }}</a>\r\n<h3>{{ title_1 }}</h3>\r\n<span class=\"view-description\">{{ field_description }}</span>"
             make_link: false
             path: ''
             absolute: false
@@ -1121,7 +1121,20 @@ display:
           plugin_id: custom
       defaults:
         fields: false
+        relationships: false
       block_hide_empty: true
+      relationships:
+        field_representative_image:
+          id: field_representative_image
+          table: search_api_datasource_default_solr_index_entity_node
+          field: field_representative_image
+          relationship: none
+          group_type: group
+          admin_label: 'Representative Image: Media'
+          required: false
+          skip_access: false
+          entity_type: node
+          plugin_id: search_api
     cache_metadata:
       max-age: -1
       contexts:
