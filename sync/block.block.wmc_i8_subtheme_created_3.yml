@@ -14,7 +14,7 @@ dependencies:
 id: wmc_i8_subtheme_created_3
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: 0
+weight: -27
 provider: null
 plugin: 'facet_block:created_page_list'
 settings:

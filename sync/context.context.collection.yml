@@ -61,19 +61,6 @@ reactions:
         unique: 0
         context_id: collection
         uuid: 41f1d520-14ae-479e-90d2-34aa6f4a750e
-      e30494e1-92c1-4c1b-8353-a3d0c1855ae0:
-        id: system_messages_block
-        label: Messages
-        provider: system
-        label_display: '0'
-        region: highlighted
-        weight: '-2'
-        context_mapping: {  }
-        theme: wmc_i8_subtheme
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: e30494e1-92c1-4c1b-8353-a3d0c1855ae0
       9c0c6077-d281-494f-a901-0c224d050c0b:
         id: system_main_block
         label: 'Main page content'
@@ -136,9 +123,10 @@ reactions:
       stable: {  }
       adminimal_theme: {  }
       bootstrap: {  }
+      dgi_i8_base: {  }
+      gin: {  }
       wmc_i8_subtheme:
         - sidr
-      gin: {  }
     saved: false
     uuid: aa32ef52-3b97-45fd-98c8-d62353daa83f
   body_class:

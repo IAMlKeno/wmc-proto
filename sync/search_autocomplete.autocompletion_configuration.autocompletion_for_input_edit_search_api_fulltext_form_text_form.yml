@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: autocompletion_for_input_edit_search_api_fulltext_form_text_form
 label: 'Autocompletion for input#edit-search-api-fulltext.form-text.form-control'
-selector: 'input#edit-search-api-fulltext.form-text.form-control, input#edit-terms.form-text.form-control, input#edit-terms--2.form-text.form-control'
+selector: 'input#edit-search-api-fulltext.form-text.form-control, input#edit-terms--2.form-text.form-control'
 minChar: 1
 autoSubmit: true
 autoRedirect: true

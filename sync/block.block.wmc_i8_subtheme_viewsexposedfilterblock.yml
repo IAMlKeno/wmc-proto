@@ -10,7 +10,7 @@ dependencies:
 id: wmc_i8_subtheme_viewsexposedfilterblock
 theme: wmc_i8_subtheme
 region: sidr
-weight: 0
+weight: -35
 provider: null
 plugin: views_exposed_filter_blocks_block
 settings:

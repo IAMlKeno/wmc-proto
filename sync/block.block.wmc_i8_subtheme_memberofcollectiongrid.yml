@@ -14,7 +14,7 @@ dependencies:
 id: wmc_i8_subtheme_memberofcollectiongrid
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: -14
+weight: -37
 provider: null
 plugin: 'facet_block:member_of_collection_grid'
 settings:

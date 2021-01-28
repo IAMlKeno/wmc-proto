@@ -13,7 +13,7 @@ dependencies:
 id: wmc_i8_subtheme_listfacets
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: 0
+weight: -25
 provider: null
 plugin: 'block_group:list_facets'
 settings:

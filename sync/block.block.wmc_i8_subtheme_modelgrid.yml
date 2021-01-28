@@ -13,7 +13,7 @@ dependencies:
 id: wmc_i8_subtheme_modelgrid
 theme: wmc_i8_subtheme
 region: search_facet_header
-weight: -9
+weight: -32
 provider: null
 plugin: 'facet_block:model_grid_'
 settings:
