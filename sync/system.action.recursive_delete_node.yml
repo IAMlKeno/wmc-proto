@@ -1,0 +1,14 @@
+uuid: f09a3301-129c-4b87-ade4-8f4fdafcdac9
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - dgi_i8_helper
+  module:
+    - dgi_i8_helper
+id: recursive_delete_node
+label: 'Delete Node, Attached Media and Files'
+type: node
+plugin: recursive_delete_node
+configuration: {  }
