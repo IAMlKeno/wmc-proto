@@ -11,14 +11,14 @@ dependencies:
     - search_api
   config:
     - field.storage.media.field_edited_text
-    - field.storage.node.field_access_terms
-    - field.storage.node.field_physical_form
-    - field.storage.node.field_genre
     - field.storage.media.field_media_file
     - field.storage.media.field_file_size
     - field.storage.media.field_media_of
+    - field.storage.node.field_access_terms
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
+    - field.storage.node.field_physical_form
+    - field.storage.node.field_genre
     - field.storage.node.field_identifier
     - field.storage.node.field_linked_agent
     - field.storage.node.field_member_of
@@ -318,7 +318,7 @@ field_settings:
     label: 'Edited Text » Processed text'
     datasource_id: 'entity:media'
     property_path: 'field_edited_text:processed'
-    type: string
+    type: text
     dependencies:
       config:
         - field.storage.media.field_edited_text
