@@ -22,7 +22,7 @@ settings:
   label: 'W&M Libraries Logo'
   provider: dgi_i8_custom_blocks
   label_display: '0'
-  display_info: "<p><a href=\"https://libraries.wm.edu/\"><img src=\"/themes/contrib/wmc_i8_subtheme/logo_fdlp_green_2x.png\" /></a></p>\r\n"
+  display_info: "<p><a title=\"Click to visit libraries.wm.edu\" target=\"_blank\" href=\"https://libraries.wm.edu/\"><img alt=\"FDLP Logo\" src=\"/themes/contrib/wmc_i8_subtheme/logo_fdlp_green_2x.png\" /></a></p>\r\n"
 visibility:
   http_headers:
     id: http_headers
