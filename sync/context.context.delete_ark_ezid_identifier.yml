@@ -14,13 +14,13 @@ conditions:
   dgi_actions_entity_persistent_identifier_populated:
     id: dgi_actions_entity_persistent_identifier_populated
     identifier: dgi_actions.identifier.ark_ezid
-    negate: 0
+    negate: 1
     uuid: 8ef9fb27-9190-467b-9a3d-149ea55a2bbb
     context_mapping:
       entity: '@entity_route_context.entity_route_context:canonical_entity'
 reactions:
-  entity_delete_dgi_actions:
-    id: entity_delete_dgi_actions
+  entity_identifier_delete_dgi_actions:
+    id: entity_identifier_delete_dgi_actions
     actions:
       delete_ark_ezid_identifier: delete_ark_ezid_identifier
     saved: false
