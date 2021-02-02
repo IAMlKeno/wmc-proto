@@ -3996,7 +3996,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: DATE
+          label: 'DATE CREATED'
           exclude: false
           alter:
             alter_text: false
@@ -4046,7 +4046,7 @@ display:
               - more
               - admin_label
             custom_label: 1
-            label: Date
+            label: DATE
             element_label_colon: 0
             exclude: 0
             element_type_enable: 0
@@ -4133,7 +4133,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: AUTHOR
+          label: 'AUTHORED BY'
           exclude: false
           alter:
             alter_text: false
@@ -5824,7 +5824,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Date
+          label: 'Date Created'
           exclude: false
           alter:
             alter_text: false
@@ -5874,7 +5874,7 @@ display:
               - more
               - admin_label
             custom_label: 1
-            label: '| DATE'
+            label: 'DATE CREATED'
             element_label_colon: 1
             exclude: 0
             element_type_enable: 0
@@ -5960,7 +5960,7 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
-          label: Name
+          label: 'Authored by'
           exclude: false
           alter:
             alter_text: false
@@ -9278,7 +9278,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: DATE
+          label: 'DATE CREATED'
           exclude: false
           alter:
             alter_text: false
@@ -9328,7 +9328,7 @@ display:
               - more
               - admin_label
             custom_label: 1
-            label: Date
+            label: DATE
             element_label_colon: 1
             exclude: 0
             element_type_enable: 0
