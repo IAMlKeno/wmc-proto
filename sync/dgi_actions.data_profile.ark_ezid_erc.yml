@@ -16,4 +16,4 @@ data:
     source_field: title
   erc_when:
     key: erc.when
-    source_field: field_edtf_date
+    source_field: field_edtf_date_created
