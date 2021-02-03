@@ -52,6 +52,7 @@ dependencies:
   module:
     - controlled_access_terms
     - field_group
+    - link
     - taxonomy
     - user
 third_party_settings:
@@ -71,10 +72,6 @@ third_party_settings:
       label: Metadata
     group_metadata_table_data:
       children:
-        - field_genre
-        - field_geographic_subject
-        - field_publisher
-        - field_temporal_subject
         - field_alternative_title
         - field_description
         - field_model
@@ -94,6 +91,11 @@ third_party_settings:
         - field_license
         - field_provenance
         - field_physical_form
+        - field_temporal_subject
+        - field_publisher
+        - field_geographic_subject
+        - field_genre
+        - field_ark
       parent_name: group_metadata
       weight: 20
       format_type: field_group_table
@@ -134,6 +136,18 @@ content:
     label: above
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  field_ark:
+    type: link
+    weight: 23
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
   field_description:
     type: basic_string
@@ -185,7 +199,7 @@ content:
     third_party_settings: {  }
   field_genre:
     type: entity_reference_label
-    weight: 23
+    weight: 22
     region: content
     label: above
     settings:
@@ -193,7 +207,7 @@ content:
     third_party_settings: {  }
   field_geographic_subject:
     type: entity_reference_label
-    weight: 22
+    weight: 21
     region: content
     label: above
     settings:
@@ -209,7 +223,7 @@ content:
     third_party_settings: {  }
   field_license:
     type: entity_reference_label
-    weight: 17
+    weight: 16
     region: content
     label: above
     settings:
@@ -241,7 +255,7 @@ content:
     third_party_settings: {  }
   field_physical_form:
     type: entity_reference_label
-    weight: 19
+    weight: 18
     region: content
     label: above
     settings:
@@ -257,14 +271,14 @@ content:
     third_party_settings: {  }
   field_provenance:
     type: basic_string
-    weight: 18
+    weight: 17
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_publisher:
     type: string
-    weight: 21
+    weight: 20
     region: content
     label: above
     settings:
@@ -272,7 +286,7 @@ content:
     third_party_settings: {  }
   field_resource_type:
     type: entity_reference_label
-    weight: 15
+    weight: 14
     region: content
     label: above
     settings:
@@ -280,7 +294,7 @@ content:
     third_party_settings: {  }
   field_rights:
     type: entity_reference_rss_category
-    weight: 16
+    weight: 15
     region: content
     label: above
     settings: {  }
@@ -295,7 +309,7 @@ content:
     third_party_settings: {  }
   field_temporal_subject:
     type: entity_reference_label
-    weight: 20
+    weight: 19
     region: content
     label: above
     settings:
@@ -327,7 +341,6 @@ hidden:
   display_media_entity_view_2: true
   display_media_service_file: true
   display_media_thumbnail: true
-  field_ark: true
   field_classification: true
   field_coordinates: true
   field_coordinates_text: true
