@@ -1,0 +1,20 @@
+uuid: 4c42ef36-6a10-4c0f-ab21-741a3a3a4255
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dgi_i8_base
+_core:
+  default_config_hash: oeLK5DXGmDK6LdoP6yTObOeInEmp2QhAcC-S3iOozBE
+id: dgi_i8_base_local_actions
+theme: dgi_i8_base
+region: content
+weight: -15
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

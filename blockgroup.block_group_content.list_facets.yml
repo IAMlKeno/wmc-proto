@@ -1,0 +1,6 @@
+uuid: 46098a2a-bb84-466b-bbd7-cb5d3a7b4224
+langcode: en
+status: true
+dependencies: {  }
+id: list_facets
+label: 'List Facets'

@@ -1,0 +1,25 @@
+preset_accent_color: custom
+preset_focus_color: accent
+enable_darkmode: false
+classic_toolbar: vertical
+icon_default: false
+icon_path: themes/contrib/wmc_i8_subtheme/favicon.ico
+high_contrast_mode: false
+third_party_settings:
+  shortcut:
+    module_link: true
+_core:
+  default_config_hash: CEHTCpo0zzrZOJNa9_M2R_HdYKrq3v1zlRVCf66hh7U
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+favicon:
+  use_default: false
+  path: themes/contrib/wmc_i8_subtheme/favicon.ico
+  mimetype: image/vnd.microsoft.icon
+accent_color: '#115740'
+focus_color: ''
+icon_upload: ''
+show_user_theme_settings: false

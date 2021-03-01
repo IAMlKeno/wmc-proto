@@ -1,0 +1,25 @@
+uuid: 77c53a1e-d484-4d33-96c9-58fab1361c4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.model
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_model_2
+theme: wmc_i8_subtheme
+region: search_facet_header
+weight: -33
+provider: null
+plugin: 'facet_block:model'
+settings:
+  id: 'facet_block:model'
+  label: Model
+  provider: facets
+  label_display: '0'
+  block_id: model_2
+visibility: {  }

@@ -1,0 +1,54 @@
+uuid: 7170390e-13f0-4c89-8e58-0bf52a8b7609
+langcode: en
+status: true
+dependencies:
+  module:
+    - copyright_footer
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+  config:
+    - blockgroup.block_group_content.footer_bottom_center
+id: wmc_i8_subtheme_copyrightfooter
+theme: wmc_i8_subtheme
+region: footer_bottom_center
+weight: -38
+provider: null
+plugin: copyright_footer
+settings:
+  id: copyright_footer
+  label: 'Copyright Footer'
+  provider: copyright_footer
+  label_display: '0'
+  organization_name: 'William & Mary Libraries'
+  organization_url: ''
+  year_origin: null
+  year_to_date: null
+  version: ''
+  version_url: ''
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

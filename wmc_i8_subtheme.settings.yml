@@ -1,0 +1,29 @@
+schemas:
+  bootstrap: 8000
+  dgi_i8_base: 8000
+  wmc_i8_subtheme: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: themes/contrib/wmc_i8_subtheme/favicon.ico
+  url: 'http://discoverygarden-vsphere-wmc-tst.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
+  use_default: 0
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: themes/contrib/wmc_i8_subtheme/logo_wm_white.png
+  url: ''
+  use_default: 0
+use_default_footer_logo: 0
+footer_logo_path: themes/contrib/wmc_i8_subtheme/footer_logo.png
+use_different_front_header_logo: 1
+front_header_logo_path: themes/contrib/wmc_i8_subtheme/logo-front.svg
+use_different_mobile_header_logo: 1
+mobile_header_logo_path: themes/contrib/wmc_i8_subtheme/favicon-white.png
+logo_link: 'https://www.wm.edu/'
+front_page_sub_title: 'Explore items digitized from our collections'
+front_page_alignment: left-align
+reset_http_request_cache: ''
+table: ''

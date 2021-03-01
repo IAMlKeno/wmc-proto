@@ -1,0 +1,54 @@
+uuid: c345536e-85d9-4cae-8a4b-d1e75c4c8c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.advanced_search
+  module:
+    - request_data_conditions
+    - system
+    - views
+  theme:
+    - dgi_i8_base
+id: exposedformadvanced_searchpage_3
+theme: dgi_i8_base
+region: content
+weight: -14
+provider: null
+plugin: 'views_exposed_filter_block:advanced_search-page_3'
+settings:
+  id: 'views_exposed_filter_block:advanced_search-page_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /advanced-search
+    negate: false
+    context_mapping: {  }

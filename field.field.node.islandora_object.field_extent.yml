@@ -1,0 +1,29 @@
+uuid: a0593251-5fab-4080-9d38-926ba369e017
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extent
+    - node.type.islandora_object
+  module:
+    - custom_add_another
+third_party_settings:
+  custom_add_another:
+    custom_add_another: 'Add extent'
+    custom_remove: ''
+_core:
+  default_config_hash: KgpvifI5hb9dSZJwo58EG3T1R4c8fZu6paUqJedq9zk
+id: node.islandora_object.field_extent
+field_name: field_extent
+entity_type: node
+bundle: islandora_object
+label: Extent
+description: 'The size or duration of a resource.'
+required: false
+translatable: false
+default_value:
+  -
+    value: '1 item'
+default_value_callback: ''
+settings: {  }
+field_type: string

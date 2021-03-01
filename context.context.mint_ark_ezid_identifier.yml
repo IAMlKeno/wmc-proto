@@ -1,0 +1,27 @@
+uuid: cded6f7a-686d-4111-bc15-421cb42dc081
+langcode: en
+status: true
+dependencies:
+  module:
+    - dgi_actions
+name: mint_ark_ezid_identifier
+label: 'Mint ARK EZID Identifier'
+group: Derivatives
+description: 'Mint ARK EZID Identifier'
+requireAllConditions: false
+disabled: false
+conditions:
+  dgi_actions_entity_persistent_identifier_populated:
+    id: dgi_actions_entity_persistent_identifier_populated
+    identifier: dgi_actions.identifier.ark_ezid
+    negate: 0
+    uuid: 2ea93a3b-a9f9-40f7-a0da-b769ce42896f
+    context_mapping:
+      entity: '@entity_route_context.entity_route_context:canonical_entity'
+reactions:
+  entity_identifier_insert_dgi_actions:
+    id: entity_identifier_insert_dgi_actions
+    actions:
+      mint_ark_ezid_identifier: mint_ark_ezid_identifier
+    saved: false
+weight: 0

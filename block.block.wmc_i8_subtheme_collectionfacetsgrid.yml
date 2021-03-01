@@ -1,0 +1,47 @@
+uuid: ee6543bf-f6b0-489c-91ee-163f112e4384
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.collection_facets_grid
+  module:
+    - blockgroup
+    - request_data_conditions
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_collectionfacetsgrid
+theme: wmc_i8_subtheme
+region: sidr
+weight: -37
+provider: null
+plugin: 'block_group:collection_facets_grid'
+settings:
+  id: 'block_group:collection_facets_grid'
+  label: 'Collection Facets Grid'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

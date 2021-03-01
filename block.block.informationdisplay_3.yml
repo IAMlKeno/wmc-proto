@@ -1,0 +1,50 @@
+uuid: 2e2e1b0d-c608-4162-aa1b-ddd78b423624
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - dgi_i8_custom_blocks
+    - request_data_conditions
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: wm-libraries-logo
+id: informationdisplay_3
+theme: wmc_i8_subtheme
+region: footer_bottom
+weight: -34
+provider: null
+plugin: dgi_info_block
+settings:
+  id: dgi_info_block
+  label: 'W&M Libraries Logo'
+  provider: dgi_i8_custom_blocks
+  label_display: '0'
+  display_info: "<p><a title=\"Click to visit libraries.wm.edu\" target=\"_blank\" href=\"https://libraries.wm.edu/\"><img alt=\"FDLP Logo\" src=\"/themes/contrib/wmc_i8_subtheme/logo_fdlp_green_2x.png\" /></a></p>\r\n"
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

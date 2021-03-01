@@ -1,0 +1,25 @@
+uuid: 53c1d3a2-c564-4d0e-ad76-b8b870aeaade
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.member_of
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_memberof_2
+theme: wmc_i8_subtheme
+region: search_facet_header
+weight: -36
+provider: null
+plugin: 'facet_block:member_of'
+settings:
+  id: 'facet_block:member_of'
+  label: 'Member of'
+  provider: facets
+  label_display: '0'
+  block_id: memberof_2
+visibility: {  }

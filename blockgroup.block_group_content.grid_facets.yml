@@ -1,0 +1,6 @@
+uuid: 18035ef6-5ff5-418c-9732-986fa49f2034
+langcode: en
+status: true
+dependencies: {  }
+id: grid_facets
+label: 'Grid Facets'

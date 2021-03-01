@@ -1,0 +1,50 @@
+uuid: 13774ed8-f345-4249-8b18-8fef999bb5f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.created_block_list
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_createdblocklist
+theme: wmc_i8_subtheme
+region: search_facet_header
+weight: -29
+provider: null
+plugin: 'facet_block:created_block_list'
+settings:
+  id: 'facet_block:created_block_list'
+  label: 'Created Block List'
+  provider: facets
+  label_display: '0'
+  block_id: createdblocklist
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

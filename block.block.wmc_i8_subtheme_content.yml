@@ -1,0 +1,22 @@
+uuid: a71190c4-6d23-4664-8947-a25c33a8afd8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wmc_i8_subtheme
+_core:
+  default_config_hash: jJyyWsPa3GMYaEZUJncRo0aRf9TgwQl_-u7eYAmRnH0
+id: wmc_i8_subtheme_content
+theme: wmc_i8_subtheme
+region: content
+weight: -35
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,59 @@
+uuid: 9d406086-c106-4ad6-9643-0601b99f1a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_level_collections
+  module:
+    - block_class
+    - request_data_conditions
+    - system
+    - views
+  theme:
+    - wmc_i8_subtheme
+third_party_settings:
+  block_class:
+    classes: top-level-collections
+id: views_block__top_level_collections_block_2
+theme: wmc_i8_subtheme
+region: content
+weight: -31
+provider: null
+plugin: 'views_block:top_level_collections-block_2'
+settings:
+  id: 'views_block:top_level_collections-block_2'
+  label: 'Top Level Collections'
+  provider: views
+  label_display: visible
+  views_label: 'Top Level Collections'
+  items_per_page: none
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

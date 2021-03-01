@@ -1,0 +1,50 @@
+uuid: 2944ebb2-89d2-40da-9e8d-f1a9f69c2aa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.model_list
+    - blockgroup.block_group_content.collection_facets_list
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_modellistxx
+theme: wmc_i8_subtheme
+region: collection_facets_list
+weight: -18
+provider: null
+plugin: 'facet_block:model_list'
+settings:
+  id: 'facet_block:model_list'
+  label: 'Model List'
+  provider: facets
+  label_display: '0'
+  block_id: modellistxx
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

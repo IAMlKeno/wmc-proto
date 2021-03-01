@@ -1,0 +1,58 @@
+uuid: c26fb80d-05f8-43b9-9ad9-92461a08eb61
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.last_modified_grid
+    - blockgroup.block_group_content.grid_facets
+  module:
+    - facets
+    - request_data_conditions
+    - user
+    - blockgroup
+  theme:
+    - dgi_i8_base
+id: last_modified_grid
+theme: dgi_i8_base
+region: grid_facets
+weight: -10
+provider: null
+plugin: 'facet_block:last_modified_grid'
+settings:
+  id: 'facet_block:last_modified_grid'
+  label: 'Last Modified'
+  provider: facets
+  label_display: visible
+  block_id: last_modified_grid
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      repository_administrator: repository_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

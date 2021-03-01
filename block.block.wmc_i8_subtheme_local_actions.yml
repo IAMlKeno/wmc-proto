@@ -1,0 +1,20 @@
+uuid: 4efc7959-cb04-4d10-8eb3-53d07dd1d09a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wmc_i8_subtheme
+_core:
+  default_config_hash: oeLK5DXGmDK6LdoP6yTObOeInEmp2QhAcC-S3iOozBE
+id: wmc_i8_subtheme_local_actions
+theme: wmc_i8_subtheme
+region: content
+weight: -34
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

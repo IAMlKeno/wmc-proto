@@ -1,0 +1,228 @@
+uuid: 92f58e44-d534-4ae6-9d82-cea19f73f2e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - context_groups
+    - islandora
+    - node
+    - system
+third_party_settings:
+  context_groups:
+    metadata:
+      name: metadata
+      label: Metadata
+      region: content_bottom
+      parent: ''
+      weight: '3'
+      theme: wmc_i8_subtheme
+      class: 'col-md-12 row bottom'
+      all_parents: {  }
+name: repository_content_items
+label: 'Repository Content Items'
+group: 'DGI Islandora'
+description: 'Blocks for Repository Content Items (not collections).'
+requireAllConditions: true
+disabled: false
+conditions:
+  node_type:
+    id: node_type
+    bundles:
+      islandora_object: islandora_object
+    negate: 0
+    uuid: 7cbecbd2-b6f1-4fd3-8e95-8c1472eb42df
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_has_term:
+    id: node_has_term
+    negate: 1
+    uuid: 26f70ecf-9309-46cb-b17f-3db793d5eaa5
+    uri: 'http://purl.org/dc/dcmitype/Collection'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    logic: and
+  request_path:
+    id: request_path
+    pages: "/node/*/embargoes\r\n/node/*/embargoes/*"
+    negate: 1
+    uuid: e4e9f10b-2936-4d2b-a9a3-9f01a8bed026
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      363b8312-754d-4137-ab8f-cb6a8f0bc6e7:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: '0'
+        weight: '2'
+        region: content_bottom
+        parent_wrapper:
+          parent: metadata
+        all_parents:
+          - metadata
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: 363b8312-754d-4137-ab8f-cb6a8f0bc6e7
+      5b643ea9-863f-45a8-a6fa-69f02c89446a:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        weight: '1'
+        region: viewer
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: 5b643ea9-863f-45a8-a6fa-69f02c89446a
+      a8eadc34-bbce-42e9-8836-bc870a94d7b6:
+        id: local_tasks_block
+        label: Tabs
+        provider: core
+        label_display: 0
+        primary: 1
+        secondary: 0
+        weight: '0'
+        region: navigation
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: ''
+        unique: 1
+        context_id: repository_content_items
+        uuid: a8eadc34-bbce-42e9-8836-bc870a94d7b6
+      7d090d4d-ffb9-4436-930b-932dcac14e9c:
+        id: 'views_block:repository_item_content_blocks-repository_item_viewer'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        weight: '3'
+        region: content
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: 7d090d4d-ffb9-4436-930b-932dcac14e9c
+      a9d31932-f5d1-4c9a-8e46-0bf3226685fc:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: '0'
+        weight: '5'
+        region: content
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: a9d31932-f5d1-4c9a-8e46-0bf3226685fc
+      c187cbfe-042a-4546-8906-3a765f070cd2:
+        id: embargoes_embargo_notification_block
+        label: 'Embargo Notifications'
+        provider: embargoes
+        label_display: '0'
+        weight: '6'
+        region: content
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: c187cbfe-042a-4546-8906-3a765f070cd2
+      d75cfdcb-9cc2-4fbd-86e4-74edc13f094d:
+        id: 'views_block:repository_item_metadata-block_1'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        weight: '4'
+        region: content
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: d75cfdcb-9cc2-4fbd-86e4-74edc13f094d
+      0bae8f2d-f363-4f64-95d5-e58afdc53fb0:
+        id: 'views_block:node_views_count_statistics-block_2'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        weight: '2'
+        region: viewer
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: 'view-node-views-count-statistics col-sm-3'
+        unique: 0
+        context_id: repository_content_items
+        uuid: 0bae8f2d-f363-4f64-95d5-e58afdc53fb0
+      8a972e56-c731-4d52-93e8-b6e7afce1bdd:
+        id: 'block_group:object_page_split_sidebar'
+        label: 'Object Page: Split Sidebar'
+        provider: blockgroup
+        label_display: 0
+        weight: '10'
+        region: sidebar_second
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        context_mapping: {  }
+        theme: wmc_i8_subtheme
+        css_class: ''
+        unique: 0
+        context_id: repository_content_items
+        uuid: 8a972e56-c731-4d52-93e8-b6e7afce1bdd
+    id: blocks
+    saved: false
+    uuid: e90aa662-f44c-472a-b91c-647d459d21a2
+    include_default_blocks: 1
+  regions:
+    id: regions
+    regions:
+      claro: {  }
+      classy: {  }
+      seven: {  }
+      stable: {  }
+      adminimal_theme: {  }
+      bootstrap: {  }
+      wmc_i8_subtheme:
+        - header
+      gin: {  }
+    saved: false
+    uuid: 4c566c65-9a6e-4a9a-8142-3e102af99a6d
+  body_class:
+    id: body_class
+    body_class: repository-content-items
+    saved: false
+weight: -7

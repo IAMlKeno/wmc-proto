@@ -1,0 +1,47 @@
+uuid: 4419de89-2b1f-458b-bfd3-91bad7254f30
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - blockgroup
+    - request_data_conditions
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_searchfacetheader
+theme: wmc_i8_subtheme
+region: sidr
+weight: -38
+provider: null
+plugin: 'block_group:search_facet_header'
+settings:
+  id: 'block_group:search_facet_header'
+  label: 'Search Facet Header'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

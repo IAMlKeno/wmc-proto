@@ -1,0 +1,48 @@
+uuid: d6ab9b92-93b5-4c63-bce1-40d44e8cd8bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.list_facets
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - blockgroup
+    - request_data_conditions
+  theme:
+    - wmc_i8_subtheme
+id: wmc_i8_subtheme_listfacets
+theme: wmc_i8_subtheme
+region: search_facet_header
+weight: -25
+provider: null
+plugin: 'block_group:list_facets'
+settings:
+  id: 'block_group:list_facets'
+  label: 'List Facets'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,38 @@
+uuid: e77a3161-e5ee-46d1-8ab4-4ae99bc1f214
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_sync_helper
+    - islandora
+  theme:
+    - wmc_i8_subtheme
+_core:
+  default_config_hash: X9fkY4VmNAGjdUvl6vSnQk9UhiuQWoYf1c3pHBjW9Do
+id: wmc_i8_subtheme_local_tasks
+theme: wmc_i8_subtheme
+region: content
+weight: -37
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  content_sync_helper_media_parent_node_has_type:
+    id: content_sync_helper_media_parent_node_has_type
+    bundles:
+      islandora_object: islandora_object
+    negate: true
+    context_mapping:
+      media: '@islandora.media_route_context_provider:media'
+  islandora_entity_bundle:
+    id: islandora_entity_bundle
+    bundles:
+      islandora_object: islandora_object
+    negate: true
+    context_mapping: {  }

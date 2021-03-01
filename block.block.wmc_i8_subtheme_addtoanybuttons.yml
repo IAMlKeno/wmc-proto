@@ -1,0 +1,52 @@
+uuid: c748a8ef-def4-450f-95e4-57f5fc69e37f
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+    - block_class
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - wmc_i8_subtheme
+  config:
+    - blockgroup.block_group_content.object_page_split_sidebar
+third_party_settings:
+  block_class:
+    classes: 'add-to-any-block block-sidebar-menu col-md-6  col-lg-12'
+id: wmc_i8_subtheme_addtoanybuttons
+theme: wmc_i8_subtheme
+region: object_page_split_sidebar
+weight: -18
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: Share
+  provider: addtoany
+  label_display: visible
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

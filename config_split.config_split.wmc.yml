@@ -1,0 +1,16 @@
+uuid: 1fbb71fd-376d-4cf8-91a3-7dda58a9bc3d
+langcode: en
+status: true
+dependencies: {  }
+id: wmc
+label: WMC
+description: 'WMC configs'
+folder: /opt/www/d8_configs/default/splits/wmc
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - '*'
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
