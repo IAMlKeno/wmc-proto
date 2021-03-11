@@ -11,7 +11,7 @@ _core:
 id: wmc_i8_subtheme_help
 theme: wmc_i8_subtheme
 region: content
-weight: -36
+weight: -38
 provider: null
 plugin: help_block
 settings:

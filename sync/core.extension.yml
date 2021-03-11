@@ -148,6 +148,7 @@ module:
   pdf: 0
   php_ffmpeg: 0
   prepopulate: 0
+  range_slider: 0
   rdf: 0
   request_data_conditions: 0
   responsive_image: 0
@@ -192,6 +193,7 @@ module:
   wmcdora: 0
   workflows: 0
   menu_link_content: 1
+  scss_compiler: 1
   content_translation: 10
   views: 10
   minimal: 1000
