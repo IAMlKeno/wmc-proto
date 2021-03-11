@@ -1,10 +1,10 @@
 langcode: en
 status: true
 dependencies: {  }
-id: wmc
-label: WMC
-description: 'WMC configs'
-folder: /opt/www/d8_configs/default/splits/wmc
+id: client
+label: Client
+description: 'Client configs'
+folder: /opt/www/d8_configs/default/splits/client
 module:
   action: 0
   addtoany: 0
