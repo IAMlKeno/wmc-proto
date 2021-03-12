@@ -4,10 +4,10 @@ palette:
   tertiary-color: '#115740'
   gradient-color-start: '#115740'
   gradient-color-end: '#115740'
-  focus-outline-color: '#8554a0'
-logo: 'public://color/wmc_i8_subtheme-aa4349ab/logo.svg'
+  focus-outline-color: '#d53b20'
+logo: 'public://color/wmc_i8_subtheme-d9e5db9e/logo.svg'
 stylesheets:
-  - 'public://color/wmc_i8_subtheme-aa4349ab/colors.css'
+  - 'public://color/wmc_i8_subtheme-d9e5db9e/colors.css'
 files:
   - ''
-  - 'public://color/wmc_i8_subtheme-aa4349ab/colors.css'
+  - 'public://color/wmc_i8_subtheme-d9e5db9e/colors.css'
