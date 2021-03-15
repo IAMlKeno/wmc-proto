@@ -5,7 +5,7 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: themes/contrib/wmc_i8_subtheme/favicon.ico
-  url: 'http://discoverygarden-vsphere-wmc-tst.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
+  url: 'http://discoverygarden-vagrant-wmc.local/themes/contrib/wmc_i8_subtheme/favicon.ico'
   use_default: 0
 features:
   comment_user_picture: 1
@@ -24,6 +24,16 @@ use_different_mobile_header_logo: 1
 mobile_header_logo_path: themes/contrib/wmc_i8_subtheme/favicon-white.png
 logo_link: 'https://www.wm.edu/'
 front_page_sub_title: 'Explore items digitized from our collections'
-front_page_alignment: left-align
+focus_outline: 1
+focus_outline_style: solid
+front_page_bg_gradient_end: '1'
+front_page_bg_gradient_start: '4'
+front_page_bg_image_opacity: '33'
+front_page_explore_text: Explore
+front_page_search_text: Search
+front_page_view_blocks: 1
+front_page_view_count_blocks: 1
+front_page_header_transparent: 0
+focus_outline_width: 3px
 reset_http_request_cache: ''
 table: ''

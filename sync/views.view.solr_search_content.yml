@@ -3327,7 +3327,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<a class=\"views-display-link is-active grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle\"></i>"
+            value: "<a title=\"View results as a grid view\" class=\"views-display-link is-active grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a title=\"View results as a list view\" class=\"views-display-link list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i tabindex=\"0\" title=\"Hide or show additional grid data\" class=\"fal fa-info-circle\"></i>"
             format: full_html
           plugin_id: text
       query:
@@ -4774,7 +4774,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<a class=\"views-display-link grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link is-active list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle active disabled\"></i>"
+            value: "<a title=\"View results as a grid view\" class=\"views-display-link grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a title=\"View results as a list view\" class=\"views-display-link is-active list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i tabindex=\"0\" title=\"Hide or show additional grid data\" class=\"fal fa-info-circle active disabled\"></i>"
             format: full_html
           plugin_id: text
       use_ajax: true
@@ -9509,7 +9509,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<i class="fal fa-info-circle"></i>'
+            value: '<i tabindex="0" title="Hide or show additional grid data" class="fal fa-info-circle"></i>'
             format: full_html
           plugin_id: text
         entity_block:
@@ -11112,7 +11112,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<i class="fal fa-info-circle active disabled"></i>'
+            value: '<i tabindex="0" title="Hide or show additional grid data" class="fal fa-info-circle active disabled"></i>'
             format: full_html
           plugin_id: text
         entity_block:
