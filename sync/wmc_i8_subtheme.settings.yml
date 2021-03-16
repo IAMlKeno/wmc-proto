@@ -19,7 +19,7 @@ logo:
 use_default_footer_logo: 0
 footer_logo_path: themes/contrib/wmc_i8_subtheme/footer_logo.png
 use_different_front_header_logo: 1
-front_header_logo_path: themes/contrib/wmc_i8_subtheme/logo-front.svg
+front_header_logo_path: themes/contrib/wmc_i8_subtheme/logo-front.png
 use_different_mobile_header_logo: 1
 mobile_header_logo_path: themes/contrib/wmc_i8_subtheme/favicon-white.png
 logo_link: 'https://www.wm.edu/'
@@ -34,6 +34,5 @@ front_page_search_text: Search
 front_page_view_blocks: 1
 front_page_view_count_blocks: 1
 front_page_header_transparent: 0
-focus_outline_width: 3px
 reset_http_request_cache: ''
 table: ''
