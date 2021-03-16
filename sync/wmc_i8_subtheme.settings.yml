@@ -34,5 +34,6 @@ front_page_search_text: Search
 front_page_view_blocks: 1
 front_page_view_count_blocks: 1
 front_page_header_transparent: 0
+focus_outline_width: 3px
 reset_http_request_cache: ''
 table: ''
