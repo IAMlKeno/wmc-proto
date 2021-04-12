@@ -452,50 +452,6 @@ display:
           hide_alter_empty: false
           plugin_id: custom
       filters:
-        name:
-          id: name
-          table: search_api_index_default_solr_index
-          field: name
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: Collection
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: search_api_string
         type:
           id: type
           table: search_api_index_default_solr_index
@@ -851,105 +807,8 @@ display:
             link_query: ''
             link_target: ''
           plugin_id: base_url
-        field_representative_image:
-          id: field_representative_image
-          table: search_api_datasource_default_solr_index_entity_node
-          field: field_representative_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: '{{ base_url }}/node/{{ nid }}'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: 'Select to visit the {{ title }} page'
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: '<a href="{{ base_url }}/node/{{ nid }}" aria-label="select to visit the {{ title }} page" title="select to visit the {{ title }} page"><img class="default-thumbnail" alt="{{ title }}" src="/themes/contrib/dgi_i8_base/images/missing_image.png"></img></a>'
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: media_thumbnail
-          settings:
-            image_style: recent_items_collections
-            image_link: ''
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api_entity
-          fallback_options:
-            link_to_item: true
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-            display_methods:
-              audio:
-                display_method: label
-                view_mode: default
-              document:
-                display_method: label
-                view_mode: default
-              extracted_text:
-                display_method: label
-                view_mode: default
-              file:
-                display_method: label
-                view_mode: default
-              html5_video:
-                display_method: label
-                view_mode: default
-              image:
-                display_method: id
-                view_mode: source
-              remote_video:
-                display_method: label
-                view_mode: default
-              video:
-                display_method: label
-                view_mode: default
-          entity_type: node
-          plugin_id: search_api_field
-        view:
-          id: view
+        view_1:
+          id: view_1
           table: views
           field: view
           relationship: none
@@ -991,15 +850,109 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          view: content_thumbnails_from_media_use
-          display: block_3
-          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title }}'
+          view: islandora_object_link
+          display: block_1
+          arguments: '{{ raw_fields.nid }}'
           plugin_id: view
+        field_representative_image:
+          id: field_representative_image
+          table: search_api_datasource_default_solr_index_entity_node
+          field: field_representative_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '<a href="{{ view_1 }}" aria-label="Select to visit the {{ title }} page" title="select to visit the {{ title }} page">{{ field_representative_image }}</a>'
+            make_link: false
+            path: '{{ base_url }}/node/{{ nid }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: 'Select to visit the {{ title }} page'
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: '<a href="{{ view_1 }}" aria-label="select to visit the {{ title }} page" title="Select to visit the {{ title }} page"><img alt="{{ title }}" src="/themes/contrib/dgi_i8_base/images/missing_image.png"></img></a>'
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: media_thumbnail
+          settings:
+            image_style: recent_items_collections
+            image_link: ''
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: true
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              audio:
+                display_method: label
+                view_mode: default
+              document:
+                display_method: label
+                view_mode: default
+              extracted_text:
+                display_method: label
+                view_mode: default
+              file:
+                display_method: label
+                view_mode: default
+              image:
+                display_method: id
+                view_mode: source
+              remote_video:
+                display_method: label
+                view_mode: default
+              video:
+                display_method: label
+                view_mode: default
+          entity_type: node
+          plugin_id: search_api_field
         field_description:
           id: field_description
           table: search_api_datasource_default_solr_index_entity_node
@@ -1081,7 +1034,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"{{ base_url }}/node/{{ nid }}\" title=\"Select to visit the {{ title }} page\">{{ field_representative_image }}</a>\r\n<h3>{{ title_1 }}</h3>\r\n<span class=\"view-description\">{{ field_description }}</span>"
+            text: "{{ field_representative_image }}\r\n<h3>{{ title_1 }}</h3>\r\n<span class=\"view-description\">{{ field_description }}</span>"
             make_link: false
             path: ''
             absolute: false
@@ -1122,6 +1075,8 @@ display:
       defaults:
         fields: false
         relationships: false
+        filters: false
+        filter_groups: false
       block_hide_empty: true
       relationships:
         field_representative_image:
@@ -1135,6 +1090,96 @@ display:
           skip_access: false
           entity_type: node
           plugin_id: search_api
+      filters:
+        type:
+          id: type
+          table: search_api_index_default_solr_index
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            islandora_object: islandora_object
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: search_api_options
+        name:
+          id: name
+          table: search_api_index_default_solr_index
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: Collection
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:

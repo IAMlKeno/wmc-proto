@@ -9,12 +9,12 @@ dependencies:
     - request_data_conditions
     - views
   theme:
-    - dgi_i8_base
+    - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: 'exposed-search-form pull-left'
+    classes: exposed-search-form
 id: exposedformsolr_search_contentpage_1
-theme: dgi_i8_base
+theme: wmc_i8_subtheme
 region: sidr
 weight: -18
 provider: null
