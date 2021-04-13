@@ -1,4 +1,4 @@
-uuid: ac86809f-f8bd-4f49-8e46-a4c446a91d14
+uuid: 2fbd909a-3044-4049-9605-04fdd24dda19
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: recent-items
+    classes: 'recent-items top'
 id: views_block__recent_items_block_1
 theme: wmc_i8_subtheme
 region: content
@@ -28,8 +28,8 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  http_headers:
-    id: http_headers
+  url_query_parameters:
+    id: url_query_parameters
     conditions: {  }
     require_all_params: 1
     negate: false
@@ -46,8 +46,8 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
-  url_query_parameters:
-    id: url_query_parameters
+  http_headers:
+    id: http_headers
     conditions: {  }
     require_all_params: 1
     negate: false

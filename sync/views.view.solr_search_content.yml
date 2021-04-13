@@ -2900,6 +2900,58 @@ display:
             link_query: ''
             link_target: ''
           plugin_id: base_url
+        view_1:
+          id: view_1
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view: islandora_object_link
+          display: block_1
+          arguments: '{{ raw_fields.nid }}'
+          plugin_id: view
         title_1:
           id: title_1
           table: search_api_datasource_default_solr_index_entity_node
@@ -3118,7 +3170,7 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
-          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_1 }}'
+          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_1 }},{{ fields.view_1 }}'
           plugin_id: view
         title:
           id: title
@@ -9007,6 +9059,58 @@ display:
             link_query: ''
             link_target: ''
           plugin_id: base_url
+        view_1:
+          id: view_1
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view: islandora_object_link
+          display: block_1
+          arguments: '{{ raw_fields.nid }}'
+          plugin_id: view
         title_2:
           id: title_2
           table: search_api_datasource_default_solr_index_entity_node
@@ -9225,7 +9329,7 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
-          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_2 }}'
+          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_2 }},{{ fields.view_1 }}'
           plugin_id: view
         title:
           id: title
