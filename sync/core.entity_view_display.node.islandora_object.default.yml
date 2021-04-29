@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_ark
     - field.field.node.islandora_object.field_classification
     - field.field.node.islandora_object.field_coordinates
     - field.field.node.islandora_object.field_coordinates_text
@@ -73,6 +74,16 @@ targetEntityType: node
 bundle: islandora_object
 mode: default
 content:
+  display_media_extracted_text:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  paged_content_text_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   repository_item_content_blocks_entity_view_2:
     weight: 2
     region: content
