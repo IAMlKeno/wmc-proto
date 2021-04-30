@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.repository_item_collection_title
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_ark
     - field.field.node.islandora_object.field_classification
     - field.field.node.islandora_object.field_coordinates
     - field.field.node.islandora_object.field_coordinates_text
@@ -23,6 +24,7 @@ dependencies:
     - field.field.node.islandora_object.field_isbn
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_lcc_classification
+    - field.field.node.islandora_object.field_license
     - field.field.node.islandora_object.field_linked_agent
     - field.field.node.islandora_object.field_local_identifier
     - field.field.node.islandora_object.field_member_of
@@ -33,6 +35,8 @@ dependencies:
     - field.field.node.islandora_object.field_pid
     - field.field.node.islandora_object.field_place_published
     - field.field.node.islandora_object.field_place_published_country
+    - field.field.node.islandora_object.field_provenance
+    - field.field.node.islandora_object.field_publisher
     - field.field.node.islandora_object.field_representative_image
     - field.field.node.islandora_object.field_resource_type
     - field.field.node.islandora_object.field_rights
@@ -55,7 +59,7 @@ third_party_settings:
         - repository_item_content_blocks_classification
         - repository_item_content_blocks_metadata
       parent_name: ''
-      weight: 52
+      weight: 58
       format_type: fieldset
       format_settings:
         description: ''
@@ -99,6 +103,7 @@ hidden:
   addtoany: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
+  display_media_extracted_text: true
   display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true
@@ -148,6 +153,7 @@ hidden:
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
   openseadragon_paged_content_entity_view_1: true
+  paged_content_text_entity_view_1: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
