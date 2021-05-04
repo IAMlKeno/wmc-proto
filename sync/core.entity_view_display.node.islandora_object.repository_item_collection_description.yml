@@ -57,7 +57,7 @@ third_party_settings:
     group_metadata:
       children: {  }
       parent_name: ''
-      weight: 54
+      weight: 60
       format_type: fieldset
       format_settings:
         description: ''
@@ -104,6 +104,7 @@ hidden:
   collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
+  display_media_extracted_text: true
   display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true
@@ -152,6 +153,7 @@ hidden:
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
   openseadragon_paged_content_entity_view_1: true
+  paged_content_text_entity_view_1: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true

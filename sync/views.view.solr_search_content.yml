@@ -2306,6 +2306,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -2325,8 +2327,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2342,6 +2342,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -3448,6 +3449,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -3455,6 +3458,10 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 0
@@ -3463,8 +3470,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3480,6 +3485,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -4614,6 +4620,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -9730,6 +9737,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -9943,6 +9951,50 @@ display:
           min_length: null
           fields: {  }
           plugin_id: views_autocomplete_filters_search_api_fulltext
+        name_2:
+          id: name_2
+          table: search_api_index_default_solr_index
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: Page
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
       filter_groups:
         operator: AND
         groups:
@@ -10922,6 +10974,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -10941,8 +10995,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -10958,6 +11010,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -11168,6 +11221,50 @@ display:
           min_length: null
           fields: {  }
           plugin_id: views_autocomplete_filters_search_api_fulltext
+        name_2:
+          id: name_2
+          table: search_api_index_default_solr_index
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: Page
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
       filter_groups:
         operator: AND
         groups:

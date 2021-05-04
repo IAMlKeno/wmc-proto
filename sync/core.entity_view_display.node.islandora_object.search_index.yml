@@ -1,9 +1,9 @@
-uuid: 4049578c-e2c7-42cf-9a6c-74e74f18e1db
+uuid: 611e5620-5aa9-466b-9fb7-a2a7f06cc9b1
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.repository_item_bottom_metadata
+    - core.entity_view_mode.node.search_index
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_ark
@@ -52,78 +52,41 @@ dependencies:
   module:
     - controlled_access_terms
     - field_group
+    - geolocation
     - link
-    - taxonomy
+    - text
     - user
 third_party_settings:
   field_group:
     group_metadata:
       children:
-        - group_metadata_table_data
+        - collection_page_title_entity_view_1
+        - repository_item_content_blocks_classification
+        - repository_item_content_blocks_metadata
       parent_name: ''
-      weight: 0
-      format_type: details
-      region: content
+      weight: 52
+      format_type: fieldset
       format_settings:
         description: ''
-        open: true
         id: ''
-        classes: bootstrap-metadata
+        classes: metadata
       label: Metadata
-    group_metadata_table_data:
-      children:
-        - field_alternative_title
-        - field_description
-        - field_model
-        - field_member_of
-        - field_subject
-        - field_pid
-        - field_access_terms
-        - langcode
-        - field_edtf_date
-        - field_edtf_date_created
-        - field_edtf_date_issued
-        - field_extent
-        - field_identifier
-        - field_linked_agent
-        - field_resource_type
-        - field_rights
-        - field_license
-        - field_provenance
-        - field_physical_form
-        - field_temporal_subject
-        - field_publisher
-        - field_geographic_subject
-        - field_genre
-        - field_ark
-      parent_name: group_metadata
-      weight: 20
-      format_type: field_group_table
-      region: content
-      format_settings:
-        label_visibility: '1'
-        desc: ''
-        desc_visibility: '2'
-        first_column: ''
-        second_column: ''
-        empty_label_behavior: '1'
-        always_show_field_label: '1'
-        empty_field_placeholder: ''
-        id: ''
-        classes: ''
-        table_row_striping: 0
-        always_show_field_value: 0
-      label: 'Metadata table data'
+      region: hidden
 _core:
   default_config_hash: AUD0qyaFHBoXd-qf4TBs-XRwu-kzs5N0EvV_kGPLzWE
-id: node.islandora_object.repository_item_bottom_metadata
+id: node.islandora_object.search_index
 targetEntityType: node
 bundle: islandora_object
-mode: repository_item_bottom_metadata
+mode: search_index
 content:
+  display_media_extracted_text:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_access_terms:
     type: entity_reference_label
-    weight: 6
+    weight: 0
     region: content
     label: above
     settings:
@@ -139,7 +102,7 @@ content:
     third_party_settings: {  }
   field_ark:
     type: link
-    weight: 23
+    weight: 0
     region: content
     label: above
     settings:
@@ -149,16 +112,63 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-  field_description:
-    type: basic_string
-    weight: 1
+  field_classification:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_coordinates:
+    type: geolocation_latlng
+    weight: 0
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+  field_coordinates_text:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_description:
+    type: basic_string
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_dewey_classification:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_display_hints:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_edition:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_edtf_date:
     type: edtf_default
-    weight: 8
+    weight: 0
     region: content
     label: above
     settings:
@@ -169,7 +179,7 @@ content:
     third_party_settings: {  }
   field_edtf_date_created:
     type: edtf_default
-    weight: 9
+    weight: 0
     region: content
     label: above
     settings:
@@ -180,7 +190,7 @@ content:
     third_party_settings: {  }
   field_edtf_date_issued:
     type: edtf_default
-    weight: 10
+    weight: 0
     region: content
     label: above
     settings:
@@ -191,7 +201,7 @@ content:
     third_party_settings: {  }
   field_extent:
     type: string
-    weight: 11
+    weight: 0
     region: content
     label: above
     settings:
@@ -199,7 +209,7 @@ content:
     third_party_settings: {  }
   field_genre:
     type: entity_reference_label
-    weight: 22
+    weight: 0
     region: content
     label: above
     settings:
@@ -207,23 +217,15 @@ content:
     third_party_settings: {  }
   field_geographic_subject:
     type: entity_reference_label
-    weight: 21
+    weight: 0
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-  field_identifier:
-    type: string
-    weight: 12
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_license:
     type: entity_reference_label
-    weight: 16
+    weight: 0
     region: content
     label: above
     settings:
@@ -231,7 +233,7 @@ content:
     third_party_settings: {  }
   field_linked_agent:
     type: typed_relation_default
-    weight: 13
+    weight: 0
     region: content
     label: above
     settings:
@@ -239,15 +241,7 @@ content:
     third_party_settings: {  }
   field_member_of:
     type: entity_reference_label
-    weight: 3
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_model:
-    type: entity_reference_label
-    weight: 2
+    weight: 0
     region: content
     label: above
     settings:
@@ -255,30 +249,22 @@ content:
     third_party_settings: {  }
   field_physical_form:
     type: entity_reference_label
-    weight: 18
+    weight: 0
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-  field_pid:
-    type: string
-    weight: 5
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_provenance:
     type: basic_string
-    weight: 17
+    weight: 0
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_publisher:
     type: string
-    weight: 20
+    weight: 0
     region: content
     label: above
     settings:
@@ -286,30 +272,38 @@ content:
     third_party_settings: {  }
   field_resource_type:
     type: entity_reference_label
-    weight: 14
+    weight: 0
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
   field_rights:
-    type: entity_reference_rss_category
-    weight: 15
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_subject:
     type: entity_reference_label
-    weight: 4
+    weight: 0
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
+  field_subject:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_table_of_contents:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_temporal_subject:
     type: entity_reference_label
-    weight: 19
+    weight: 0
     region: content
     label: above
     settings:
@@ -317,12 +311,27 @@ content:
     third_party_settings: {  }
   langcode:
     type: language
-    weight: 7
+    weight: 0
     region: content
     label: above
     settings:
       link_to_entity: false
       native_language: false
+    third_party_settings: {  }
+  paged_content_text_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  repository_item_content_blocks_entity_view_2:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  repository_item_content_blocks_entity_view_3:
+    weight: 1
+    region: content
+    settings: {  }
     third_party_settings: {  }
   solr_search_content_entity_view_1_form:
     weight: 9
@@ -339,39 +348,31 @@ hidden:
   collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
-  display_media_extracted_text: true
   display_media_service_file: true
   display_media_thumbnail: true
-  field_classification: true
-  field_coordinates: true
-  field_coordinates_text: true
-  field_dewey_classification: true
-  field_display_hints: true
-  field_edition: true
+  field_identifier: true
   field_isbn: true
   field_language: true
   field_lcc_classification: true
   field_local_identifier: true
+  field_model: true
   field_note: true
   field_oclc_number: true
+  field_pid: true
   field_place_published: true
   field_place_published_country: true
   field_representative_image: true
   field_subjects_name: true
-  field_table_of_contents: true
   field_weight: true
   links: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
   openseadragon_paged_content_entity_view_1: true
-  paged_content_text_entity_view_1: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
   repository_item_content_blocks_classification: true
-  repository_item_content_blocks_entity_view_2: true
-  repository_item_content_blocks_entity_view_3: true
   repository_item_content_blocks_metadata: true
   solr_search_content_entity_view_1: true
   solr_search_content_entity_view_2: true
