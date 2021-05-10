@@ -12,7 +12,7 @@ _core:
 id: wmc_i8_subtheme_local_tasks
 theme: wmc_i8_subtheme
 region: content
-weight: -37
+weight: -39
 provider: null
 plugin: local_tasks_block
 settings:

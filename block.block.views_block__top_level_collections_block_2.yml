@@ -6,6 +6,7 @@ dependencies:
     - views.view.top_level_collections
   module:
     - block_class
+    - dgi_actions
     - request_data_conditions
     - system
     - views
@@ -13,11 +14,11 @@ dependencies:
     - wmc_i8_subtheme
 third_party_settings:
   block_class:
-    classes: top-level-collections
+    classes: 'top-level-collections top'
 id: views_block__top_level_collections_block_2
 theme: wmc_i8_subtheme
 region: content
-weight: -31
+weight: -34
 provider: null
 plugin: 'views_block:top_level_collections-block_2'
 settings:
@@ -55,5 +56,10 @@ visibility:
   request_path:
     id: request_path
     pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  dgi_actions_entity_persistent_identifier_populated:
+    id: dgi_actions_entity_persistent_identifier_populated
+    identifier: ''
     negate: false
     context_mapping: {  }
