@@ -2306,6 +2306,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -2325,8 +2327,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2342,6 +2342,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -2900,6 +2901,58 @@ display:
             link_query: ''
             link_target: ''
           plugin_id: base_url
+        view_1:
+          id: view_1
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view: islandora_object_link
+          display: block_1
+          arguments: '{{ raw_fields.nid }}'
+          plugin_id: view
         title_1:
           id: title_1
           table: search_api_datasource_default_solr_index_entity_node
@@ -3118,7 +3171,7 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
-          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_1 }}'
+          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_1 }},{{ fields.view_1 }}'
           plugin_id: view
         title:
           id: title
@@ -3327,7 +3380,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<a class=\"views-display-link is-active grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle\"></i>"
+            value: "<a title=\"View results as a grid view\" class=\"views-display-link is-active grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a title=\"View results as a list view\" class=\"views-display-link list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i tabindex=\"0\" title=\"Hide or show additional grid data\" class=\"fal fa-info-circle\"></i>"
             format: full_html
           plugin_id: text
       query:
@@ -3396,6 +3449,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -3403,6 +3458,10 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              editor: '0'
+              ingester: '0'
+              repository_administrator: '0'
+              site_administrator: '0'
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 0
@@ -3411,8 +3470,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3428,6 +3485,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -3710,7 +3768,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -4562,6 +4620,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -4774,7 +4833,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<a class=\"views-display-link grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a class=\"views-display-link is-active list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i class=\"fal fa-info-circle active disabled\"></i>"
+            value: "<a title=\"View results as a grid view\" class=\"views-display-link grid\" href=\"?page=[current-page:query:page]\">Grid</a>\r\n<a title=\"View results as a list view\" class=\"views-display-link is-active list\" href=\"?display=list&page=[current-page:query:page]\">list</a>\r\n<i tabindex=\"0\" title=\"Hide or show additional grid data\" class=\"fal fa-info-circle active disabled\"></i>"
             format: full_html
           plugin_id: text
       use_ajax: true
@@ -9007,6 +9066,58 @@ display:
             link_query: ''
             link_target: ''
           plugin_id: base_url
+        view_1:
+          id: view_1
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view: islandora_object_link
+          display: block_1
+          arguments: '{{ raw_fields.nid }}'
+          plugin_id: view
         title_2:
           id: title_2
           table: search_api_datasource_default_solr_index_entity_node
@@ -9225,7 +9336,7 @@ display:
           hide_alter_empty: false
           view: content_thumbnails_from_media_use
           display: block_1
-          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_2 }}'
+          arguments: '{{ raw_fields.nid }},{{ fields.base_url }},{{ raw_fields.title_2 }},{{ fields.view_1 }}'
           plugin_id: view
         title:
           id: title
@@ -9509,7 +9620,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<i class="fal fa-info-circle"></i>'
+            value: '<i tabindex="0" title="Hide or show additional grid data" class="fal fa-info-circle"></i>'
             format: full_html
           plugin_id: text
         entity_block:
@@ -9626,6 +9737,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -9839,6 +9951,50 @@ display:
           min_length: null
           fields: {  }
           plugin_id: views_autocomplete_filters_search_api_fulltext
+        name_2:
+          id: name_2
+          table: search_api_index_default_solr_index
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: Page
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
       filter_groups:
         operator: AND
         groups:
@@ -10002,7 +10158,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -10818,6 +10974,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: search_api_fulltext
             required: false
             remember: false
@@ -10837,8 +10995,6 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -10854,6 +11010,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - rendered_item
             - title
           plugin_id: search_api_fulltext
         name_1:
@@ -11064,6 +11221,50 @@ display:
           min_length: null
           fields: {  }
           plugin_id: views_autocomplete_filters_search_api_fulltext
+        name_2:
+          id: name_2
+          table: search_api_index_default_solr_index
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: Page
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_string
       filter_groups:
         operator: AND
         groups:
@@ -11112,7 +11313,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<i class="fal fa-info-circle active disabled"></i>'
+            value: '<i tabindex="0" title="Hide or show additional grid data" class="fal fa-info-circle active disabled"></i>'
             format: full_html
           plugin_id: text
         entity_block:

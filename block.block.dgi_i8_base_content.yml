@@ -1,0 +1,22 @@
+uuid: c6c26200-5506-4608-800e-ef560b93679e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dgi_i8_base
+_core:
+  default_config_hash: jJyyWsPa3GMYaEZUJncRo0aRf9TgwQl_-u7eYAmRnH0
+id: dgi_i8_base_content
+theme: dgi_i8_base
+region: content
+weight: -15
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

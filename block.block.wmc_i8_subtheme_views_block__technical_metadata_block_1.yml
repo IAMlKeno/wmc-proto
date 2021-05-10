@@ -7,7 +7,9 @@ dependencies:
     - blockgroup.block_group_content.object_page_split_sidebar
   module:
     - block_class
+    - dgi_actions
     - request_data_conditions
+    - user
     - views
     - blockgroup
   theme:
@@ -54,3 +56,15 @@ visibility:
     require_all_params: 1
     negate: false
     context_mapping: {  }
+  dgi_actions_entity_persistent_identifier_populated:
+    id: dgi_actions_entity_persistent_identifier_populated
+    identifier: ''
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      repository_administrator: repository_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

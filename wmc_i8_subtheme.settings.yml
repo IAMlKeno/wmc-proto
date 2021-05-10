@@ -5,7 +5,7 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: themes/contrib/wmc_i8_subtheme/favicon.ico
-  url: 'http://discoverygarden-vsphere-wmc-tst.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
+  url: 'http://jojo-ovirt-wmc-i8bt84.dgi/themes/contrib/wmc_i8_subtheme/favicon.ico'
   use_default: 0
 features:
   comment_user_picture: 1
@@ -19,11 +19,32 @@ logo:
 use_default_footer_logo: 0
 footer_logo_path: themes/contrib/wmc_i8_subtheme/footer_logo.png
 use_different_front_header_logo: 1
-front_header_logo_path: themes/contrib/wmc_i8_subtheme/logo-front.svg
+front_header_logo_path: themes/contrib/wmc_i8_subtheme/logo-front.png
 use_different_mobile_header_logo: 1
 mobile_header_logo_path: themes/contrib/wmc_i8_subtheme/favicon-white.png
 logo_link: 'https://www.wm.edu/'
 front_page_sub_title: 'Explore items digitized from our collections'
-front_page_alignment: left-align
+focus_outline: 1
+focus_outline_style: solid
+front_page_bg_gradient_end: '50'
+front_page_bg_gradient_start: '100'
+front_page_bg_image_opacity: '33'
+front_page_explore_text: Explore
+front_page_search_text: Search
+front_page_view_blocks: 1
+front_page_view_count_blocks: 1
+front_page_header_transparent: 0
+front_page_gradient_deg: '180'
+header_logo_width: '200'
+header_logo_advanced_widths: 0
+header_logo_wide_width: null
+header_logo_tablet_width: null
+use_different_front_logo_widths: 0
+header_logo_front_wide_width: null
+header_logo_front_width: null
+header_logo_front_tablet_width: null
+use_different_mobile_logo_widths: 1
+header_logo_mobile_width: '75'
+header_logo_front_mobile_width: '75'
 reset_http_request_cache: ''
 table: ''

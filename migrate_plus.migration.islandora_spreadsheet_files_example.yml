@@ -1,0 +1,76 @@
+uuid: 4d17adf7-20e0-470e-b252-ffaa98abf2ce
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_spreadsheet_ingest
+_core:
+  default_config_hash: DLxJ5YjpWcnsLKFvNrsaQ1adff8fF50rfPu3zH6Ftek
+id: islandora_spreadsheet_files_example
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: islandora_spreadsheet_example
+label: 'Create files from rows in the csv.'
+source:
+  constants:
+    DRUPAL_FILE_DIRECTORY: 'public://islandora_spreadsheet_ingest_example/'
+    SOURCE_BINARY_DIRECTORY: /opt/www/drupal/modules/contrib/islandora_spreadsheet_ingest/fixtures/
+  columns:
+    - ID
+    - Digital_File
+    - Mime
+process:
+  field_digital_file_exists:
+    plugin: skip_on_empty
+    method: row
+    source: Digital_File
+    message: 'Field Digital_File is missing'
+  destination_filename:
+    -
+      plugin: callback
+      callable: basename
+      source: Digital_File
+  destination_full_path:
+    -
+      plugin: concat
+      source:
+        - constants/DRUPAL_FILE_DIRECTORY
+        - '@destination_filename'
+    -
+      plugin: urlencode
+    -
+      plugin: dgi_migrate.process.log
+      template: 'Destination Full Path: :value'
+      level: 4
+  source_image_path:
+    -
+      plugin: concat
+      source:
+        - constants/SOURCE_BINARY_DIRECTORY
+        - Digital_File
+  uri:
+    -
+      plugin: file_copy
+      source:
+        - '@source_image_path'
+        - '@destination_full_path'
+      file_exists: rename
+      move: false
+  filemime: Mime
+  filename: '@destination_filename'
+  status:
+    -
+      plugin: default_value
+      default_value: 1
+  filesize:
+    -
+      plugin: callback
+      source: '@uri'
+      callable: filesize
+destination:
+  plugin: 'entity:file'
+  validate: true
+migration_dependencies: null

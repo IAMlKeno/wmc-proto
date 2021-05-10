@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_ark
     - field.field.node.islandora_object.field_classification
     - field.field.node.islandora_object.field_coordinates
     - field.field.node.islandora_object.field_coordinates_text
@@ -58,7 +59,7 @@ third_party_settings:
         - repository_item_content_blocks_classification
         - repository_item_content_blocks_metadata
       parent_name: ''
-      weight: 52
+      weight: 57
       format_type: fieldset
       format_settings:
         description: ''
@@ -98,6 +99,7 @@ hidden:
   collection_page_title_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
+  display_media_extracted_text: true
   display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true
@@ -147,6 +149,7 @@ hidden:
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
   openseadragon_paged_content_entity_view_1: true
+  paged_content_text_entity_view_1: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true

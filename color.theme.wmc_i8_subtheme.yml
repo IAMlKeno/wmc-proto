@@ -1,0 +1,11 @@
+palette:
+  base-color: '#115740'
+  secondary-color: '#115740'
+  tertiary-color: '#115740'
+  gradient-color-start: '#115740'
+  gradient-color-end: '#03110d'
+  focus-outline-color: '#d53b20'
+logo: 'public://color/wmc_i8_subtheme-8ade6230/logo.svg'
+stylesheets: {  }
+files:
+  - 'public://color/wmc_i8_subtheme-8ade6230/logo.png'

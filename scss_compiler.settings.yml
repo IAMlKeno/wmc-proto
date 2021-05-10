@@ -1,0 +1,9 @@
+cache: 0
+sourcemaps: 0
+output_format: compressed
+check_modify_time: 0
+node_modules_path: ''
+plugins:
+  scss: scss_compiler_scssphp
+_core:
+  default_config_hash: WOHuYoD9Gcq1EQksYeQGDj9QON1NE0bAqauvwQO-vIk
