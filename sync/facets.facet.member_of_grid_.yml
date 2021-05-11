@@ -13,7 +13,7 @@ url_alias: member_of
 weight: 0
 min_count: 1
 show_only_one_result: true
-field_identifier: title_1
+field_identifier: member_of_title
 facet_source_id: 'search_api:views_page__solr_search_content__page_1'
 widget:
   type: checkbox
